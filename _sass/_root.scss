@@ -1,0 +1,18 @@
+body {
+  padding: 0;
+  line-height: $line-height;
+  max-width: 900px;
+  text-align: justify;
+  display: block;
+  margin: auto;
+  color: $fg-color;
+  font-family: $main-font-family;
+  font-size: $main-font-size;
+  font-weight: 300;
+}
+
+html {
+  background-color: $bg-color;
+  padding: 2em;
+  font-family: $main-font-family;
+}
