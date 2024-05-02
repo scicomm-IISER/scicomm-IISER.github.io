@@ -1,9 +1,13 @@
 $main-font-size: 1.6em !default;
+$line-height: 1.4em !default;
+$main-margin: 2em !default;
+$body-width: 900px !default;
+$topbar-pad: 0.4em !default;
+$footer-pad: 0.5em !default;
+
 $h1-font-size: 3em !default;
 $h2-font-size: 2.4em !default;
 $h3-font-size: 1.8em !default;
-$line-height: 1.4em !default;
-$mainMargin: 2em !default;
 
 /* system typefaces */
 $main-font-family: "Roboto Condensed", "Open Sans", "DaddyTimeMono Nerd Font Mono" !default;
@@ -13,6 +17,7 @@ $heading-font-family: "BenchNine" !default;
 // one-dark colour palette
 $bg-color: #262626;
 $fg-color: #f8f8f8;
-$link-color: #dc2f2f;
+$link-color: #8cabff;
 $heading-color: #ff894c;
 $icon-color: #e5c07b;
+$topbar-color: #f5e8c7;

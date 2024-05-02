@@ -1,0 +1,39 @@
+header {
+	background-color: $topbar-color;
+}
+.topbar {
+	color: $bg-color;
+	padding: $topbar-pad;
+	padding-left: $main-margin;
+	padding-right: $main-margin;
+	height: calc(1.5 * #{$line-height} + 2 * #{$topbar-pad});
+	max-width: $body-width;
+	margin: auto;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+.topbar-icon {
+	> a {
+	font-weight: normal;
+	font-size: 0.9em;
+	color: $bg-color;
+	}
+}
+
+.site-desc {
+	font-weight: normal;
+	font-size: 0.8em;
+	text-align: left;
+}
+
+.site-icon {
+	height: 100%;
+	float: left;
+	padding-right: $main-margin;
+	> img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
