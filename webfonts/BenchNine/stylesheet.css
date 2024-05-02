@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'BenchNine';
+    src: url('BenchNine-Bold.woff2') format('woff2'),
+        url('BenchNine-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BenchNine';
+    src: url('BenchNine-Regular.woff2') format('woff2'),
+        url('BenchNine-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BenchNine';
+    src: url('BenchNine-Light.woff2') format('woff2'),
+        url('BenchNine-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

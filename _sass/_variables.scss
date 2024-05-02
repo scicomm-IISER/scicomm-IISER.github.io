@@ -1,12 +1,18 @@
-$main-font-size: 1.4em !default;
-$line-height: 1.2 !default;
+$main-font-size: 1.6em !default;
+$h1-font-size: 3em !default;
+$h2-font-size: 2.4em !default;
+$h3-font-size: 1.8em !default;
+$line-height: 1.4em !default;
 $mainMargin: 2em !default;
 
 /* system typefaces */
-$main-font-family: "Roboto Condensed", "DaddyTimeMono Nerd Font Mono" !default;
+$main-font-family: "Roboto Condensed", "Open Sans", "DaddyTimeMono Nerd Font Mono" !default;
 $monospace-font: "Roboto Condensed" !default;
-$header-font-family: "BenchNine", -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif !default;
+$heading-font-family: "BenchNine" !default;
 
-// breeze-dark colour palette
-$bg-color: #31363b;
-$fg-color: #eff0f1;
+// one-dark colour palette
+$bg-color: #262626;
+$fg-color: #f8f8f8;
+$link-color: #dc2f2f;
+$heading-color: #ff894c;
+$icon-color: #e5c07b;
