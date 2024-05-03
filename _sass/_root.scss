@@ -1,21 +1,21 @@
 body {
-  line-height: $line-height;
-  color: $fg-color;
-  font-family: $main-font-family;
-  font-size: $main-font-size;
-  font-weight: 300;
-  font-family: $main-font-family;
+	line-height: $line-height;
+	color: $fg-color;
+	font-family: $main-font-family;
+	font-size: $main-font-size;
+	font-weight: 300;
+	font-family: $main-font-family;
+	margin: 0;
+	padding: 0;
 }
 
 .main-content {
 	display: block;
 	margin: auto;
 	max-width: $body-width;
-	padding: $main-margin;
-	padding-top: 0;
 	text-align: justify;
 }
 
 html {
-  background-color: $bg-color;
+	background-color: $bg-color;
 }

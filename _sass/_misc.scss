@@ -1,0 +1,15 @@
+.member-desc {
+    display: flex;
+	justify-content: space-between;
+	margin-bottom: 2em;
+	> img {
+		flex-shrink: 0;
+		width: 25%;
+		object-fit: contain;
+	}
+	> span {
+		flex-shrink: 0;
+		width: 70%;
+		font-size: 0.9em;
+	}
+}
