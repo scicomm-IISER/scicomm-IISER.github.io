@@ -1,16 +1,22 @@
 h1,h2,h3,h4 {
 	font-family: $heading-font-family;
 	color: $heading-color;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
 }
 h1 {
 	font-size: $h1-font-size;
 }
 h2 {
 	font-size: $h2-font-size;
-	border-bottom: 2px solid $topbar-color;
+	border-bottom: 2px solid $header-color;
 	padding-bottom: 0.4em;
 }
 
 h3 {
 	font-size: $h3-font-size;
+}
+
+h1 {
+	text-align: center;
 }

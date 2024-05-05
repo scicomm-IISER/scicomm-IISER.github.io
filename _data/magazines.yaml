@@ -1,0 +1,34 @@
+#### IMPORTANT ####
+# The latest issues should go to the top.
+####
+
+2023:
+  - fileName: name1.pdf
+    month: May
+    thumbnailFileName: name1.jpg
+    focus: "Competition between nocturnal viruses and blasphemous beetles"
+  - fileName: name2.pdf
+    month: March
+    thumbnailFileName: name2.jpg
+  - fileName: name3.pdf
+    month: January
+    thumbnailFileName: name3.jpg
+2022:
+  - fileName: name4.pdf
+    month: November
+    thumbnailFileName: name4.jpg
+  - fileName: name5.pdf
+    month: September
+    thumbnailFileName: name5.jpg
+  - fileName: name6.pdf
+    month: July
+    thumbnailFileName: name6.jpg
+  - fileName: name7.pdf
+    month: May
+    thumbnailFileName: name7.jpg
+  - fileName: name8.pdf
+    month: March
+    thumbnailFileName: name8.jpg
+  - fileName: name9.pdf
+    month: January
+    thumbnailFileName: name9.jpg

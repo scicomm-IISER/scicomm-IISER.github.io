@@ -5,6 +5,8 @@ $body-width: 900px !default;
 $topbar-pad: 0.2em !default;
 $footer-pad: 0.5em !default;
 $header-height: 70px !default;
+$image-maxwidth: 700px !default;
+$magazine-thumbnail-maxwidth: 150px !default;
 
 $h1-font-size: 3em !default;
 $h2-font-size: 2.4em !default;
@@ -16,9 +18,10 @@ $monospace-font: "Roboto Condensed" !default;
 $heading-font-family: "BenchNine" !default;
 
 // one-dark colour palette
-$bg-color: #262626;
-$fg-color: #f8f8f8;
-$link-color: #8cabff;
-$heading-color: #ff894c;
+$bg-color: #222831;
+$fg-color: #ded5c4;
+$link-color: #cca8e9;
+$heading-color: #78bbe6;
 $icon-color: #e5c07b;
-$topbar-color: #f5e8c7;
+$header-color: #393e46;
+$footer-color: #393e46;

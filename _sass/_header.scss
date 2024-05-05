@@ -1,5 +1,5 @@
 header {
-	background-color: $topbar-color;
+	background-color: $header-color;
 	height: $header-height;
 	padding: $topbar-pad $main-margin $topbar-pad $main-margin;
 }
@@ -14,17 +14,27 @@ nav {
 }
 
 nav * {
-	color: $bg-color;
+	color: $fg-color;
 	font-weight: bold;
 	font-size: 0.9em;
 }
 
+nav *:hover {
+	border-bottom: 0;
+	padding: 0;
+}
+
+#home-button {
+	height: 100%;
+}
 #site-title {
 	font-size: 1.4em;
 	margin: auto;
 }
 
 #site-icon {
+	float: left;
+	padding-right: 1em;
 	height: 100%;
 	> img {
 		height: 100%;
