@@ -4,4 +4,13 @@ title: Articles
 permalink: /articles
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. _Vestibulum tortor quam_, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. 
+{% for article in site.posts %}
+<div class="article-item" markdown=1>
+<img class="article-thumbnail" src="/assets/hero-images/{{article.hero-image}}"/>
+<span class="article-item-details">
+<span>{{ article.title }}</span>
+<span>{{ article.date | date:"%b %d, %Y" }}</span>
+<a href="{{ article.url }}">View article.</a>
+</span>
+</div>
+{% endfor %}

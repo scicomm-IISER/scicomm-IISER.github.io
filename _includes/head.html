@@ -3,14 +3,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>{{ page.title }}</title>
-	<meta name="description" content={{ page.excerpt }}>
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ post.title }}{% endif %}</title>
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt }}{% endif %}{% if post.excerpt %}{{ post.excerpt }}{% endif %}">
 
-	<meta property="og:title" content={{ page.title }}>
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% endif %}{% if post.title %}{{ post.title }}{% endif %}">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content={{ page.url }}>
-	<meta property="og:description" content={{ page.excerpt }}>
-	<meta property="og:image" content={{ page.header_image }}>
+	<meta property="og:url" content={{ site.url }}{{ page.url }}>
+	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt }}{% endif %}{% if post.excerpt %}{{ post.excerpt }}{% endif %}">
+	<meta property="og:image" content="{% if page.header_image %}{{ page.header_image }}{% endif %}{% if post.header_image %}{{ post.header_image }}{% endif %}">
 
 	<link rel="icon" href="/favicon.ico">
 	<link rel="icon" href="/favicon.svg" type="image/svg+xml">

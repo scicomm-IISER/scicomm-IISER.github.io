@@ -5,9 +5,21 @@
 
 <body>
 {% include header.html %}
-	<h1> {{ page.title }} </h1>
-	{{ content }}
-</body>
+<div class="main-content">
+<h1> {{ page.title }} </h1>
+<div class="author-date-excerpt" markdown=1>
+<span class="excerpt">{% if page.excerpt %}{{ page.excerpt }}{% endif %}</span>
+<span class="author-date">
+	<span class="author">{{ page.author }}</span>
+	<br>
+	{{ page.date | date:"%b %d, %Y"}}
+</span>
+</div>
+
+<img class="hero-image" src="/assets/hero-images/{{ page.hero-image }}"/>
+{{ content }}
+</div>
 {% include footer.html %}
+</body>
 </html>
 

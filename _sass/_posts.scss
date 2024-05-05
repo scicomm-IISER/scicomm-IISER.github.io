@@ -1,0 +1,37 @@
+.excerpt {
+	font-style: italic;
+	text-align: left;
+	display: block;
+	font-size: 0.9em;
+	color: white;
+}
+
+.author-date-excerpt {
+	display: flex;
+	justify-content: space-between;
+	> span {
+	max-width: 50%;
+	> .author {
+		color: $focus-color;
+		font-weight: bold;
+	}
+	}
+	> .author-date {
+		text-align: right;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+}
+
+.article-item {
+	> img.article-thumbnail {
+		max-width: 40%;
+	}
+	display: flex;
+	flex-wrap: nowrap;
+	> .article-item-details {
+		display: flex;
+		flex-direction: column;
+	}
+}
