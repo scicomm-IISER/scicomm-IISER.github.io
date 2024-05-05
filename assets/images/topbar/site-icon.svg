@@ -24,14 +24,15 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      inkscape:zoom="1.4501208"
-     inkscape:cx="149.6427"
-     inkscape:cy="103.78445"
+     inkscape:cx="149.64271"
+     inkscape:cy="103.78446"
      inkscape:window-width="1920"
      inkscape:window-height="1000"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     showgrid="false" />
   <defs
      id="defs1">
     <inkscape:path-effect
@@ -52,8 +53,8 @@
        height="50"
        x="19.683226"
        y="87.768471"
-       rx="7"
-       ry="7" />
+       rx="10"
+       ry="10" />
     <path
        style="fill:none;fill-opacity:1;stroke:#c0c0c0;stroke-width:4;stroke-dasharray:none;stroke-opacity:1"
        id="path1"

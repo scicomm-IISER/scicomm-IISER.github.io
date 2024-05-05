@@ -1,12 +1,10 @@
 footer {
-	background-color: $topbar-color;
-	position: fixed;
-	bottom: 0;
-	color: $bg-color;
 	width: 100%;
-	padding-top: $footer-pad;
-	padding-bottom: $footer-pad;
-	text-align: center;
-	font-weight: bold;
+	color: $topbar-color;
+	font-weight: normal;
 	font-size: 0.9em;
+	text-align: center;
+	padding-top: $topbar-pad;
+	padding-bottom: $topbar-pad;
+	border-top: 0.6em solid white;
 }

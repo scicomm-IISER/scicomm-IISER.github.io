@@ -6,7 +6,9 @@ body {
 	font-weight: 300;
 	font-family: $main-font-family;
 	margin: 0;
-	padding: 0;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 }
 
 .main-content {
@@ -14,8 +16,13 @@ body {
 	margin: auto;
 	max-width: $body-width;
 	text-align: justify;
+	padding: $main-margin;
+	padding-top: 0;
+	padding-bottom: 0;
+	flex-grow: 1;
 }
 
 html {
 	background-color: $bg-color;
+	height: 100%;
 }

@@ -7,7 +7,10 @@ h1 {
 }
 h2 {
 	font-size: $h2-font-size;
+	border-bottom: 2px solid $topbar-color;
+	padding-bottom: 0.4em;
 }
+
 h3 {
 	font-size: $h3-font-size;
 }
