@@ -15,7 +15,7 @@ permalink: /issues
     ISSUE FOCUS:<br>
     <strong>{{ issue["focus"] }}</strong>
     </div>
-    <a id="latest-issue-link" href="{{issue["fileName"]}}">View/Download this issue.</a>
+    <a id="latest-issue-link" href="/assets/magazines/{{issue["fileName"]}}">View/Download this issue.</a>
 </div>
 </div>
 {% endfor %}

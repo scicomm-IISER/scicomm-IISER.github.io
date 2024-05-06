@@ -5,9 +5,11 @@
 	align-items: left;
 	position: relative;
 	left: 10%;
-	gap: 4em;
 	height: $homepage-banner-height;
 	max-width: 40%;
+	> h1,h3 {
+		text-align: left;
+	}
 }
 
 .home-banner {
@@ -19,14 +21,6 @@
 	background-position: center; 
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-.home-title {
-	font-size: 3em;
-}
-
-.home-subtitle {
-	font-size: 1.5em;
 }
 
 .banner-dummy {

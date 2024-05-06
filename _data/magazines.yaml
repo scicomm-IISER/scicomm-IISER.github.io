@@ -5,30 +5,30 @@
 2023:
   - fileName: name1.pdf
     month: May
-    thumbnailFileName: name1.jpg
+    thumbnailFileName: name1.svg
     focus: "Competition between nocturnal viruses and blasphemous beetles"
   - fileName: name2.pdf
     month: March
-    thumbnailFileName: name2.jpg
+    thumbnailFileName: name2.svg
   - fileName: name3.pdf
     month: January
-    thumbnailFileName: name3.jpg
+    thumbnailFileName: name3.svg
 2022:
   - fileName: name4.pdf
     month: November
-    thumbnailFileName: name4.jpg
+    thumbnailFileName: name4.svg
   - fileName: name5.pdf
     month: September
-    thumbnailFileName: name5.jpg
+    thumbnailFileName: name5.svg
   - fileName: name6.pdf
     month: July
-    thumbnailFileName: name6.jpg
+    thumbnailFileName: name6.svg
   - fileName: name7.pdf
     month: May
-    thumbnailFileName: name7.jpg
+    thumbnailFileName: name7.svg
   - fileName: name8.pdf
     month: March
-    thumbnailFileName: name8.jpg
+    thumbnailFileName: name8.svg
   - fileName: name9.pdf
     month: January
-    thumbnailFileName: name9.jpg
+    thumbnailFileName: name9.svg
