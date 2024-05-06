@@ -24,14 +24,36 @@
 	}
 }
 
-.article-item {
-	> img.article-thumbnail {
+.article-item > p {
+	font-size: smaller;
+	> a {
+		min-width: 40%;
 		max-width: 40%;
+	}
+	> a > img.article-thumbnail {
+		width: 100%;
 	}
 	display: flex;
 	flex-wrap: nowrap;
-	> .article-item-details {
-		display: flex;
-		flex-direction: column;
-	}
+	gap: 2em;
+}
+.article-item-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.article-item-title {
+	font-size: larger;
+	color: $focus-color;
+}
+.article-item-excerpt {
+	line-height: 1.3em;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.article-item-tags {
+	display: inline-flex;
+	justify-content: flex-start;
+	gap: 1em;
 }

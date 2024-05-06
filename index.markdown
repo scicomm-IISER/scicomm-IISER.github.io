@@ -2,7 +2,7 @@
 layout: home
 ---
 
-# Landing page
+# {{ site.title }} - {{ site.description }}
 
 ## Subheading
 

@@ -4,6 +4,13 @@ a {
 	font-weight: bold;
 }
 a:hover {
-	padding-bottom: 2px;
-	border-bottom: 2px solid $link-color;
+	text-decoration: underline;
+}
+
+.button {
+	font-size: 0.8em;
+	font-weight: bold;
+	background-color: $header-color;
+	border-radius: 6px;
+	padding: 0em 0.6em 0em 0.6em;
 }

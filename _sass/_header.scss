@@ -18,15 +18,21 @@ nav * {
 	font-weight: bold;
 	font-size: 0.9em;
 }
-
 nav *:hover {
-	border-bottom: 0;
-	padding: 0;
+	text-decoration: none;
+}
+.nav-icons:hover {
+	transform: scale(1.2);
 }
 
 #home-button {
 	height: 100%;
 }
+
+#home-button > a:hover, #home-button > span > a:hover {
+	transform: scale(1.05);
+}
+
 #site-title {
 	font-size: 1.4em;
 	margin: auto;
@@ -49,5 +55,4 @@ nav *:hover {
 #site-title-desc {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
