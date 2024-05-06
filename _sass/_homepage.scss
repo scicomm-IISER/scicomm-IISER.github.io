@@ -1,0 +1,34 @@
+.home-title-subtitle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	position: relative;
+	left: 10%;
+	gap: 4em;
+	height: $homepage-banner-height;
+	max-width: 40%;
+}
+
+.home-banner {
+	width: 100vw;
+	position: absolute;
+	left: 0;
+	height: $homepage-banner-height;
+	background-image: url("/assets/images/home-page/banner.svg");
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.home-title {
+	font-size: 3em;
+}
+
+.home-subtitle {
+	font-size: 1.5em;
+}
+
+.banner-dummy {
+	height: $homepage-banner-height;
+}

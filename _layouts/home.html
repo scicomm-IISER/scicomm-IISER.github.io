@@ -22,6 +22,13 @@
 <body>
 {% include header.html %}
 <div class="main-content">
+	<div class="home-banner">
+	<div class="home-title-subtitle">
+	<span class="home-title">{{ site.title }}</span>
+	<span class="home-subtitle">{{ site.description }}</span>
+	</div>
+	</div>
+	<div class="banner-dummy"></div>
 	{{ content }}
 </div>
 {% include footer.html %}
