@@ -8,9 +8,14 @@ a:hover {
 }
 
 .button {
-	font-size: 0.8em;
+	font-size: 1em;
 	font-weight: bold;
 	background-color: $header-color;
 	border-radius: 6px;
-	padding: 0em 0.6em 0em 0.6em;
+	padding: 0.1em 0.6em 0.1em 0.6em;
+	color: $fg-color;
+}
+.button:hover {
+	text-decoration: none;
+	transform: scale(1.1);
 }

@@ -25,7 +25,8 @@
 }
 
 .article-item > p {
-	font-size: smaller;
+	font-size: 0.9em;
+	text-align: left;
 	> a {
 		min-width: 40%;
 		max-width: 40%;
@@ -43,7 +44,6 @@
 	justify-content: space-between;
 }
 .article-item-title {
-	font-size: larger;
 	color: $focus-color;
 }
 .article-item-excerpt {
@@ -56,4 +56,5 @@
 	display: inline-flex;
 	justify-content: flex-start;
 	gap: 1em;
+	flex-wrap: wrap;
 }

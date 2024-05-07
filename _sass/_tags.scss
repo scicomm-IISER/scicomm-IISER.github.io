@@ -1,0 +1,9 @@
+.tags-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 1em;
+	> .button {
+		padding: 0.2em 0.7em 0.4em 0.7em;
+	}
+}
