@@ -9,50 +9,36 @@ nav {
 	max-width: $body-width;
 	height: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
+	gap: 1em;
 }
 
 nav * {
 	color: $fg-color;
 	font-weight: bold;
-	font-size: 0.9em;
 }
+
 nav *:hover {
 	text-decoration: none;
 }
-.nav-icons:hover {
+
+#main-nav-bar {
+	display: inline-flex;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+
+#main-nav-bar > a:hover {
 	transform: scale(1.2);
 }
 
-#home-button {
-	height: 100%;
-}
-
-#home-button > a:hover, #home-button > span > a:hover {
-	transform: scale(1.05);
-}
-
-#site-title {
-	font-size: 1.4em;
-	text-align: left;
-}
-
 #site-icon {
-	float: left;
-	padding-right: 1em;
 	height: 100%;
 	> img {
 		height: 100%;
 	}
 }
-
-#site-desc {
-	font-weight: normal;
-	font-size: 0.7em;
-}
-
-#site-title-desc {
-	display: flex;
-	flex-direction: column;
+#site-icon > img:hover {
+	transform: scale(1.1);
 }
