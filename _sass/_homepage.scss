@@ -23,6 +23,10 @@
 	background-size: cover;
 }
 
+.home-title-subtitle > h1,h3 {
+	color: $bg-color;
+}
+
 .banner-dummy {
 	height: $homepage-banner-height;
 }
