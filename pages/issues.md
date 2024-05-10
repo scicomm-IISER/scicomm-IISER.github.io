@@ -25,7 +25,7 @@ permalink: /issues
 ### {{ mag_year[0] }}
 <div class="magazine-thumbnails" markdown=1>
 {% for issue in mag_year[1] %}
-<a class="magazine-thumbnail-item" href="{{issue["fileName"]}}">
+<a class="magazine-thumbnail-item" href="/assets/magazines/{{issue["fileName"]}}">
 <img src="/assets/magazine-thumbnails/{{ issue["thumbnailFileName"] }}"/>
 <strong>{{ issue["month"] }}</strong>
 </a>
