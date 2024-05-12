@@ -9,6 +9,7 @@
 	max-width: 40%;
 	> h1,h3 {
 		text-align: left;
+		color: $bg-color;
 	}
 }
 
@@ -23,10 +24,40 @@
 	background-size: cover;
 }
 
-.home-title-subtitle > h1,h3 {
-	color: $bg-color;
-}
-
 .banner-dummy {
 	height: $homepage-banner-height;
+}
+
+#carousel {
+	height: $carousel-height;
+	max-height: $carousel-height;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#carousel-article {
+	display: none;
+	> h3 {
+		padding-bottom: 0.5em;
+	}
+}
+
+#carousel-nav {
+	display: flex;
+	justify-content: center;
+	gap: 2em;
+	> span {
+		height: 25px;
+		width: 25px;
+		border-radius: 50%;
+	}
+}
+
+.solid-circle {
+	background-color: $fg-color;
+	border: 3px solid $fg-color;
+}
+.empty-circle {
+	border: 3px solid $fg-color;
 }

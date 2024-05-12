@@ -58,3 +58,22 @@
 	gap: 1em;
 	flex-wrap: wrap;
 }
+
+.latest-article {
+	text-align: left;
+	> a {
+		width: 100%;
+	}
+	> a > img.article-thumbnail {
+		width: 100%;
+	}
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 2em;
+}
+
+.latest-article-title {
+	color: $focus-color;
+	display: block;
+	padding-bottom: 0.4em;
+}
