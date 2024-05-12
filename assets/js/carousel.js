@@ -1,18 +1,14 @@
-function switchCarousel(index) {
-	switch(index) {
-	  case 1:
-		document.getElementById("carousel-issue").style.display = "block"; 
-		document.getElementById("carousel-article").style.display = "none"; 
-		document.getElementById("carousel-nav-1").className = "solid-circle"; 
-		document.getElementById("carousel-nav-2").className = "empty-circle"; 
-		break;
-	  case 2:
-		document.getElementById("carousel-issue").style.display = "none"; 
-		document.getElementById("carousel-article").style.display = "block"; 
-		document.getElementById("carousel-nav-1").className = "empty-circle"; 
-		document.getElementById("carousel-nav-2").className = "solid-circle"; 
-		break;
-	  default:
-		// code block
-	} 
+document.getElementById("carousel-issue").style.display = "block"; 
+
+function switchCarousel(nextItem, nextButton) {
+	console.log(nextItem)
+	console.log(nextButton)
+	for (const child of document.getElementById("carousel").children) {
+	  child.style.display = "none";
+	}
+	document.getElementById(nextItem.toString()).style.display = "block"; 
+	for (const child of document.getElementById("carousel-nav").children) {
+	  child.className = "empty-circle";
+	}
+	document.getElementById(nextButton).className = "solid-circle"; 
 }

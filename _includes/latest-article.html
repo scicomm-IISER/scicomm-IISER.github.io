@@ -1,6 +1,6 @@
 ### Latest Article ([View All](/articles))
 
-{% assign article = site.posts[0] %}
+{% assign article = site.categories["articles"][0] %}
 <span class="latest-article-title">{{ article.title | upcase }}</span>
 <span class="latest-article">
 <a href="{{ article.url }}"><img class="article-thumbnail" src="/assets/hero-images/{{article.hero-image}}"/></a>

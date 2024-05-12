@@ -1,0 +1,8 @@
+{% assign post = site.categories["news"][0] %}
+<span class="article-item-title">{{ post.title | upcase }} </span><br>
+&nbsp;&nbsp;{{ post.date | date:"%b %d, %Y" }} <br><br>
+<span class="news-excerpt">
+	...{{ post.content | truncate: 400 }}
+</span>
+
+<a href="{{ post.url }}">Read more</a>

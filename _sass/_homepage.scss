@@ -30,17 +30,14 @@
 
 #carousel {
 	height: $carousel-height;
-	max-height: $carousel-height;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+}
+
+#carousel-news {
+	display: none;
 }
 
 #carousel-article {
 	display: none;
-	> h3 {
-		padding-bottom: 0.5em;
-	}
 }
 
 #carousel-nav {
@@ -48,8 +45,8 @@
 	justify-content: center;
 	gap: 2em;
 	> span {
-		height: 25px;
-		width: 25px;
+		height: $carousel-button-size;
+		width: $carousel-button-size;
 		border-radius: 50%;
 	}
 }
@@ -60,4 +57,18 @@
 }
 .empty-circle {
 	border: 3px solid $fg-color;
+}
+
+.empty-circle:hover{
+	cursor: pointer;
+}
+
+.news-excerpt {
+	display: block;
+	font-style: italic;
+	font-size: 0.9em;
+	opacity: 70%;
+	margin-left: 2em;
+	margin-right: 2em;
+	text-align: justify;
 }
