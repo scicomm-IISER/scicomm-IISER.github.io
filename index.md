@@ -17,9 +17,9 @@ permalink: /
 </div>
 </div>
 <div id="carousel-nav">
-<span id="carousel-nav-1" onclick="switchCarousel('carousel-issue', 'carousel-nav-1')" class="solid-circle"></span>
-<span id="carousel-nav-2" onclick="switchCarousel('carousel-article', 'carousel-nav-2')" class="empty-circle"></span>
-<span id="carousel-nav-3" onclick="switchCarousel('carousel-news', 'carousel-nav-3')" class="empty-circle"></span>
+<span onclick="switchCarousel(this, 'carousel-issue')" class="solid-circle"></span>
+<span onclick="switchCarousel(this, 'carousel-article')" class="empty-circle"></span>
+<span onclick="switchCarousel(this, 'carousel-news')" class="empty-circle"></span>
 </div>
 
 ## Recent Articles ([View All](/articles))
