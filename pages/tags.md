@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Search by Tags
 permalink: /tags
 ---

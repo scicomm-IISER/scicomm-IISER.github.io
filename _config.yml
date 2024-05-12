@@ -22,3 +22,24 @@ title: NameOfWebsite
 description: A very brief description of the website # Primarily for SEO.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      path: "_posts/articles/"
+      layout: "posts"
+      permalink: "/articles/:slug/"
+      category: "articles"
+  -
+    scope:
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "_posts/news/"
+    values:
+      layout: "news"
+      permalink: "/news/:slug/"
+      category: "news"

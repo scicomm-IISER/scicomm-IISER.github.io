@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Magazine Issues
 permalink: /issues
 ---

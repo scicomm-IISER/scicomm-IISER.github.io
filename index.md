@@ -1,8 +1,8 @@
 ---
 layout: home
 hero-image: banner.svg
+permalink: /
 ---
-
 
 <div id="carousel">
 <div id="carousel-issue" markdown=1>
