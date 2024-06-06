@@ -22,6 +22,12 @@ body {
 	flex-grow: 1;
 }
 
+// @media only screen and (max-width: 600px)  {
+// 	.main-content {
+// 		padding: 0.5em;
+// 	}
+// }
+
 html {
 	background-color: $bg-color;
 	height: 100%;

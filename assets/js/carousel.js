@@ -12,20 +12,20 @@ function switchCarousel(element, nextItem) {
 }
 
 
-function activateNextCarousel() {
-	let childrenMain = document.getElementById("carousel").children;
-	let childrenNav = document.getElementById("carousel-nav").children;
-	for (var i = 0; i < childrenMain.length; i++) {
-	  if (childrenMain[i].style.display == "block") {
-		  let nextCount = i + 1
-		  if (nextCount > childrenMain.length - 1) {
-			  nextCount = 0
-		  }
-		  switchCarousel(childrenNav[nextCount], childrenMain[nextCount].id);
-		  break;
-	  }
-	}
-}
+// function activateNextCarousel() {
+// 	let childrenMain = document.getElementById("carousel").children;
+// 	let childrenNav = document.getElementById("carousel-nav").children;
+// 	for (var i = 0; i < childrenMain.length; i++) {
+// 	  if (childrenMain[i].style.display == "block") {
+// 		  let nextCount = i + 1
+// 		  if (nextCount > childrenMain.length - 1) {
+// 			  nextCount = 0
+// 		  }
+// 		  switchCarousel(childrenNav[nextCount], childrenMain[nextCount].id);
+// 		  break;
+// 	  }
+// 	}
+// }
 
 
-setInterval(activateNextCarousel, 4000);
+// setInterval(activateNextCarousel, 4000);

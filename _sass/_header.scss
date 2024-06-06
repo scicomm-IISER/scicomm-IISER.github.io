@@ -42,3 +42,13 @@ nav *:hover {
 #site-icon > img:hover {
 	transform: scale(1.1);
 }
+
+
+@media only screen and (max-width: 600px)  {
+    #site-title {
+      display: none;
+    }
+    header {
+      padding: $topbar-pad;
+    }
+}

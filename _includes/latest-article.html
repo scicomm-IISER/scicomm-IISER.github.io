@@ -1,7 +1,7 @@
-### Latest Article ([View All](/articles))
+<h3>Latest Article <a href="/articles">(View All)</a></h3>
 
 {% assign article = site.categories["articles"][0] %}
-<span class="latest-article-title">{{ article.title | upcase }}</span>
+<span class="latest-article-title">{{ article.title }}</span>
 <span class="latest-article">
 <a href="{{ article.url }}"><img class="article-thumbnail" src="/assets/hero-images/{{article.hero-image}}"/></a>
 <span class="article-item-details">

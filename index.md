@@ -1,25 +1,24 @@
 ---
 layout: home
-hero-image: banner.svg
 permalink: /
 ---
 
-<div id="carousel">
-<div id="carousel-issue" markdown=1>
-{% include latest-issue.html %}
-</div></div>
-<div id="carousel-article" markdown=1>
-{% include latest-article.html %}
-</div>
-<div id="carousel-news" markdown=1>
-### News & Updates
-{% include latest-news.html %}
-</div>
+<div id="carousel" markdown=1>
+  <div id="carousel-issue" markdown=1>
+  {% include latest-issue.html %}
+  </div>
+  <div id="carousel-article" markdown=1>
+  {% include latest-article.html %}
+  </div>
+  <div id="carousel-news" markdown=1>
+  <h3>News & Updates <a href="/news">(View All)</a></h3>
+  {% include latest-news.html %}
+  </div>
 </div>
 <div id="carousel-nav">
-<span onclick="switchCarousel(this, 'carousel-issue')" class="solid-circle"></span>
-<span onclick="switchCarousel(this, 'carousel-article')" class="empty-circle"></span>
-<span onclick="switchCarousel(this, 'carousel-news')" class="empty-circle"></span>
+    <span onclick="switchCarousel(this, 'carousel-issue')" class="solid-circle"></span>
+    <span onclick="switchCarousel(this, 'carousel-article')" class="empty-circle"></span>
+    <span onclick="switchCarousel(this, 'carousel-news')" class="empty-circle"></span>
 </div>
 
 ## Recent Articles ([View All](/articles))
