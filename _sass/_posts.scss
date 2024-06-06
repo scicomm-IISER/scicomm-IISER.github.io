@@ -81,12 +81,28 @@
 
 
 @media only screen and (max-width: 600px)  {
+  .latest-article {
+    > * {
+      text-align: center;
+    }
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    > a > img {
+      margin: auto;
+      display: block;
+    }
+  }
   .article-item > p {
       flex-direction: column;
       align-items: center;
       gap: 0;
   > a {
-    max-width: 80%;
+    max-width: 100%;
+    > img {
+      margin: auto;
+      display: block;
+    }
   }
   }
   .article-item-details {
