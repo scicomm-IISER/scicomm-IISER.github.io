@@ -49,16 +49,14 @@ nav *:hover {
       display: none;
     }
     header {
-      padding: $topbar-pad;
+      padding: 0;
+      gap: 0;
+      padding-right: 1em;
     }
     #site-icon {
       transform: scale(0.7);
     }
     #main-nav-bar {
-      transform: scale(0.9);
-      gap: 0.5em;
-    }
-    nav {
-      gap: 0;
+      gap: 1em;
     }
 }

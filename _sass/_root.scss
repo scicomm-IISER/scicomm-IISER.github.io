@@ -22,11 +22,11 @@ body {
 	flex-grow: 1;
 }
 
-// @media only screen and (max-width: 600px)  {
-// 	.main-content {
-// 		padding: 0.5em;
-// 	}
-// }
+@media only screen and (max-width: 600px)  {
+   body {
+     font-size: $mobile-font-size;
+   }
+}
 
 html {
 	background-color: $bg-color;

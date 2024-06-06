@@ -21,13 +21,13 @@ permalink: /
     <span onclick="switchCarousel(this, 'carousel-news')" class="empty-circle"></span>
 </div>
 
-## Recent Articles ([View All](/articles))
+### Recent Articles ([View All](/articles))
 
 {% for post in site.categories["articles"] limit:2 %}
 {% include article-item.html %}
 {% endfor %}
 
-## News & Updates ([View All](/news))
+### News & Updates ([View All](/news))
 
 {% for post in site.categories["news"] limit:2 %}
 - <span class="article-item-title">{{ post.title }} </span><br>
