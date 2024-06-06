@@ -51,4 +51,14 @@ nav *:hover {
     header {
       padding: $topbar-pad;
     }
+    #site-icon {
+      transform: scale(0.7);
+    }
+    #main-nav-bar {
+      transform: scale(0.9);
+      gap: 0.5em;
+    }
+    nav {
+      gap: 0;
+    }
 }

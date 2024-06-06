@@ -23,7 +23,7 @@
 	align-items: center;
 	gap: 2em;
 	> p > img {
-		max-width: calc(2 * #{$magazine-thumbnail-maxwidth})
+		max-width: calc(2 * #{$magazine-thumbnail-maxwidth});
 	}
 	> span {
 		max-width: calc(2 * #{$magazine-thumbnail-maxwidth})
@@ -36,3 +36,21 @@
 	gap: 1em;
 	text-align: left;
 }
+
+#latest-issue-link {
+  padding-left: 1em;
+}
+
+@media only screen and (max-width: 600px)  {
+  #latest-issue {
+    display: block;
+    text-align: center;
+	> p > img {
+		max-width: 70%;
+	}
+  }
+  #latest-issue-desc {
+    text-align: center;
+  }
+}
+
