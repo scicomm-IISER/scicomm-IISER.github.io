@@ -1,6 +1,6 @@
 ---
 title: Published Articles
-permalink: /articles
+permalink: /articles/
 ---
 
 You can also search articles by [tags](/tags), or browse our older [archives](/archives).

@@ -26,7 +26,7 @@ defaults:
     scope:
       type: "posts"
     values:
-      path: "_posts/articles/"
+      path: "_posts/article-posts/"
       layout: "posts"
       permalink: "/articles/:slug/"
       category: "articles"
@@ -37,7 +37,7 @@ defaults:
       layout: "default"
   -
     scope:
-      path: "_posts/news/"
+      path: "_posts/news-posts/"
     values:
       layout: "news"
       permalink: "/news/:slug/"
