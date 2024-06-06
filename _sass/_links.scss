@@ -10,10 +10,10 @@ a:hover {
 .button {
 	font-size: 1em;
 	font-weight: bold;
-	background-color: $header-color;
+	background-color: $link-color;
 	border-radius: 6px;
 	padding: 0.1em 0.6em 0.1em 0.6em;
-	color: $fg-color;
+	color: $bg-color;
 }
 .button:hover {
 	text-decoration: none;

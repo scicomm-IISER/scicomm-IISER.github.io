@@ -23,11 +23,11 @@ $monospace-font: "Roboto Condensed" !default;
 $heading-font-family: "BenchNine" !default;
 
 // one-dark colour palette
-$bg-color: #19191b;
-$fg-color: #e2e2e2;
-$link-color: #9fd3c7;
-$heading-color: #78bbe6;
+$bg-color: #eeeeee;
+$fg-color: #222831;
+$link-color: #0092ca;
+$heading-color: #393e46;
 $icon-color: #e5c07b;
-$header-color: #393e46;
-$footer-color: #393e46;
-$focus-color: #e366e3;
+$header-color: $fg-color;
+$footer-color: $header-color;
+$focus-color: $header-color;
