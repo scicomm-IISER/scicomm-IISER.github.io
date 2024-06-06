@@ -3,7 +3,7 @@
 {% assign article = site.categories["articles"][0] %}
 <span class="latest-article-title">{{ article.title }}<a href="{{ article.url }}"> | View article</a></span>
 <span class="latest-article">
-<a href="{{ article.url }}"><img class="article-thumbnail" src="/assets/hero-images/{{article.hero-image}}"/></a>
+<a href="{{ article.url }}"><img class="article-thumbnail" src="./assets/hero-images/{{article.hero-image}}"/></a>
 <span class="article-item-details">
     <span>󰙈 {{ article.author }} |  {{ article.date | date:"%b %d, %Y" }}</span>
     <span class="article-item-excerpt">{{ article.excerpt | truncate: 150 }}</span>
