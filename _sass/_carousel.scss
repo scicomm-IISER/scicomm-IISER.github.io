@@ -23,12 +23,6 @@
 	}
 }
 
-@media only screen and (max-width: 600px)  {
-    #carousel-nav {
-      padding-top: 1em;
-    }
-}
-
 .solid-circle {
 	background-color: $fg-color;
 	border: 3px solid $fg-color;
@@ -39,4 +33,14 @@
 
 .empty-circle:hover{
 	cursor: pointer;
+}
+
+@media only screen and (max-width: 600px)  {
+  #carousel {
+    padding-top: 0.5em;
+    height: auto;
+  }
+    #carousel-nav {
+      padding-top: 1em;
+    }
 }

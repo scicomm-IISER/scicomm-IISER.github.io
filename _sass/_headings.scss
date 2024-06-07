@@ -1,4 +1,5 @@
 h1,h2,h3,h4 {
+	line-height: $h1-line-height;
 	font-family: $heading-font-family;
 	color: $heading-color;
 	margin-bottom: 0.5em;
@@ -18,6 +19,5 @@ h3 {
 
 h1 {
 	font-size: $h1-font-size;
-	line-height: $h1-line-height;
 	text-align: center;
 }

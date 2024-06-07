@@ -24,7 +24,7 @@ permalink: /
 
 {% include recent-articles.html numArticles="2" %}
 
-## News & Updates ([View All](/news))
+## News ([View All](/news))
 
 {% for post in site.categories["news"] limit:2 %}
 - <span class="article-item-title">{{ post.title }} </span><br>

@@ -2,12 +2,6 @@ img {
 	max-width: $image-maxwidth;
 }
 
-@media (max-width: 600px)  {
-  img {
-    max-width: 80%;
-  }
-}
-
 .hero-image {
 	width: 100%;
 	max-width: 100%;

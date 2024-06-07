@@ -41,17 +41,15 @@
 
 @media only screen and (max-width: 600px)  {
   .article-item {
-    width: 100%;
+      width: 100%;
       flex-direction: column;
-      align-items: center;
-      gap: 0;
-  }
-  .article-item-details {
-    text-align: left;
-  }
-  .article-item-tags {
-	justify-content: center;
-    padding-top: 0.5em;
-    padding-bottom: 1.5em;
+      align-items: left;
+      gap: 0.5em;
+      > a {
+        width: 100%;
+        > img {
+        width: 100%;
+      }
+    }
   }
 }
