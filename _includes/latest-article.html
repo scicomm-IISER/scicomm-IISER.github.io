@@ -1,12 +1,10 @@
-<h2>Latest Article <a href="/articles">(View All)</a></h2>
-
 {% assign article = site.categories["articles"][0] %}
-<span class="latest-article-title">{{ article.title }}<a href="{{ article.url }}"> | View article</a></span>
-<span class="latest-article">
-<a href="{{ article.url }}"><img class="article-thumbnail" src="/assets/hero-images/{{article.hero-image}}"/></a>
-<span class="article-item-details">
-    <span>󰙈 {{ article.author }} |  {{ article.date | date:"%b %d, %Y" }}</span>
-    <span class="article-item-excerpt">{{ article.excerpt | truncate: 150 }}</span>
+<div id="latest-article" markdown=1>
+<a href="{{ article.url }}"><img src="/assets/hero-images/{{article.hero-image}}"/></a>
+<div id="latest-article-desc">
+	<h3>Latest Article</h3>
+	<span id="latest-article-title">{{ article.title }}</span>
+	<span>󰙈 {{ article.author }} |  {{ article.date | date:"%b %d, %Y" }} | <a href="{{ article.url }}">View article</a></span>
 	<span class="article-item-tags">{% for tag in article.tags %}<a href="/tags/#{{ tag }}" class="button">{{ tag }}</a>{% endfor %}</span>
-</span>
-</span>
+</div>
+</div>

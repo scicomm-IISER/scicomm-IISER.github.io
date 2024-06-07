@@ -1,0 +1,125 @@
+.excerpt {
+	font-style: italic;
+	text-align: left;
+	display: block;
+	font-size: 0.9em;
+	color: $focus-color;
+}
+
+.author-date-excerpt {
+	display: flex;
+	justify-content: space-between;
+	> span {
+	max-width: 50%;
+	> .author {
+		color: $focus-color;
+		font-weight: bold;
+	}
+	}
+	> .author-date {
+		text-align: right;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+}
+
+.article-item {
+	font-size: 0.9em;
+	text-align: left;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	gap: 1em;
+}
+.article-thumbnail-tags {
+    position: relative;
+    > a > img.article-thumbnail {
+      width: 100%;
+    }
+    flex-basis: 200%;
+}
+.article-item-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    gap: 1em;
+}
+.article-item-title {
+	color: $focus-color;
+    font-weight: bold;
+    line-height: calc(0.9 * #{$line-height});
+}
+.article-item-excerpt {
+	line-height: 1.3em;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.article-item-tags {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    position: absolute;
+    width: 100%;
+    background-color: rgba($header-color, 0.5);
+    bottom: 1px;
+}
+
+.article-author {
+    display: flex;
+    background-color: rgba($bg-color, 0.5);
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.latest-article {
+	text-align: left;
+	> a {
+		width: 160%;
+	}
+	> a > img.article-thumbnail {
+		width: 100%;
+	}
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 2em;
+}
+
+.latest-article-title {
+	color: $focus-color;
+	font-weight: bold;
+	display: block;
+	padding-bottom: 0.4em;
+}
+
+
+@media only screen and (max-width: 600px)  {
+  .latest-article {
+    > * {
+      text-align: center;
+    }
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    > a > img {
+      margin: auto;
+      display: block;
+    }
+  }
+  .article-item {
+    width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+  }
+  .article-item-details {
+    text-align: left;
+  }
+  .article-item-tags {
+	justify-content: center;
+    padding-top: 0.5em;
+    padding-bottom: 1.5em;
+  }
+}

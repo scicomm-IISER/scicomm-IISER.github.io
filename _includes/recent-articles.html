@@ -1,0 +1,5 @@
+<div class="recent-articles">
+	{% for article in site.categories["articles"] limit:include.numArticles %}
+	{% include article-item.html %}
+	{% endfor %}
+</div>

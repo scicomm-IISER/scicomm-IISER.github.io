@@ -6,47 +6,21 @@
 	color: $focus-color;
 }
 
-.author-date-excerpt {
-	display: flex;
-	justify-content: space-between;
-	> span {
-	max-width: 50%;
-	> .author {
-		color: $focus-color;
-		font-weight: bold;
-	}
-	}
-	> .author-date {
-		text-align: right;
-		display: flex;
-		flex-direction: column;
-		flex-wrap: nowrap;
-	}
-}
-
-.article-item > p {
-	font-size: 0.9em;
-	text-align: left;
-	> a {
-		min-width: 40%;
-		max-width: 40%;
-	}
-	> a > img.article-thumbnail {
-		width: 100%;
-	}
-	display: flex;
-	flex-wrap: nowrap;
-	gap: 2em;
-}
-.article-item-details {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+.article-item {
+  text-align: left;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  > a > img {
+      width: 100%;
+  }
+  gap: 0.5em;
 }
 .article-item-title {
 	color: $focus-color;
-    font-weight: bold;
+    line-height: 1em;
 }
+
 .article-item-excerpt {
 	line-height: 1.3em;
 	font-size: 0.9em;
@@ -54,60 +28,30 @@
 }
 
 .article-item-tags {
-	display: inline-flex;
-	justify-content: flex-start;
-	gap: 1em;
-	flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
 }
 
-.latest-article {
-	text-align: left;
-	> a {
-		width: 160%;
-	}
-	> a > img.article-thumbnail {
-		width: 100%;
-	}
-	display: flex;
-	flex-wrap: nowrap;
-	gap: 2em;
+.recent-articles {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1em;
 }
 
-.latest-article-title {
-	color: $focus-color;
-	font-weight: bold;
-	display: block;
-	padding-bottom: 0.4em;
-}
 
 
 @media only screen and (max-width: 600px)  {
-  .latest-article {
-    > * {
-      text-align: center;
-    }
+  .article-item {
+    width: 100%;
       flex-direction: column;
       align-items: center;
       gap: 0;
-    > a > img {
-      margin: auto;
-      display: block;
-    }
-  }
-  .article-item > p {
-      flex-direction: column;
-      align-items: center;
-      gap: 0;
-  > a {
-    max-width: 100%;
-    > img {
-      margin: auto;
-      display: block;
-    }
-  }
   }
   .article-item-details {
-    text-align: center;
+    text-align: left;
   }
   .article-item-tags {
 	justify-content: center;

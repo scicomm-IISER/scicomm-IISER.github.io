@@ -10,6 +10,4 @@ permalink: /articles/
 {% include latest-article.html %}
 
 ## Recent Articles
-{% for article in site.categories["articles"] limit:10 %}
-{% include article-item.html %}
-{% endfor %}
+{% include recent-articles.html numArticles="10" %}

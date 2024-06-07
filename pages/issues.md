@@ -3,20 +3,7 @@ title: Magazine Issues
 permalink: /issues
 ---
 
-{% assign latestIssue = site.data.magazines | first %}
-
-### Latest Issue 
-<div id="latest-issue" markdown=1>
-<img src="/assets/magazine-thumbnails/{{ latestIssue[1][0]["thumbnailFileName"] }}"/>
-<div id="latest-issue-desc">
-    <span>{{ latestIssue[1][0]["month"] | upcase }}, {{ latestIssue[0] }}</span>
-    <div id="latest-issue-focus">
-    ISSUE FOCUS:<br>
-    <strong>{{ latestIssue[1][0]["focus"] }}</strong>
-    </div>
-    <a id="latest-issue-link" href="/assets/magazines/{{latestIssue[1][0]["fileName"]}}">View/Download this issue.</a>
-</div>
-</div>
+{% include latest-issue.html %}
 
 {% for mag_year in site.data.magazines %}
 ### {{ mag_year[0] }}

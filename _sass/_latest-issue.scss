@@ -1,0 +1,32 @@
+#latest-issue {
+	display: flex;
+	gap: 2em;
+	> p {
+      width: 100%;
+    > a {
+      width: 100%;
+    > img {
+      max-width: 100%;
+    }
+    }
+    }
+}
+
+#latest-issue-desc {
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+    justify-content: flex-start;
+	gap: 1em;
+	text-align: left;
+}
+
+@media only screen and (max-width: 600px)  {
+  #latest-issue {
+    display: block;
+    text-align: center;
+  }
+  #latest-issue-desc {
+    text-align: center;
+  }
+}

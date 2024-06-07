@@ -1,0 +1,46 @@
+#latest-article {
+	display: flex;
+	gap: 2em;
+	> p {
+      width: 100%;
+    > a {
+      width: 100%;
+    > img {
+      max-width: 100%;
+    }
+    }
+    }
+}
+
+#latest-article-desc {
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    > h3 {
+      margin: 0;
+    }
+}
+
+#latest-article-title {
+	color: $focus-color;
+    line-height: 1em;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px)  {
+  .latest-article {
+    > * {
+      text-align: center;
+    }
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    > a > img {
+      margin: auto;
+      display: block;
+    }
+  }
+}
