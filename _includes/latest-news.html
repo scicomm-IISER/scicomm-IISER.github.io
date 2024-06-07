@@ -1,8 +1,10 @@
 {% assign post = site.categories["news"][0] %}
-<span class="article-item-title">**{{ post.title }}**</span><br>
-&nbsp;&nbsp;{{ post.date | date:"%b %d, %Y" }} <br><br>
-<span class="news-excerpt">
+<h3>News & Updates</h3>
+<span id="latest-news-title">{{ post.title }}</span><br><br>
+<span class="nf nf-fa-calendar_check"></span>&nbsp;&nbsp;{{ post.date | date:"%b %d, %Y" }} &nbsp;&nbsp;<span class="nf nf-md-chevron_double_right"></span>&nbsp;&nbsp;<a href="{{ post.url }}">Read more</a><br><br>
+<span id="latest-news-excerpt">
 	...{{ post.content | truncate: 400 }}
 </span>
 
-<a href="{{ post.url }}">Read more</a>
+
+<div><span class="nf nf-md-bomb"></span>&nbsp;&nbsp;<a href="/news">View Other News</a></div>

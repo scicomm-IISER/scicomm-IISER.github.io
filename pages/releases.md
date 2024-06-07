@@ -1,6 +1,6 @@
 ---
-title: Magazine Issues
-permalink: /issues
+title: Magazine
+permalink: /magazine/
 ---
 
 {% include latest-issue.html %}

@@ -11,7 +11,6 @@ permalink: /
   {% include latest-article.html %}
   </div>
   <div id="carousel-news" markdown=1>
-  <h3>News & Updates <a href="/news">(View All)</a></h3>
   {% include latest-news.html %}
   </div>
 </div>
@@ -21,11 +20,11 @@ permalink: /
     <span onclick="switchCarousel(this, 'carousel-news')" class="empty-circle"></span>
 </div>
 
-### Recent Articles ([View All](/articles))
+## Recent Articles ([View All](/articles))
 
 {% include recent-articles.html numArticles="2" %}
 
-### News & Updates ([View All](/news))
+## News & Updates ([View All](/news))
 
 {% for post in site.categories["news"] limit:2 %}
 - <span class="article-item-title">{{ post.title }} </span><br>

@@ -2,12 +2,12 @@
 <div id="latest-issue" markdown=1>
 <a href="/assets/magazines/{{latestIssue[1][0]["fileName"]}}"><img src="/assets/magazine-thumbnails/{{ latestIssue[1][0]["thumbnailFileName"] }}"/></a>
 <div id="latest-issue-desc">
-	<h3>Latest Issue</h3>
-	<span>{{ latestIssue[1][0]["month"] | upcase }}, {{ latestIssue[0] }}</span>
+	<h3>Latest Release</h3>
+	<span>{{ latestIssue[1][0]["month"] | upcase }}, {{ latestIssue[0] }} &nbsp;&nbsp;&nbsp;<span class="nf nf-fa-circle_down"></span>&nbsp;<a href="/assets/magazines/{{latestIssue[1][0]["fileName"]}}">View/Download</a></span>
     <span id="latest-issue-focus">
-    ISSUE FOCUS:<br>
+    RELEASE FOCUS:<br>
     <strong>{{ latestIssue[1][0]["focus"] }}</strong>
     </span>
-	<a href="/assets/magazines/{{latestIssue[1][0]["fileName"]}}">View/Download</a>
+	<span><span class="nf nf-oct-stack"></span>&nbsp;<a href="/assets/magazines/{{latestIssue[1][0]["fileName"]}}">View All Releases</a></span>
 </div>
 </div>
