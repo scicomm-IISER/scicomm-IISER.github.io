@@ -1,11 +1,16 @@
 ---
-title: "All About Cogito"
+title: "What is InScight?"
 permalink: /about/
 ---
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. _Vestibulum tortor quam_, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. 
 
-## What is Cogito?
-Aenean ultricies mi vitae est. Mauris placerat eleifend leo. **Quisque** sit amet est et ullamcorper pharetra. Vestibulum [sapien](https://www.iiserkol.ac.in/web/en/#gsc.tab=0) erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt **condimentum, eros ipsum rutrum orci**, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. [Praesent dapibus, neque id cursus faucibus](https://www.iiserkol.ac.in/web/en/#gsc.tab=0), tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, _facilisis luctus, metus_.
+InScight is an online magazine dedicated to making pure science accessible and engaging. We have tasked ourselves with bringing the wonders of science to a broader audience by exploring innovative research and the scientific discoveries that come with it. This is accomplished by presenting well-researched and thought-provoking articles on this website, and publishing periodical magazines based on such articles. The articles are written by the wider community of enthusiasts. 
+
+If you want to submit content to us (written article, video, interview, etc), visit [this page](/submit/).
+
+## Contact Information
+- You can always get in touch via [email]({{ site.data.socials["email"] }}).
+- If you want to remain anonymous, you can submit this [google form]({{ site.data.socials["gform"] }}).
+- You can also reach out to us on our social media accounts: <a class="nf nf-fa-facebook_square" href="{{ site.data.socials["facebook"] }}"></a> <a class="nf nf-fa-twitter_square" href="{{ site.data.socials["twitter"] }}"></a>
 
 ## Team Members
 {% for category in site.data.members %}
