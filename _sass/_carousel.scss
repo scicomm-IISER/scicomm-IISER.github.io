@@ -1,15 +1,7 @@
 #carousel {
-  height: 40%;
-  max-height: 40%;
-  overflow: hidden;
-}
-
-#carousel-news {
-	display: none;
-}
-
-#carousel-article {
-	display: none;
+    > :not(.active-item) {
+      display: none;
+    }
 }
 
 #carousel-nav {
@@ -21,11 +13,10 @@
         transform: scale(1.5);
         cursor: pointer;
 	}
-}
-
-#carousel-nav-1{
-  padding-bottom: 3px;
-  border-bottom: 3px solid $fg-color;
+    > .active-nav {
+        padding-bottom: 3px;
+        border-bottom: 3px solid $fg-color;
+    }
 }
 
 @media only screen and (max-width: $breakpoint-small)  {

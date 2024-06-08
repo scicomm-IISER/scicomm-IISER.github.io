@@ -1,31 +1,31 @@
-document.getElementById("carousel-issue").style.display = "block"; 
-
-function switchCarousel(element, nextItem) {
+function activateCarousel(index) {
+	height = document.getElementById("carousel").clientHeight;
 	for (const child of document.getElementById("carousel").children) {
-	  child.style.display = "none";
+		child.classList.remove("active-item");
 	}
-	document.getElementById(nextItem).style.display = "block"; 
 	for (const child of document.getElementById("carousel-nav").children) {
-	  child.className = "empty-circle";
+	  child.classList.remove("active-nav");
 	}
-	element.className = "solid-circle"; 
+	document.getElementById("carousel").children[index].classList.add("active-item");
+	document.getElementById("carousel-nav").children[index].classList.add("active-nav");
+	document.getElementById("carousel").style.height = height + "px";
+	clearInterval(slideshow);
+	slideshow = setInterval(switchCarousel, 5000);
 }
 
+function switchCarousel() {
+	let index=0;
+	for (let i = 0; i < document.getElementById("carousel-nav").children.length; i++) {
+		if (document.getElementById("carousel-nav").children[i].classList.contains("active-nav")) {
+			index = i;
+			break;
+		}
+	} 
+	activateCarousel((index + 1) % 3);
+}
 
-// function activateNextCarousel() {
-// 	let childrenMain = document.getElementById("carousel").children;
-// 	let childrenNav = document.getElementById("carousel-nav").children;
-// 	for (var i = 0; i < childrenMain.length; i++) {
-// 	  if (childrenMain[i].style.display == "block") {
-// 		  let nextCount = i + 1
-// 		  if (nextCount > childrenMain.length - 1) {
-// 			  nextCount = 0
-// 		  }
-// 		  switchCarousel(childrenNav[nextCount], childrenMain[nextCount].id);
-// 		  break;
-// 	  }
-// 	}
-// }
+for (let i = 0; i < document.getElementById("carousel-nav").children.length; i++) {
+	document.getElementById("carousel-nav-" + i).addEventListener("click", function(){ activateCarousel(i); });
+}
 
-
-// setInterval(activateNextCarousel, 4000);
+var slideshow = setInterval(switchCarousel, 5000);

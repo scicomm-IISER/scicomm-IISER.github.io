@@ -7,7 +7,7 @@
 {% include header.html %}
 <div id="content">
 <h1> {{ page.title }} </h1>
-<span class="news-date">&nbsp;&nbsp;&nbsp;{{ page.date | date:"%b %d, %Y" }}</span>
+<span class="author-date"><span class="nf nf-fa-calendar_check"></span>&nbsp;&nbsp;&nbsp;{{ page.date | date:"%b %d, %Y" }}</span>
 {{ content }}
 </div>
 {% include footer.html %}

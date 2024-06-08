@@ -1,11 +1,14 @@
 .excerpt {
 	font-style: italic;
-	text-align: left;
-	display: block;
+	text-align: justify;
 	font-size: 0.9em;
-	color: $focus-color;
+    color: rgba($focus-color, 0.8);
 }
 
+.author-date {
+    color: $focus-color;
+    font-weight: bold;
+}
 .article-item {
   text-align: left;
   width: 48%;

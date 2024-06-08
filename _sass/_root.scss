@@ -31,7 +31,7 @@ body {
     gap: $main-margin;
 	flex-direction: column;
     width: 100%;
-    min-height: calc(100vh - 2 * #{$main-margin} - #{$header-height} - 2 * #{$topbar-pad} - #{$footer-height})
+    min-height: calc(100vh - 2 * #{$main-margin} - #{$header-height} - 2 * #{$topbar-pad} - #{$footer-height});
 }
 
 @media only screen and (max-width: $breakpoint-small)  {

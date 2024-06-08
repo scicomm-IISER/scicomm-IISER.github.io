@@ -6,14 +6,11 @@
 {% include header.html %}
 <div class="main-content">
 <h1> {{ page.title }} </h1>
-<div class="author-date-excerpt" markdown=1>
-<span class="excerpt">{% if page.excerpt %}{{ page.excerpt }}{% endif %}</span>
-<span class="author-date">
-	<span class="author">󰙈 {{ page.author }}</span>
-	<br>
-	 {{ page.date | date:"%b %d, %Y"}}
-</span>
+<div class="author-date">
+	<span class="nf nf-md-draw_pen"></span>&nbsp;&nbsp;{{ page.author }}&nbsp;&nbsp;&nbsp;&nbsp;
+	<span class="nf nf-fa-calendar_check"></span>&nbsp;&nbsp;{{ page.date | date:"%b %d, %Y"}}
 </div>
+<div class="excerpt">{% if page.excerpt %}{{ page.excerpt }}{% endif %}</div>
 
 <img class="hero-image" src="/assets/hero-images/{{ page.hero-image }}"/>
 {{ content }}
