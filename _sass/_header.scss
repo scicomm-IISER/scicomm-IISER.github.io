@@ -1,7 +1,10 @@
 header {
 	background-color: $header-color;
 	height: $header-height;
-	padding: $topbar-pad $main-margin $topbar-pad $main-margin;
+	padding-top: $topbar-pad;
+	padding-bottom: $topbar-pad;
+    max-width: 100vw;
+    width: 100vw;
 }
 
 nav {
@@ -50,14 +53,15 @@ nav *:hover {
     }
     header {
       padding: 0;
-      gap: 0;
-      padding-right: 1em;
     }
     #site-icon {
       transform: scale(0.7);
     }
     #main-nav-bar {
-      gap: 1em;
-      font-size: 0.9em;
+      justify-content: space-around;
+    }
+    nav {
+      gap: 0;
+      justify-content: space-around;
     }
 }

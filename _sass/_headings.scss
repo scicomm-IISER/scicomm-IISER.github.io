@@ -2,8 +2,8 @@ h1,h2,h3,h4 {
 	line-height: $h1-line-height;
 	font-family: $heading-font-family;
 	color: $heading-color;
-	margin-bottom: 0.5em;
-	margin-top: 0.5em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
 }
 h2 {
 	font-size: $h2-font-size;
@@ -20,4 +20,17 @@ h3 {
 h1 {
 	font-size: $h1-font-size;
 	text-align: center;
+}
+
+
+@media only screen and (max-width: 600px)  {
+h1 {
+	font-size: $h1-mobile-font-size;
+}
+h2 {
+	font-size: $h2-mobile-font-size;
+}
+h3 {
+	font-size: $h3-mobile-font-size;
+}
 }

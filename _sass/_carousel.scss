@@ -1,6 +1,6 @@
 #carousel {
-  height: 500px;
-  max-height: 500px;
+  height: 40%;
+  max-height: 40%;
   overflow: hidden;
 }
 
@@ -16,31 +16,20 @@
 	display: flex;
 	justify-content: center;
 	gap: 2em;
+    padding-top: 0em;
 	> span {
-		height: $carousel-button-size;
-		width: $carousel-button-size;
-		border-radius: 50%;
+        transform: scale(1.5);
+        cursor: pointer;
 	}
 }
 
-.solid-circle {
-	background-color: $fg-color;
-	border: 3px solid $fg-color;
-}
-.empty-circle {
-	border: 3px solid $fg-color;
-}
-
-.empty-circle:hover{
-	cursor: pointer;
+#carousel-nav-1{
+  padding-bottom: 3px;
+  border-bottom: 3px solid $fg-color;
 }
 
 @media only screen and (max-width: 600px)  {
   #carousel {
-    padding-top: 0.5em;
     height: auto;
   }
-    #carousel-nav {
-      padding-top: 1em;
-    }
 }

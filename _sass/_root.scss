@@ -1,34 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
 	line-height: $line-height;
 	color: $fg-color;
+	background-color: $bg-color;
 	font-family: $main-font-family;
 	font-size: $main-font-size;
 	font-weight: 400;
 	font-family: $main-font-family;
-	margin: 0;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
+	max-width: $body-width;
+	padding: $main-margin;
+    padding-top: 0;
+    padding-bottom: 0;
+	margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: $main-margin;
+    height: 100%;
 }
 
-.main-content {
-	display: block;
-	margin: auto;
-	max-width: $body-width;
-	text-align: justify;
-	padding: $main-margin;
-	padding-top: 0;
-	padding-bottom: 0;
-	flex-grow: 1;
+#content {
+	display: flex;
+    gap: $main-margin;
+	flex-direction: column;
+    width: 100%;
+    min-height: calc(100vh - 2 * #{$main-margin} - #{$header-height} - 2 * #{$topbar-pad} - #{$footer-height})
 }
 
 @media only screen and (max-width: 600px)  {
    body {
      font-size: $mobile-font-size;
    }
-}
-
-html {
-	background-color: $bg-color;
-	height: 100%;
 }

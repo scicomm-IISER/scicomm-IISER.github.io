@@ -1,10 +1,9 @@
 footer {
-	width: 100%;
+	width: 100vw;
 	background-color: $footer-color;
     color: $bg-color;
-	text-align: center;
     font-size: 0.9em;
-    height: 3em;
+    height: $footer-height;
     display: flex;
     justify-content: center;
     align-items: center;
