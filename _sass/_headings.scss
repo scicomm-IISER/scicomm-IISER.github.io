@@ -23,14 +23,14 @@ h1 {
 }
 
 
-@media only screen and (max-width: 600px)  {
-h1 {
-	font-size: $h1-mobile-font-size;
-}
-h2 {
-	font-size: $h2-mobile-font-size;
-}
-h3 {
-	font-size: $h3-mobile-font-size;
-}
+@media only screen and (max-width: $breakpoint-small)  {
+  h1 {
+      font-size: $h1-mobile-font-size;
+  }
+  h2 {
+      font-size: $h2-mobile-font-size;
+  }
+  h3 {
+      font-size: $h3-mobile-font-size;
+  }
 }

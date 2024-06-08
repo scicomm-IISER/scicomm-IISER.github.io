@@ -8,6 +8,7 @@ $topbar-pad: 0.2em !default;
 $footer-pad: 0.5em !default;
 $footer-height: 50px !default;
 $header-height: 70px !default;
+$header-height-mobile: 50px !default;
 $image-maxwidth: 700px !default;
 $magazine-thumbnail-maxwidth: 230px !default;
 $homepage-banner-height: 400px !default;
@@ -36,3 +37,6 @@ $icon-color: #e5c07b;
 $header-color: $fg-color;
 $footer-color: $header-color;
 $focus-color: #34495e;
+
+$breakpoint-medium: 1000px;
+$breakpoint-small: 600px;

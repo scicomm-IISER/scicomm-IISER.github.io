@@ -18,7 +18,7 @@
 	text-align: left;
 }
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: $breakpoint-small)  {
   #latest-issue {
     flex-wrap: wrap;
     position: relative;

@@ -28,7 +28,7 @@
   border-bottom: 3px solid $fg-color;
 }
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: $breakpoint-small)  {
   #carousel {
     height: auto;
   }
