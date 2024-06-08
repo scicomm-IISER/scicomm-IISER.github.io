@@ -20,6 +20,13 @@ permalink: /
     <span id="carousel-nav-2" class="nf nf-md-numeric_3_box"></span>
 </div>
 
+<div id="intro" markdown=1>
+<img id="intro-logo" src="/assets/images/topbar/site-icon.svg"/>
+<span>
+<span class="nf nf-md-lightbulb">&nbsp;</span>**InScight** is an online magazine dedicated to making pure science accessible and engaging. More on this can be found on the [about page](/about/).
+</span>
+</div>
+
 <div markdown=1>
 ## Recent Articles ([View All](/articles))
 {% include recent-articles.html numArticles="2" %}
