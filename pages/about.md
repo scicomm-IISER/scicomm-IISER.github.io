@@ -9,7 +9,7 @@ If you want to submit content to us (written article, video, interview, etc), vi
 
 ## Contact Information
 - You can always get in touch via [email]({{ site.data.socials["email"] }}).
-- If you want to remain anonymous, you can submit this [google form]({{ site.data.socials["gform"] }}).
+- If you want to remain anonymous, you can submit [this form]({{ site.data.socials["feedbackForm"] }}).
 - You can also reach out to us on our social media accounts: <a class="nf nf-fa-facebook_square" href="{{ site.data.socials["facebook"] }}"></a> <a class="nf nf-fa-twitter_square" href="{{ site.data.socials["twitter"] }}"></a>
 
 ## Team Members
