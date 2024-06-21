@@ -1,0 +1,17 @@
+.member-info {
+  display: flex;
+  gap: 1em;
+  > img {
+    width: 250px;
+  }
+}
+.member-links {
+  padding-right: 1em;
+  color: $focus-color;
+}
+
+.member-name {
+  color: $focus-color;
+  font-size: 1.1em;
+}
+

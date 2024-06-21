@@ -1,11 +1,121 @@
-Category 1:
-  FirstName1 LastName1:
-    description: Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. _Vestibulum tortor quam_, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
-    imageName: placeholder.svg
-Category 2:
-  FirstName2 LastName2:
-    description: Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. _Vestibulum tortor quam_, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
-    imageName: placeholder.svg
-  FirstName3 LastName3:
-    description: Pellentesque habitant morbi tristique senectus et netus et malesuada fames ames ac turpis egestas. _Vestibulum tortor quam_, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. ac turpis egestas. Vestibulum tortor quam_, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ames ac turpis egestas. _Vestibulum tortor quam_, feugiat v.
-    imageName: placeholder.svg
+---
+-
+    name: Swarnendu Saha
+    desc: A dedicated 5th-year student pursuing my MS-Thesis in the Department of Physical Sciences at IISER Kolkata, I am a passionate science enthusiast with a love for trekking, reading, and engaging in vibrant cultural activities.
+    image: swarnendu.jpg
+    group: Editorial Board
+    email: ss20ms152@iiserkol.ac.in
+    website: 
+    facebook: "https://www.facebook.com/swarnendu.saha.121"
+    instagram: "https://www.instagram.com/swarnendu013/"
+    twitter: 
+    github: 
+    linkedin: 
+-
+    name: Suman Halder
+    desc: I am Ph.D student at Department of Physical Sciences, IISER Kolkata. I am working with Dr.Rumi De.
+    image: suman.jpg
+    group: Editorial Board
+    email: sh23rs017@iiserkol.ac.in
+    website: 
+    facebook: "https://www.facebook.com/suman9.33.8.56.halder?mibextid=ZbWKwL"
+    instagram: living_in_downtown_lanes
+    twitter: 
+    github: 
+    linkedin: 
+-
+    name: Budhaditya Banerjee
+    desc: Research Scholar - Biophysics . 
+    image: budhaditya.jpg
+    group: Editorial Board
+    email: 
+    website: 
+    facebook: 
+    instagram: 
+    twitter: 
+    github: 
+    linkedin: 
+-
+    name: Shibaraj Sahu 
+    desc: "Passionate about exploring Physics and Mathematics. Avidly interested in Quantum Information Theory, math modeling, scientific computation, and effective science communication.\n"
+    image: shibraj.png
+    group: Editorial Board
+    email: ss23ms132@iiserkol.ac.in
+    website: 
+    facebook: 
+    instagram: 
+    twitter: 
+    github: "https://github.com/Shibaraj123"
+    linkedin: 
+-
+    name: Tanmay Raj 
+    desc: Good at reading, nothing special 
+    image: tanmay.jpg
+    group: Editorial Board
+    email: tr23ms106@iiserkol.ac.in
+    website: 
+    facebook: 
+    instagram: 
+    twitter: 
+    github: 
+    linkedin: 
+-
+    name: Alekhya Kundu
+    desc: I am in IISER Kolkata currently in first year of BS-MS degree here. I have particular interest in Physics,Music,Geopolitics and History to be precise. In Future, I want to pursue a career as a  High energy Physics  researcher. 
+    image: alekhya.jpg
+    group: Editorial Board
+    email: ak23ms169@iiserkol.ac.in
+    website: 
+    facebook: 
+    instagram: 
+    twitter: 
+    github: 
+    linkedin: 
+-
+    name: Manish Behera
+    desc: 23MS.Your friendly neighborhood nerd. Find me hanging out at the library mostly. 
+    image: manish.jpeg
+    group: Graphics Design
+    email: mb23ms121@iiserkol.ac.in
+    website: 
+    facebook: 
+    instagram: "https://www.instagram.com/m.anishb/"
+    twitter: "https://x.com/sandvoxel4"
+    github: "https://github.com/Xeylenol"
+    linkedin: 
+-
+    name: Divyanshu Saha
+    desc: "Concept artist, animal lover, mythology enthusiast, chronically online.\nCall me Jack, the way I've mastered none of these trades."
+    image: divyanshu.jpg
+    group: Graphics Design
+    email: ds23ms141@iiserkol.ac.in
+    website: 
+    facebook: "https://www.facebook.com/divyanshu.saha.50"
+    instagram: "https://www.instagram.com/dittogreninja/"
+    twitter: "https://x.com/divsaha"
+    github: "https://github.com/aDivineShoe"
+    linkedin: "https://www.linkedin.com/in/divyanshu-saha"
+-
+    name: Sayan Saha
+    desc: Hi, I am a student at IISER Kolkata. 
+    image: sayan.jpg
+    group: Social Media Management
+    email: sahasayan748@gmail.com
+    website: 
+    facebook: 
+    instagram: 
+    twitter: 
+    github: 
+    linkedin: 
+-
+    name: Abhirup Mukherjee
+    desc: PhD student working in quantum condensed matter physics.
+    image: abhirup.jpg
+    group: Website Management
+    email: 
+    website: "https://abhirup-m.github.io"
+    facebook: 
+    instagram: 
+    twitter: 
+    github: "https://github.com/abhirup-m"
+    linkedin: 

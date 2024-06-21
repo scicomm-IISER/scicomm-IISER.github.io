@@ -13,16 +13,27 @@ If you want to submit content to us (written article, video, interview, etc), vi
 - You can also reach out to us on our social media accounts: <a class="nf nf-fa-facebook_square" href="{{ site.data.socials["facebook"] }}"></a> <a class="nf nf-fa-twitter_square" href="{{ site.data.socials["twitter"] }}"></a>
 
 ## Team Members
-{% for category in site.data.members %}
-### {{ category[0] }}
-{% for name in category[1] %}
-![](/assets/images/about/{{ name[1]["imageName"] }})
-<span>
-**{{ name[0] }}**<br><br>
-{{ name[1]["description"] }}
-</span>
-{: .member-desc }
+{% for member in site.data.members %}
+<div class="member-info">
+<img class="member-image" src="/assets/images/members/{{member["image"]}}"/>
+<div class="member-details" markdown=1>
+<span class="member-name">**{{ member["name"] }}**</span>
 
-{% endfor %}
+{{ member["group"] }}
+
+---
+{{ member["desc"] }}
+
+<div>
+{% if member["email"] %}<a class="member-links nf nf-md-email" href="{{ member["email"] }}"></a>{% endif %}
+{% if member["website"] %}<a class="member-links nf nf-md-web" href="{{ member["website"] }}"></a>{% endif %}
+{% if member["github"] %}<a class="member-links nf nf-fa-github" href="{{ member["github"] }}"></a>{% endif %}
+{% if member["linkedin"] %}<a class="member-links nf nf-fa-linkedin_square" href="{{ member["linkedin"] }}"></a>{% endif %}
+{% if member["twitter"] %}<a class="member-links nf nf-fa-twitter_square" href="{{ member["twitter"] }}"></a>{% endif %}
+{% if member["facebook"] %}<a class="member-links nf nf-md-facebook" href="{{ member["facebook"] }}"></a>{% endif %}
+{% if member["instagram"] %}<a class="member-links nf nf-md-instagram" href="{{ member["instagram"] }}"></a>{% endif %}
+</div>
+</div>
+</div>
 {% endfor %}
 
