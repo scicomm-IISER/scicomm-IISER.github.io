@@ -6,9 +6,32 @@
   }
 }
 .member-links > * {
-  padding-left: 1em;
+  margin-left: 1em;
   color: $focus-color;
   cursor: pointer;
+}
+.member-links {
+  > .nf-md-email {
+  color: $gmail-color;
+  }
+  > .nf-md-web {
+  color: $web-color;
+  }
+  > .nf-fa-github {
+  color: $github-color;
+  }
+  > .nf-fa-linkedin_square {
+  color: $linkedin-color;
+  }
+  > .nf-fa-twitter_square {
+  color: $twitter-color;
+  }
+  > .nf-fa-instagram {
+  color: $instagram-color;
+  }
+  > .nf-md-facebook {
+  color: $facebook-color;
+  }
 }
 
 .member-links > *:hover {

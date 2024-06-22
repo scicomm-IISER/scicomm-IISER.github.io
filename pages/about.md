@@ -25,7 +25,7 @@ If you want to submit content to us (written article, video, interview, etc), vi
 {%- if member["linkedin"] -%}<a class="nf nf-fa-linkedin_square" href="{{ member["linkedin"] }}"></a>{%- endif -%}
 {%- if member["twitter"] -%}<a class="nf nf-fa-twitter_square" href="{{ member["twitter"] }}"></a>{%- endif -%}
 {%- if member["facebook"] -%}<a class="nf nf-md-facebook" href="{{ member["facebook"] }}"></a>{%- endif -%}
-{%- if member["instagram"] -%}<a class="nf nf-md-instagram" href="{{ member["instagram"] }}"></a>{%- endif -%}
+{%- if member["instagram"] -%}<a class="nf nf-fa-instagram" href="{{ member["instagram"] }}"></a>{%- endif -%}
 </span>
 </span>
 
