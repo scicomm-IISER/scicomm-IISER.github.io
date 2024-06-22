@@ -5,9 +5,14 @@
     width: 250px;
   }
 }
-.member-links {
-  padding-right: 1em;
+.member-links > * {
+  padding-left: 1em;
   color: $focus-color;
+  cursor: pointer;
+}
+
+.member-links > *:hover {
+  text-decoration: none;
 }
 
 .member-name {

@@ -1,7 +1,7 @@
 ---
 -
     name: Swarnendu Saha
-    desc: A dedicated 5th-year student pursuing my MS-Thesis in the Department of Physical Sciences at IISER Kolkata, I am a passionate science enthusiast with a love for trekking, reading, and engaging in vibrant cultural activities.
+    desc: "A dedicated 5th-year student pursuing my MS-Thesis in the Department of Physical Sciences at IISER Kolkata, I am a passionate science enthusiast with a love for trekking, reading, and engaging in vibrant cultural activities."
     image: swarnendu.jpg
     group: Editorial Board
     email: ss20ms152@iiserkol.ac.in
@@ -13,19 +13,19 @@
     linkedin: 
 -
     name: Suman Halder
-    desc: I am Ph.D student at Department of Physical Sciences, IISER Kolkata. I am working with Dr.Rumi De.
+    desc: "I am Ph.D student at Department of Physical Sciences, IISER Kolkata. I am working with Dr. Rumi De."
     image: suman.jpg
     group: Editorial Board
     email: sh23rs017@iiserkol.ac.in
     website: 
     facebook: "https://www.facebook.com/suman9.33.8.56.halder?mibextid=ZbWKwL"
-    instagram: living_in_downtown_lanes
+    instagram: "https://www.instagram.com/living_in_downtown_lanes/"
     twitter: 
     github: 
     linkedin: 
 -
     name: Budhaditya Banerjee
-    desc: Research Scholar - Biophysics . 
+    desc: "Research Scholar - Biophysics."
     image: budhaditya.jpg
     group: Editorial Board
     email: 
@@ -37,7 +37,7 @@
     linkedin: 
 -
     name: Shibaraj Sahu 
-    desc: "Passionate about exploring Physics and Mathematics. Avidly interested in Quantum Information Theory, math modeling, scientific computation, and effective science communication.\n"
+    desc: "Passionate about exploring Physics and Mathematics. Avidly interested in Quantum Information Theory, math modeling, scientific computation, and effective science communication."
     image: shibraj.png
     group: Editorial Board
     email: ss23ms132@iiserkol.ac.in
@@ -49,7 +49,7 @@
     linkedin: 
 -
     name: Tanmay Raj 
-    desc: Good at reading, nothing special 
+    desc: "Good at reading, nothing special"
     image: tanmay.jpg
     group: Editorial Board
     email: tr23ms106@iiserkol.ac.in
@@ -61,7 +61,7 @@
     linkedin: 
 -
     name: Alekhya Kundu
-    desc: I am in IISER Kolkata currently in first year of BS-MS degree here. I have particular interest in Physics,Music,Geopolitics and History to be precise. In Future, I want to pursue a career as a  High energy Physics  researcher. 
+    desc: "I am in IISER Kolkata currently in first year of BS-MS degree here. I have particular interest in Physics, Music, Geopolitics and History to be precise. In Future, I want to pursue a career as a  High energy Physics  researcher."
     image: alekhya.jpg
     group: Editorial Board
     email: ak23ms169@iiserkol.ac.in
@@ -73,7 +73,7 @@
     linkedin: 
 -
     name: Manish Behera
-    desc: 23MS.Your friendly neighborhood nerd. Find me hanging out at the library mostly. 
+    desc: "23MS. Your friendly neighborhood nerd. Find me hanging out at the library mostly."
     image: manish.jpeg
     group: Graphics Design
     email: mb23ms121@iiserkol.ac.in
@@ -85,7 +85,7 @@
     linkedin: 
 -
     name: Divyanshu Saha
-    desc: "Concept artist, animal lover, mythology enthusiast, chronically online.\nCall me Jack, the way I've mastered none of these trades."
+    desc: "Concept artist, animal lover, mythology enthusiast, chronically online. Call me Jack, the way I've mastered none of these trades."
     image: divyanshu.jpg
     group: Graphics Design
     email: ds23ms141@iiserkol.ac.in
@@ -97,7 +97,7 @@
     linkedin: "https://www.linkedin.com/in/divyanshu-saha"
 -
     name: Sayan Saha
-    desc: Hi, I am a student at IISER Kolkata. 
+    desc: "Hi, I am a student at IISER Kolkata."
     image: sayan.jpg
     group: Social Media Management
     email: sahasayan748@gmail.com
@@ -109,7 +109,7 @@
     linkedin: 
 -
     name: Abhirup Mukherjee
-    desc: PhD student working in quantum condensed matter physics.
+    desc: "Quantum condensed matter physics. Software. Anime"
     image: abhirup.jpg
     group: Website Management
     email: 

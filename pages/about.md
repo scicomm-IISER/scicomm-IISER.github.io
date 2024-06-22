@@ -17,23 +17,25 @@ If you want to submit content to us (written article, video, interview, etc), vi
 <div class="member-info">
 <img class="member-image" src="/assets/images/members/{{member["image"]}}"/>
 <div class="member-details" markdown=1>
-<span class="member-name">**{{ member["name"] }}**</span>
+<span class="member-name">**{{ member["name"] }}**
+<span class="member-links">
+{%- if member["email"] -%}<span class="email-id nf nf-md-email" data="{{ member["email"] }}"></span>{%- endif -%}
+{%- if member["website"] -%}<a class="nf nf-md-web" href="{{ member["website"] }}"></a>{%- endif -%}
+{%- if member["github"] -%}<a class="nf nf-fa-github" href="{{ member["github"] }}"></a>{%- endif -%}
+{%- if member["linkedin"] -%}<a class="nf nf-fa-linkedin_square" href="{{ member["linkedin"] }}"></a>{%- endif -%}
+{%- if member["twitter"] -%}<a class="nf nf-fa-twitter_square" href="{{ member["twitter"] }}"></a>{%- endif -%}
+{%- if member["facebook"] -%}<a class="nf nf-md-facebook" href="{{ member["facebook"] }}"></a>{%- endif -%}
+{%- if member["instagram"] -%}<a class="nf nf-md-instagram" href="{{ member["instagram"] }}"></a>{%- endif -%}
+</span>
+</span>
 
 {{ member["group"] }}
 
 ---
 {{ member["desc"] }}
 
-<div>
-{% if member["email"] %}<a class="member-links nf nf-md-email" href="{{ member["email"] }}"></a>{% endif %}
-{% if member["website"] %}<a class="member-links nf nf-md-web" href="{{ member["website"] }}"></a>{% endif %}
-{% if member["github"] %}<a class="member-links nf nf-fa-github" href="{{ member["github"] }}"></a>{% endif %}
-{% if member["linkedin"] %}<a class="member-links nf nf-fa-linkedin_square" href="{{ member["linkedin"] }}"></a>{% endif %}
-{% if member["twitter"] %}<a class="member-links nf nf-fa-twitter_square" href="{{ member["twitter"] }}"></a>{% endif %}
-{% if member["facebook"] %}<a class="member-links nf nf-md-facebook" href="{{ member["facebook"] }}"></a>{% endif %}
-{% if member["instagram"] %}<a class="member-links nf nf-md-instagram" href="{{ member["instagram"] }}"></a>{% endif %}
-</div>
 </div>
 </div>
 {% endfor %}
 
+<script src="/assets/js/copyEmail.js"></script>
