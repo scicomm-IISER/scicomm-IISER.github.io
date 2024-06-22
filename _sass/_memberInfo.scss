@@ -1,4 +1,5 @@
 .member-info {
+  text-align: left;
   display: flex;
   gap: 1em;
   > img {
@@ -6,10 +7,13 @@
   }
 }
 .member-links > * {
-  margin-left: 1em;
   color: $focus-color;
   cursor: pointer;
 }
+.member-links > * + * {
+  padding-left: 0.5em;
+}
+
 .member-links {
   > .nf-md-email {
   color: $gmail-color;
@@ -38,9 +42,20 @@
   text-decoration: none;
 }
 
-.member-name {
+.members-desc {
+  text-align: justify;
+}
+
+.member-name > strong {
   color: $focus-color;
   font-size: 1.1em;
+  padding-right: 1em;
+}
+
+.member-name {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 
@@ -49,7 +64,8 @@
   flex-direction: column;
   gap: 0.5em;
   > img {
-    width: 100%;
+    width: 70%;
+    margin: auto;
   }
   padding-bottom: 1em;
 }

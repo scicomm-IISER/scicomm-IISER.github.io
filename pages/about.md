@@ -33,6 +33,7 @@ If you want to submit content to us (written article, video, interview, etc), vi
 
 ---
 {{ member["desc"] }}
+{: .members-desc }
 
 </div>
 </div>
