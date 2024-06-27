@@ -13,7 +13,9 @@ If you want to submit content to us (written article, video, interview, etc), vi
 - You can also reach out to us on our social media accounts: <a class="nf nf-fa-facebook_square" href="{{ site.data.socials["facebook"] }}"></a> <a class="nf nf-fa-twitter_square" href="{{ site.data.socials["twitter"] }}"></a>
 
 ## Team Members
-{% for member in site.data.members %}
+{% for category in site.data.members %}
+**category**
+{% for member in category %}
 <div class="member-info">
 <img class="member-image" src="/assets/images/members/{{member["image"]}}"/>
 <div class="member-details" markdown=1>
@@ -29,14 +31,13 @@ If you want to submit content to us (written article, video, interview, etc), vi
 </span>
 </span>
 
-{{ member["group"] }}
-
 ---
 {{ member["desc"] }}
 {: .members-desc }
 
 </div>
 </div>
+{% endfor %}
 {% endfor %}
 
 <script src="/assets/js/copyEmail.js"></script>
