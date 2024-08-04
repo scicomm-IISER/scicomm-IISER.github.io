@@ -55,3 +55,16 @@
     }
   }
 }
+
+img.article-image {
+  border: 0.1em solid gray;
+  display: block;
+  margin: auto;
+}
+span.article-caption {
+  text-align: center;
+  display: block;
+  font-style: italic;
+  color: $heading-color;
+  max-width: 1400px;
+}
