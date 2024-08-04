@@ -12,7 +12,11 @@
 </div>
 <div class="excerpt">{% if page.excerpt %}{{ page.excerpt }}{% endif %}</div>
 
+<div class="hero-image-caption">
 <img class="hero-image" src="/assets/hero-images/{{ page.hero-image }}"/>
+<a class="hero-caption" href="{{ page.hero-source }}">Source &nbsp;<span class="nf nf-oct-link"></span></a>
+</div>
+
 {{ content }}
 </div>
 {% include footer.html %}
