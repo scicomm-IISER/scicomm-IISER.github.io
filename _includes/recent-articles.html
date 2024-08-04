@@ -1,5 +1,15 @@
 <div class="recent-articles">
+	{% assign counter = 0 %}
+	{% assign latestFlag = 0 %}
 	{% for article in site.categories["articles"] limit:include.numArticles %}
-	{% include article-item.html %}
+	{% if latestFlag == 0 %}
+		{% if article.draft == false or article.draft == blank %}
+			{% assign latestFlag = 1 %}
+		{% endif %}
+	{% else %}
+		{% if article.draft == false or article.draft == blank %}
+			{% include article-item.html %}
+		{% endif %}
+	{% endif %}
 	{% endfor %}
 </div>
