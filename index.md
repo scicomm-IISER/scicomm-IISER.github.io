@@ -21,9 +21,9 @@ permalink: /
 </div>
 
 <div id="intro" markdown=1>
-<img id="intro-logo" src="/assets/images/topbar/site-icon.svg"/>
+<img id="intro-logo" src="{{ site.logo }}"/>
 <span>
-<span class="nf nf-md-lightbulb">&nbsp;</span>**InScight** is an online magazine dedicated to making pure science accessible and engaging. More on this can be found on the [about page](/about/).
+**InScight** is an online magazine dedicated to making pure science accessible and engaging. More on this can be found on the [about page](/about/).
 </span>
 </div>
 
