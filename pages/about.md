@@ -3,7 +3,7 @@ title: "What is InScight?"
 permalink: /about/
 ---
 
-InScight is an online magazine dedicated to making pure science accessible and engaging. We have tasked ourselves with bringing the wonders of science to a broader audience by exploring innovative research and the scientific discoveries that come with it. This is accomplished by presenting well-researched and thought-provoking articles on this website, and publishing periodical magazines based on such articles. The articles are written by the wider community of enthusiasts. 
+InScight is an online magazine dedicated to making pure science accessible and engaging. We have tasked ourselves with bringing the wonders of science to a broader audience by exploring innovative research and the scientific discoveries that come with it. This is accomplished by presenting well-researched and thought-provoking articles on this website, and publishing periodical magazines based on such articles. The articles are written by the wider community of enthusiasts. InScight is the spiritual successor to [Cogito](/cogitoOld/pages/vision.html).
 
 If you want to submit content to us (written article, video, interview, etc), visit [this page](/submit/).
 
