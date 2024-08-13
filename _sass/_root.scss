@@ -1,8 +1,9 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
-body {
+html {
 	line-height: $line-height;
 	color: $fg-color;
 	background-color: $bg-color;
@@ -10,33 +11,30 @@ body {
 	font-size: $main-font-size;
 	font-weight: 400;
 	font-family: $main-font-family;
+}
+
+body {
+    height: 100%;
 	display: flex;
 	flex-direction: column;
-	height: 100%;
-	max-width: $body-width;
-	padding: $main-margin;
-    padding-top: 0;
-    padding-bottom: 0;
-	margin: auto;
     align-items: center;
     justify-content: space-between;
     gap: $main-margin;
-    height: 100%;
+    overflow-x: hidden;
 }
 
 #content {
-    margin-left: $main-margin;
-    margin-right: $main-margin;
+    max-width: $body-width;
 	display: flex;
     gap: $main-margin;
 	flex-direction: column;
-    width: 100%;
     min-height: calc(100vh - 2 * #{$main-margin} - #{$header-height} - 2 * #{$topbar-pad} - #{$footer-height});
-    text-align: justify;
 }
 
 @media only screen and (max-width: $breakpoint-small)  {
    body {
+     margin-left: $main-margin;
+     margin-right: $main-margin;
      font-size: $mobile-font-size;
    }
 }
