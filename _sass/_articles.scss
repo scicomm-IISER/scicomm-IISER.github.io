@@ -56,15 +56,15 @@
   }
 }
 
-img.article-image {
+.article-image > img {
   border: 0.1em solid gray;
   display: block;
   margin: auto;
 }
-span.article-caption {
+.article-image > span {
   text-align: center;
   display: block;
   font-style: italic;
   color: $heading-color;
-  max-width: 1400px;
+  max-width: 100%;
 }

@@ -1,5 +1,4 @@
 {% for article in site.categories["articles"] %}
-{% if article.draft == false or article.draft == blank %}
 <div id="latest-article">
 <a href="{{ article.url }}"><img src="/assets/hero-images/{{article.hero-image}}"/></a>
 <div id="latest-article-desc">
@@ -9,6 +8,4 @@
 	<span class="article-item-tags">{% for tag in article.tags %}<a href="/tags/#{{ tag }}" class="button">{{ tag }}</a>{% endfor %}</span>
 </div>
 </div>
-{% break %}
-{% endif %}
 {% endfor %}

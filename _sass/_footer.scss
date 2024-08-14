@@ -1,5 +1,5 @@
 footer {
-	width: 100vw;
+	width: 100%;
 	background-color: $footer-color;
     color: $bg-color;
     font-size: 0.9em;
@@ -11,4 +11,5 @@ footer {
     > a {
       color: $bg-color;
     }
+    margin-top: auto;
 }

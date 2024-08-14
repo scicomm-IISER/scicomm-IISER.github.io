@@ -10,4 +10,4 @@ permalink: /articles/
 {% include latest-article.html %}
 
 ## Recent Articles
-{% include recent-articles.html numArticles="10" %}
+{% include recent-articles.html start=1 numArticles="10" %}

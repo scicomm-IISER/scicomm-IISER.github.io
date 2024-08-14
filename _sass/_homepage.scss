@@ -1,20 +1,15 @@
 #intro {
     background-color: $heading-color;
     color: $bg-color;
-    > p {
-      > img {
-        max-width: 100px;
-        height: 100%;
-      }
-      margin: 1em;
-      display: flex;
-      gap: 1em;
-      justify-content: space-between;
-      > span {
-        margin: auto;
-      }
+    > img {
+      max-width: 80px;
+      height: 100%;
     }
-    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: $main-margin;
+    width: 100%;
+    padding: $main-margin;
 }
 
 @media only screen and (max-width: $breakpoint-small)  {

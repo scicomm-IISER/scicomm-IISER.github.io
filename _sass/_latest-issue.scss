@@ -1,11 +1,12 @@
 #latest-issue {
 	display: flex;
+    justify-content: space-between;
 	gap: 2em;
     > a {
-      width: 100%;
-    > img {
-      max-width: 100%;
-    }
+      max-width: 50%;
+      > img {
+        width: 100%;
+      }
     }
 }
 
@@ -25,6 +26,9 @@
     gap: 0;
     > p{
       margin: 0;
+    }
+    > a {
+      max-width: 100%;
     }
   }
   #latest-issue-desc {

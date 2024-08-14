@@ -1,6 +1,5 @@
 * {
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -11,31 +10,32 @@ html {
 	font-size: $main-font-size;
 	font-weight: 400;
 	font-family: $main-font-family;
-    max-width: 100%;
 }
 
 body {
-    width: 100%;
-    height: 100%;
 	display: flex;
 	flex-direction: column;
     align-items: center;
-    text-align: left;
-    justify-content: space-between;
+    min-height: 100vh;
     gap: $main-margin;
+    overflow-x: hidden;
+    margin: 0;
 }
 
-#content {
-	display: flex;
-    gap: $main-margin;
-	flex-direction: column;
-    min-height: calc(100vh - 2 * #{$main-margin} - #{$header-height} - 2 * #{$topbar-pad} - #{$footer-height});
+main {
+    max-width: $body-width;
+    width: 100%;
+}
+
+@media only screen and (max-width: $breakpoint-medium)  {
+   main {
+     padding-left: $main-margin;
+     padding-right: $main-margin;
+   }
 }
 
 @media only screen and (max-width: $breakpoint-small)  {
-   body {
-     margin-left: $main-margin;
-     margin-right: $main-margin;
+   html {
      font-size: $mobile-font-size;
    }
 }
