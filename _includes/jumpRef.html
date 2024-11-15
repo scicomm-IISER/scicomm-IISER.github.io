@@ -1,0 +1,2 @@
+{% assign index = include.ref | minus: 1 %}
+<a href="#ref-{{ include.ref }}" class="jump-ref" title="{{ site.data.references[page.refs-file][index] }}">[{{ include.ref }}]</a>
