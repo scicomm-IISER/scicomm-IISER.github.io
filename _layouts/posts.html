@@ -9,16 +9,35 @@
   <h1> {{ page.title }} </h1>
   <div class="author-date">
   	<span class="nf nf-md-draw_pen"></span>&nbsp;&nbsp;{{ page.author }}&nbsp;&nbsp;&nbsp;&nbsp;
+	<br>
+	<br>
   	<span class="nf nf-fa-calendar_check"></span>&nbsp;&nbsp;{{ page.date | date:"%b %d, %Y"}}
   </div>
   <div class="excerpt">{% if page.excerpt %}{{ page.excerpt }}{% endif %}</div>
-  
+  <hr>
   <div class="hero-image-caption">
   <img class="hero-image" src="/assets/hero-images/{{ page.hero-image }}"/>
-  <a class="hero-caption" href="{{ page.hero-source }}">Source &nbsp;<span class="nf nf-oct-link"></span></a>
+  {% if page.hero-source %}
+	  <a class="hero-caption" href="{{ page.hero-source }}">Source &nbsp;<span class="nf nf-oct-link"></span></a>
+  {% endif %}
   </div>
   
   {{ content }}
+
+  {% if page.author-bio %}
+	  <div class="author-bio">{{ page.author-bio | markdownify }}</div>
+  {% endif %}
+
+  {% if page.refs-file %}
+  <h3>References</h3>
+  <ol>
+  {% assign counter = 1 %}
+  {% for line in site.data.references.biology-AI %}
+  <li id="ref-{{ counter }}">{{ line }}</li>
+  {% assign counter = counter | plus: 1 %}
+  {% endfor %}
+  </ol>
+  {% endif %}
 </main>
 {% include footer.html %}
 </body>

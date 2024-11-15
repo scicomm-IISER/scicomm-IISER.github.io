@@ -1,7 +1,7 @@
-$main-font-size: 1.5em !default;
+$main-font-size: 1.2em !default;
 $mobile-font-size: 1.0em !default;
 $line-height: 1.4em !default;
-$h1-line-height: 0.9em !default;
+$h1-line-height: 1em !default;
 $main-margin: 1em !default;
 $body-width: 900px !default;
 $topbar-pad: 0.2em !default;
@@ -24,19 +24,19 @@ $h2-mobile-font-size: calc(1.6 * #{$mobile-font-size}) !default;
 $h3-mobile-font-size: calc(1.2 * #{$mobile-font-size}) !default;
 
 /* system typefaces */
-$main-font-family: "Roboto Condensed", "DaddyTimeMono Nerd Font Mono" !default;
+$main-font-family: "Cooper Hewitt", "DaddyTimeMono Nerd Font Mono" !default;
 $monospace-font: "Roboto Condensed" !default;
-$heading-font-family: "BenchNine" !default;
+$heading-font-family: "Cooper Hewitt", "Roboto Condensed", "BenchNine", "Cooper Hewitt",  !default;
 
 // one-dark colour palette
-$bg-color: #eeeeee;
-$fg-color: #222831;
-$link-color: #0092ca;
-$heading-color: #393e46;
+$bg-color: #161A1D;
+$fg-color: #a3a3a3;
+$focus-color: #f7d7ff;
+$heading-color: #F5585B;
+$link-color: $focus-color;
 $icon-color: #e5c07b;
-$header-color: $fg-color;
+$header-color: $bg-color;
 $footer-color: $header-color;
-$focus-color: #34495e;
 
 $breakpoint-medium: $body-width;
 $breakpoint-small: 600px;

@@ -1,8 +1,9 @@
 .excerpt {
-	font-style: italic;
+    padding-top: 1em;
 	text-align: justify;
-	font-size: 0.9em;
-    color: rgba($focus-color, 0.8);
+	font-size: 0.8em;
+    // font-weight: 600;
+    font-style: italic;
 }
 
 .author-date {
@@ -56,15 +57,41 @@
   }
 }
 
-.article-image > img {
-  border: 0.1em solid gray;
+.article-image {
+  background-color: #F0F0F0;
+  padding: 1em;
+  width: 100%;
   display: block;
   margin: auto;
 }
+
+.article-image > img {
+  display: block;
+  margin: auto;
+  padding-bottom: 1em;
+}
 .article-image > span {
   text-align: center;
+  margin: auto;
   display: block;
-  font-style: italic;
-  color: $heading-color;
-  max-width: 100%;
+  color: $bg-color;
+  > strong {
+    color: $bg-color;
+  }
+}
+
+.author-bio {
+  > p {
+    margin: 0em;
+  }
+  color: $fg-color;
+  font-weight: 600;
+  background-color: rgba($fg-color, 0.1);
+  padding: 1em;
+  font-size: 0.8em;
+  text-align: justify;
+}
+
+.jump-ref {
+  text-decoration: none;
 }

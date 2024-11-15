@@ -1,11 +1,16 @@
 a {
 	color: $link-color;
-	text-decoration: none;
-	font-weight: bold;
+	// text-decoration: none;
+	// font-weight: normal;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
 }
 a:hover {
-	text-decoration: underline;
-    text-decoration-thickness: 3px;
+	// text-decoration: underline;
+	font-weight: bold;
+    // text-underline-offset: 4px;
+    // text-decoration-thickness: 3px;
+    // transform: scale(1.1);
 }
 
 .button {
