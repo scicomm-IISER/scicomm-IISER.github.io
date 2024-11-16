@@ -48,3 +48,13 @@ p {
 strong {
     color: $focus-color;
 }
+
+hr {
+  height: 3px;
+  color: $fg-color;
+  background-color: $fg-color;
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1em;
+}

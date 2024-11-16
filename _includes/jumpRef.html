@@ -1,2 +1,3 @@
-{% assign index = include.ref | minus: 1 %}
-<a href="#ref-{{ include.ref }}" class="jump-ref" title="{{ site.data.references[page.refs-file][index] }}">[{{ include.ref }}]</a>
+{%- assign index = include.ref | minus: 1 -%}
+{%- assign tooltip = site.data.references[page.refs-file][index] |  smartify -%}
+<a href="#ref-{{ include.ref }}" class="jump-ref" title="{{ tooltip }}">[{{ include.ref }}]</a>

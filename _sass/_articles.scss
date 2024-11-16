@@ -84,11 +84,11 @@
   > p {
     margin: 0em;
   }
-  color: $fg-color;
-  font-weight: 600;
+  color: $focus-color;
+  // font-weight: 600;
   background-color: rgba($fg-color, 0.1);
   padding: 1em;
-  font-size: 0.8em;
+  font-size: 0.9em;
   text-align: justify;
 }
 

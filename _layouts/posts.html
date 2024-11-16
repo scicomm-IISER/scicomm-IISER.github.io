@@ -13,7 +13,7 @@
 	<br>
   	<span class="nf nf-fa-calendar_check"></span>&nbsp;&nbsp;{{ page.date | date:"%b %d, %Y"}}
   </div>
-  <div class="excerpt">{% if page.excerpt %}{{ page.excerpt }}{% endif %}</div>
+  <p class="excerpt">{% if page.excerpt %}{{ page.excerpt }}{% endif %}</p>
   <hr>
   <div class="hero-image-caption">
   <img class="hero-image" src="/assets/hero-images/{{ page.hero-image }}"/>
@@ -23,6 +23,8 @@
   </div>
   
   {{ content }}
+
+  <hr>
 
   {% if page.author-bio %}
 	  <div class="author-bio">{{ page.author-bio | markdownify }}</div>
