@@ -1,32 +1,12 @@
 #### IMPORTANT: The latest issues should go to the top. ####
 
-2023:
-  - fileName: name1.pdf
-    month: May
-    thumbnailFileName: image.jpg
-    focus: "Competition between nocturnal viruses and blasphemous beetles"
-  - fileName: name2.pdf
-    month: March
-    thumbnailFileName: image.jpg
-  - fileName: name3.pdf
-    month: January
-    thumbnailFileName: image.jpg
-2022:
-  - fileName: name4.pdf
+"2024":
+  - permalink: /issue1/
+    download: "https://drive.google.com/file/d/1HFMWR22cKZGvHjyoBcV__iUL5tGvKkj7/view?usp=sharing"
+    thumbnail: issue1Cover.png
+    issue-number: 1
     month: November
-    thumbnailFileName: image.jpg
-  - fileName: name5.pdf
-    month: September
-    thumbnailFileName: image.jpg
-  - fileName: name6.pdf
-    month: July
-    thumbnailFileName: image.jpg
-  - fileName: name7.pdf
-    month: May
-    thumbnailFileName: image.jpg
-  - fileName: name8.pdf
-    month: March
-    thumbnailFileName: image.jpg
-  - fileName: name9.pdf
-    month: January
-    thumbnailFileName: image.jpg
+    preview:
+      - Quantum Physics-themed Crossword
+      - IISER Kolkata’s iGEM 2024 Breakthrough
+      - Revolutionising Biology with Artificial Intelligence

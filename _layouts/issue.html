@@ -1,0 +1,52 @@
+<!doctype html>
+
+{% for pair in site.data.magazines %}
+{% for issue in pair[1] %}
+{% if issue.issue-number == page.issue %}
+{% assign pdfLink = issue["download"] %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+<html lang="en">
+{% include head.html %}
+
+<body>
+{% include header.html %}
+<main>
+  <h1> Issue #{{ page.issue }} </h1>
+
+  {{page.month}}, {{ page.year}} &nbsp;&nbsp;&nbsp;<a href={{ pdfLink }}>PDF</a>
+
+  <h3> Articles </h3>
+  <ul>
+  {% for article in site.categories["article"] %}
+  {% if article.issue == page.issue %}
+  <li>
+  {{ article.title }}
+  <br>
+  {{ article.authors | join: " " }} &nbsp;&nbsp;<a href={{ article.url }}>Read article</a>
+  </li>
+  <br>
+  {% endif %}
+  {% endfor %}
+  </ul>
+
+  <h3> Interviews </h3>
+  <ul>
+  {% for article in site.categories["interview"] %}
+  {% if article.issue == page.issue %}
+  <li>
+  {{ article.title }}
+  <br>
+  {{ article.authors | join: " " }} &nbsp;&nbsp;<a href={{ article.url }}>Read article</a>
+  </li>
+  <br>
+  {% endif %}
+  {% endfor %}
+  </ul>
+</main>
+{% include footer.html %}
+</body>
+</html>
+

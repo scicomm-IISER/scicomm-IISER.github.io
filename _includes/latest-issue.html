@@ -1,13 +1,15 @@
-{% assign latestIssue = site.data.magazines | first %}
+{% assign year = 'now' | date: "%Y" %}
+{% assign latestIssue = site.data.magazines[year][0] %}
 <div id="latest-issue">
-<a href="/assets/magazines/{{latestIssue[1][0]["fileName"]}}"><img src="/assets/magazine-thumbnails/{{ latestIssue[1][0]["thumbnailFileName"] }}"/></a>
+<a href="{{latestIssue["permalink"]}}"><img src="/assets/magazine-thumbnails/{{ latestIssue["thumbnail"] }}"/></a>
 <div id="latest-issue-desc">
-	<h3>Latest Release</h3>
-	<span>{{ latestIssue[1][0]["month"] | upcase }}, {{ latestIssue[0] }} &nbsp;&nbsp;&nbsp;<span class="nf nf-fa-circle_down"></span>&nbsp;<a href="/assets/magazines/{{latestIssue[1][0]["fileName"]}}">View/Download</a></span>
-    <span id="latest-issue-focus">
-    RELEASE FOCUS:<br>
-    <strong>{{ latestIssue[1][0]["focus"] }}</strong>
-    </span>
-	<span><span class="nf nf-oct-stack"></span>&nbsp;<a href="/assets/magazines/{{latestIssue[1][0]["fileName"]}}">View All Releases</a></span>
+<h2>Latest Release</h2>
+	<span>{{ latestIssue["month"] }}, {{ year }}</span>
+	<ul>
+	{% for line in latestIssue["preview"] %}
+	<li>{{ line }}</li>
+	{% endfor %}
+	</ul>
+	<a href="{{latestIssue["permalink"]}}">Read Issue</a>
 </div>
 </div>

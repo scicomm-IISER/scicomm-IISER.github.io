@@ -25,12 +25,17 @@ logo: "/assets/images/global/logo.png"
 defaults:
   -
     scope:
-      type: "posts"
+      path: "_posts/articles/"
     values:
-      path: "_posts/article-posts/"
       layout: "posts"
       permalink: "/articles/:slug/"
-      category: "articles"
+      category: "article"
+  -
+    scope:
+      path: "_posts/issues/"
+    values:
+      layout: "issue"
+      permalink: "/:slug/"
   -
     scope:
       type: "pages"
@@ -38,10 +43,10 @@ defaults:
       layout: "default"
   -
     scope:
-      path: "_posts/news-posts/"
+      path: "_posts/interviews/"
     values:
-      layout: "news"
-      permalink: "/news/:slug/"
-      category: "news"
+      layout: "posts"
+      permalink: "/interviews/:slug/"
+      category: "interview"
 kramdown:
   math_engine: katex

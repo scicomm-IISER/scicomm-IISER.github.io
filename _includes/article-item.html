@@ -1,6 +1,10 @@
 <div class="article-item">
 <a href="{{ article.url }}"><img class="article-thumbnail" src="/assets/hero-images/{{article.hero-image}}"/></a>
-<span class="article-item-title">{{ article.title }}&nbsp;<span class="nf nf-md-chevron_double_right"></span>&nbsp;<a href="{{ article.url }}">View article</a></span>
-<span class="article-author-date"><span class="nf nf-md-draw_pen"></span>&nbsp;{{ article.author }} | {{ article.date | date:"%b %d, %Y" }}&nbsp;&nbsp;&nbsp;</span>
+<strong>{{ article.title }}</strong>
+{{ article.authors | join: ", " }}
+<br>
+<span>{{ article.date | date:"%b %d, %Y" }} <span class="button">{{ article.field }}</span></span>
+<a href="{{ article.url }}">Read Article</a>
+
 <span class="article-item-tags">{% for tag in article.tags %}<a href="/tags/#{{ tag }}" class="button">{{ tag }}</a>{% endfor %}</span>
 </div>

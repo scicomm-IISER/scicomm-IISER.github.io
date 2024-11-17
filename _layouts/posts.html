@@ -8,8 +8,9 @@
 <main>
   <h1> {{ page.title }} </h1>
   <div class="author-date">
-  	<span class="nf nf-md-draw_pen"></span>&nbsp;&nbsp;{{ page.author }}&nbsp;&nbsp;&nbsp;&nbsp;
+  	{{ page.authors | join: ", " }}
 	<br>
+	[{{ page.author-affiliation | join: ", " }}]
 	<br>
   	<span class="nf nf-fa-calendar_check"></span>&nbsp;&nbsp;{{ page.date | date:"%b %d, %Y"}}
   </div>
@@ -34,7 +35,7 @@
   <h3>References</h3>
   <ol>
   {% assign counter = 1 %}
-  {% for line in site.data.references.biology-AI %}
+  {% for line in site.data.references[page.refs-file] %}
   <li id="ref-{{ counter }}">{{ line }}</li>
   {% assign counter = counter | plus: 1 %}
   {% endfor %}

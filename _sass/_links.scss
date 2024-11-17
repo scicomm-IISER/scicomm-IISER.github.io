@@ -14,12 +14,15 @@ a:hover {
 }
 
 .button {
+    font-family: $monospace-font;
 	font-size: 1em;
 	font-weight: bold;
-	background-color: $header-color;
+	background-color: $heading-color;
 	border-radius: 6px;
-	padding: 0.1em 0.6em 0.1em 0.6em;
-	color: $bg-color;
+    padding: 0.3em;
+    padding-top: 0.1em;
+	// padding: 0.1em 0.6em 0.1em 0.6em;
+	color: white;
 }
 .button:hover {
 	text-decoration: none;
