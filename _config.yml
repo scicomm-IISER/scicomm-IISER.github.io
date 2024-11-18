@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: InScight
-description: A very brief description of the website # Primarily for SEO.
+description: "InScight is a student-run online magazine hosted by IISER Kolkata, dedicated to making pure science accessible and engaging." # Primarily for SEO.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 logo: "/assets/images/global/logo.png"
 defaults:
@@ -32,21 +32,22 @@ defaults:
       category: "article"
   -
     scope:
-      path: "_posts/issues/"
-    values:
-      layout: "issue"
-      permalink: "/:slug/"
-  -
-    scope:
-      type: "pages"
-    values:
-      layout: "default"
-  -
-    scope:
       path: "_posts/interviews/"
     values:
       layout: "posts"
       permalink: "/interviews/:slug/"
       category: "interview"
+  # -
+  #   scope:
+  #     path: "_posts/issues/"
+  #   values:
+  #     layout: "issues"
+  #     permalink: "/issues/:slug/"
+  #     category: "issues"
+  -
+    scope:
+      type: "pages"
+    values:
+      layout: "default"
 kramdown:
   math_engine: katex
