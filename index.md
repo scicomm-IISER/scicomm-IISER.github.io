@@ -4,11 +4,12 @@ permalink: /
 ---
 
 {% include latest-issue.html %}
-<span><span class="nf nf-oct-stack"></span>&nbsp;<a href="/assets/magazines/{{latestIssue[1][0]["fileName"]}}">View Older Releases</a></span>
+
+#  What is InScight?
 
 <p id="intro" markdown=1>
-<img id="intro-logo" src="{{ site.logo }}"/>
-<span>**InScight** is an online magazine dedicated to making pure science accessible and engaging. More on this can be found on the [about page](/about/).</span>
+<img id="intro-logo" src="{{ site.logo-dark }}"/>
+<span>If you are new to this site, you have reached the home page of **InScight**. {{ site.description }} More on this can be found on the [about page](/about/).</span>
 </p>
 
 ## Recent Articles

@@ -27,12 +27,13 @@ $h3-mobile-font-size: calc(1.2 * #{$mobile-font-size}) !default;
 $main-font-family: "Cooper Hewitt", "DaddyTimeMono Nerd Font Mono" !default;
 $monospace-font: "Roboto Condensed" !default;
 $heading-font-family: "Cooper Hewitt", "Roboto Condensed", "BenchNine", "Cooper Hewitt",  !default;
+$symbols-font-family: "Symbols Nerd Font",  !default;
 
 // one-dark colour palette
 $bg-color: #161A1D;
 $fg-color: #a3a3a3;
 $focus-color: white;
-$heading-color: #F5585B;
+$heading-color: #F8723F;
 $link-color: $focus-color;
 $icon-color: #e5c07b;
 $header-color: $bg-color;
@@ -42,10 +43,10 @@ $breakpoint-medium: $body-width;
 $breakpoint-small: 600px;
 
 // accent colours
-$facebook-color: #4267B2;
+$facebook-color: #1877F2;
 $web-color: #F4B400;
 $gmail-color: #c71610;
 $instagram-color: #ee2a7b;
-$github-color: #2b3137;
+$github-color: #fff;
 $linkedin-color: #0e76a8;
 $twitter-color: #1DA1F2;

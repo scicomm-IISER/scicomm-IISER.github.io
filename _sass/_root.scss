@@ -63,3 +63,10 @@ hr {
 .interview-answer{
   color: $focus-color;
 }
+
+.nf {
+  font-family: $symbols-font-family;
+  text-decoration: none;
+  padding-bottom: 4px;
+  transform: scale(1.2);
+}

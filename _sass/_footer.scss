@@ -1,7 +1,7 @@
 footer {
 	width: 100%;
-	background-color: $footer-color;
-    color: $bg-color;
+	// background-color: $footer-color;
+    color: $fg-color;
     font-size: 0.9em;
     height: $footer-height;
     display: flex;
@@ -9,7 +9,7 @@ footer {
     align-items: center;
     gap: 0.5em;
     > a {
-      color: $bg-color;
+      color: $fg-color;
     }
     margin-top: auto;
 }

@@ -1,5 +1,5 @@
 #intro {
-    background-color: $fg-color;
+    background-color: $focus-color;
     color: $bg-color;
     > img {
       max-width: 80px;
@@ -21,10 +21,6 @@
     margin: 0.5em;
     > img {
       display: none;
-    }
-    > span > .nf {
-      display: inline;
-      font-size: 1.2em;
     }
   }
 }
