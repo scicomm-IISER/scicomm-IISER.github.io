@@ -1,7 +1,7 @@
 ---
 title:  "Engineering Solutions for Foot Care: IISER-K’s E. coli-Powered Foot Insole Bags Gold at iGEM"
 excerpt: "The IISER Kolkata iGEM 2024 team addresses the widespread problem of foot infections by developing a self-sustaining, GMO-based insole that can both treat and prevent fungal growth. Using engineered E. coli to produce linalool, a natural antifungal and antibacterial compound found in lavender, the insole continuously protects against fungal and bacterial growth, reducing discomfort and leaving a refreshing scent. The team, through complex control systems, such as quorum sensing and cell cycle arrest, ensured the bacteria became effective with time. Their interdisciplinary project won a gold medal and special award nomination for Best Fashion and Cosmetics."
-hero-image: "igemEsolei.jpg"
+hero-image: "igem2024.webp"
 authors: ["Swarnendu Saha", "Suman Haldar"]
 author-affiliation: ["IISER Kolkata"]
 author-bio: "A fifth year BS-MS student of IISER Kolkata, **Swarnendu Saha** is a student working with Prof. Rajesh Kumble Nayak, He is a travel enthusiast who loves to travel anywhere below the sky. **Suman Halder** is a second-year PhD student at IISER Kolkata, working under the guidance of Dr. Rumi De. He enjoys writing essays and poems, reading thrillers, photography, and listening to rock music. Currently, he is researching cell oscillations and migration"

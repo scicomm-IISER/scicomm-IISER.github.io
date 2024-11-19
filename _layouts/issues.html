@@ -16,7 +16,7 @@
 <main>
   <h1> Issue #{{ page.issue }} </h1>
 
-  {{page.month}}, {{ page.year}} &nbsp;&nbsp;&nbsp;<a href={{ pdfLink }}>PDF</a>
+  {{page.month}}, {{ page.year}} &nbsp;&nbsp;&nbsp;<a href={{ pdfLink }}>Download PDF</a>
 
   <h3> Articles </h3>
   <ul>
@@ -25,7 +25,8 @@
   <li>
   {{ article.title }}
   <br>
-  {{ article.authors | join: ", " }} &nbsp;&nbsp;<a href={{ article.url }}>Read article</a>
+  <span class="nf">󰙏</span>&nbsp;&nbsp;&nbsp;{{ article.authors | join: ", " }}<br>
+  <a href={{ article.url }}>Read article</a>
   </li>
   <br>
   {% endif %}

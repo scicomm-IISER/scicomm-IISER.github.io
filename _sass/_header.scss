@@ -14,6 +14,9 @@ nav {
     align-items: center;
     margin: auto;
 }
+nav > a, #site-title {
+  padding-top: 0.6em;
+}
 
 nav * {
 	color: $focus-color;

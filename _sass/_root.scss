@@ -67,6 +67,8 @@ hr {
 .nf {
   font-family: $symbols-font-family;
   text-decoration: none;
-  padding-bottom: 4px;
+  // margin-bottom: 8px;
+  position: relative;
+  bottom: 3px;
   transform: scale(1.2);
 }

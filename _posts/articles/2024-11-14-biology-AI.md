@@ -1,7 +1,7 @@
 ---
 title:  "Revolutionising Biology with Artificial Intelligence"
 excerpt: "Suryadip and Tathagata offer an engaging exploration of how AI is transforming biological sciences. From the early days of rule-based AI to cutting-edge deep learning applications like AlphaFold, this article traces the evolution of AI's role in biology. It highlights AI's power in solving complex problems such as protein folding, drug discovery, and genomics. With groundbreaking examples like DeepVariant and DrugGPT, readers will gain insight into AI's monumental impact on research and healthcare. Dive into the future of biology where data meets innovation!"
-hero-image: "biology-AI.jpeg"
+hero-image: "biology-AI.webp"
 refs-file: "biology-AI"
 authors: ["Suryadip Sarkar", "Tathagata Chatterjee"]
 author-affiliation: ["IBAB Bengaluru", "RKMVERI Kolkata"]
