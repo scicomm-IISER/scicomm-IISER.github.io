@@ -1,6 +1,6 @@
 ---
 title: Content Submission
-permalink: /submit
+permalink: /submit/
 ---
 
 Please read the submission guidelines provided below very carefully before submitting content to us. The content can be based on any aspect of science that you find interesting and **non-trivial**, and that you feel can be appreciated by a general audience. All files must be compressed into a single archive and submitted through [this form]({{ site.data.socials["submitForm"] }}).
