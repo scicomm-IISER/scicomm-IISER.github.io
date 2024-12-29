@@ -1,23 +1,21 @@
 a {
 	color: $link-color;
-	// text-decoration: none;
-	// font-weight: normal;
-    text-decoration-thickness: 2px;
+	text-decoration: underline;
+	font-weight: normal;
+    text-decoration-thickness: 3px;
     text-underline-offset: 3px;
+    text-decoration-color: $link-color;
 }
 a:hover {
-	// text-decoration: underline;
-	font-weight: bold;
-    // text-underline-offset: 4px;
-    // text-decoration-thickness: 3px;
-    // transform: scale(1.1);
+    text-underline-offset: 4px;
+    text-decoration-color: $link-color;
 }
 
 .button {
     font-family: $monospace-font;
 	font-size: 1em;
 	font-weight: bold;
-	background-color: $heading-color;
+	background-color: $focus-color;
 	border-radius: 6px;
     padding: 0.3em;
     padding-top: 0.1em;

@@ -1,5 +1,5 @@
 header {
-	background-color: $header-color;
+	background-color: $header-bg;
 	height: $header-height;
 	padding-top: $topbar-pad;
 	padding-bottom: $topbar-pad;
@@ -19,7 +19,7 @@ nav > a, #site-title {
 }
 
 nav * {
-	color: $focus-color;
+	color: $header-fg;
 	text-decoration: none;
 	font-weight: 600;
 }
@@ -66,17 +66,11 @@ nav *:hover {
 
 
 @media only screen and (max-width: $breakpoint-medium)  {
-    #site-icon-title {
+    #site-title {
       display: none;
-    }
-    #site-icon-mobile {
-      display: inline;
     }
     header {
       height: $header-height-mobile;
-    }
-    #site-icon-mobile {
-      height: 80%;
     }
     nav {
       justify-content: space-around;

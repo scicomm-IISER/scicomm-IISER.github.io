@@ -1,18 +1,19 @@
 #intro {
-    background-color: $focus-color;
+    background-color: $fg-color;
     color: $bg-color;
+    display: flex;
+    align-items: center;
+    gap: $main-margin;
+    width: 100%;
+    padding: $main-margin;
     > img {
       max-width: 80px;
       height: 100%;
     }
     > span > strong,a {
       color: $bg-color;
+      text-decoration-color: $bg-color;
     }
-    display: flex;
-    align-items: center;
-    gap: $main-margin;
-    width: 100%;
-    padding: $main-margin;
 }
 
 @media only screen and (max-width: $breakpoint-small)  {

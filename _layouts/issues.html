@@ -17,35 +17,39 @@
   <h1> Issue #{{ page.issue }} </h1>
 
   {{page.month}}, {{ page.year}} &nbsp;&nbsp;&nbsp;<a href={{ pdfLink }}>Download PDF</a>
+  <br>
+  <br>
 
   <h3> Articles </h3>
-  <ul>
   {% for article in site.categories["article"] %}
   {% if article.issue == page.issue %}
-  <li>
-  {{ article.title }}
+  <b>{{ article.title }}</b>
   <br>
-  <span class="nf">󰙏</span>&nbsp;&nbsp;&nbsp;{{ article.authors | join: ", " }}<br>
-  <a href={{ article.url }}>Read article</a>
-  </li>
+  <span class="nf">󰙏</span>&nbsp;&nbsp;&nbsp;{{ article.authors | join: ", " }} | <a href={{ article.url }}>Read article</a>
+  <br>
   <br>
   {% endif %}
   {% endfor %}
-  </ul>
 
   <h3> Interviews </h3>
-  <ul>
   {% for article in site.categories["interview"] %}
   {% if article.issue == page.issue %}
-  <li>
-  {{ article.title }}
+  <b>{{ article.title }}</b>
   <br>
-  {{ article.authors | join: " " }} &nbsp;&nbsp;<a href={{ article.url }}>Read article</a>
-  </li>
+  <span class="nf">󰙏</span>&nbsp;&nbsp;&nbsp;{{ article.authors | join: ", " }} | <a href={{ article.url }}>Read interview</a>
+  <br>
   <br>
   {% endif %}
   {% endfor %}
+
+  <h3> At The Frontiers </h3>
+  {% assign filename = "Issue-" | append: page.issue %}
+  <ul>
+  {% for item in site.data["researchSummary"][filename] %}
+  <li> {{ item["Title"] }} | <b>{{ item["Author"] }}</b> </li>
+  {% endfor %}
   </ul>
+  <a href="/research-summary-{{ page.issue }}/">Read in Full</a><br>
 </main>
 {% include footer.html %}
 </body>

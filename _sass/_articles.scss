@@ -1,15 +1,18 @@
 .excerpt {
-    padding-top: 1em;
-	text-align: justify;
-	font-size: 0.9em;
-    // font-weight: 600;
-    font-style: italic;
-    line-height: 1.3em;
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.1em;
+    color: $fg-color;
+    padding-left: 1em;
+    border-left: 0.5em solid $focus-color;
+    > p {
+      text-align: left;
+    }
 }
 
 .author-date {
-    color: $focus-color;
-    // font-weight: bold;
+    text-align: right;
+    color: $fg-color;
 }
 .article-item {
   text-align: left;
@@ -58,41 +61,22 @@
   }
 }
 
-.article-image {
-  background-color: #F0F0F0;
-  padding: 1em;
-  width: 100%;
-  display: block;
-  margin: auto;
-}
-
-.article-image > img {
-  display: block;
-  margin: auto;
-  padding-bottom: 1em;
-}
-.article-image > span {
-  text-align: center;
-  margin: auto;
-  display: block;
-  color: $bg-color;
-  > strong {
-    color: $bg-color;
-  }
-}
-
 .author-bio {
   > p {
     margin: 0em;
   }
-  color: $focus-color;
-  // font-weight: 600;
-  background-color: rgba($fg-color, 0.1);
+  color: $fg-color;
+  background-color: rgba($focus-color, 0.1);
   padding: 1em;
   font-size: 0.9em;
+  line-height: 1.1em;
   text-align: justify;
 }
 
 .jump-ref {
   text-decoration: none;
+}
+
+.references {
+  font-size: 0.9em;
 }

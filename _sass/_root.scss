@@ -1,5 +1,8 @@
 * {
     box-sizing: border-box;
+    scrollbar-width: none;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -46,7 +49,7 @@ p {
 }
 
 strong {
-    color: $focus-color;
+    color: $bold-color;
 }
 
 hr {
@@ -71,4 +74,28 @@ hr {
   position: relative;
   bottom: 3px;
   transform: scale(1.2);
+}
+
+ol > li {
+    margin-left: 2em;
+}
+
+ul > li {
+    list-style-type: none;
+}
+ul > li::before {
+    content: '■';
+    font-size: 0.8em;
+    padding-right: 0.4em;
+}
+
+.summary-head {
+  color: $focus-color;
+}
+
+.summary-content {
+  font-size: 0.9em;
+  line-height: 1.2em;
+  text-align: justify;
+  margin-left: 3em;
 }

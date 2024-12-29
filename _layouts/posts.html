@@ -8,13 +8,15 @@
 <main>
   <h1> {{ page.title }} </h1>
   <div class="author-date">
-  	{{ page.authors | join: ", " }}
-	<br>
-	[{{ page.author-affiliation | join: ", " }}]
-	<br>
-  	<span class="nf"></span>&nbsp;&nbsp;{{ page.date | date:"%b %d, %Y"}}
+	  <b>{{ page.authors | join: ", " }}</b><br>
+	  {{ page.author-affiliation | join: ", " }}<br>
+	  Published: {{ page.date | date:"%b %d, %Y"}}
   </div>
-  <p class="excerpt">{% if page.excerpt %}{{ page.excerpt }}{% endif %}</p>
+
+  <div class="excerpt">
+  {{ page.excerpt | markdownify }}
+  </div>
+
   <hr>
   <div class="hero-image-caption">
   <img class="hero-image" src="/assets/hero-images/{{ page.hero-image }}"/>
@@ -30,9 +32,11 @@
   {% if page.author-bio %}
 	  <div class="author-bio">{{ page.author-bio | markdownify }}</div>
   {% endif %}
+  <br>
 
   {% if page.refs-file %}
   <h3>References</h3>
+  <div class="references">
   <ol>
   {% assign counter = 1 %}
   {% for line in site.data.references[page.refs-file] %}
@@ -40,6 +44,7 @@
   {% assign counter = counter | plus: 1 %}
   {% endfor %}
   </ol>
+  </div>
   {% endif %}
 </main>
 {% include footer.html %}

@@ -1,11 +1,11 @@
 ---
 title:  "Revolutionising Biology with Artificial Intelligence"
-excerpt: "Suryadip and Tathagata offer an engaging exploration of how AI is transforming biological sciences. From the early days of rule-based AI to cutting-edge deep learning applications like AlphaFold, this article traces the evolution of AI's role in biology. It highlights AI's power in solving complex problems such as protein folding, drug discovery, and genomics. With groundbreaking examples like DeepVariant and DrugGPT, readers will gain insight into AI's monumental impact on research and healthcare. Dive into the future of biology where data meets innovation!"
+excerpt: "Suryadip and Tathagata offer an engaging exploration of how AI is **transforming** biological sciences. From the early days of rule-based AI to cutting-edge deep learning applications like AlphaFold, this article traces the evolution of AI's role in biology. It highlights AI's power in solving complex problems such as protein folding, drug discovery, and genomics. With groundbreaking examples like DeepVariant and DrugGPT, readers will gain insight into AI's monumental impact on research and healthcare. Dive into the future of biology where data meets innovation!"
 hero-image: "biology-AI.webp"
 refs-file: "biology-AI"
 authors: ["Suryadip Sarkar", "Tathagata Chatterjee"]
 author-affiliation: ["IBAB Bengaluru", "RKMVERI Kolkata"]
-author-bio: "**Suryadip Sarkar**, a 2nd-year master’s student in Big Data Biology at the Institute of Bioinformatics and Applied Biotechnology, Bengaluru, is driven by a passion for applying AI and ML to solve complex challenges in life sciences. **Tathagata Chatterjee**, a 1st-year master’s student in Medical Biotechnology at Ramkrishna Mission Vivekananda Educational and Research Institute, Kolkata, has a keen interest in cancer biology and applied immunology, aspiring to make impactful contributions in these fields."
+author-bio: "**Suryadip Sarkar**, a 2nd-year master’s student in Big Data Biology at the Institute of Bioinformatics and Applied Biotechnology, Bengaluru, is driven by a passion for applying AI and ML to solve complex challenges in life sciences. <br><br> **Tathagata Chatterjee**, a 1st-year master’s student in Medical Biotechnology at Ramkrishna Mission Vivekananda Educational and Research Institute, Kolkata, has a keen interest in cancer biology and applied immunology, aspiring to make impactful contributions in these fields."
 issue: 1
 category: article
 field: biology

@@ -6,3 +6,12 @@
       max-width: 400px;
     }
 }
+
+.article-title-release {
+  color: $focus-color;
+  display: none;
+}
+
+.release-articles {
+  display: flex;
+}

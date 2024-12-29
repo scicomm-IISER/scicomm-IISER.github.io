@@ -1,4 +1,4 @@
-$main-font-size: 1.2em !default;
+$main-font-size: 1.15em !default;
 $mobile-font-size: 1.0em !default;
 $line-height: 1.4em !default;
 $h1-line-height: 1em !default;
@@ -26,18 +26,19 @@ $h3-mobile-font-size: calc(1.2 * #{$mobile-font-size}) !default;
 /* system typefaces */
 $main-font-family: "Cooper Hewitt", "DaddyTimeMono Nerd Font Mono" !default;
 $monospace-font: "Roboto Condensed" !default;
-$heading-font-family: "Cooper Hewitt", "Roboto Condensed", "BenchNine", "Cooper Hewitt",  !default;
+$heading-font-family: "Roboto Condensed", "Cooper Hewitt", "BenchNine", "Cooper Hewitt",  !default;
 $symbols-font-family: "Symbols Nerd Font",  !default;
 
-// one-dark colour palette
-$bg-color: #161A1D;
-$fg-color: #b3b3b3;
-$focus-color: white;
-$heading-color: #F8723F;
-$link-color: $focus-color;
-$icon-color: #e5c07b;
-$header-color: $bg-color;
-$footer-color: $header-color;
+$fg-color: #333;
+$bg-color: #fbeaff;
+$focus-color: #53596e;
+$heading-color: #4e415f;
+$link-color: #633d34;
+$bold-color: $focus-color;
+$header-bg: $fg-color;
+$footer-bg: $header-bg;
+$header-fg: $bg-color;
+$footer-fg: $header-fg;
 
 $breakpoint-medium: $body-width;
 $breakpoint-small: 600px;
