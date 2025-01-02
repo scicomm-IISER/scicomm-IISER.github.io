@@ -4,7 +4,7 @@
 <a href="{{latestIssue["permalink"]}}"><img src="/assets/magazine-thumbnails/{{ latestIssue["thumbnail"] }}"/></a>
 <div id="latest-issue-desc">
 <h2>Latest Release</h2>
-	<span>{{ latestIssue["month"] }}, {{ year }}</span>
+	<strong>{{ latestIssue["month"] }}, {{ year }}</strong>
 	<ul>
 	{% for line in latestIssue["preview"] %}
 	<li>{{ line }}</li>
