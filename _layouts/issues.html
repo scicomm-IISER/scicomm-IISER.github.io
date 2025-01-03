@@ -20,7 +20,7 @@
   <br>
   <br>
 
-  <h3> Articles </h3>
+  <h2> Articles </h2>
   {% for article in site.categories["article"] %}
   {% if article.issue == page.issue %}
   <b>{{ article.title }}</b>
@@ -31,7 +31,7 @@
   {% endif %}
   {% endfor %}
 
-  <h3> Interviews </h3>
+  <h2> Interviews </h2>
   {% for article in site.categories["interview"] %}
   {% if article.issue == page.issue %}
   <b>{{ article.title }}</b>
@@ -42,11 +42,12 @@
   {% endif %}
   {% endfor %}
 
-  <h3> At The Frontiers </h3>
+  <h2> At The Frontiers </h2>
   {% assign filename = "Issue-" | append: page.issue %}
   <ul>
   {% for item in site.data["researchSummary"][filename] %}
   <li> {{ item["Title"] }} | <b>{{ item["Author"] }}</b> </li>
+  <br>
   {% endfor %}
   </ul>
   <a href="/research-summary-{{ page.issue }}/">Read in Full</a><br>
