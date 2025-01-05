@@ -16,10 +16,14 @@ We currently accept submissions in these categories:
 
 Please read the respective submission guidelines for the category of your submission very carefully before submitting content to us. 
 
-<h3>Science articles</h3>
-Written content should be created as a **plain text** file or a **markdown** file, in English, Bengali or Hindi. The length should be roughly between 700 and 1500 words. It would be helpful if you can also provided a small abstract (pitch) of the article as well as a header image for the top of the article.
+### Science articles
+As the main content of our magazines, please submit scientific articles describing interesting ideas in science, through [this form]({{ site.data.socials["articleForm"] }}). The articles should be roughly between 1500 and 2500 words in length, and should preferably be readable by a broad non-technical audience. The writing must be original, and should be supported by images/figures wherever necessary. All images must have appropriate captions, and all information used from other sources must be properly cited. 
 
-Images should be provided separately, even if they are embedded within the document. The sources and captions for the images can be mentioned either within the document or in a separate text file. The sources of all images should be cited. Try to provide the images in as high a resolution as possible.
+### Summaries of published research
+This section of our magazine showcases summaries of recently published research articles; the summary should specify the question being probed in the article, the motivation for probing this question, and the major results of the work, all within 300-400 words. Send us your contributions through [this form]({{ site.data.socials["researchSummaryForm"] }}). The goal is to present to our readers the landscape of science at the very frontiers of research. This is in contrast to the long-form science articles previously mentioned, that primarily discuss time-tested and well-understood ideas in science. Accordingly, this section is intended for a more specialised audience.
 
-You must ensure that the content is understandable by someone with a high school science background. Try to use as few technical terms as possible. If the content is already published elsewhere, please specify the terms of publication. Plagiarized content is not allowed in any form. Please try to fact-check your content as much as possible, and provide references to back up your statements.
-</p>
+### Interviews
+Typically, we (InScight) conduct our own interviews, but we are also happy to publish any interview that you might have taken of some notable person (working in science academia). Send us the audio/text file of the interview at [scicomm@iiserkol.ac.in](mailto:scicomm@iiserkol.ac.in).
+
+### Science games
+Our magazine features games like crosswords, quizzes and [linked lists](/games/), all based on scientific themes. If you have ideas for such games or if you have come up with crosswords, quiz questions or linked lists that you want us to publish (with proper attribution of course), send us the stuff at [scicomm@iiserkol.ac.in](mailto:scicomm@iiserkol.ac.in).

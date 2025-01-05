@@ -1,4 +1,4 @@
-{% for article in site.categories["article"] %}
+{% for article in site.categories["article"] limit:1 %}
 <div id="latest-article">
 <a href="{{ article.url }}"><img src="/assets/hero-images/{{article.hero-image}}"/></a>
 <div id="latest-article-desc">
