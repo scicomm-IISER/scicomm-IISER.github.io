@@ -40,3 +40,5 @@ If you want to submit content to us (written article, video, interview, etc), vi
 {% endfor %}
 
 <script src="/assets/js/copyEmail.js"></script>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "99ae02c5123e4ae191aa6b7b00a251d8"}'></script><!-- End Cloudflare Web Analytics -->
