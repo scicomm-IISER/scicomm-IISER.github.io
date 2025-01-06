@@ -1,0 +1,17 @@
+questions:
+  - "This Nobel Prize-winning physicist has an element named after him. His wife, upon being shown the results of his experiment for the first time, said, 'I have seen my death!'. Who is the scientist?"
+  - "Dr Dilip Mahalanabis, an Indian paediatrician, is famous for pioneering one of the most important medical advances of the 20th century that dramatically saved lives during the cholera outbreak in Bangladesh in 1971. What is this medical advancement?"
+options:
+  -
+    - Wilhelm Roentgen
+    - Pierre Curie
+    - Henri Becquerel
+    - Enrico Fermi
+  -
+    - Vaxchora vaccine
+    - Oral rehydration solution (ORS)
+    - Zinc supplementation
+    - Ringer's lactate
+answers:
+  - 1
+  - 2
