@@ -1,49 +1,16 @@
 .member-info {
-  text-align: left;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 1em;
   > img {
-    width: 250px;
+    width: 200px;
   }
-}
-.member-links > * {
-  color: $focus-color;
-  cursor: pointer;
-}
-.member-links > * + * {
-  padding-left: 0.5em;
-}
-
-.member-links {
-  > .nf-md-email {
-  color: $gmail-color;
-  }
-  > .nf-md-web {
-  color: $web-color;
-  }
-  > .nf-fa-github {
-  color: $github-color;
-  }
-  > .nf-fa-linkedin_square {
-  color: $linkedin-color;
-  }
-  > .nf-fa-twitter_square {
-  color: $twitter-color;
-  }
-  > .nf-fa-instagram {
-  color: $instagram-color;
-  }
-  > .nf-md-facebook {
-  color: $facebook-color;
-  }
-}
-
-.member-links > *:hover {
-  text-decoration: none;
 }
 
 .members-desc {
   text-align: justify;
+  max-width: 200px;
 }
 
 .member-name > strong {
@@ -52,21 +19,18 @@
   padding-right: 1em;
 }
 
-.member-name {
+.team-group {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: left;
+  gap: 1.5em;
 }
 
-
 @media only screen and (max-width: $breakpoint-small)  {
+.members-desc {
+  max-width: 100%;
+}
 .member-info {
-  flex-direction: column;
-  gap: 0.5em;
-  > img {
-    width: 70%;
-    margin: auto;
-  }
-  padding-bottom: 1em;
+  align-items: start;
 }
 }

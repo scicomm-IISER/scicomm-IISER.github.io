@@ -25,3 +25,35 @@ a:hover {
 	text-decoration: none;
 	transform: scale(1.1);
 }
+
+.social-links {
+  cursor: pointer;
+  position: relative;
+  top: 0.04em;
+  font-size: 1.2em;
+}
+.social-links + .social-links {
+  padding-left: 0.5em;
+}
+
+.social-links.nf-md-email {
+  color: $gmail-color;
+  }
+.social-links.nf-md-web {
+  color: $web-color;
+  }
+.social-links.nf-fa-github {
+  color: $github-color;
+  }
+.social-links.nf-fa-linkedin_square {
+  color: $linkedin-color;
+  }
+.social-links.nf-fa-twitter_square {
+  color: $twitter-color;
+  }
+.social-links.nf-fa-instagram {
+  color: $instagram-color;
+  }
+.social-links.nf-md-facebook {
+  color: $facebook-color;
+  }

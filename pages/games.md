@@ -20,4 +20,6 @@ We are working on some **science quizzes**, **crosswords** and other word games.
 {% endfor %}
 </ul>
 
-
+<br>
+## Linked Lists
+We are currently working on this. Please check out the PDF of the magazine for a non-interactive version of the game.

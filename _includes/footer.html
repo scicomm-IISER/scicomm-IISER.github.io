@@ -1,6 +1,5 @@
  <footer>
-	 Updated: {{ site.time | date: "%b %d, %Y"}}
-	 <span>©&nbsp;{{site.time | date: "%Y"}} {{site.title}}.</span>
-	 <a class="nf" href="{{ site.data.socials["facebook"] }}"></a>
-	 <a class="nf" href="{{ site.data.socials["twitter"] }}"></a>
+	©&nbsp;{{site.time | date: "%Y"}} {{site.title}} &nbsp;|&nbsp;
+	{% include socials.html %} &nbsp;|&nbsp;
+	Hosted by <a href="https://www.iiserkol.ac.in/web/en/" target="_blank">IISER Kolkata</a>
 </footer> 

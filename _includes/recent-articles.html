@@ -1,5 +1,5 @@
 <div class="recent-articles">
-	{% for article in site.categories["article"] offset:include.start limit:include.numArticles %}
+	{% for article in site.categories[include.category] offset:include.start limit:include.numArticles %}
 		{% include article-item.html %}
 	{% endfor %}
 </div>

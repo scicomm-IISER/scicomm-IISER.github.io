@@ -9,7 +9,13 @@ footer {
     align-items: center;
     gap: 0.5em;
     > a {
-      color: $fg-color;
+      color: $bg-color;
+      text-decoration: underline;
+      margin: none;
+      padding: 0;
     }
     margin-top: auto;
+    > .social-links {
+      top: -0.1em;
+    }
 }

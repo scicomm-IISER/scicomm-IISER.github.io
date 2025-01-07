@@ -11,28 +11,28 @@ In addition to articles, we offer interactive content such as games and intervie
 ## Contact Information
 - You can always get in touch via [email]({{ site.data.socials["email"] }}).
 - If you want to remain anonymous, you can submit [this form]({{ site.data.socials["feedbackForm"] }}).
-- You can also reach out to us on our social media accounts: <a class="nf" href="{{ site.data.socials["facebook"] }}"></a> <a class="nf" href="{{ site.data.socials["twitter"] }}"></a>
+- You can also reach out to us on our social media accounts: {% include socials.html %}
+
 
 <p></p>
 
 {% for category in site.data.members %}
 ## {{ category[0] }}
+<div class="team-group">
 {% for member in category[1] %}
 <div class="member-info">
 <img class="member-image" src="/assets/images/members/{{member["image"]}}"/>
 <div class="member-details" markdown=1>
-<span class="member-name">**{{ member["name"] }}**
-</span>
-<div class="member-links">
-{%- if member["email"] -%}<span class="email-id nf nf-md-email" data="{{ member["email"] }}">󰇮</span>{%- endif -%}
-{%- if member["website"] -%}<a class="nf nf-md-web" href="{{ member["website"] }}">󰖟</a>{%- endif -%}
-{%- if member["github"] -%}<a class="nf nf-fa-github" href="{{ member["github"] }}"></a>{%- endif -%}
-{%- if member["linkedin"] -%}<a class="nf nf-fa-linkedin_square" href="{{ member["linkedin"] }}"></a>{%- endif -%}
-{%- if member["twitter"] -%}<a class="nf nf-fa-twitter_square" href="{{ member["twitter"] }}"></a>{%- endif -%}
-{%- if member["facebook"] -%}<a class="nf nf-md-facebook" href="{{ member["facebook"] }}"></a>{%- endif -%}
-{%- if member["instagram"] -%}<a class="nf nf-fa-instagram" href="{{ member["instagram"] }}"></a>{%- endif -%}
-
-</div>
+**{{ member["name"] }}**
+<br>
+{%- if member["email"] -%}<span class="social-links email-id nf nf-md-email" href="mailto:{{ member["email"] }}">󰇮</span>{%- endif -%}
+{%- if member["website"] -%}<a class="social-links nf nf-md-web" href="{{ member["website"] }}">󰖟</a>{%- endif -%}
+{%- if member["github"] -%}<a class="social-links nf nf-fa-github" href="{{ member["github"] }}"></a>{%- endif -%}
+{%- if member["linkedin"] -%}<a class="social-links nf nf-fa-linkedin_square" href="{{ member["linkedin"] }}"></a>{%- endif -%}
+{%- if member["twitter"] -%}<a class="social-links nf nf-fa-twitter_square" href="{{ member["twitter"] }}"></a>{%- endif -%}
+{%- if member["facebook"] -%}<a class="social-links nf nf-md-facebook" href="{{ member["facebook"] }}"></a>{%- endif -%}
+{%- if member["instagram"] -%}<a class="social-links nf nf-fa-instagram" href="{{ member["instagram"] }}"></a>{%- endif -%}
+<br>
 
 {{ member["desc"] }}
 {: .members-desc }
@@ -40,6 +40,8 @@ In addition to articles, we offer interactive content such as games and intervie
 </div>
 </div>
 {% endfor %}
+</div>
+<br>
 {% endfor %}
 
 <script src="/assets/js/copyEmail.js"></script>

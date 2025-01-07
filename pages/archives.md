@@ -17,6 +17,6 @@ Search by year of publication.
 ## {{ set["name"] }}
 {% for article in set["items"] %}
 - <span class="article-item-title">{{ article.title }} </span><br>
-󰙈&nbsp;&nbsp;{{ article.author }} &nbsp;&nbsp;\|&nbsp;&nbsp; &nbsp;&nbsp;{{ article.date | date:"%b %d" }} &nbsp;&nbsp;\|&nbsp;&nbsp; <a href="{{ article.url }}">View article</a>
+󰙈&nbsp;&nbsp;{{ article.authors | join: ", " }} &nbsp;&nbsp;\|&nbsp;&nbsp; &nbsp;&nbsp;{{ article.date | date:"%b %d" }} &nbsp;&nbsp;\|&nbsp;&nbsp; <a href="{{ article.url }}">View article</a>
 {% endfor %}
 {% endfor %}

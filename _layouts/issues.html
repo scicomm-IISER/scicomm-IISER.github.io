@@ -47,10 +47,9 @@
   <ul>
   {% for item in site.data["researchSummary"][filename] %}
   <li> {{ item["Title"] }} | <b>{{ item["Author"] }}</b> </li>
-  <br>
   {% endfor %}
   </ul>
-  <a href="/research-summary-{{ page.issue }}/">Read in Full</a><br>
+  <a href="/research-summary-{{ page.issue }}/">View</a><br>
 </main>
 {% include footer.html %}
 </body>

@@ -10,4 +10,8 @@ permalink: /articles/
 {% include latest-article.html %}
 
 ## Recent Articles
-{% include recent-articles.html start=1 numArticles="10" %}
+{% include recent-articles.html category="article" start=1 numArticles="10" %}
+
+
+## Recent Interviews
+{% include recent-articles.html category="interview" start=0 numArticles="10" %}

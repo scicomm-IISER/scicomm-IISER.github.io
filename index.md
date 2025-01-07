@@ -7,6 +7,7 @@ permalink: /
 {% include latest-issue.html %}
 </p>
 
+<br>
 ##  What is InScight?
 
 <p id="intro" markdown=1>
@@ -14,5 +15,10 @@ permalink: /
 <span>If you are new to this site, welcome! You have reached the home page of **InScight**. {{ site.description }} More on this can be found on the [about page](/about/).</span>
 </p>
 
+<br>
 ## Recent Articles
-{% include recent-articles.html start="0" numArticles="4" %}
+{% include recent-articles.html start="0" numArticles="2" category="article" %}
+
+<br>
+## Recent Interviews
+{% include recent-articles.html start="0" numArticles="2" category="interview" %}
