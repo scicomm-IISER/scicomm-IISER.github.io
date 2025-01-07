@@ -15,3 +15,10 @@
 .release-articles {
   display: flex;
 }
+
+.magazine-buttons {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  row-gap: 1em;
+}

@@ -16,7 +16,7 @@
 <main>
   <h1> Issue #{{ page.issue }} </h1>
 
-  {{page.month}}, {{ page.year}} &nbsp;&nbsp;&nbsp;<a href={{ pdfLink }}>Download PDF</a>
+  {{page.month}}, {{ page.year}} &nbsp;&nbsp;&nbsp;<a class="button" href={{ pdfLink }}>Download PDF</a>
   <br>
   <br>
 
@@ -25,7 +25,7 @@
   {% if article.issue == page.issue %}
   <b>{{ article.title }}</b>
   <br>
-  <span class="nf">󰙏</span>&nbsp;&nbsp;&nbsp;{{ article.authors | join: ", " }} | <a href={{ article.url }}>Read article</a>
+  <span class="nf">󰙏</span>&nbsp;&nbsp;&nbsp;{{ article.authors | join: ", " }} | <a class="button" href={{ article.url }}>Read article</a>
   <br>
   <br>
   {% endif %}
@@ -36,7 +36,7 @@
   {% if article.issue == page.issue %}
   <b>{{ article.title }}</b>
   <br>
-  <span class="nf">󰙏</span>&nbsp;&nbsp;&nbsp;{{ article.authors | join: ", " }} | <a href={{ article.url }}>Read interview</a>
+  <span class="nf">󰙏</span>&nbsp;&nbsp;&nbsp;{{ article.authors | join: ", " }} | <a class="button" href={{ article.url }}>Read interview</a>
   <br>
   <br>
   {% endif %}
@@ -49,7 +49,27 @@
   <li> {{ item["Title"] }} | <b>{{ item["Author"] }}</b> </li>
   {% endfor %}
   </ul>
-  <a href="/research-summary-{{ page.issue }}/">View</a><br>
+  <a class="button" href="/research-summary-{{ page.issue }}/">View</a><br>
+
+  <br>
+  <h2> Science Games </h2>
+  <ul>
+	{% for article in site.categories["quiz"] %}
+	  {% if article.issue == page.issue %}
+	  <li> General Science Quiz  <a class="button" href="{{ article.url }}">Try Out</a></li>
+	  {% endif %}
+    {% endfor %}
+	{% for article in site.categories["crossword"] %}
+	  {% if article.issue == page.issue %}
+	  <li> {{ article.title }}  <a class="button" href="{{ article.url }}">Try Out</a></li>
+	  {% endif %}
+    {% endfor %}
+	{% for article in site.categories["linkedlist"] %}
+	  {% if article.issue == page.issue %}
+	  <li> Linked List  <a class="button" href="{{ article.url }}">Try Out</a></li>
+	  {% endif %}
+    {% endfor %}
+  </ul>
 </main>
 {% include footer.html %}
 </body>

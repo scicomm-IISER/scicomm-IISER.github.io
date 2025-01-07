@@ -66,15 +66,6 @@ hr {
   color: $focus-color;
 }
 
-.nf {
-  font-family: $symbols-font-family;
-  text-decoration: none;
-  // margin-bottom: 8px;
-  position: relative;
-  bottom: 3px;
-  transform: scale(1.2);
-}
-
 ol > li {
     margin-left: 2em;
 }
@@ -98,4 +89,3 @@ ul > li::before {
   text-align: justify;
   margin-left: 3em;
 }
-

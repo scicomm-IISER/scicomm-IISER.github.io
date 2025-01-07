@@ -50,8 +50,16 @@ defaults:
       path: "_posts/crosswords/"
     values:
       layout: "default"
-      permalink: "/quizzes/:slug/"
+      permalink: "/crosswords/:slug/"
       category: "crossword"
+      excerpt: ""
+  -
+    scope:
+      path: "_posts/linkedlists/"
+    values:
+      layout: "default"
+      permalink: "/linkedlists/:slug/"
+      category: "linkedlist"
       excerpt: ""
   -
     scope:

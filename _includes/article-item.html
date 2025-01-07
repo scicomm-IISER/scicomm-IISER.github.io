@@ -3,8 +3,7 @@
 <strong>{{ article.title }}</strong>
 {{ article.authors | join: ", " }}
 <br>
-<span>{{ article.date | date:"%b %d, %Y" }} <span class="button">{{ article.field }}</span></span>
+<span>{{ article.date | date:"%b %d, %Y" }} <span class="tag-button">{{ article.field }}</span></span>
 <a href="{{ article.url }}">View Article</a>
 
-<span class="article-item-tags">{% for tag in article.tags %}<a href="/tags/#{{ tag }}" class="button">{{ tag }}</a>{% endfor %}</span>
 </div>

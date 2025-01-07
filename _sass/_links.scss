@@ -18,12 +18,21 @@ a:hover {
 	background-color: $link-color;
 	border-radius: 6px;
     border: none;
-	padding: 0.3em 0.6em 0.1em 0.6em;
+	padding: 0.4em 0.6em 0.3em 0.6em;
 	color: $bg-color;
+	text-decoration: none;
 }
 .button:hover {
 	text-decoration: none;
 	transform: scale(1.1);
+}
+
+.nf {
+  font-family: $symbols-font-family;
+  text-decoration: none;
+  position: relative;
+  bottom: 3px;
+  transform: scale(1.2);
 }
 
 .social-links {
@@ -57,3 +66,14 @@ a:hover {
 .social-links.nf-md-facebook {
   color: $facebook-color;
   }
+
+.tag-button {
+    font-family: $main-font-family;
+	font-size: 0.9em;
+	background-color: $fg-color;
+	border-radius: 6px;
+    border: none;
+	padding: 0.4em 0.6em 0.3em 0.6em;
+	color: $bg-color;
+	text-decoration: none;
+}

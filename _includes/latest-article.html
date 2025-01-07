@@ -5,7 +5,6 @@
 <div id="latest-article-desc">
 	<span id="latest-article-title">{{ article.title }}</span>
 	<span class="article-author-date"><span class="nf nf-md-draw_pen"></span>&nbsp;{{ article.authors | join: ", " }} | {{ article.date | date:"%b %d, %Y" }}&nbsp;&nbsp;<span class="nf nf-md-chevron_double_right"></span>&nbsp;<a href="{{ article.url }}">View article</a></span>
-	<span class="article-item-tags">{% for tag in article.tags %}<a href="/tags/#{{ tag }}" class="button">{{ tag }}</a>{% endfor %}</span>
 </div>
 </div>
 {% endfor %}
