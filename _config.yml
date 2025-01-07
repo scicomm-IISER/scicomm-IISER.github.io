@@ -38,13 +38,13 @@ defaults:
       layout: "posts"
       permalink: "/interviews/:slug/"
       category: "interview"
-  # -
-  #   scope:
-  #     path: "_posts/issues/"
-  #   values:
-  #     layout: "issues"
-  #     permalink: "/issues/:slug/"
-  #     category: "issues"
+  -
+    scope:
+      path: "_posts/quizzes/"
+    values:
+      layout: "quiz"
+      permalink: "/quizzes/:slug/"
+      category: "quiz"
   -
     scope:
       type: "pages"

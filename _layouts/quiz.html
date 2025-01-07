@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+{% include head.html %}
+
+<body>
+{% include header.html %}
+
+<h1> {{ page.title }} </h1>
+
+<main>
+{% assign path = site.data.quizzes[page.quizId] %}
+{% assign questions = path["questions"] %}
+{% assign options = path["options"] %}
+{% assign answers = path["answers"] %}
+{% for question in questions %}
+{% assign outerloop = forloop %}
+{% assign formID = "form" | append: outerloop.index %}
+<form id={{ formID }}>
+{{ outerloop.index }}. {{ question }}<br>
+{% for option in options[outerloop.index0] %}
+{% assign buttonId = outerloop.index | append: "-" | append: forloop.index %}
+<input type="radio" name="{{ outerloop.index }}" id="{{ buttonId }}" value="{{ buttonId }}" />
+<label for="{{ buttonId }}" id="l-{{ buttonId }}">{{ option }}</label>
+<br>
+{% endfor %}
+{% assign correctAnswerId = outerloop.index | append: "-" | append: answers[outerloop.index0] %}
+
+<button type="button" value="{{ correctAnswerId }}">Reveal</button>
+</form>
+<br>
+{% endfor %}
+
+</main>
+<script src="{{ site.baseurl }}{% link assets/js/quizzes.js %}"> </script>
+
+{% include footer.html %}
+</body>
+</html>
+
