@@ -6,9 +6,9 @@ function VerifyAnswer(correctAnswer, formID) {
         answer = value;
     }
     console.log(document.getElementById(correctAnswer).nextSibling.nextSibling.id);
-    document.getElementById(correctAnswer).nextSibling.nextSibling.innerHTML += " <span class=\"nf\">󰸞</span>";
+    document.getElementById(correctAnswer).nextSibling.nextSibling.innerHTML += " <span class=\"nf quizIndicatorCorrect\">󰸞</span>";
     if (answer != correctAnswer) {
-        document.getElementById(answer).nextSibling.nextSibling.innerHTML += "  <span class=\"nf\"></span>";
+        document.getElementById(answer).nextSibling.nextSibling.innerHTML += "  <span class=\"nf quizIndicatorWrong\"></span>";
     }
 }
 

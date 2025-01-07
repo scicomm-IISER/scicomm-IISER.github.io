@@ -47,6 +47,14 @@ defaults:
       category: "quiz"
   -
     scope:
+      path: "_posts/crosswords/"
+    values:
+      layout: "default"
+      permalink: "/quizzes/:slug/"
+      category: "crossword"
+      excerpt: ""
+  -
+    scope:
       type: "pages"
     values:
       layout: "default"

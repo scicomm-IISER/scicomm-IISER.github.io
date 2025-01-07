@@ -1,0 +1,23 @@
+iframe.crossword-iframe {
+  height: $crossword-height;
+  width: 100%;
+}
+.quizIndicatorCorrect {
+  color: green;
+  font-size: 1.2em;
+  font-weight: bold;
+  position: relative;
+  top: 0.05em;
+}
+.quizIndicatorWrong {
+  color: red;
+  font-size: 1.2em;
+  font-weight: bold;
+  position: relative;
+  top: 0.05em;
+}
+input[type="radio"] {
+  transform: scale(1.5);
+  margin-right: 0.5em;
+  accent-color: $link-color;
+}
