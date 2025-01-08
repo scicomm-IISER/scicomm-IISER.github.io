@@ -19,6 +19,7 @@
 .magazine-buttons {
   display: inline-flex;
   flex-wrap: wrap;
-  justify-content: start;
-  row-gap: 1em;
+  justify-content: left;
+  gap: 0.5em;
+  row-gap: 0.5em;
 }
