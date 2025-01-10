@@ -21,6 +21,7 @@
 title: InScight
 description: "InScight is a student-run online magazine hosted by IISER Kolkata, dedicated to making pure science accessible and engaging." # Primarily for SEO.
 url: "https://scicomm.iiserkol.ac.in" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ''
 logo-light: "/assets/images/global/logo-light.png"
 logo-dark: "/assets/images/global/logo-dark.png"
 defaults:
