@@ -2,13 +2,61 @@
 "Editorial Board":
   -
       name: Swarnendu Saha
-      desc: "A dedicated 5th-year student pursuing my MS-Thesis in the Department of Physical Sciences at IISER Kolkata, I am a passionate science enthusiast with a love for trekking, reading, and engaging in vibrant cultural activities."
+      desc: "5th-year student pursuing my MS-Thesis in the Department of Physical Sciences at IISER Kolkata. Science enthusiast with a love for trekking, reading, and engaging in vibrant cultural activities."
       image: swarnendu.jpg
       group: Editorial Board
       email: ss20ms152@iiserkol.ac.in
       website: 
       facebook: "https://www.facebook.com/swarnendu.saha.121"
       instagram: "https://www.instagram.com/swarnendu013/"
+      twitter: 
+      github: 
+      linkedin: 
+  -
+      name: Archita Sarkar 
+      desc: "Hi! I'm Archita a.k.a Smileyarchi. A recently graduated BS-MS student with Biology major and Chemistry Minor with a passion in exploring almost everything, every time."
+      image: archita.jpg
+      group: Editorial Board
+      email: architasarkar07@gmail.com
+      website: 
+      facebook: 
+      instagram: "https://www.instagram.com/smileyarchi07"
+      twitter: "https://twitter.com/smileyarchi07"
+      github: "https://github.com/smileyarchi07"
+      linkedin: 
+  -
+      name: Medha Roy Chowdhury 
+      desc: "PhD Research Fellow in Quantum Condensed Matter. Book lover, mountain enthusiast and passionate about music."
+      image: medha.jpeg
+      group: Editorial Board
+      email: "mrc20rs121@iiserkol.ac.in"
+      website: 
+      facebook: 
+      instagram: 
+      twitter: 
+      github: 
+      linkedin: 
+  -
+      name: Chitradeep Saha
+      desc: "In love with a star that y'all call the Sun. From mermaids to mountains, exploration is on."
+      image: chitradeep.jpg
+      group: Editorial Board
+      email: tr23ms106@iiserkol.ac.in
+      website: 
+      facebook: 
+      instagram: 
+      twitter: "https://x.com/deephysics1729"
+      github: "https://github.com/deephysics1729"
+      linkedin: 
+  -
+      name: Ayan Biswas
+      desc: "Researcher at IISc. Loves Playing the Guitar and Ukulele. Enjoys Tintin Comics, and Loves Making Good Memes."
+      image: ayan.jpeg
+      group: Editorial Board
+      email: ayanbsw98@gmail.com
+      website: 
+      facebook: 
+      instagram: 
       twitter: 
       github: 
       linkedin: 
@@ -35,18 +83,6 @@
       instagram: 
       twitter: 
       github: 
-      linkedin: 
-  -
-      name: Archita Sarkar 
-      desc: "Hi! I'm Archita a.k.a Smileyarchi. A recently graduated BS-MS student with Biology major and Chemistry Minor with a passion in exploring almost everything, every time."
-      image: archita.jpg
-      group: Editorial Board
-      email: architasarkar07@gmail.com
-      website: 
-      facebook: 
-      instagram: "https://www.instagram.com/smileyarchi07"
-      twitter: "https://twitter.com/smileyarchi07"
-      github: "https://github.com/smileyarchi07"
       linkedin: 
   -
       name: Suman Halder
@@ -86,6 +122,18 @@
       linkedin: 
 
 "Graphics Design":
+-
+    name: Meghithdharshan R
+    desc: "Currently a BS-MS undergrad. Highly passionate in Astrophysics and History. Interested in graphic designing and video editing."
+    image: meghit.jpg
+    group: Graphics Design
+    email: mb23ms121@iiserkol.ac.in
+    website: 
+    facebook: "https://www.facebook.com/Meghith.Ramesh"
+    instagram: "https://www.instagram.com/meghithr"
+    twitter: "https://x.com/MeghithR"
+    github: 
+    linkedin: "https://in.linkedin.com/in/meghithdharshan"
 -
     name: Manish Behera
     desc: "23MS. Your friendly neighborhood nerd. Find me hanging out at the library mostly."
