@@ -14,7 +14,7 @@ permalink: /magazine/
 <strong>Issue #{{ issue["issue-number"] }} | {{ issue["month"] }}</strong>&nbsp;&nbsp;&nbsp;&nbsp;<span class="magazine-buttons"><a class="button" href="{{issue["permalink"]}}">Browse</a><a class="button" target="_blank" href="{{issue["download"]}}">Download</a></span>
 <ul>
 {% for line in issue["preview"] %}
-<li>{{ line }}</li>
+<li>{{ line | markdownify | remove: '<p>' | remove: '</p>' }}</li>
 {% endfor %}
 </ul>
 

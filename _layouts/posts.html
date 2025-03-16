@@ -33,6 +33,10 @@
 	  <div class="author-bio">{{ page.author-bio | markdownify }}</div>
   {% endif %}
   <br>
+  {% if page.addendum %}
+	  <div class="author-bio">{{ page.addendum | markdownify }}</div>
+  {% endif %}
+  <br>
 
   {% if page.refs-file %}
   <h3>References</h3>

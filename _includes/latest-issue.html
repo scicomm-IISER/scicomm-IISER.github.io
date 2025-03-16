@@ -7,7 +7,7 @@
 	<strong>{{ latestIssue["month"] }}, {{ year }}</strong>
 	<ul>
 	{% for line in latestIssue["preview"] %}
-	<li>{{ line }}</li>
+	<li>{{ line | markdownify | remove: '<p>' | remove: '</p>' }}</li>
 	{% endfor %}
 	</ul>
 	<div class="magazine-buttons"><a class="button" href="{{latestIssue["permalink"]}}">Browse Issue</a><a class="button" target="_blank" href="{{latestIssue["download"]}}">Download PDF</a> <a class="button" href="/magazine/">Browse Older Issues</a></div>

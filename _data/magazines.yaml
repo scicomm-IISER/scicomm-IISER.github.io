@@ -1,6 +1,15 @@
 #### IMPORTANT: The latest issues should go to the top. ####
 
 "2025":
+  - permalink: /issue2/
+    download: "https://drive.google.com/file/d/14o6oV02T7Elsc5aR7rh7nySlVmmV7r9x/view?usp=sharing"
+    thumbnail: issue2Cover.webp
+    issue-number: 2
+    month: March
+    preview:
+      - "Melding Data with Science: A Perspective on the Recent Nobel Prizes - **Neelanjana Sengupta**"
+      - "The Quantum Conundrum: Redefining Security in the Quantum Revolution - **Shibaraj Sahu**"
+      - "The Theme for This Issue's Crossword is **Biological Evolution**"
   - permalink: /issue1/
     download: "https://drive.google.com/file/d/1HFMWR22cKZGvHjyoBcV__iUL5tGvKkj7/view?usp=sharing"
     thumbnail: issue1Cover.webp
