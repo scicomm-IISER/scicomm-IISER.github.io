@@ -108,18 +108,6 @@
       twitter: 
       github: 
       linkedin: 
-  -
-      name: Tanmay Raj 
-      desc: "Good at reading, nothing special"
-      image: tanmay.jpg
-      group: Editorial Board
-      email: tr23ms106@iiserkol.ac.in
-      website: 
-      facebook: 
-      instagram: 
-      twitter: 
-      github: 
-      linkedin: 
 
 "Graphics Design":
 -
@@ -134,30 +122,6 @@
     twitter: "https://x.com/MeghithR"
     github: 
     linkedin: "https://in.linkedin.com/in/meghithdharshan"
--
-    name: Manish Behera
-    desc: "23MS. Your friendly neighborhood nerd. Find me hanging out at the library mostly."
-    image: manish.jpeg
-    group: Graphics Design
-    email: mb23ms121@iiserkol.ac.in
-    website: 
-    facebook: 
-    instagram: "https://www.instagram.com/m.anishb/"
-    twitter: "https://x.com/sandvoxel4"
-    github: "https://github.com/Xeylenol"
-    linkedin: 
--
-    name: Divyanshu Saha
-    desc: "Concept artist, animal lover, mythology enthusiast, chronically online. Call me Jack, the way I've mastered none of these trades."
-    image: divyanshu.jpg
-    group: Graphics Design
-    email: ds23ms141@iiserkol.ac.in
-    website: 
-    facebook: "https://www.facebook.com/divyanshu.saha.50"
-    instagram: "https://www.instagram.com/dittogreninja/"
-    twitter: "https://x.com/divsaha"
-    github: "https://github.com/aDivineShoe"
-    linkedin: "https://www.linkedin.com/in/divyanshu-saha"
 "Social Media Management":
 -
     name: Sayan Saha
@@ -174,7 +138,7 @@
 "Website Management":
 -
     name: Abhirup Mukherjee
-    desc: "Pursuing my PhD in quantum condensed matter. Interested in software development."
+    desc: "Pursuing my PhD in quantum condensed matter physics. Interested in software development."
     image: abhirup.jpg
     group: Website Management
     email: 
