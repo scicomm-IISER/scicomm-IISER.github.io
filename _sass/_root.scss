@@ -63,7 +63,11 @@ hr {
 
 
 .interview-answer{
-  color: $focus-color;
+  // color: $focus-color;
+  // font-weight: 600;
+  border-left: 0.2em solid $focus-color;
+  padding-left: 0.4em;
+  // color: $bg-color;
 }
 
 ol > li {

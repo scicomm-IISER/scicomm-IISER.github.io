@@ -29,6 +29,7 @@ MB: After completing your undergraduate studies, you went on to pursue a Ph.D. a
 
 PC: When I was completing my postgraduate studies, it was quite common at that time for students to apply for Ph.D. programs both in India and abroad, while also considering job opportunities in India. I applied to a few Ph.D. programs both within India and internationally, and the University of California, Berkeley, was one of the places I applied to.
 
+{% include article-image.html image="/assets/images/interviews/probalChaudhuri/fig1.png" caption="Shyama Narendranath is a scientist at U R Rao Satellite Centre, ISRO. She is a part of Chandrayaan-2 and other Indian planetary programs. She has been awarded the Zubin Kembhavi award by the Astronomical Society of India." width=600 %}
 
 The reason I chose UC Berkeley was because, at the time, they were doing significant work in areas like non-parametric statistics and robust statistics, which really caught my interest. I had been introduced to some of these topics during my postgraduate years, and they seemed like a fascinating direction to explore further. However, I’ll admit that, even then, I wasn’t entirely sure why I specifically wanted to go to Berkeley. It was more of a feeling that this was the right opportunity for me.
 
@@ -41,6 +42,8 @@ At Berkeley, the environment was so different from what I had experienced in Ind
 Berkeley was also politically active during those years, especially with movements against apartheid in South Africa. I vividly recall seeing protests and demonstrations outside the administrative building, where students were passionately advocating for change. These experiences, both academically and socially, had a profound influence on me, shaping not just my research interests but also my broader perspective on society and the world around me.
 
 I spent three years at UC Berkeley, from 1985 to 1988, and those years were pivotal in both my academic and personal growth.
+
+{% include article-image.html image="/assets/images/interviews/probalChaudhuri/fig2.png" caption="**Fig 2.** Prof. Chaudhuri did his Ph.D. in Statistics at University of California, Berkeley." width=600 %}
 
 Swarnendu Saha(SS): And what was the political scenario in Bengal?
 
@@ -84,6 +87,8 @@ In terms of technology, I also saw the advent of workstations like the Sun works
 
 In terms of curriculum, statistics has evolved with the times. While our training focused more on theoretical and mathematical statistics, today’s courses incorporate a lot more data analysis. Students now spend significant time working with real data, using computers to run analyses, which wasn’t part of our training at the time.
 
+{% include article-image.html image="/assets/images/interviews/probalChaudhuri/fig3.jpeg" caption="**Fig 3.** Prof. Prasanta Chandra Mahalanobis, Founded the Indian Statistical Institute (ISI) from a single laboratory at Presidency College." width=200 %}
+
 SS: ISI started its journey right after the Independence, within a few years. And since then, we have also had the implementation of a good number of  IITs; they have made a brand out of themselves. But even today, almost 20 years since the start of the IISERs, most people don't know what the IISERs are. What is your  take on this?
 
 PC: The origins of ISI were quite different from its current form. As I mentioned in my lecture, ISI began in a small room at Presidency College, initially called the Statistical Laboratory. Prasanta Mahalanobis, its founder, was addressing statistical problems arising from various sectors, including government needs, in collaboration with others. As the work expanded, the need for trained statisticians grew, leading to the establishment of formal training programs.
@@ -109,6 +114,8 @@ PC:   I believe science should be pursued out of passion, not for fame. A scient
 The general public may not understand the nuances of a scientific career, especially in a society where engineering and medicine are seen as more immediately rewarding. But for those who choose science, the reward lies in the pursuit of knowledge, not in material gains or recognition.
 
 MB: Could you share some insights on what you're currently working on? Do you have any advice for young students who are considering a career in statistics?
+
+{% include article-image.html image="/assets/images/interviews/probalChaudhuri/fig4.png" caption="**Fig 4.** The statistical laboratory set up by Prof.Mahalanobis at Presidency College, in 1931 which later became the ISI that is today." width=200 %}
 
 PC: Statistics is a versatile field used across virtually every discipline both social sciences and natural sciences. If you’re considering a career in statistics, I’d recommend getting solid training from a good program. Beyond that, it's important to stay open-minded and read widely beyond just statistics. You need to understand the broader role of science in society, why science exists and how it impacts the world.
 
