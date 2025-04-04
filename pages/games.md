@@ -4,7 +4,7 @@ permalink: /games/
 ---
 
 ### Quizzes
-<ul>
+<ul class="quizzes-list">
 {% for article in site.categories["quiz"] %}
 <li>{{ article.title }} <a class="button" href="{{ article.url }}">Start</a></li>
 {% endfor %}
@@ -12,7 +12,7 @@ permalink: /games/
 
 <br>
 ### Crosswords
-<ul>
+<ul class="crosswords-list">
 {% for article in site.categories["crossword"] limit: 4 %}
 <li>{{ article.title }} <a class="button" href="{{ article.url }}">Start</a></li>
 {% endfor %}
