@@ -1,0 +1,84 @@
+questions:
+  - "In this picture taken at Ehrenfest's home, Einstein and Bohr can be seen debating about one of the most mysterious aspects of quantum mechanics. Can you guess the topic of their debate, which later became part of the well-known Bohr–Einstein debates."
+  - "The above picture is of the announcement of a fundamental experimental discovery in physics, which was predicted theoretically by the two scientists in the picture, almost half a decade before. They were awarded with the Nobel prize a year after the experiment. What is the discovery being reported here?"
+  - "This image shows the succesful completion of a very important mission for India's development and defense strategy. The three persons are the then chief of the organisations who headed the mission: Dr. K Santhanam (technical advisor of DRDO), Dr. Rajagopala Chidambaram (head of DAE) and Dr. A P J Abdul Kalam (head of DRDO). Do you know what the mission was?"
+  - "This is the picture of a very prestigeous conference that occurred in 2024. It is one of the oldest conferences and was started by scientists to discuss important and timely topics of natural science. The 1927 edition of this conference involved the coming together of several top physicists of that time, including Einstein, Lorentz, De Broglie and Poincare. Incidentally, the only woman physicist there was Marie Curie. Name the conference."
+  - "The man on the right in the below image is an Indian American scientist who worked on molecular genetics. His main contribution was to demonstrate the role of nucleotide in protein synthesis, for which he got the nobel prize. He was the first scientist to chemically synthesize oligonucleotides. After years of work, he became the first to complete the total synthesis of a functional gene outside a living organism in 1972. Who is he?"
+  - "This picture is familiar to all of the students of evolutionary biology. The diversity of the beaks in these intimately associated birds amazed Darwin and he said- It is very remarkable that a nearly perfect gradation of structure in this one group can be traced in the form of the beak, from one exceeding in dimensions that of the largest gros-beak, to another differing but little from that of a warbler. The genus of the bird with the biggest beak and that with the smallest respectively are"
+  - "It is observed that the male birds of the type represented in the picture for Q6 have two types of song sounds A and B. Observation leads to the fact that birds with song A have short beaks and this helps them tear apart the cactus base and eat the pulp and any insect larvae and pupae, while birds with song B have longer beaks and they are able to punch holes in the cactus fruit and eat the fleshy aril pulp, which surrounds the seeds. What do you think is the possible advantage of this difference in features?"
+  - "The man shown in the above picture was at University of Calcutta, where he flared out the end of a waveguide, demonstrating the horn antenna. He pioneered the investigation of radio microwave optics, made significant contributions to botany, and was a major force behind the expansion of experimental science on the Indian subcontinent. He was also the first one to announce the presence of ”nervous system” of plants. Identify the man and also name the instrument which he used to measure the plant’s growth."
+  - "In 1985, Harold Kroto from the University of Sussex, along with James R. Heath, Sean O’Brien, Robert Curl, and Richard Smalley from Rice University, discovered structures resembling the picture. These were found in the sooty residue formed by vaporizing carbon in a helium atmosphere. The mass spectrum of the residue revealed distinct peaks corresponding to molecules with precise masses equivalent to 60, 70, or more carbon atoms—specifically, C60 and C70. Identify the molecule."
+  - "Poincare conjecture is a theorem in geometric topology that states that every closed three dimensional manifold is topologically equivalent to sphere. This was an unsolved problem till 2002, until it was solved by the man in the picture. He went on to decline the Fields medal, saying ”I’m not interested in money or fame, I don’t want to be on display like an animal in a zoo. I’m not a hero of mathematics. I’m not even that successful; that is why I don’t want to have everybody looking at me”. Can you name this mathematician?"
+images:
+    - assets/images/quiz-images/quiz2/DNA.png
+    - assets/images/quiz-images/quiz2/DNA.png
+    - assets/images/quiz-images/quiz2/DNA.png
+    - assets/images/quiz-images/quiz2/DNA.png
+    - assets/images/quiz-images/quiz2/DNA.png
+    - assets/images/quiz-images/quiz2/DNA.png
+    - assets/images/quiz-images/quiz2/DNA.png
+    - 
+    - assets/images/quiz-images/quiz2/DNA.png
+    - assets/images/quiz-images/quiz2/DNA.png
+options:
+  -
+    - Whether quantum mechanics can be unified with gravity
+    - Whether the Copenhagen interpretation of quantum mechanics was a valid description of nature
+    - Whether quantum systems can be chaotic
+    - Whether a classical system can transition into aquantum system
+  -
+    - Discovery of gravitational waves
+    - Successful run of a quantum computer
+    - Discovery of water on moon's surface
+    - Discovery of the Higgs boson
+  -
+    - India's second nuclear bomb test
+    - India's first satellite test
+    - India's first missile test
+    - India's first nuclear submarine test
+  -
+    - International Conference on Theoretical Physics
+    - The Solvay Conference
+    - International Conference on Quantum Physics
+    - Planck Round Table Conference
+  -
+    - MS Swaminathan
+    - Venkat Ramakrishnan
+    - Manjul Bhargava
+    - Hargobind Khorana
+  -
+    - Geospiza, Certhidea
+    - Geospiza, Camarhynchus
+    - Certhidea, Geospiza
+    - Camarhynchus, Geospiza
+  -
+    - Reduces competition for nesting sites during breeding season, ensuring higher reproductive success for all groups.
+    - Ensures that birds with song A can avoid predators more effectively by staying near the cactus base, while birds with song B can feed higher up and escape aerial predators.
+    - Helps maintain genetic diversity among the population by encouraging different song types during mating displays.
+    - Maximises their feeding opportunities during the non-breeding season when food is scarce.
+  -
+    - Jagadish Chandra Bose, crescograph
+    - Satyendranath Bose, radiometer
+    - Debendramohan Bose, botanogram
+    - Gyanchandra Bose, coherer
+  -
+    - Graphite
+    - Diamond
+    - Fullerene
+    - Carbon nanotube
+  -
+    - Don Zagier
+    - Grigori Perelman
+    - Dennis Sullivan
+    - Andrew Wiles
+answers:
+  - 1
+  - 4
+  - 1
+  - 2
+  - 4
+  - 3
+  - 4
+  - 1
+  - 3
+  - 2
