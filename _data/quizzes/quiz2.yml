@@ -10,16 +10,16 @@ questions:
   - "In 1985, Harold Kroto from the University of Sussex, along with James R. Heath, Sean O’Brien, Robert Curl, and Richard Smalley from Rice University, discovered structures resembling the picture. These were found in the sooty residue formed by vaporizing carbon in a helium atmosphere. The mass spectrum of the residue revealed distinct peaks corresponding to molecules with precise masses equivalent to 60, 70, or more carbon atoms—specifically, C60 and C70. Identify the molecule."
   - "Poincare conjecture is a theorem in geometric topology that states that every closed three dimensional manifold is topologically equivalent to sphere. This was an unsolved problem till 2002, until it was solved by the man in the picture. He went on to decline the Fields medal, saying ”I’m not interested in money or fame, I don’t want to be on display like an animal in a zoo. I’m not a hero of mathematics. I’m not even that successful; that is why I don’t want to have everybody looking at me”. Can you name this mathematician?"
 images:
-    - assets/images/quiz-images/quiz2/DNA.png
-    - assets/images/quiz-images/quiz2/DNA.png
-    - assets/images/quiz-images/quiz2/DNA.png
-    - assets/images/quiz-images/quiz2/DNA.png
-    - assets/images/quiz-images/quiz2/DNA.png
-    - assets/images/quiz-images/quiz2/DNA.png
-    - assets/images/quiz-images/quiz2/DNA.png
+    - assets/images/quiz-images/quiz2/quiz2-image1.png
+    - assets/images/quiz-images/quiz2/quiz2-image2.png
+    - assets/images/quiz-images/quiz2/quiz2-image3.png
+    - assets/images/quiz-images/quiz2/quiz2-image4.png
+    - assets/images/quiz-images/quiz2/quiz2-image5.png
+    - assets/images/quiz-images/quiz2/quiz2-image6.png
     - 
-    - assets/images/quiz-images/quiz2/DNA.png
-    - assets/images/quiz-images/quiz2/DNA.png
+    - assets/images/quiz-images/quiz2/quiz2-image8.png
+    - assets/images/quiz-images/quiz2/quiz2-image9.png
+    - assets/images/quiz-images/quiz2/quiz2-image10.png
 options:
   -
     - Whether quantum mechanics can be unified with gravity
