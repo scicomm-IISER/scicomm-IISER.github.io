@@ -3,9 +3,6 @@ title: Magazine
 permalink: /magazine/
 ---
 
-{% include latest-issue.html %}
-<br>
-
 {% for mag_year in site.data.magazines %}
 ## {{ mag_year[0] }}
 <div class="magazine-thumbnails" markdown=1>
