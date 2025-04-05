@@ -22,7 +22,7 @@
 {% for option in options[outerloop.index0] %}
 {% assign buttonId = outerloop.index | append: "-" | append: forloop.index %}
 <input type="radio" name="{{ outerloop.index }}" id="{{ buttonId }}" value="{{ buttonId }}" />
-<label for="{{ buttonId }}" id="l-{{ buttonId }}"><span>{{ option }}</label>
+<label for="{{ buttonId }}" id="l-{{ buttonId }}">{{ option }}</label>
 <br>
 {% endfor %}
 {% assign correctAnswerId = outerloop.index | append: "-" | append: answers[outerloop.index0] %}
