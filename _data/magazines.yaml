@@ -1,6 +1,14 @@
 #### IMPORTANT: The latest issues should go to the top. ####
 
 "2025":
+  - permalink: /issue3/
+    download: ""
+    thumbnail: issue3Cover.webp
+    issue-number: 3
+    month: May
+    preview:
+      - "From a BS-MS Student to An Independent Scientist: My Academic Journey - **Sayan Choudhury**"
+      - "In Conversation with Prof. Mustansir Barma"
   - permalink: /issue2/
     download: "https://drive.google.com/file/d/14o6oV02T7Elsc5aR7rh7nySlVmmV7r9x/view?usp=sharing"
     thumbnail: issue2Cover.webp
