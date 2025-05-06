@@ -13,3 +13,16 @@
 		font-size: 0.9em;
 	}
 }
+
+th,td {
+  border: 3px solid gray;
+  padding: 4px;
+  vertical-align: bottom;
+  margin: 0;
+}
+table {
+  border-collapse: collapse;
+  display: block;
+  text-align: center;
+  margin: auto;
+}

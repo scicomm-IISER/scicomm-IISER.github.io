@@ -31,6 +31,7 @@ img {
   display: block;
   margin: auto;
   margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .article-image > img {
@@ -39,11 +40,11 @@ img {
   padding-bottom: 1em;
 }
 .article-image > span {
-  text-align: center;
+  text-align: justify;
   margin: auto;
   display: block;
   color: $fg-color;
-  font-weight: 550;
+  font-weight: 600;
   > strong {
     color: $fg-color;
   }

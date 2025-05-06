@@ -6,8 +6,16 @@ def FrontMatter(contents):
     frontMatter = {}
     for (number, line) in enumerate(contents):
         mainStart = number
-        if line.startswith("#let date ="):
-            frontMatter["date"] = line[line.find("\"")+1:-1]
+        if line.startswith("#let received ="):
+            day = line[line.find("day:")+4:line.find(",", line.find("day:")+4)].strip()
+            month = line[line.find("month:")+6:line.find(",", line.find("month:")+6)].strip()
+            if len(month) == 1:
+                month = "0"+month
+            if len(day) == 1:
+                day = "0"+day
+            year = line[line.find("year:")+5:line.find(",", line.find("year:")+5)].strip()
+            print(day, month, year)
+            frontMatter["date"] = year + "-" + month + "-" + day
             continue
         if line.startswith("#let file ="):
             frontMatter["file"] = line[line.find("\"")+1:-1].split("/")[-1]
@@ -31,13 +39,13 @@ def FrontMatter(contents):
             frontMatter["excerpt"] = line[line.find("\"")+1:-1]
             continue
         if line.startswith("#let coverImage ="):
-            frontMatter["coverImage"] = line[line.find("\"")+1:-1]
+            frontMatter["hero-image"] = os.path.basename(line[line.find("\"")+1:-1])
             continue
         if line.startswith("#let authorInfo ="):
             frontMatter["author-bio"] = line[line.find("\"")+1:-1]
             continue
         if line.startswith("#let refsFile ="):
-            frontMatter["refs-file"] = line[line.find("\"")+1:-1]
+            frontMatter["refs-file"] = os.path.splitext(os.path.basename(line[line.find("\"")+1:-1]))[0]
             continue
         if line.startswith("#let category ="):
             frontMatter["field"] = line[line.find("\"")+1:-1]
@@ -55,26 +63,25 @@ def MainMatterArticle(mainContents, mainStart):
     figCounter = 1
     for line in mainContents:
         if line.startswith("#v-image(") or line.startswith("#h-image("):
-            imageDict = {}
-            for (i, s) in enumerate([s.strip() for s in line[line.find("(")+1:line.rfind(")")].split("\",")]):
-                k, v = [s[:s.find(":")].strip(' \"'), s[s.find(":")+1:].strip(' \"')]
-                imageDict[k] = v
-            mainMatter += "{{% include article-image.html image=\"{}\" caption=\"**Fig {}**. {}\" width=500 %}}\n".format(imageDict['path'], figCounter, imageDict['caption'])
+            imageDict = {'path': "", 'caption': ""}
+            imageDict['path'] = os.path.basename(line[line.find("path: \"")+7:line.find("\"", line.find("path: \"")+7)])
+            imageDict['caption'] = line[line.find("caption: \"")+10:line.find("\"", line.find("caption: \"")+10)]
+            mainMatter += "{{% include article-image.html image=\"/assets/images/articles/{}\" caption=\"**Fig {}**. {}\" width=500 %}}\n".format(imageDict['path'], figCounter, imageDict["caption"]) + "\n"
             figCounter += 1
             continue
         if line.startswith("#align") or line.startswith("#colbreak()") or line.startswith("#show: section.with") or line.startswith("#import"):
             continue
         if line.startswith("#dcap(\"") and line.endswith("\")"):
-            mainMatter += line[7:-2]+"\n"
+            mainMatter += line[7:-2] + "\n"
         elif line.startswith("=="):
-            mainMatter += line.replace("==", "##")
+            mainMatter += line.replace("==", "##") + "\n"
         else:
-            mainMatter += line+"\n"
+            mainMatter += line + "\n"
     return mainMatter
 
 
 def MainMatterInterview(interviewName, interviewer, interviewee):
-    interviewPath = os.path.join(os.path.dirname(typstpath), interviewName)
+    interviewPath = os.path.join(os.path.dirname(os.path.dirname(typstpath)), "dataFiles", interviewName)
     interviewContent = [line.strip() for line in open(interviewPath, "r")]
     mainMatter = ""
     decorationFlag = False
@@ -86,7 +93,7 @@ def MainMatterInterview(interviewName, interviewer, interviewee):
             for (i, s) in enumerate([s.strip() for s in line[line.find("(")+1:line.rfind(")")].split("\",")]):
                 k, v = [s[:s.find(":")].strip(' \"'), s[s.find(":")+1:].strip(' \"')]
                 imageDict[k] = v
-            mainMatter += "{{% include article-image.html image=\"{}\" caption=\"{}\" width=500 %}}\n".format(imageDict['path'], imageDict['caption'])
+            mainMatter += "{{% include article-image.html image=\"/assets/images/articles/{}\" caption=\"{}\" width=500 %}}\n".format(os.path.basename(imageDict['path']), imageDict['caption'])
             continue
         if line.startswith("#dcap(\"") and line.endswith("\")"):
             mainMatter += line[7:-2]+"\n"
@@ -95,6 +102,7 @@ def MainMatterInterview(interviewName, interviewer, interviewee):
         else:
             if line.startswith(interviewee):
                 decorationFlag = True
+                mainMatter += "\n"
             if True in [line.startswith(s) for s in interviewer]:
                 decorationFlag = False
             mainMatter += line+"\n"
@@ -104,11 +112,12 @@ def MainMatterInterview(interviewName, interviewer, interviewee):
 
 typstpath = sys.argv[1]
 category = sys.argv[2]
+issue = sys.argv[3]
 with open(typstpath, "r") as file:
     contents = [line.rstrip() for line in file]
 frontMatter, mainStart = FrontMatter(contents)
+print(frontMatter["date"])
 frontMatter["category"] = category
-print(frontMatter)
 savePath = frontMatter["date"] + "-" + typstpath.split("/")[-1].replace(".typ", ".md")
 if category == "article":
     mainMatter = MainMatterArticle(contents[mainStart+1:], mainStart+1)
@@ -117,6 +126,7 @@ elif category == "interview":
 
 with open(savePath, "w") as file:
     file.write("---\n")
+    file.write("issue: {}\n".format(issue))
     for (k, v) in frontMatter.items():
         if k == "authors" or k == "author-affiliation":
             file.write("{}: {}\n".format(k, v))

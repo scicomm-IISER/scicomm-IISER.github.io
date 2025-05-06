@@ -43,7 +43,7 @@ defaults:
     scope:
       path: "_posts/quizzes/"
     values:
-      layout: "quizWithImages"
+      layout: "quiz"
       permalink: "/quizzes/:slug/"
       category: "quiz"
   -
