@@ -4,6 +4,7 @@
 {% for issue in pair[1] %}
 {% if issue.issue-number == page.issue %}
 {% assign pdfLink = issue["download"] %}
+{% assign thumbnail = "/assets/magazine-thumbnails/" | append: issue["thumbnail"] %}
 {% endif %}
 {% endfor %}
 {% endfor %}
@@ -15,8 +16,9 @@
 {% include header.html %}
 <main>
   <h1> Issue #{{ page.issue }} </h1>
+  <img src={{ thumbnail }} width=500 />
 
-  {{page.month}}, {{ page.year}} &nbsp;&nbsp;&nbsp;<a class="button" href={{ pdfLink }}>Download PDF</a>
+  <div>{{page.month}}, {{ page.year}} &nbsp;&nbsp;&nbsp;<a class="button" href={{ pdfLink }}>Download PDF</a></div>
   <br>
   <br>
 
@@ -25,7 +27,7 @@
   {% if article.issue == page.issue %}
   <b>{{ article.title }}</b>
   <br>
-  <span class="nf">󰙏</span>&nbsp;&nbsp;&nbsp;{{ article.authors | join: ", " }} | <a class="button" href={{ article.url }}>Read article</a>
+  {{ article.authors | join: ", " }} <a class="button" href={{ article.url }}>Read article</a>
   <br>
   <br>
   {% endif %}
@@ -36,7 +38,7 @@
   {% if article.issue == page.issue %}
   <b>{{ article.title }}</b>
   <br>
-  <span class="nf">󰙏</span>&nbsp;&nbsp;&nbsp;{{ article.authors | join: ", " }} | <a class="button" href={{ article.url }}>Read interview</a>
+  {{ article.authors | join: ", " }} <a class="button" href={{ article.url }}>Read interview</a>
   <br>
   <br>
   {% endif %}
