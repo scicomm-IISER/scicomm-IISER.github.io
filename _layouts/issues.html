@@ -21,6 +21,13 @@
   <div>{{page.month}}, {{ page.year}} &nbsp;&nbsp;&nbsp;<a class="button" href={{ pdfLink }}>Download PDF</a></div>
   <br>
   <br>
+  {% for article in site.categories["meta"] %}
+  {% if article.issue == page.issue %}
+  <b>{{ article.title }}</b> | <i>{{ article.subtitle }}</i> <a class="button" href={{ article.url }}>Read</a>
+  <br>
+  <br>
+  {% endif %}
+  {% endfor %}
 
   <h2> Articles </h2>
   {% for article in site.categories["article"] %}
@@ -51,10 +58,10 @@
   <li> {{ item["Title"] }} | <b>{{ item["Author"] }}</b> </li>
   {% endfor %}
   </ul>
-  <a class="button" href="/research-summary-{{ page.issue }}/">View</a><br>
+  <a class="button" href="/issue{{ page.issue }}/digest/">View</a><br>
 
   <br>
-  <h2> Science Games </h2>
+  <h2 id="games"> Science Games </h2>
   <ul>
 	{% for article in site.categories["quiz"] %}
 	  {% if article.issue == page.issue %}

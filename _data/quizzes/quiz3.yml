@@ -61,16 +61,16 @@ options:
     - Stress analyzer
     - Emotion sensor
 images:
-  - ""
-  - ""
-  - ""
-  - ""
-  - "/images/lyrid.jpeg"
-  - ""
-  - "/images/NGC2395.jpg"
-  - ""
-  - ""
-  - ""
+  -
+  -
+  -
+  -
+  - "/assets/images/quiz-images/lyrid.webp"
+  -
+  - "/assets/images/quiz-images/NGC2395.jpg"
+  -
+  -
+  -
 answers:
   - 1
   - 3

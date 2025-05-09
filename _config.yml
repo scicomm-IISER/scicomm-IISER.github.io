@@ -27,42 +27,10 @@ logo-dark: "/assets/images/global/logo-dark.png"
 defaults:
   -
     scope:
-      path: "_posts/articles/"
+      path: "_posts/"
     values:
       layout: "posts"
-      permalink: "/articles/:slug/"
       category: "article"
-  -
-    scope:
-      path: "_posts/interviews/"
-    values:
-      layout: "posts"
-      permalink: "/interviews/:slug/"
-      category: "interview"
-  -
-    scope:
-      path: "_posts/quizzes/"
-    values:
-      layout: "quiz"
-      permalink: "/quizzes/:slug/"
-      category: "quiz"
-  -
-    scope:
-      path: "_posts/crosswords/"
-    values:
-      layout: "default"
-      permalink: "/crosswords/:slug/"
-      category: "crossword"
-      excerpt: ""
-  -
-    scope:
-      path: "_posts/linkedlists/"
-    values:
-      layout: "default"
-      permalink: "/linkedlists/:slug/"
-      category: "linkedlist"
-      excerpt: ""
-  -
     scope:
       type: "pages"
     values:

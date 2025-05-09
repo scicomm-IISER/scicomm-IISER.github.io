@@ -109,7 +109,19 @@
       github: 
       linkedin: 
 
-"Graphics Design":
+"Graphics Design and Website":
+-
+    name: Abhirup Mukherjee
+    desc: "Pursuing my PhD in quantum condensed matter physics. Interested in software development."
+    image: abhirup.jpg
+    group: Website Management
+    email: 
+    website: "https://abhirup-m.github.io"
+    facebook: 
+    instagram: 
+    twitter: 
+    github: "https://github.com/abhirup-m"
+    linkedin: 
 -
     name: Meghithdharshan R
     desc: "Currently a BS-MS undergrad. Highly passionate in Astrophysics and History. Interested in graphic designing and video editing."
@@ -134,17 +146,4 @@
     instagram: 
     twitter: 
     github: 
-    linkedin: 
-"Website Management":
--
-    name: Abhirup Mukherjee
-    desc: "Pursuing my PhD in quantum condensed matter physics. Interested in software development."
-    image: abhirup.jpg
-    group: Website Management
-    email: 
-    website: "https://abhirup-m.github.io"
-    facebook: 
-    instagram: 
-    twitter: 
-    github: "https://github.com/abhirup-m"
     linkedin: 

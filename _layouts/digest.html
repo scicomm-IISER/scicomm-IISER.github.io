@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+
+<main>
+  <h1> On The Fronters | Issue #{{ page.issueNumber }} </h1>
+  {% assign id = "Issue-" | append: page.issueNumber %}
+  {% for item in site.data.researchSummary[id] %}
+  <div class="summary-head">
+  <b>{{ item["Title"] }}</b><br>
+  {{ item["Reference"] }}<br>
+  Contributed by: {{ item["Author"] }} ({{ item["Affiliation"] }})<br>
+  Keywords: {{ item["Keywords"] | join: ", " }}<br><br>
+  </div>
+  <div class="summary-content">{{ item["Summary"] | newline_to_br }}</div>
+  {% if item["Image"] %}
+  {% assign imagePath = "/assets/images/digest/" | append: item["Image"] %}
+  {% assign caption = item["Caption"] %}
+  {% include article-image.html image=imagePath caption=caption width=600 %}
+  {% endif %}
+  <br>
+  
+  <hr> 
+  {% endfor %}
+
+</main>

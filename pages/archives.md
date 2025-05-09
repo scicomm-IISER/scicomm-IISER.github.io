@@ -14,9 +14,21 @@ Search by year of publication.
 
 
 {% for set in postsByYear %}
-## {{ set["name"] }}
-{% for article in set["items"] %}
-- <span class="article-item-title">{{ article.title }} </span><br>
-󰙈&nbsp;&nbsp;{{ article.authors | join: ", " }} &nbsp;&nbsp;\|&nbsp;&nbsp; &nbsp;&nbsp;{{ article.date | date:"%b %d" }} &nbsp;&nbsp;\|&nbsp;&nbsp; <a href="{{ article.url }}">View article</a>
-{% endfor %}
+# {{ set["name"] }}
+### Articles
+  {% for article in set["items"] %}
+  {% if article.category == "article" %}
+  <span class="article-item-title">{{ article.title }}</span> 
+  <br>
+  _{{ article.authors | join: ", " }}_ &nbsp;&nbsp;\|&nbsp;&nbsp; {{ article.date | date:"%b %d" }} &nbsp;&nbsp;\|&nbsp;&nbsp; <a href="{{ article.url }}" class="button">View</a>
+  {% endif %}
+  {% endfor %}
+### Interviews
+  {% for article in set["items"] %}
+  {% if article.category == "interview"%}
+  <span class="article-item-title">{{ article.title }}</span> 
+  <br>
+  _{{ article.authors | join: ", " }}_ &nbsp;&nbsp;\|&nbsp;&nbsp; {{ article.date | date:"%b %d" }} &nbsp;&nbsp;\|&nbsp;&nbsp; <a href="{{ article.url }}" class="button">View</a>
+  {% endif %}
+  {% endfor %}
 {% endfor %}

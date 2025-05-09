@@ -17,8 +17,8 @@ permalink: /
 
 <br>
 ## Recent Articles
-{% include recent-articles.html start="0" numArticles="2" category="article" %}
+{% include recent-articles.html start="0" numArticles=2 category="article" %}
 
 <br>
 ## Recent Interviews
-{% include recent-articles.html start="0" numArticles="2" category="interview" %}
+{% include recent-articles.html start="0" numArticles=2 category="interview" %}
