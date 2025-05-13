@@ -3,6 +3,7 @@
     font-weight: 400;
     line-height: 1.1em;
     color: $fg-color;
+    margin-top: 1em;
     padding-left: 1em;
     border-left: 0.5em solid $focus-color;
     > p {
@@ -11,7 +12,7 @@
 }
 
 .author-date {
-    text-align: right;
+    text-align: left;
     color: $fg-color;
 }
 .article-item {
@@ -64,13 +65,25 @@
 .author-bio {
   > p {
     margin: 0em;
+    color: $fg-color;
+    font-size: 0.9em;
+    line-height: 1.1em;
+    text-align: justify;
+    max-width: 400px;
   }
-  color: $fg-color;
+  > img {
+    max-width: 300px;
+  }
   background-color: rgba($focus-color, 0.1);
   padding: 1em;
-  font-size: 0.9em;
-  line-height: 1.1em;
-  text-align: justify;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .jump-ref {

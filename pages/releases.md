@@ -10,7 +10,7 @@ permalink: /magazine/
 {% assign permalink = issue["permalink"] %}
 {% assign current = site.posts | where_exp: "item" , "item.permalink contains permalink" %}
 <div markdown=1>
-<strong>Issue #{{ issue["issue-number"] }} | {{ issue["month"] }}</strong>&nbsp;&nbsp;&nbsp;&nbsp;<span class="magazine-buttons"><a class="button" href="{{issue["permalink"]}}">Browse</a><a class="button" target="_blank" href="{{issue["download"]}}">Download</a></span>
+<strong>Issue #{{ issue["issue-number"] }} | {{ issue["month"] }}</strong>&nbsp;&nbsp;&nbsp;&nbsp;<span class="magazine-buttons"><a class="button" href="{{issue["permalink"]}}">Browse</a><a class="button" target="_blank" href="/assets/magazines/issue{{issue['issue-number']}}.pdf">Download</a></span>
 <ul>
 {% assign featured = current | where_exp: "post" , "post.feature == true" %}
 {% for post in featured limit:2 %}

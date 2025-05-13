@@ -4,6 +4,12 @@ layout: default
 
 
 <main>
+  <div class="hero-image-caption">
+  <img class="hero-image" src="/assets/hero-images/{{ page.hero-image }}"/>
+  {% if page.hero-source %}
+    <a class="hero-caption" href="{{ page.hero-source }}">Source &nbsp;<span class="nf nf-oct-link"></span></a>
+  {% endif %}
+  </div>
   <h1> On The Fronters | Issue #{{ page.issueNumber }} </h1>
   {% assign id = "Issue-" | append: page.issueNumber %}
   {% for item in site.data.researchSummary[id] %}

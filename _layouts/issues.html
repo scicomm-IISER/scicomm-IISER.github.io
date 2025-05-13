@@ -3,7 +3,6 @@
 {% for pair in site.data.magazines %}
 {% for issue in pair[1] %}
 {% if issue.issue-number == page.issue %}
-{% assign pdfLink = issue["download"] %}
 {% assign thumbnail = "/assets/magazine-thumbnails/" | append: issue["thumbnail"] %}
 {% endif %}
 {% endfor %}
@@ -18,7 +17,7 @@
   <h1> Issue #{{ page.issue }} </h1>
   <img src={{ thumbnail }} width=500 />
 
-  <div>{{page.month}}, {{ page.year}} &nbsp;&nbsp;&nbsp;<a class="button" href={{ pdfLink }}>Download PDF</a></div>
+  <div>{{page.month}}, {{ page.year}} &nbsp;&nbsp;&nbsp;<a class="button" href="/assets/magazines/issue{{ page.issue }}.pdf">Download PDF</a></div>
   <br>
   <br>
   {% for article in site.categories["meta"] %}

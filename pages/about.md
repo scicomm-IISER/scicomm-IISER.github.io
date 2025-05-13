@@ -11,17 +11,17 @@ InScight is the spiritual successor to [Cogito](/cogitoOld/pages/vision.html), c
 
 In addition to articles, we offer interactive content such as games and interviews with prominent scientists, providing multiple avenues for readers to engage with science. Our latest release includes a quantum physics-themed crossword, showcasing our commitment to making science both educational and entertaining. 
 
-# Contact Information
+## Contact Information
 - You can always get in touch via [email]({{ site.data.socials["email"] }}).
 - If you want to remain anonymous, you can submit [this form]({{ site.data.socials["feedbackForm"] }}).
 - You can also reach out to us on our social media accounts: {% include socials.html %}
 
 <p></p>
-# Buy Us a Coffee
-If you are feeling generous and wish to sponsor some printed copies of our magazine for greater distribution, feel free to email us at [scicomm@iiserkol.ac.in]({{ site.data.socials["email"] }}). If you wish to contribute straight away, all details are provided in this form.
+## Buy Us A Coffee
+If you are feeling generous and wish to sponsor some printed copies of our magazine for greater distribution, you are requested to use this [form](https://docs.google.com/forms/d/e/1FAIpQLSc1XWwxSF3UDJZVXpvmdlTDRUjmi0Gv4l5vk24VnTs_aUhsVQ/viewform?usp=preview). Feel free to get in touch with us at [scicomm@iiserkol.ac.in]({{ site.data.socials["email"] }}) if you need any clarification.
 
 <p></p>
-# Members
+## Members
 
 {% for category in site.data.members %}
 ### {{ category[0] }}

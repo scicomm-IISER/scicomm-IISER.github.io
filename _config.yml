@@ -25,16 +25,15 @@ baseurl: ''
 logo-light: "/assets/images/global/logo-light.png"
 logo-dark: "/assets/images/global/logo-dark.png"
 defaults:
-  -
-    scope:
-      path: "_posts/"
+defaults:
+  - scope:
+      type: posts
     values:
-      layout: "posts"
-      category: "article"
-    scope:
-      type: "pages"
+      layout: posts
+  - scope:
+      type: pages
     values:
-      layout: "default"
+      layout: default
 kramdown:
   math_engine: katex
 plugins:
