@@ -31,7 +31,9 @@ layout: default
 {% if page.author-bio %}
   <div class="author-bio">
 	{% if page.author-bio %}
+	{% if page.authorImage %}
 	<img src="/assets/authorFaces/{{ page.authorImage }}"/>
+	{% endif %}
 	{% endif %}
     {{ page.author-bio | markdownify }}
   </div>

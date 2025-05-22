@@ -10,7 +10,8 @@ layout: default
     <a class="hero-caption" href="{{ page.hero-source }}">Source &nbsp;<span class="nf nf-oct-link"></span></a>
   {% endif %}
   </div>
-  <h1> On The Fronters | Issue #{{ page.issueNumber }} </h1>
+  <h1> Insight Digest | Issue #{{ page.issueNumber }} </h1>
+  <h2> Showcasing the frontiers of science</h2>
   {% assign id = "Issue-" | append: page.issueNumber %}
   {% for item in site.data.researchSummary[id] %}
   <div class="summary-head">
