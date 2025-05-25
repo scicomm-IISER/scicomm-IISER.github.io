@@ -2,11 +2,7 @@
 permalink: /html/
 ---
 
-{% for year in site.data.magazines limit:1 %}
-{% for magazine in year[1] limit:1 %}
-{% assign latest = magazine["permalink"] %}
-{% endfor %}
-{% endfor %}
+{% assign latest = site.data.magazines[0]["permalink"] %}
 
 <script language="javascript">
   window.location = "{{ latest }}";

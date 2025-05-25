@@ -15,7 +15,7 @@ permalink: /issue2/quantum/
 ## Introduction
 In the age of digital communication, encryption is crucial for ensuring the privacy and security of data exchanged over the internet. The advent of quantum computing represents a paradigm shift in computational capabilities, bringing both remarkable opportunities and profound challenges. Among the most affected fields is cryptography, the cornerstone of secure digital communication. This article explores both sides of quantum computing’s impact on cryptography, focusing on the vulnerabilities it introduces to classical encryption schemes and the secure possibilities offered by protocols like Quantum Key Distribution (QKD).
 
-{% include article-image.html image="/assets/images/articles/quantumConundrum/fig1.png" caption="**Fig 1.** Peter Williston Shor (born 1959), an American theoretical computer scientist and Applied Mathematician, is best known for Shor’s Algorithm, which enables quantum computers to factor integers exponentially faster than classical algorithms, posing a challenge to modern cryptography." width=300 %}
+{% include figure.html image="fig1.png" caption="Peter Williston Shor (born 1959), an American theoretical computer scientist and Applied Mathematician, is best known for Shor’s Algorithm, which enables quantum computers to factor integers exponentially faster than classical algorithms, posing a challenge to modern cryptography." width=300 %}
 
 ## Shor’s Algorithm and the Threat to Classical Cryptography
 At the heart of modern cryptography lie hard mathematical problems, such as integer factorization (used in RSA encryption) and discrete logarithms (used in Elliptic Curve Cryptography, or ECC). These problems are computationally infeasible for classical computers to solve within a reasonable timeframe, providing the security guarantees we rely on for digital communication. 
@@ -36,7 +36,7 @@ RSA encryption, named after its creators, Rivest, Shamir, and Adleman, is one of
 RSA encryption allows anyone to encrypt a message using the recipient’s public key \\((N, e)\\). The ciphertext \\(c\\) is computed as \\(c = m^e~\text{mod}~N\\), where \\(m\\) is the message. Decrypting the ciphertext requires the private key \\(d\\), which is computationally infeasible to derive without factoring \\(N\\), ensuring security. For sufficiently large \\(N\\) (e.g., 2048 bits), classical algorithms cannot factorize \\(N\\) within a practical timeframe. To give a rough estimate, one of the best-known classical algorithms for integer factorization, the General Number Field Sieve (GNFS), with a sub-exponential time complexity (faster than polynomial time but slower than exponential) could factor a 795-bit number in about two years using huge computational resources. This gives a rough idea of the arduous task classical decryption has to face.
 
 
-{% include article-image.html image="/assets/images/articles/quantumConundrum/fig2.png" caption="**Fig 2.** A schematic representation of asymmetric encryption: A sender encrypts plaintext using the recipient's public key, generating ciphertext. Decryption requires the recipient's private key, ensuring secure communication." width=600 %}
+{% include figure.html image="fig2.png" caption="A schematic representation of asymmetric encryption: A sender encrypts plaintext using the recipient's public key, generating ciphertext. Decryption requires the recipient's private key, ensuring secure communication." width=600 %}
 
 ## How Shor’s Algorithm Breaks RSA?
 Shor’s algorithm revolutionizes the factoring problem by providing an efficient quantum solution. It consists of two main steps:
@@ -54,7 +54,7 @@ Shor’s algorithm revolutionizes the factoring problem by providing an efficien
 But why is Shor's algorithm so influential in this regard?
 
 
-{% include article-image.html image="/assets/images/articles/quantumConundrum/fig3.png" caption="**Fig 3.** A comparison between classical bits and quantum bits (qubits). Classical bits exist in definite states (0 or 1), while qubits can exist in a superposition of both states, represented on the Bloch sphere as ∣ψ⟩=α∣0⟩+β∣1⟩ where α and β are complex probability amplitudes." width=500 %}
+{% include figure.html image="fig3.png" caption="A comparison between classical bits and quantum bits (qubits). Classical bits exist in definite states (0 or 1), while qubits can exist in a superposition of both states, represented on the Bloch sphere as ∣ψ⟩=α∣0⟩+β∣1⟩ where α and β are complex probability amplitudes." width=500 %}
 
 ## Why Shor’s Algorithm is a Game-Changer?
 As already mentioned, the best classical algorithms for factoring, such as the General Number Field Sieve, have a sub-exponential time complexity. In contrast, Shor’s algorithm has a polynomial time complexity of \\(O((\log N)^3)\\), making it exponentially faster. This efficiency renders RSA insecure against quantum computers capable of running Shor’s algorithm.
@@ -119,7 +119,7 @@ If an eavesdropper, Eve, intercepts the qubits, she will be forced to measure th
 
 To detect eavesdropping, Alice and Bob compare a randomly selected portion of the raw key. If the error rate exceeds a predefined threshold ϵ, they abort the protocol, assuming that an eavesdropper (Eve) was present.
 
-{% include article-image.html image="/assets/images/articles/quantumConundrum/fig4.png" caption="**Fig 4.** A Quantum Key Distribution (QKD) model where Alice and Bob exchange a cryptographic key using both a classical public channel and a quantum communication channel. An eavesdropper, Eve, attempts to intercept the key, but quantum principles ensure any intrusion is detectable. (See [7])" width=600 %}
+{% include figure.html image="fig4.png" caption="A Quantum Key Distribution (QKD) model where Alice and Bob exchange a cryptographic key using both a classical public channel and a quantum communication channel. An eavesdropper, Eve, attempts to intercept the key, but quantum principles ensure any intrusion is detectable. (See [7])" width=600 %}
 
 ## Security of QKD
 The security of QKD relies on two of these important quantum principles:

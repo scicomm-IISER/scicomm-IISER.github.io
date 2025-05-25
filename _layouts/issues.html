@@ -1,85 +1,73 @@
-<!doctype html>
+---
+layout: default
+---
 
-{% for pair in site.data.magazines %}
-{% for issue in pair[1] %}
-{% if issue.issue-number == page.issue %}
-{% assign thumbnail = "/assets/magazine-thumbnails/" | append: issue["thumbnail"] %}
-{% endif %}
+<img src="/assets/magazine-thumbnails/issue{{ page.issue }}" width=500 />
+<h1> Issue #{{ page.issue }} </h1>
+<div class="magazine-banner">
+<div>{{ page.month }}, {{ page.year}} <a class="button" href="/assets/magazines/issue{{ page.issue }}.pdf">Download PDF</a></div>
+</div>
+
+{% assign permalink = "issue" | append: page.issue %}
+{% assign issueItems = site.posts | where_exp: "item" , "item.permalink contains permalink" %}
+
+<h2>Perspectives</h2>
+{% assign metaArticles = issueItems | where:"category", "meta" %}
+{% for item in metaArticles %}
+<div class="magazine-item">
+<b>{{ item.title }}</b>
+<span><i>{{ item.excerpt }}</i> <a class="button" href={{ item.url }}>Read</a></span>
+</div>
 {% endfor %}
+
+
+<h2> Articles </h2>
+{% assign articles = issueItems | where:"category", "article" %}
+{% for item in articles %}
+<div class="magazine-item">
+<strong>{{ item.title }}</strong>
+<span><i>{{ item.authors | join: ", " | strip }}</i> <a class="button" href={{ item.url }}>Read</a></span>
+</div>
 {% endfor %}
 
-<html lang="en">
-{% include head.html %}
+<h2> Interviews </h2>
+{% assign interviews = issueItems | where:"category", "interview" %}
+{% for item in interviews %}
+<div class="magazine-item">
+<b>{{ item.title }}</b>
+<span><i>{{ item.authors | join: ", " }}</i> <a class="button" href={{ item.url }}>Read</a></span>
+</div>
+{% endfor %}
 
-<body>
-{% include header.html %}
-<main>
-  <h1> Issue #{{ page.issue }} </h1>
-  <img src={{ thumbnail }} width=500 />
+<h2> Insight Digest </h2>
+{% assign filename = "issue" | append: page.issue %}
+{% for item in site.data["researchSummary"][filename] %}
+{% assign slug = item["Title"] | slugify %}
+{% assign link = "/issue" | append: page.issue | append: "/digest/#" | append: slug %}
+<div class="magazine-item">
+{{ item["Title"] }} 
+<span><i>{{ item["Author"] }}</i> <a class="button" href={{ link }}>Read</a></span>
+</div>
+{% endfor %}
+<div class="magazine-item">
+<a class="button" href="/issue{{ page.issue }}/digest/">Read All</a><br>
+</div>
 
-  <div>{{page.month}}, {{ page.year}} &nbsp;&nbsp;&nbsp;<a class="button" href="/assets/magazines/issue{{ page.issue }}.pdf">Download PDF</a></div>
-  <br>
-  <br>
-  {% for article in site.categories["meta"] %}
+<h2 id="games"> Science Games </h2>
+<ul>
+{% for article in site.categories["quiz"] %}
   {% if article.issue == page.issue %}
-  <b>{{ article.title }}</b> | <i>{{ article.subtitle }}</i> <a class="button" href={{ article.url }}>Read</a>
-  <br>
-  <br>
+  <li> General Science Quiz  <a class="button" href="{{ article.url }}">Try Out</a></li>
   {% endif %}
-  {% endfor %}
-
-  <h2> Articles </h2>
-  {% for article in site.categories["article"] %}
+{% endfor %}
+{% for article in site.categories["crossword"] %}
   {% if article.issue == page.issue %}
-  <b>{{ article.title }}</b>
-  <br>
-  {{ article.authors | join: ", " }} <a class="button" href={{ article.url }}>Read article</a>
-  <br>
-  <br>
+  <li> {{ article.title }}  <a class="button" href="{{ article.url }}">Try Out</a></li>
   {% endif %}
-  {% endfor %}
-
-  <h2> Interviews </h2>
-  {% for article in site.categories["interview"] %}
+{% endfor %}
+{% for article in site.categories["linkedlist"] %}
   {% if article.issue == page.issue %}
-  <b>{{ article.title }}</b>
-  <br>
-  {{ article.authors | join: ", " }} <a class="button" href={{ article.url }}>Read interview</a>
-  <br>
-  <br>
+  <li> Linked List  <a class="button" href="{{ article.url }}">Try Out</a></li>
   {% endif %}
-  {% endfor %}
-
-  <h2> At The Frontiers </h2>
-  {% assign filename = "Issue-" | append: page.issue %}
-  <ul>
-  {% for item in site.data["researchSummary"][filename] %}
-  <li> {{ item["Title"] }} | <b>{{ item["Author"] }}</b> </li>
-  {% endfor %}
-  </ul>
-  <a class="button" href="/issue{{ page.issue }}/digest/">View</a><br>
-
-  <br>
-  <h2 id="games"> Science Games </h2>
-  <ul>
-	{% for article in site.categories["quiz"] %}
-	  {% if article.issue == page.issue %}
-	  <li> General Science Quiz  <a class="button" href="{{ article.url }}">Try Out</a></li>
-	  {% endif %}
-    {% endfor %}
-	{% for article in site.categories["crossword"] %}
-	  {% if article.issue == page.issue %}
-	  <li> {{ article.title }}  <a class="button" href="{{ article.url }}">Try Out</a></li>
-	  {% endif %}
-    {% endfor %}
-	{% for article in site.categories["linkedlist"] %}
-	  {% if article.issue == page.issue %}
-	  <li> Linked List  <a class="button" href="{{ article.url }}">Try Out</a></li>
-	  {% endif %}
-    {% endfor %}
-  </ul>
-</main>
-{% include footer.html %}
-</body>
-</html>
-
+{% endfor %}
+</ul>

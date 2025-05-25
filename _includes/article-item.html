@@ -1,9 +1,0 @@
-<div class="article-item">
-<a href="{{ article.url }}"><img class="article-thumbnail" src="/assets/hero-images/{{article.hero-image}}"/></a>
-<strong>{{ article.title }}</strong>
-{{ article.authors | join: ", " }}
-<br>
-<span>{{ article.date | date:"%b %d, %Y" }} {% if article.field != nil %} <span class="tag-button">{{ article.field }}</span> {% endif %} </span>
-<a href="{{ article.url }}">View Article</a>
-
-</div>

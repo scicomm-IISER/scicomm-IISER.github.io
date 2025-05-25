@@ -1,0 +1,32 @@
+@use 'constants';
+
+.magazine-item {
+  display: flex;
+  gap: 0.1rem;
+  flex-direction: column;
+}
+.magazine-item + .magazine-item {
+  margin-top: 1rem;
+}
+.magazine-banner {
+  > div {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  > img {
+    margin-bottom: 0.5rem;
+  }
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+.release-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  > strong {
+  color: constants.$emph-color;
+  }
+}
+.magazine-summary + .magazine-summary {
+  margin-top: 2rem;
+}

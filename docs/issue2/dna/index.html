@@ -1,0 +1,231 @@
+<!doctype html>
+
+<html lang="en">
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MPQZSVEQWQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MPQZSVEQWQ');
+</script>
+	<!--KaTeX-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+	<script>
+	    document.addEventListener("DOMContentLoaded", function() {
+	  	  renderMathInElement(document.body, {
+	  	  });
+	    });
+	</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Detection of Base-Pair Mismatch in DNA via Graphene Nanopores</title>
+	<meta name="description" content="DNA's electrical properties have been studied since D.D. Eley and Cees Dekker's work, revealing its nonlinear I-V characteristics. This led to extensive research on charge transport mechanisms using models like the Dangling Backbone Ladder Model. Recently, Sourav and coworkers advanced these models to detect DNA base-pair mismatches via conductance and I-V analysis, with potential applications in genetic disorder detection and medical diagnostics.">
+
+	<meta property="og:title" content="Detection of Base-Pair Mismatch in DNA via Graphene Nanopores">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content=http://localhost:4000/issue2/dna/>
+	<meta property="og:description" content="DNA's electrical properties have been studied since D.D. Eley and Cees Dekker's work, revealing its nonlinear I-V characteristics. This led to extensive research on charge transport mechanisms using models like the Dangling Backbone Ladder Model. Recently, Sourav and coworkers advanced these models to detect DNA base-pair mismatches via conductance and I-V analysis, with potential applications in genetic disorder detection and medical diagnostics.">
+	<meta property="og:image" content="">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+
+	<!doctype html>
+
+<link rel="stylesheet" href="/assets/css/styles.css">
+<link rel="stylesheet" href="/assets/webfonts/Lato/stylesheet.css">
+<link rel="stylesheet" href="/assets/webfonts/Hero New/stylesheet.css">
+<link rel="stylesheet" href="/assets/webfonts/Roboto/stylesheet.css">
+<link rel="stylesheet" href="/assets/webfonts/SymbolsNF/stylesheet.css">
+<link rel="stylesheet" href="/assets/webfonts/Lilex/stylesheet.css">
+
+</head>
+
+
+<body>
+<header>
+<nav>
+<a id="home-button" href="/">
+ <img src="/assets/global/bannerTextWhite.svg"/>
+</a>
+<a href="/magazine/">Magazine</a>
+<a href="/archives/">Archives</a>
+<a href="/games/">Games</a>
+<a href="/submit/">Submit</a>
+<a href="/about/">About</a>
+</nav>
+</header> 
+
+
+<main>
+  
+  <div class="hero-image-caption">
+	  <img class="hero-image" src="/assets/images//issue2/dna//DNA.png"/>
+  
+  </div>
+
+<h1> Detection of Base-Pair Mismatch in DNA via Graphene Nanopores </h1>
+
+<div class="author">Sukalyan Deb</div>
+<div class="affiliation">IISER Kolkata</div>
+<div class="date">Published: Feb 05, 2025</div>
+
+
+<div class="excerpt">
+<p>DNA’s electrical properties have been studied since D.D. Eley and Cees Dekker’s work, revealing its nonlinear I-V characteristics. This led to extensive research on charge transport mechanisms using models like the Dangling Backbone Ladder Model. Recently, Sourav and coworkers advanced these models to detect DNA base-pair mismatches via conductance and I-V analysis, with potential applications in genetic disorder detection and medical diagnostics.</p>
+
+</div>
+
+<hr>
+<p>The field of quantum transport in DNA begins with a fundamental question: “Is DNA a metal, insulator, or semiconductor ?” For the first time in 1961, D.D. Eley, in his paper [4] , studied the current-conducting ability of Penicillium DNA under a certain voltage and he observed a very small departure from Ohm’s law. Eley took the first initiative, paving the way for an entirely new and intriguing area of research, which is now referred to as DNA Nanotechnology.</p>
+
+<figure>
+  
+  
+  
+  
+  <img src="/assets/images/issue2/dna/fig1.png" width="500" />
+  
+  
+  
+  
+  <figcaption> FIG 1.  Schematic representation of a dna double helix showing base pair attached with sugar -phosphate backbones.
+</figcaption>
+  
+</figure>
+
+<p>DNA, the basic building block of life, is composed of four nitrogenous bases (A, T, G and C), forming a double helix with complementary base pairing (A-T, G-C). The two nitrogen bases of a given pair are connected via a hydrogen bond, whereas different bases are connected via covalent bonds that form the two rungs of the double-helix. The sequence of the different bases along the rungs is vital, as it controls different biological processes, e.g., DNA replication, transcription, and protein synthesis in living organisms. When a base pair mismatch occurs during DNA replication, it can lead to faulty protein production, which may result in genetic diseases and cancer. [6]</p>
+
+<figure>
+  
+  
+  
+  
+  <img src="/assets/images/issue2/dna/fig2.png" width="400" />
+  
+  
+  
+  
+  <figcaption> FIG 2.  A tight binding ladder model representation through double stranded DNA . A,T,G and C are the four nitrogenous bases.Vertical line between bases represents intrastrand hopping and solid horizontal line represents interstrand hopping(t).
+</figcaption>
+  
+</figure>
+
+<p>In 1998, at Delft University of Technology, Cees Dekker and his team conducted a groundbreaking experimental [3] measurement of DNA conductivity. They used double-stranded poly(G)-poly(C) DNA, which is 10.4 nm long and consists  of 30 base pairs, placed between platinum-coated electrodes at room temperature. The uniqueness of the experiment lies in the simplicity of both the method used and the idea implemented, as well as the high precision of the results obtained . It was observed that below a certain threshold voltage, the DNA behaved as an insulator, conducting very little current .The I-V response curve revealed non linear behavior, indicating the presence of a bandgap. Interest in this field surged around 2000, marking a significant milestone in bioelectronics.</p>
+
+<figure>
+  
+  
+  
+  
+  <img src="/assets/images/issue2/dna/fig3.png" width="300" />
+  
+  
+  
+  
+  <figcaption> FIG 3.  I - V response of the poly(G)-poly(C) DNA showing semiconducting behaviour. Adapted from [3].
+</figcaption>
+  
+</figure>
+
+<p>The theoretical exploration of suitable charge conduction mechanisms through DNA began following these experimental works. Researchers have attempted to understand the underlying physics using methods such as Density Functional Theory or the computationally modest tight-binding model Hamiltonian approach.The most commonly used model is the Dangling Backbone Ladder Model, which represents DNA as a traditional ladder with backbones attached to the outer sides . The Hamiltonian for DNA includes hopping terms along the rungs of the double-helix, following the covalent bonds. “Hopping” refers to the movement of electrons to their nearest neighbors, representing the kinetic energy terms. Experiments revealed that current flows through the π-stacked bases along the rungs of the double-helix.</p>
+
+<figure>
+  
+  
+  
+  
+  <img src="/assets/images/issue2/dna/fig4.png" width="300" />
+  
+  
+  
+  
+  <figcaption> FIG 4.  Schematic view of graphene nanopore device showing double stranded DNA passing through the nanopore. Adapted from [1].
+</figcaption>
+  
+</figure>
+
+<p>Sourav and coworkers [1] expanded on the ladder model to mimic double-stranded DNA, aiming to detect base-pair mismatches by incorporating both nearest-neighbor and inter-layer hopping between the nitrogen bases of the two helices in their analysis.</p>
+
+<p>They examined changes in local density of states, conductivity and I-V characteristics by inserting a ds-DNA chain into a graphene nanopore. The traditional  technique  for the DNA sequencing is the Sanger [5] method, which uses chain-terminating dideoxynucleotides to determine the sequence of a DNA strand. However, its main drawback is that it is a time-consuming process, and sequencing an entire human genome using this method costs around 1,000 USD.The advantage of using graphene nanopores is that it is a unique and more cost-effective technique for DNA sequencing.Their study explores techniques for detecting DNA base-pair mismatches through conductance and I-V response analysis, which revealed distinct patterns.</p>
+
+<figure>
+  
+  
+  
+  
+  <img src="/assets/images/issue2/dna/fig5.png" width="500" />
+  
+  
+  
+  
+  <figcaption> FIG 5.  The left panel represents the current-voltage response for a DNA strand with a base pair mismatches , while the right panel corresponds to a DNA strand without a mismatch. A clear distinction is observed in the left panel, indicating a significant departure from the expected behaviour. Adapted from [1].
+</figcaption>
+  
+</figure>
+
+<p>They successfully identified unique signatures related to base-pair mismatches that can lead to different genetic diseases, offering significant potential to early detection genetic disorder and medical diagnostics. This work could lead to the development of a fast and cost-effective DNA sequencing device.</p>
+
+
+
+
+<hr>
+  <div class="author-bio">
+	
+	
+	
+    <p><strong>Sukalyan Deb</strong> is a PhD scholar in the Department of Physical Sciences at IISER Kolkata, currently working in theoretical physics, focusing on strongly correlated systems.</p>
+
+  </div>
+
+<br>
+
+<br>
+
+
+<h3>References</h3>
+<div class="references">
+<ol>
+
+
+<li id="ref-1">Sourav Kundu and S N Karmakar, Nanotechnology 27 135101 (2016)</li>
+
+
+<li id="ref-2">J.Watson and F.Crick, Nature(London) 171,737(1953)</li>
+
+
+<li id="ref-3">Porath D, Bezryadin A, de Vries S, Dekker C. Direct measurement of electrical transport through DNA molecules. Nature. 2000 Feb 10;403(6770):635-8</li>
+
+
+<li id="ref-4">Eley, D. D., Spivey, D. I. (1962). Semiconductivity of organic substances. Part 9.—Nucleic acid in the dry state. Transactions of the Faraday Society, 58(0), 411–415.</li>
+
+
+<li id="ref-5">Sanger F, Nicklen S, Coulson AR. DNA sequencing with chain-terminating inhibitors. Proc Natl Acad Sci U S A. 1977 Dec;74(12):5463-7.</li>
+
+
+<li id="ref-6">Lahtz C, Pfeifer GP. Epigenetic changes of DNA repair genes in cancer. J Mol Cell Biol. 2011 Feb;3(1):51-8.</li>
+
+
+</ol>
+</div>
+
+
+</main>
+
+ <footer>
+	<span>©️ 2025 InScight </span>
+	<span>|</span>
+	<span>📤 Hosted by <a href="https://www.iiserkol.ac.in/web/en/" target="_blank">IISER Kolkata</a></span>
+	<span>|</span>
+	<span><a class="nf social-links nf-fa-instagram" href="https://www.instagram.com/inscight_iiserkolkata/">󰋾</a><a class="nf social-links nf-fa-twitter_square" href="https://x.com/InScightIISERK"></a></span>
+</footer> 
+
+</body>
+</html>
+

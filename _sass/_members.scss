@@ -1,0 +1,34 @@
+@use 'constants';
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  row-gap: 2rem;
+  justify-content: space-around;
+}
+.member-details {
+  width: 250px;
+  > img {
+    width: 200px;
+  }
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: constants.$breakpoint-tiny) {
+  .members {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4rem;
+  }
+  .member-details {
+    width: 100%;
+    > img {
+      width: 200px;
+    }
+    text-align: left;
+  }
+}

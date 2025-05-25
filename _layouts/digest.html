@@ -2,33 +2,28 @@
 layout: default
 ---
 
+<div class="hero-image-caption">
+	<img class="hero-image" src="/assets/images/issue{{page.issueNumber}}/digest/{{page.hero-image}}"/>
+{% if page.hero-source %}
+<a class="hero-caption" href="{{ page.hero-source }}">Source &nbsp;<span class="nf nf-oct-link"></span></a>
+{% endif %}
+</div>
+<h1> Insight Digest | Issue #{{ page.issueNumber }} </h1>
+<div class="excerpt"> In Insight Digest, we showcase fresh highlights from the frontiers of science research.</div>
 
-<main>
-  <div class="hero-image-caption">
-  <img class="hero-image" src="/assets/hero-images/{{ page.hero-image }}"/>
-  {% if page.hero-source %}
-    <a class="hero-caption" href="{{ page.hero-source }}">Source &nbsp;<span class="nf nf-oct-link"></span></a>
-  {% endif %}
-  </div>
-  <h1> Insight Digest | Issue #{{ page.issueNumber }} </h1>
-  <h2> Showcasing the frontiers of science</h2>
-  {% assign id = "Issue-" | append: page.issueNumber %}
-  {% for item in site.data.researchSummary[id] %}
-  <div class="summary-head">
-  <b>{{ item["Title"] }}</b><br>
-  {{ item["Reference"] }}<br>
-  Contributed by: {{ item["Author"] }} ({{ item["Affiliation"] }})<br>
-  Keywords: {{ item["Keywords"] | join: ", " }}<br><br>
-  </div>
-  <div class="summary-content">{{ item["Summary"] | newline_to_br }}</div>
-  {% if item["Image"] %}
-  {% assign imagePath = "/assets/images/digest/" | append: item["Image"] %}
-  {% assign caption = item["Caption"] %}
-  {% include article-image.html image=imagePath caption=caption width=600 %}
-  {% endif %}
-  <br>
-  
-  <hr> 
-  {% endfor %}
-
-</main>
+{% assign id = "issue" | append: page.issueNumber %}
+{% for item in site.data.researchSummary[id] %}
+<div class="digest-item">
+<h3 id="{{ item["Title"] | slugify }}">{{ item["Title"] }}</h3>
+<span class="reference">{{ item["Reference"] }}</span>
+<span class="author">Contributed by: {{ item["Author"] }}</span> 
+<span class="affiliation">({{ item["Affiliation"] }})</span>
+<span class="keywords">Keywords: {{ item["Keywords"] | join: ", " }}</span>
+<p class="summary">{{ item["Summary"] | newline_to_br }}</p>
+{% if item["Image"] %}
+{% assign imagePath = item["Image"] %}
+{% assign caption = item["Caption"] %}
+{% include figure.html image=imagePath caption=caption width=600 suppressPrefix=true %}
+{% endif %}
+</div>
+{% endfor %}

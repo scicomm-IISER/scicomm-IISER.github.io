@@ -1,0 +1,6 @@
+@use 'constants';
+.archive-author {
+  color: constants.$emph-color;
+  font-style: italic;
+}
+

@@ -1,0 +1,284 @@
+<!doctype html>
+
+<html lang="en">
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MPQZSVEQWQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MPQZSVEQWQ');
+</script>
+	<!--KaTeX-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+	<script>
+	    document.addEventListener("DOMContentLoaded", function() {
+	  	  renderMathInElement(document.body, {
+	  	  });
+	    });
+	</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Let’s Make An "Invisibility Cloak"!</title>
+	<meta name="description" content="**What if invisibility wasn’t just a fantasy but a reality within our grasp?** From Harry Potter’s enchanted cloak to high-tech military stealth, the dream of becoming unseen has fascinated us for centuries. Thanks to breakthroughs in metamaterials and transformation optics, scientists are bending light in ways that were once thought impossible—bringing invisibility cloaks out of fiction and into the lab. But while these cloaks can already manipulate microwaves and sound waves, perfecting them for visible light remains a thrilling challenge. As science threads the needle between magic and reality, the question is no longer if invisibility is possible, but when we’ll finally disappear from sight.">
+
+	<meta property="og:title" content="Let’s Make An "Invisibility Cloak"!">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content=http://localhost:4000/issue2/cloak/>
+	<meta property="og:description" content="**What if invisibility wasn’t just a fantasy but a reality within our grasp?** From Harry Potter’s enchanted cloak to high-tech military stealth, the dream of becoming unseen has fascinated us for centuries. Thanks to breakthroughs in metamaterials and transformation optics, scientists are bending light in ways that were once thought impossible—bringing invisibility cloaks out of fiction and into the lab. But while these cloaks can already manipulate microwaves and sound waves, perfecting them for visible light remains a thrilling challenge. As science threads the needle between magic and reality, the question is no longer if invisibility is possible, but when we’ll finally disappear from sight.">
+	<meta property="og:image" content="">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+
+	<!doctype html>
+
+<link rel="stylesheet" href="/assets/css/styles.css">
+<link rel="stylesheet" href="/assets/webfonts/Lato/stylesheet.css">
+<link rel="stylesheet" href="/assets/webfonts/Hero New/stylesheet.css">
+<link rel="stylesheet" href="/assets/webfonts/Roboto/stylesheet.css">
+<link rel="stylesheet" href="/assets/webfonts/SymbolsNF/stylesheet.css">
+<link rel="stylesheet" href="/assets/webfonts/Lilex/stylesheet.css">
+
+</head>
+
+
+<body>
+<header>
+<nav>
+<a id="home-button" href="/">
+ <img src="/assets/global/bannerTextWhite.svg"/>
+</a>
+<a href="/magazine/">Magazine</a>
+<a href="/archives/">Archives</a>
+<a href="/games/">Games</a>
+<a href="/submit/">Submit</a>
+<a href="/about/">About</a>
+</nav>
+</header> 
+
+
+<main>
+  
+  <div class="hero-image-caption">
+	  <img class="hero-image" src="/assets/images//issue2/cloak//invisibilityCloak.png"/>
+  
+  </div>
+
+<h1> Let’s Make An "Invisibility Cloak"! </h1>
+
+<div class="author">Swarnendu Saha</div>
+<div class="affiliation">IISER Kolkata</div>
+<div class="date">Published: Mar 02, 2025</div>
+
+
+<div class="excerpt">
+<p><strong>What if invisibility wasn’t just a fantasy but a reality within our grasp?</strong> From Harry Potter’s enchanted cloak to high-tech military stealth, the dream of becoming unseen has fascinated us for centuries. Thanks to breakthroughs in metamaterials and transformation optics, scientists are bending light in ways that were once thought impossible—bringing invisibility cloaks out of fiction and into the lab. But while these cloaks can already manipulate microwaves and sound waves, perfecting them for visible light remains a thrilling challenge. As science threads the needle between magic and reality, the question is no longer if invisibility is possible, but when we’ll finally disappear from sight.</p>
+
+</div>
+
+<hr>
+<p>Among all the magical things to exist in the Harry Potter universe, the one that captures my imagination the most are invisibility cloaks. While such cloaks are quite common there, such accessories are still just a dream in our world. Nevertheless, there does exist some concrete physics that allows us to get pretty close to making such invisibility cloaks. Let’s try to understand this physics, and also come up with a practical setup for it. While the invisibility cloaks in Rowling’s universe were either woven from Demiguise hair or borrowed from Death, we will not have to go to such extreme measures, and can make do with some interesting physics.</p>
+
+<p>Have you ever noticed how objects seem to bend or look like they’re floating when placed in water? This fascinating phenomenon, which many of us first learned about in school, is caused by <strong>refraction</strong>. Refraction occurs when light changes direction as it passes from one medium to another—like from air to water—due to a change in its speed. The degree to which light bends depends on a property called the <strong>refractive index</strong> of the material. A higher refractive index means light slows down more and bends to a greater extent. This behavior is governed by a fundamental physics principle known as <strong>Snell’s Law</strong>. Snell’s Law mathematically relates the angles of incidence (the incoming light) and refraction (the bent light) using the equation:</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><mi>sin</mi><mo>⁡</mo><msub><mi>θ</mi><mi>i</mi></msub></mrow><mrow><mi>sin</mi><mo>⁡</mo><msub><mi>θ</mi><mi>r</mi></msub></mrow></mfrac><mo>=</mo><mfrac><msub><mi>n</mi><mn>2</mn></msub><msub><mi>n</mi><mn>1</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">\frac{\sin \theta_i}{\sin \theta_r} = \frac{n_2}{n_1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.2074em;vertical-align:-0.836em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3714em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop">sin</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop">sin</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">θ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.836em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.9436em;vertical-align:-0.836em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1076em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.836em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span>
+
+<p>where \(\theta_i\) and \(\theta_r\) are the angles of incidence and refraction, and \(n_1\) and \(n_2\) are the refractive indices of the two media.</p>
+
+<p>When light enters air from water, it bends away from the normal (a line perpendicular to the surface) because water has a higher refractive index than air. When the refracted light reaches us, our eyes extrapolate the refracted light straight backwards. This extrapolated position of the image is offset from the actual position, because of the bending, creating an apparent shift in the position of objects, <strong>forming a virtual image within the denser medium</strong> (e.g., water).</p>
+
+<figure>
+  
+  
+  
+  
+  <img src="/assets/images/issue2/cloak/fig1.png" width="500" />
+  
+  
+  
+  
+  <figcaption> FIG 1.  Advances in metamaterials, nanolenses, and transformation optics are paving the way for technology that can bend light around objects, allowing the background to remain visible. This could make it possible for incoming light from any angle and distance to create the illusion of invisibility. [Image Source: University of Rochester].
+</figcaption>
+  
+</figure>
+
+<p>Imagine an extreme case of this, where the angle of refraction \(\theta_r\) becomes greater than 180°; the virtual image will then be generated <strong>outside the water</strong>. This is somewhat similar to total internal reflection, where light reflects entirely within the water, and nothing is refracted. For the virtual image to occur outside the water, the refractive index itself has to be negative. How, if at all, is that even possible? This is where metamaterials come into the picture.</p>
+
+<p>Metamaterials are not natural substances. Their properties have been <strong>modified with grids</strong>; a grid refers to a structured arrangement or pattern of small artificial components or units (often called meta-atoms) that are engineered to manipulate electromagnetic waves, such as light. The grid can take forms such as a lattice, periodic arrangement, or irregular structures. These are often composed of materials like metals or dielectrics. The spacing between the elements in the grid is <strong>smaller than the wavelength of the light</strong>. This enables precise control over the interaction between light and the material.</p>
+
+<p>Light propagates through any material in the form of an electromagnetic wave, consisting of <strong>simultaneous oscillations</strong> of electric and magnetic fields. The speed and direction of propagation of these fields are determined, respectively, by the permittivity (\(\varepsilon\)) and the permeability (\(\mu\)) of the material. Together, they also determine the refractive index of the material, through the relation:</p>
+
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>=</mo><mi>ε</mi><mi>μ</mi></mrow><annotation encoding="application/x-tex">n^2 = \varepsilon \mu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8641em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">ε</span><span class="mord mathnormal">μ</span></span></span></span></span>
+
+<p>In 1968, Russian physicist Victor Vaselago showed that for materials in which both the permittivity and permeability are negative, it makes sense to <strong>treat the refractive index to be negative</strong>, by identifying \( n = -\sqrt{\varepsilon \mu} \) instead of the positive root. Why is this important for invisibility cloaks? Well, for an object to be visible, light reflected from the object must reach the eye of the observer. If an object is covered by a metamaterial with a negative refractive index, the virtual image coming from the object will be produced outside the body of the object and it <strong>will not reach the eye of any observer</strong>. Without any reflected light reaching the eye, the object will be practically invisible for the observer. It was about 30 years after Vaselago’s work that metamaterials could be produced, though with several limitations.</p>
+
+<figure>
+  
+  
+  
+  
+  <img src="/assets/images/issue2/cloak/fig2.png" width="500" />
+  
+  
+  
+  
+  <figcaption> FIG 2.  Schematic representation of refraction when light passes from air into water. The light bends towards the normal as it enters the surface of water; the ratio of the sines of the incident angle     and the refracted angle       is given by the ratio of the refractive indices of the two media. The red dotted line is followed by our eye when light coming from water into air reaches it; the end of the dotted line is the location of the virtual image.  [Credit: K.Venkataramana]
+</figcaption>
+  
+</figure>
+
+<h2 id="metamaterials-and-how-they-manipulate-electromagnetic-waves">Metamaterials, and How They Manipulate Electromagnetic Waves</h2>
+<p>In 2006, David Smith from Duke University advanced a concept initially proposed by British physicist John Pendry by developing a metamaterial to <strong>manipulate microwave energy</strong>. The paper “Controlling Electromagnetic Fields,” authored by Pendry, Schurig, and Smith and published in Science in 2006, presents a groundbreaking design strategy for manipulating electromagnetic fields using artificially engineered metamaterials. By carefully designing the components’ shape, size, and arrangement in these metamaterials, the authors show that <strong>it is possible to guide, bend, and reshape electromagnetic fields</strong>, achieving highly controlled propagation paths. This approach enables the redirection of electromagnetic energy around objects, avoiding scattering and absorption, and opens the door to innovative technologies that challenge traditional limitations of wave behavior.</p>
+
+<p>The 2006 paper “Metamaterial Electromagnetic Cloak at Microwave Frequencies” by Smith and co-workers presents the <strong>first experimental demonstration</strong> of a metamaterial-based cloak designed to render objects invisible to microwave radiation. Smith’s innovation involved a fabric composed of concentric rings embedded with electronic microwave manipulators. When activated, this metamaterial can redirect microwaves around its central area, effectively <strong>preventing the waves from interacting with any object placed within that area</strong>.</p>
+
+<p>While humans cannot see microwaves, this technology demonstrated a key principle: energy waves can be guided around an object.  The experimental evidence confirmed the theoretical predictions and demonstrated the feasibility of using metamaterials for cloaking applications. The work showcased the potential for such technology, revealing a path toward developing advanced forms of invisibility by tailoring these principles to various types of waves.</p>
+
+<figure>
+  
+  
+  
+  
+  <img src="/assets/images/issue2/cloak/fig3.png" width="500" />
+  
+  
+  
+  
+  <figcaption> FIG 3.  Propagation of light through a material involves the simultaneous oscillation of electric field (blue) and magnetic field (green). The propagation is affected by the properties of the material such as the permittivity and permeability. [Credit: Marko Petek].
+</figcaption>
+  
+</figure>
+
+<h2 id="the-bridge-to-optical-wavelengths">The Bridge To Optical Wavelengths</h2>
+<p>By building on earlier work by Vladimir Shalaev from Purdue University, Igor Smolyaninov from the University of Maryland made some impressive advancements in the quest for invisibility in 2007. The paper “Negative Index of Refraction in Optical Metamaterials” by Shalaev et al. presented a significant advancement in the field of metamaterials by demonstrating a material with a negative refractive index at <strong>optical communication wavelengths</strong>. Using this work, Smolyaninov and co-workers achieved experimental realization of a non-magnetic electromagnetic cloak operating in the visible spectrum. This amazing cloak is only 10 micrometers wide and is made of concentric gold rings that are infused with polarized cyan light. These rings help to steer incoming light waves around the hidden object, <strong>effectively making it disappear</strong>.</p>
+
+<p>Meanwhile, researchers in China at Wuhan University are exploring a similar idea with sound waves, proposing an acoustic invisibility cloak that can redirect sound around an object.</p>
+
+<p>However, these metamaterial cloaks do have some limitations. <strong>They’re really tiny and only function in two dimensions</strong>, making them unsuitable for use in our three-dimensional world. Also, the cloaks tend to be too heavy and cannot be carried around for personal purposes, but are more suitable for hiding stationary objects like buildings or military vehicles.</p>
+
+<h2 id="enter-metalenses">Enter Metalenses</h2>
+<p>Metalenses are an innovative alternative to traditional lenses, <strong>overcoming the “rainbow” effect</strong>, where different colours of light slow down at different rates, by using tiny structures that focus all colours to the same point. Unlike conventional lenses, metalenses are ultra-thin, easy to manufacture, and more efficient at handling different wavelengths.</p>
+
+<p>In 2018, Chen and co-workers discovered that by using tiny titanium “nanofins,” metalenses can focus light across a broad range of colours, nearly eliminating the colour distortion problem.</p>
+
+<figure>
+  
+  
+  
+  
+  <img src="/assets/images/issue2/cloak/fig4.png" width="500" />
+  
+  
+  
+  
+  <figcaption> FIG 4.  Top panel: Through the power of a metalens, incoming light from across the spectrum along a wide area can be focused down to a point. If that light can be bent around an object, de-focused, and sent off in its initial direction, we would have an actual invisibility cloak. Bottom panels: The metalens is designed to provide spatially dependent group delays such that wavepackets from different locations arrive simultaneously at the focus.See [5]
+</figcaption>
+  
+</figure>
+
+<h2 id="how-optical-camouflage-makes-you-almost-invisible">How Optical Camouflage Makes You (Almost) Invisible</h2>
+<p>Since it is not yet possible for metamaterials to operate in the visible range, we will instead adopt a different technique to achieve invisibility. It involves using a coat made from a “magic fabric” referred to as <strong>retro-reflective material</strong>. The coat is made of tiny glass beads; when light hits these beads, it bounces right back to where it came from. This makes the fabric super bright at night and helps it reflect whatever’s behind it.</p>
+
+<p>The setup involves the following components:</p>
+
+<p><strong>Video Camera</strong>: This camera sits behind you, capturing the scene that’s behind the cloak.</p>
+
+<p><strong>Computer</strong>: The computer takes that camera feed and adjusts it so it looks just right when projected onto the cloak.</p>
+
+<p><strong>Projector</strong>: The projector then beams this adjusted image onto the cloak. There’s a tiny pinhole that helps keep the image sharp.</p>
+
+<p><strong>Combiner</strong>: This is a special mirror that reflects the image onto the cloak and lets the light bounce off the cloak go through to your eyes.</p>
+
+<p>Here’s how the magic happens:</p>
+
+<p><strong>Step 1.</strong> The camera films what’s behind you and passes the image/video to a computer. This is necessary to replace the image of the person with that of the background.</p>
+
+<p><strong>Step 2.</strong> The computer tweaks the footage so it fits perfectly with your cloak. This might involve making adjustments so that the distances and angles are accounted for. The processed data is passed to a projector.</p>
+
+<p><strong>Step 3.</strong> The projector shines this adjusted image/video onto the combiner through a tiny hole.</p>
+
+<p><strong>Step 4.</strong> The combiner mirror sends the image onto the cloak. The cloak acts as a screen and reflects the light back, passed through by the combiner so that you can still see the surroundings.</p>
+
+<p>Ultimately, the cloak makes you look invisible because it <strong>shows the background scene right on the fabric</strong> while letting the real-world light reach your eyes. So, while you’re not precisely disappearing, you’re blending in pretty darn well!</p>
+
+<figure>
+  
+  
+  
+  
+  <img src="/assets/images/issue2/cloak/fig5.png" width="300" />
+  
+  
+  
+  
+  <figcaption> FIG 5.  Schematic representation of the invisibility setup. The background is captured by the camera and processed by the computer. This data is fed into the projector before being sent into the combiner and ultimately broadcast onto the cloak. The cloak returns the light back to the observer, effectively replacing the image of the target person with that of the background in the eye of the observer. See [7].
+</figcaption>
+  
+</figure>
+
+
+
+
+<hr>
+  <div class="author-bio">
+	
+	
+	
+    <p>A fifth year BS-MS student of IISER Kolkata, <strong>Swarnendu Saha</strong> is a student working with Prof. Rajesh Kumble Nayak, and is a travel enthusiast, who loves to travel anywhere below the sky. Instead of mentioning  his preferred fields in science, he would rather say that chemistry is the one he doesn’t like at all!</p>
+
+  </div>
+
+<br>
+
+<br>
+
+
+<h3>References</h3>
+<div class="references">
+<ol>
+
+
+<li id="ref-1">J. B. Pendry et al. , “Controlling Electromagnetic Fields”. Science 312,1780-1782 (2006)</li>
+
+
+<li id="ref-2">D. Schurig et al. ,Metamaterial Electromagnetic Cloak at Microwave Frequencies. Science 314, 977-980 (2006)</li>
+
+
+<li id="ref-3">I. I. Smolyaninov, Y. J. Hung, and C. C. Davis, "Two-dimensional metamaterial structure exhibiting reduced visibility at 500 nm," Opt. Lett. 33, 1342-1344 (2008)</li>
+
+
+<li id="ref-4">Vladimir M. Shalaev, Wenshan Cai, Uday K. Chettiar, Hsiao-Kuan Yuan, Andrey K. Sarychev, Vladimir P. Drachev, and Alexander V. Kildishev, "Negative index of refraction in optical metamaterials," Opt. Lett. 30, 3356-3358 (2005)</li>
+
+
+<li id="ref-5">Chen, W.T., Zhu, A.Y., Sanjeev, V. et al. A broadband achromatic metalens for focusing and imaging in the visible. Nature Nanotech 13, 220–226 (2018)</li>
+
+
+<li id="ref-6">“Wuhan University student team develops invisibility cloak-Wuhan University,” Whu.edu.cn, Li Jing, Su xinyue, Sylvia, Xi Bingqing, Gao Fei (2023)</li>
+
+
+<li id="ref-7">William Harris & Robert Lamb "How Does an Invisibility Cloak Work?" 1 January 1970.</li>
+
+
+</ol>
+</div>
+
+
+</main>
+
+ <footer>
+	<span>©️ 2025 InScight </span>
+	<span>|</span>
+	<span>📤 Hosted by <a href="https://www.iiserkol.ac.in/web/en/" target="_blank">IISER Kolkata</a></span>
+	<span>|</span>
+	<span><a class="nf social-links nf-fa-instagram" href="https://www.instagram.com/inscight_iiserkolkata/">󰋾</a><a class="nf social-links nf-fa-twitter_square" href="https://x.com/InScightIISERK"></a></span>
+</footer> 
+
+</body>
+</html>
+

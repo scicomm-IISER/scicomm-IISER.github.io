@@ -1,40 +1,59 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: InScight
-description: "InScight is a student-run online magazine hosted by IISER Kolkata, dedicated to making pure science accessible and engaging." # Primarily for SEO.
+description: "InScight is a student-run online magazine hosted by IISER Kolkata, dedicated to making science accessible and engaging for a general audience." # Primarily for SEO.
 url: "https://scicomm.iiserkol.ac.in" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: ''
-logo-light: "/assets/images/global/logo-light.png"
-logo-dark: "/assets/images/global/logo-dark.png"
-defaults:
+destination: ./docs
+logo-light: "/assets/global/logo-light.png"
+logo-dark: "/assets/global/bannerTextWhite.svg"
+archives: # key-value pairs that list the categories of posts that need to be listed in the archives page
+  article: "Articles"
+  interview: "Interviews"
+  digest: "Insight Digest"
+archive-year: # range of years to archive
+  start: 2024
+  end: 2025
+category-icons:
+  article: "🧬"
+  interview: "🎙️"
+  crossword: "🎳"
 defaults:
   - scope:
+      path: ""
       type: posts
     values:
       layout: posts
+      excerpt: ""
+  - scope:
+      path: "_posts/*/*-digest.md"
+      type: posts
+    values:
+      layout: digest
+      excerpt: ""
+  - scope:
+      path: "_posts/*/*-quiz.md"
+      type: posts
+    values:
+      layout: quiz
+      excerpt: ""
+  - scope:
+      path: "_posts/*/*-crossword.md"
+      type: posts
+    values:
+      layout: pages
+      excerpt: ""
   - scope:
       type: pages
     values:
-      layout: default
+      layout: pages
+      excerpt: ""
 kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  toc_levels: 1..2
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
   math_engine: katex
+  parse_block_html: false
+  highlighter: rouge
 plugins:
   - jekyll-sitemap

@@ -1,0 +1,9 @@
+Variables,Successful Begging,Unsuccessful Begging
+BGpi,0.807***,0.517***
+BGc,0.729***,0.777***
+BGe,0.772***,0.355***
+Adult,0.965***,0.76***
+Adult Female,0.963***,0.758***
+Adult Male,0.286***,0.234**
+Offer 1,0.988***,0.564***
+Offer 2,0.325***,0.34***

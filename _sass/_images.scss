@@ -1,59 +1,16 @@
+@use 'constants';
 img {
-    max-width: 100%;
+  max-width: constants.$width;
+  text-align: center;
 }
 
-.hero-image {
-	width: 100%;
-	max-width: 100%;
-	// padding-top: 1em;
-}
-.hero-caption { 
-  position: absolute;
-  bottom: 0.4em;
-  left: 0;
-  padding: 0.2em;
-  color: $bg-color;
-  background-color: rgba(0.9, 0.9, 0.9, 0.5);
-  font-size: 0.8em;
-}
-.hero-caption:hover { 
-  text-decoration: none;
-}
-
-.hero-image-caption {
-  position: relative;
-}
-
-.article-image {
-  background-color: rgba($fg-color, 0.08);
-  padding: 1em;
-  width: 100%;
-  display: block;
-  margin: auto;
-  margin-bottom: 1em;
-  margin-top: 1em;
-}
-
-.article-image > img {
-  display: block;
-  margin: auto;
-  padding-bottom: 1em;
-}
-.article-image > span {
-  text-align: justify;
-  margin: auto;
-  display: block;
-  color: $fg-color;
-  font-weight: 600;
-  > strong {
-    color: $fg-color;
-  }
-  font-size: 0.9em;
-  line-height: 1.1em;
-}
-
-@media only screen and (max-width: $breakpoint-small)  {
-  img {
-    max-width: 100%;
+figure {
+  text-align: center;
+  > figcaption {
+    font-size: 0.9rem;
+    padding-top: 0.2rem;
+    color: constants.$h1-color;
+    font-style: italic;
   }
 }
+

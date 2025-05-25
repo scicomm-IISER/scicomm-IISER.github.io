@@ -1,0 +1,5 @@
+@use 'constants';
+iframe.crossword-iframe {
+  height: constants.$crossword-height;
+  width: 100%;
+}

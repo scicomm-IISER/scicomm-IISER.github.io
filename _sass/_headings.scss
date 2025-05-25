@@ -1,31 +1,29 @@
-h1,h2,h3,h4 {
-	line-height: $h1-line-height;
-	font-family: $heading-font-family;
-	color: $heading-color;
-    margin-bottom: 0.5em;
-}
-
+@use 'constants';
 h1 {
-	font-size: $h1-font-size;
+    color: constants.$h1-color;
+    font-size: constants.$h1-size;
+    text-align: left;
+    line-height: 95%;
 }
 
-h2 {
-	font-size: $h2-font-size;
+h2,h3,h4,h5,h6 {
+    color: constants.$hn-color;
+    text-align: left;
+    line-height: 95%;
+    margin-bottom: 0.5rem;
 }
 
 h3 {
-	font-size: $h3-font-size;
+    margin-bottom: 0.4rem;
 }
 
+h2 {
+    font-size: constants.$h2-size;
+}
+h3 {
+    font-size: constants.$h3-size;
+}
 
-@media only screen and (max-width: $breakpoint-small)  {
-  h1 {
-      font-size: $h1-mobile-font-size;
-  }
-  h2 {
-      font-size: $h2-mobile-font-size;
-  }
-  h3 {
-      font-size: $h3-mobile-font-size;
-  }
+h2 + p {
+  margin-top: 0;
 }

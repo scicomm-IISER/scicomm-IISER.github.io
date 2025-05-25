@@ -1,0 +1,52 @@
+@use 'constants';
+
+#latest-issue {
+  display: flex;
+  flex-direction: row;
+  > a { 
+    width: 100%;
+    > img {
+    max-width: 500px;
+    width: 100%;
+    object-fit: cover;
+    }
+  }
+  gap: 2rem;
+  > .latest-issue-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0.1rem;
+    > h1, p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    text-align: left;
+  }
+}
+
+// @media (max-width: constants.$breakpoint-medium) {
+//   #latest-issue {
+//     flex-direction: column;
+//   }
+// }
+
+.home-button {
+  padding-bottom: 1rem;
+  > .nf {
+    color: constants.$fg-color;
+    font-size: 1.5rem;
+  }
+}
+
+#intro {
+  > div {
+    font-size: 1.4rem;
+    color: constants.$h1-color;
+    font-weight: bold;
+  }
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  // border: 0.2rem solid rgba(white, 0.3);
+  // border-radius: 15px;
+}

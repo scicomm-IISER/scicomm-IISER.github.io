@@ -1,0 +1,23 @@
+@use 'constants';
+.digest-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-top: 0.2rem solid constants.$fg-color;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  > .reference {
+    font-style: italic;
+    text-align: right;
+    color: constants.$h1-color;
+  }
+  > .author {
+    color: constants.$emph-color;
+    font-weight: bold;
+    text-align: right;
+  }
+  > .keywords, .affiliation {
+    text-align: right;
+  }
+
+}

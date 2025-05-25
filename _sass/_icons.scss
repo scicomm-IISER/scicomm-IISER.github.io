@@ -1,0 +1,12 @@
+@use 'constants';
+.nf {
+  padding: 0.1rem;
+  font-weight: bold;
+}
+a.nf {
+  color: constants.$emph-color;
+}
+
+.nf + .nf {
+  padding-left: 0.5rem;
+}

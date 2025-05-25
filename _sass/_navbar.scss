@@ -1,0 +1,50 @@
+@use 'constants';
+header {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+nav {
+	max-width: constants.$width;
+	height: constants.$header-height;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 0;
+    padding-top: constants.$footer-gap;
+    padding-bottom: calc(2 * constants.$footer-gap);
+    width: 100%;
+    > a {
+      color: constants.$hn-color;
+    }
+    > a:hover {
+      text-decoration: none;
+      transform: scale(1.2);
+    }
+}
+#home-button img {
+  width: constants.$logo-size;
+  height: 100%;
+}
+
+@media (max-width: constants.$breakpoint-medium) {
+  header {
+    width: 100%;
+  }
+  nav {
+    width: calc(100% - 2rem);
+    padding-top: constants.$footer-gap;
+    padding-bottom: constants.$footer-gap;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: constants.$breakpoint-small) {
+  #home-button img {
+    width: calc(0.6 * constants.$logo-size);
+    height: 100%;
+  }
+}

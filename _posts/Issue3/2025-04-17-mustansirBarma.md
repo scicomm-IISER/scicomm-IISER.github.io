@@ -38,7 +38,7 @@ SS: Now, coming to science, you work in statistical physics. When I as a laypers
 MB:  Randomness means to me the same thing that it means to everybody else. Something that is not predictable because it could be this way or that way. There are options and there might be different probabilities or different options so that you cannot be sure which one will happen.
 {: .interview-answer }
 
-{% include article-image.html image="/assets/images/interviews/mustansirBarma/MB1Small.png" caption="Mustansir Barma accepting the INSA (Indian National Science Academy) medal for Young Scientists in 1980. [Source TIFR H]" width=600 %}
+{% include figure.html image="MB1Small.png" caption="Mustansir Barma accepting the INSA (Indian National Science Academy) medal for Young Scientists in 1980. [Source TIFR H]" width=600 %}
 
 So, that is what I would say is the characteristic of randomness. You are not sure of what will happen in time.
 {: .interview-answer }
@@ -73,7 +73,7 @@ This concept of symmetry-driven phase behavior is fundamental in statistical phy
 
 SS: Let me try to understand this from a different angle. You mentioned earlier that in theory, for a very short time interval after I place the candle, there is no image of it  on the mirror. In the same way, if I consider the system over a very short time interval, there will be a region where the phase is morphing. Can you please explain or help me visualize what exactly is happening there?
 
-{% include article-image.html image="/assets/images/interviews/mustansirBarma/MB3.jpeg" caption="The then Prime Minister of India, Dr. Manmohan Singh, unveiled the foundation stone of the new TIFR Hyderabad campus in October 2010. [Credit: Mohd. Yousuf, The Hindu]" width=600 %}
+{% include figure.html image="MB3.jpeg" caption="The then Prime Minister of India, Dr. Manmohan Singh, unveiled the foundation stone of the new TIFR Hyderabad campus in October 2010. [Credit: Mohd. Yousuf, The Hindu]" width=600 %}
 
 MB:  Well, the first thing is that you must understand what is meant by this temperature, pressure phase diagram and what it is referring to is phases which have reached equilibrium. So, the diagram with pressure and temperature and so on applies only to equilibrium phases of matter. Now, equilibrium is a state which is reached in principle if you wait very very long - you have to wait really long for a system to reach equilibrium and for example, if you change the temperature, it takes some time for the system to equilibrate.
 {: .interview-answer }
@@ -118,7 +118,7 @@ SS: How do you evaluate the present condition of academia in various countries -
 MB: To assess the current situation, we must compare it with the past. So, I’ll share my perspective by comparing today’s scenario with the time when I returned to India from the United States.
 {: .interview-answer }
 
-{% include article-image.html image="/assets/images/interviews/mustansirBarma/MB5.jpg" caption="STATPHYS – Kolkata IX (2016): Abhishek Dhar, Sanjib Sabhapandit, Mustansir Barma, Sakuntala Chatterjee, Shamik Gupta. [Source TIFR H]" width=600 %}
+{% include figure.html image="MB5.jpg" caption="STATPHYS – Kolkata IX (2016): Abhishek Dhar, Sanjib Sabhapandit, Mustansir Barma, Sakuntala Chatterjee, Shamik Gupta. [Source TIFR H]" width=600 %}
 
 I came back in 1976 and joined TIFR, first as a postdoc and later as a permanent faculty member. If I focus on physics, particularly condensed matter physics, the research environment back then was very different from what it is today. At that time, there were very few active research groups in India. It is difficult to imagine today, but back then, you could count all the major groups on your fingers—probably no more than ten. It was a challenging time, but also exciting in its own way. The DAE Solid State Physics Meeting was one of the very few academic gatherings in the country. Since there weren’t many conferences, this meeting became the central hub where almost everyone working in condensed matter physics in India would come together. Travel was very different too. There were no frequent flights, so we relied on trains for travel. I remember collaborating with a researcher in Roorkee while I was in Bombay—and every interaction required significant logistical effort.
 {: .interview-answer }
@@ -168,7 +168,7 @@ MB: Question everything. There is no such thing as questioning rightly or wrongl
 In science, answers are not the main thing. The question is paramount. The true essence of science lies in asking the right questions, pushing boundaries, and challenging assumptions.
 {: .interview-answer }
 
-{% include article-image.html image="/assets/images/interviews/mustansirBarma/MB4.jpg" caption="Mustansir Barma delivering an invited talk at the International Institute of Physics, Brazil, on \"Entropy, Order and Fluctuations\", in January of 2020. [Source IIP]" width=600%}
+{% include figure.html image="MB4.jpg" caption="Mustansir Barma delivering an invited talk at the International Institute of Physics, Brazil, on \"Entropy, Order and Fluctuations\", in January of 2020. [Source IIP]" width=600%}
 
 SS: Having completed a major portion of your academic life and having become an Emeritus Professor, what do you consider to be your biggest contribution to science, TIFR, and the students?
 

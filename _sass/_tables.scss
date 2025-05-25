@@ -1,0 +1,22 @@
+@use 'constants';
+table {
+  border-collapse: collapse;
+  > caption {
+    font-size: 0.9rem;
+    padding-top: 0.2rem;
+    color: constants.$h1-color;
+    font-style: italic;
+    caption-side: bottom;
+    text-align: justify;
+  }
+}
+.table {
+  display: grid;
+  justify-content: center;
+}
+th,td {
+  border: 3px solid gray;
+  padding: 4px;
+  vertical-align: bottom;
+  margin: 0;
+}

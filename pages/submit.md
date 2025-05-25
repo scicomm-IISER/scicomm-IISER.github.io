@@ -3,8 +3,6 @@ title: Content Submission
 permalink: /submit/
 ---
 
-# {{page.title }}
-
 We are always happy to accept publishable content from students as well as practitioners of science. The final decision on whether to publish any particular submission lies with our editorial team. All content that we decide to publish will be edited by our team for clarity, correctness and readability. All submitted content must be primarily the intellectual property of the author. Use of content from elsewhere must be properly cited, and any plagiarism will result in immediate rejection of the submission. 
 
 We currently accept submissions in these categories:

@@ -41,7 +41,7 @@ AD: Can you walk us through the progression of the facilities during your time a
 SR: Sure! Most of our classes were held at the LHC in our second year. By the time we reached our fourth or fifth year, the RC was ready, but the TRC was still under construction. So, for a while, the RC and LHC were quite similar regarding available facilities, but the TRC wasn’t yet in the picture.
 {: .interview-answer }
 
-{% include article-image.html image="/assets/images/interviews/srijitaAlumnus/fig1.png" caption="Dr. Ray is, at the time of this interview, a postdoctoral associate in the department of Earth, Environmental and Planetray Sciences, Rice University." width=300 %}
+{% include figure.html image="fig1.png" caption="Dr. Ray is, at the time of this interview, a postdoctoral associate in the department of Earth, Environmental and Planetray Sciences, Rice University." width=300 %}
 AD: So, just to clarify, the RC was up and running, but the TRC wasn’t available yet?
 
 SR: Yes, exactly. The RC was available, but the TRC wasn’t. It can be tricky sometimes to remember the exact timeline, especially after all these years, but that’s how it unfolded.
@@ -75,7 +75,7 @@ AD: No, not that. What I meant is, that is the norm we think about and come acro
 SR: So, It is actually difficult to say and pinpoint any particular reason. I think the way teachers taught us and the books, those things were, I mean, I really enjoyed reading the books or the classes were very like, what should I say, very good. Interesting.
 {: .interview-answer }
 
-{% include article-image.html image="/assets/images/interviews/srijitaAlumnus/fig2.png" caption="Monazite crystal from SiO2- Srijita Ray worked on this crystal." width=300 %}
+{% include figure.html image="fig2.png" caption="Monazite crystal from SiO2- Srijita Ray worked on this crystal." width=300 %}
 SS: So, in those days, did you have SDG? 
 
 SR: No.
@@ -114,7 +114,7 @@ And, if you know, the experimental petrology labs are not very common. So, in th
 That’s why, when selecting universities, ANU was one of my top choices, primarily because of the excellent experimental setup there.
 {: .interview-answer }
 
-{% include article-image.html image="/assets/images/interviews/srijitaAlumnus/fig3.png" caption="Old campus of Indian Institute  Of Science and Educational Research Kolkata, back  in 2014." width=400 %}
+{% include figure.html image="fig3.png" caption="Old campus of Indian Institute  Of Science and Educational Research Kolkata, back  in 2014." width=400 %}
 SS: So, like Europe, you applied to a professor and got it or like the USA, you applied to an institute? 
 
 SR: No. So, like in Europe, I had to email some professors, and they conducted interviews with me. After that, I had to go through the application process and complete all the necessary steps before finally getting selected and enrolment. 
@@ -144,7 +144,7 @@ As for my case, I did like a little bit of TAship duty, but that was an optional
 So, I would say that in Australia, the work-life balance is better. 
 {: .interview-answer }
 
-{% include article-image.html image="/assets/images/interviews/srijitaAlumnus/fig4.png" caption="Earth Sciences Laboratory, where Srijita Ray worked at IISER Kolkata." width=400 %}
+{% include figure.html image="fig4.png" caption="Earth Sciences Laboratory, where Srijita Ray worked at IISER Kolkata." width=400 %}
 
 AD: Better in the sense?
 
@@ -173,7 +173,7 @@ SS: Is there any fundamental difference between the interview process in Europe 
 SR: No. The interview process is very similar. So, in Europe, the principal supervisor and the co-supervisor asked me questions, and that was one round only, and in Australia also the same. 
 {: .interview-answer }
 
-{% include article-image.html image="/assets/images/interviews/srijitaAlumnus/fig5.png" caption="Srijita Ray with Prof. Tapabrato Sarkar and collegues." width=600 %}
+{% include figure.html image="fig5.png" caption="Srijita Ray with Prof. Tapabrato Sarkar and collegues." width=600 %}
 
 SS: What about the funding sources in Australia? So, the funding source is like a university can fund you, or if a professor has your fund, then that is a wa,y or there is another way like the government you can get funded. 
 
@@ -204,7 +204,7 @@ I mean, have you heard or seen?
 SR: No. I have seen that during the COVID. It is not in India, and it is somewhere else.
 {: .interview-answer }
 
-{% include article-image.html image="/assets/images/interviews/srijitaAlumnus/fig6.png" caption="Crystallization of monazite from a SiO2 bearing carbonate melt at 1275 ºC, 20 kbar using piston-cylinder instrument- her phD work." width=400 %}
+{% include figure.html image="fig6.png" caption="Crystallization of monazite from a SiO2 bearing carbonate melt at 1275 ºC, 20 kbar using piston-cylinder instrument- her phD work." width=400 %}
 
 SS: I mean, where we were all looking towards doctors and scientists for the doctors for the immediate cure to save the lives and scientists for mainly biologists, scientists. Yes, for the medication. For the medication, but then this came up.
 
@@ -241,7 +241,7 @@ So, for me, it was basically the panel member or the supervisor. So they have al
 So, that's how I was a part of that funded project throughout my PhD.  I didn't have to write the proposal and like to bring the funding. So, that's why maybe I was not aware of this funding situation or other things.
 {: .interview-answer }
 
-{% include article-image.html image="/assets/images/interviews/srijitaAlumnus/fig7.png" caption="Australia National University in Canberra, University in which Srijita ray pursued her PhD." width=600 %}
+{% include figure.html image="fig7.png" caption="Australia National University in Canberra, University in which Srijita ray pursued her PhD." width=600 %}
 
 SS: See, the fact is that is why I am asking this for the Australian case. Yes your scholarship was tax-free. Scholarship is tax-free in India also, but keeping it as a scholarship, there are other things you have to very much important your funding for your project and all.
 
@@ -270,7 +270,7 @@ SR:, To be honest, I never felt, never felt that.
 
 SS: So, after this PhD, what's your plan?
 
-{% include article-image.html image="/assets/images/interviews/srijitaAlumnus/fig8.png" caption="Srijita Ray with her  PhD supervisor (Prof. Greg Yaxley) and some other colleagues." width=600 %}
+{% include figure.html image="fig8.png" caption="Srijita Ray with her  PhD supervisor (Prof. Greg Yaxley) and some other colleagues." width=600 %}
  
 
 SR: So, I will join as a postdoc at Rice University in Texas. So, and that's a period of? For two years. After that? After that, basically, basically, I want to explore the industry as well because I have never been totally in academia like throughout.
@@ -305,7 +305,7 @@ SS: So, now a follow-up question comes in: if more industry has to come up, are 
 SR: I mean applied science, engineering science if you know engineering science fully, some application-based sciences, not fundamental discoveries or stuff like that. Also, they may be inclined towards some, something where. But I mean, when I am saying industry, it is not always like that.  Research industries and national labs are included as well.
 {: .interview-answer }
 
-{% include article-image.html image="/assets/images/interviews/srijitaAlumnus/fig9.png" caption="Professor Rajdeep Dasgupta under whom Srijita Ray is working currently under in Rice University, Texas." width=600 %}
+{% include figure.html image="fig9.png" caption="Professor Rajdeep Dasgupta under whom Srijita Ray is working currently under in Rice University, Texas." width=600 %}
 SS: So, national labs. Again, coming back to academia, right?
 
 SR:  So, the national lab is a link between academia and industry. So, it is not like full academia, or it is not like the entire industry.
@@ -336,7 +336,7 @@ AD: Have you ever thought why earth science shows these fluctuations where physi
 SR: I think it is because we learn physics, chemistry, biology, and mathematics from childhood. So, people usually like when they come here, they usually already love either physics or mathematics or chemistry like that, and they usually go there.
 {: .interview-answer }
 
-{% include article-image.html image="/assets/images/interviews/srijitaAlumnus/fig10.png" caption="Srijita is currently working as a Postdoctoral Associate in the Department of Earth, Environmental, and Planetary Sciences at Rice University in Houston, Texas." width=600 %}
+{% include figure.html image="fig10.png" caption="Srijita is currently working as a Postdoctoral Associate in the Department of Earth, Environmental, and Planetary Sciences at Rice University in Houston, Texas." width=600 %}
 AD: In Australia, it was not a hostel life, right? You had to stay in apartments?
 
 SR: So, in Australia, we stayed in studio apartments.
@@ -370,4 +370,4 @@ SR: Yes, the saving was fine.
 
 SS: Okay, so with this we conclude. Thank you.
 
-{% include article-image.html image="/assets/images/interviews/srijitaAlumnus/fig11.png" caption="14MS group photo on convocation 2019, Srijita and her batch mates one last time all together." width=600 %}
+{% include figure.html image="fig11.png" caption="14MS group photo on convocation 2019, Srijita and her batch mates one last time all together." width=600 %}

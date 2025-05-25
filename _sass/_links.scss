@@ -1,81 +1,20 @@
+@use 'constants';
 a {
-	color: $link-color;
-	text-decoration: underline;
-	font-weight: normal;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 3px;
-    text-decoration-color: $link-color;
+  color: constants.$link-color;
+  text-decoration: none;
+  font-weight: constants.$bold-weight;
 }
-a:hover {
-    text-underline-offset: 4px;
-    text-decoration-color: $link-color;
-}
-
-.button {
-    font-family: $main-font-family;
-	font-size: 0.9em;
-	// font-weight: bold;
-	background-color: $link-color;
-	border-radius: 6px;
-    border: none;
-	padding: 0.4em 0.6em 0.3em 0.6em;
-	color: $bg-color;
-	text-decoration: none;
-  transition: all 0.2s ease-in-out;
-  display: inline-block;
-}
-.button:hover {
-	text-decoration: none;
-	transform: scale(1.1);
+a:hover,
+a:focus {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 
 .nf {
-  font-family: $symbols-font-family;
+  font-family: constants.$nf-font;
+}
+a.nf:hover,
+a.nf:focus {
   text-decoration: none;
-  position: relative;
-  bottom: 3px;
-  transform: scale(1.2);
-}
-
-.social-links {
-  cursor: pointer;
-  position: relative;
-  top: 0.04em;
-  font-size: 1.2em;
-}
-.social-links + .social-links {
-  padding-left: 0.5em;
-}
-
-.social-links.nf-md-email {
-  color: $gmail-color;
-  }
-.social-links.nf-md-web {
-  color: $web-color;
-  }
-.social-links.nf-fa-github {
-  color: $github-color;
-  }
-.social-links.nf-fa-linkedin_square {
-  color: $linkedin-color;
-  }
-.social-links.nf-fa-twitter_square {
-  color: $twitter-color;
-  }
-.social-links.nf-fa-instagram {
-  color: $instagram-color;
-  }
-.social-links.nf-md-facebook {
-  color: $facebook-color;
-  }
-
-.tag-button {
-    font-family: $main-font-family;
-	font-size: 0.9em;
-	background-color: $fg-color;
-	border-radius: 6px;
-    border: none;
-	padding: 0.4em 0.6em 0.3em 0.6em;
-	color: $bg-color;
-	text-decoration: none;
 }

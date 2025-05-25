@@ -1,21 +1,11 @@
+@use 'constants';
 footer {
 	width: 100%;
-	background-color: $footer-bg;
-    color: $footer-fg;
-    font-size: 0.9em;
-    height: $footer-height;
+    margin-top: constants.$footer-gap;
+    height: constants.$footer-height;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5em;
-    > a {
-      color: $bg-color;
-      text-decoration: underline;
-      margin: none;
-      padding: 0;
-    }
-    margin-top: auto;
-    > .social-links {
-      top: -0.1em;
-    }
+    color: constants.$hn-color;
 }

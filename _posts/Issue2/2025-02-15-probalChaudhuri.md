@@ -30,7 +30,7 @@ MB: After completing your undergraduate studies, you went on to pursue a Ph.D. a
 
 PC: When I was completing my postgraduate studies, it was quite common at that time for students to apply for Ph.D. programs both in India and abroad, while also considering job opportunities in India. I applied to a few Ph.D. programs both within India and internationally, and the University of California, Berkeley, was one of the places I applied to.
 
-{% include article-image.html image="/assets/images/interviews/probalChaudhuri/fig1.png" caption="Shyama Narendranath is a scientist at U R Rao Satellite Centre, ISRO. She is a part of Chandrayaan-2 and other Indian planetary programs. She has been awarded the Zubin Kembhavi award by the Astronomical Society of India." width=600 %}
+{% include figure.html image="fig1.png" caption="Indian Statistical Institute (ISI), Kolkata, where Prof.Chaudhuri did his bachelors and masters in Statistics." width=600 %}
 
 The reason I chose UC Berkeley was because, at the time, they were doing significant work in areas like non-parametric statistics and robust statistics, which really caught my interest. I had been introduced to some of these topics during my postgraduate years, and they seemed like a fascinating direction to explore further. However, I’ll admit that, even then, I wasn’t entirely sure why I specifically wanted to go to Berkeley. It was more of a feeling that this was the right opportunity for me.
 
@@ -44,7 +44,7 @@ Berkeley was also politically active during those years, especially with movemen
 
 I spent three years at UC Berkeley, from 1985 to 1988, and those years were pivotal in both my academic and personal growth.
 
-{% include article-image.html image="/assets/images/interviews/probalChaudhuri/fig2.png" caption="**Fig 2.** Prof. Chaudhuri did his Ph.D. in Statistics at University of California, Berkeley." width=600 %}
+{% include figure.html image="fig2.png" caption="Prof. Chaudhuri did his Ph.D. in Statistics at University of California, Berkeley." width=600 %}
 
 Swarnendu Saha(SS): And what was the political scenario in Bengal?
 
@@ -88,7 +88,7 @@ In terms of technology, I also saw the advent of workstations like the Sun works
 
 In terms of curriculum, statistics has evolved with the times. While our training focused more on theoretical and mathematical statistics, today’s courses incorporate a lot more data analysis. Students now spend significant time working with real data, using computers to run analyses, which wasn’t part of our training at the time.
 
-{% include article-image.html image="/assets/images/interviews/probalChaudhuri/fig3.jpeg" caption="**Fig 3.** Prof. Prasanta Chandra Mahalanobis, Founded the Indian Statistical Institute (ISI) from a single laboratory at Presidency College." width=200 %}
+{% include figure.html image="fig3.jpeg" caption="Prof. Prasanta Chandra Mahalanobis, Founded the Indian Statistical Institute (ISI) from a single laboratory at Presidency College." width=200 %}
 
 SS: ISI started its journey right after the Independence, within a few years. And since then, we have also had the implementation of a good number of  IITs; they have made a brand out of themselves. But even today, almost 20 years since the start of the IISERs, most people don't know what the IISERs are. What is your  take on this?
 
@@ -116,7 +116,7 @@ The general public may not understand the nuances of a scientific career, especi
 
 MB: Could you share some insights on what you're currently working on? Do you have any advice for young students who are considering a career in statistics?
 
-{% include article-image.html image="/assets/images/interviews/probalChaudhuri/fig4.png" caption="**Fig 4.** The statistical laboratory set up by Prof.Mahalanobis at Presidency College, in 1931 which later became the ISI that is today." width=200 %}
+{% include figure.html image="fig4.png" caption="The statistical laboratory set up by Prof.Mahalanobis at Presidency College, in 1931 which later became the ISI that is today." width=200 %}
 
 PC: Statistics is a versatile field used across virtually every discipline both social sciences and natural sciences. If you’re considering a career in statistics, I’d recommend getting solid training from a good program. Beyond that, it's important to stay open-minded and read widely beyond just statistics. You need to understand the broader role of science in society, why science exists and how it impacts the world.
 

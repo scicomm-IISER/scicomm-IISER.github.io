@@ -37,7 +37,7 @@ SKK: Experiencing an institution as a student and as a faculty gives a dual pers
 
 SS: Since you have worked in other countries like Japan and USA, what do you feel are the major differences between the way research is carried out in those countries and the way it is carried out in ours?
 
-{% include article-image.html image="/assets/images/interviews/SunilKhare/iitdelhi.jpg" caption="Prof. Khare did his doctoral work at IIT Delhi. He later joined his alma mater as a professor of Biochemistry." width=800 %}
+{% include figure.html image="iitdelhi.jpg" caption="Prof. Khare did his doctoral work at IIT Delhi. He later joined his alma mater as a professor of Biochemistry." width=800 %}
 
 SKK:  My postdoc experience in Japan and the USA profoundly shaped my research habits. Their approach emphasises precision and perfection, with an intense work ethic and meticulously checking every detail. Their advanced instrumentation and strict standards greatly influenced me, as I had the freedom to work and try out my ideas; I learned a lot from their disciplined, curiosity-driven, and question-based approach to science.
 {: .interview-answer }
@@ -68,7 +68,7 @@ SKK: The Government of India has launched several initiatives to address societa
 
 Similarly, the Department of Biotechnology and other ministries support projects that apply scientific solutions to such problems.  At IISER Kolkata, we also contribute through outreach initiatives like "Ek Pehel," wherein we engage with school children, exposing and motivating them to science and education. 
 
-{% include article-image.html image="/assets/images/interviews/SunilKhare/tsukaba.webp" caption="The city of Tsukuba in Japan, where Prof. Khare carried out his post-doctoral research." width=800 %}
+{% include figure.html image="tsukaba.webp" caption="The city of Tsukuba in Japan, where Prof. Khare carried out his post-doctoral research." width=800 %}
 
 AM: A more academic question now. Considering your experience in both academia and industry, which role did you find creatively more demanding? Which one was more interesting? 
 
@@ -105,7 +105,7 @@ AM: Okay, a bit of a mundane question now. In this institute, the IPhD program h
 SKK: I think this program is in tune with  or in sync with the NEP, which mandates multiple entry and  exits. So, this program to me appears a very good example of NEP implementation, wherein  if students want to exit, they can exit after master, or can continue for Ph.D.  To me it appears a good program.  I do not think that it is dying, it’s actually very much vibrant.
 {: .interview-answer }
 
-{% include article-image.html image="/assets/images/interviews/SunilKhare/agriculture.webp" caption="National Centre for Agricultural Utilization Research- USDA Peoria USA, where Prof. Khare was a visiting fellow." width=600 %}
+{% include figure.html image="agriculture.webp" caption="National Centre for Agricultural Utilization Research- USDA Peoria USA, where Prof. Khare was a visiting fellow." width=600 %}
 
 AM:  Another IISER-specific question. You have been here for around three months now. How do you wish to see this institute five years down the line?
 
@@ -136,7 +136,7 @@ SKK: Actually the EWS fee waiver  is the government's defined scheme,  and we ar
 
 SS: IITs and IISERs often promote a vibrant system of sports and cultural meets that encourage interaction among diverse ideas. However, within the IISER system, no such structure exists for promoting scientific interactions among the students. How do you feel about establishing an Inter-IISER Science Meet to complement our existing discipline-focused meetings? This will allow students from all IISERs, including the undergraduates, to present their research and ideas, fostering collaboration and innovation across various backgrounds and disciplines.
 
-{% include article-image.html image="/assets/images/interviews/SunilKhare/protein.svg" caption="The city of Tsukuba in Japan, where Prof. Khare carried out his post-doctoral research." width=800 %}
+{% include figure.html image="protein.svg" caption="The city of Tsukuba in Japan, where Prof. Khare carried out his post-doctoral research." width=800 %}
 
 SKK: This is a very welcome idea. I will put it to all IISERs Directors meetings and I will be happy to take it forward. 
 {: .interview-answer }

@@ -1,95 +1,43 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+@use 'constants';
 html {
-	line-height: $line-height;
-	color: $fg-color;
-	background-color: $bg-color;
-	font-family: $main-font-family;
-	font-size: $main-font-size;
-	font-weight: 400;
-	font-family: $main-font-family;
+  background-color: constants.$bg-color;
+  color: constants.$fg-color;
+  font-family: constants.$font, constants.$symbols-font, constants.$emoji-font !important;
+  font-size: constants.$font-size;
+  font-weight: constants.$weight;
+  text-align: justify;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+html::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    gap: $main-margin;
-    overflow-x: hidden;
-    margin: 0;
+  width: 100%;
+  margin: 0;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - constants.$footer-height + constants.$footer-gap);
 }
 
 main {
-    max-width: $body-width;
-    width: 100%;
+  flex-grow: 1;
+  max-width: constants.$width;
+  margin: auto;
 }
 
-@media only screen and (max-width: $breakpoint-medium)  {
-   main {
-     padding-left: $main-margin;
-     padding-right: $main-margin;
-   }
-}
-
-@media only screen and (max-width: $breakpoint-small)  {
-   html {
-     font-size: $mobile-font-size;
-   }
-}
-
-p {
-    margin-bottom: 1em;
-    text-align: justify;
-}
-
-strong {
-    color: $bold-color;
-}
-
-hr {
-  height: 3px;
-  color: $fg-color;
-  background-color: $fg-color;
-  border: none;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 1em;
-}
-
-
-.interview-answer{
-  // color: $focus-color;
-  // font-weight: 600;
-  border-left: 0.2em solid $focus-color;
-  padding-left: 0.4em;
-  // color: $bg-color;
-}
-
-ol > li {
-    margin-left: 2em;
-}
-
-ul > li {
-    list-style-type: none;
-}
-ul > li::before {
-    content: '■';
-    font-size: 0.8em;
-    padding-right: 0.4em;
-}
-
-.summary-head {
-  color: $focus-color;
-}
-
-.summary-content {
-  font-size: 0.9em;
-  line-height: 1.2em;
-  text-align: justify;
-  margin-left: 3em;
+@media (max-width: constants.$breakpoint-medium) {
+  body {
+    max-width: 100%;
+    margin: 0;
+    margin-top: 1rem;
+  }
+  main {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
 }

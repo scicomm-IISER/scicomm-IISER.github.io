@@ -2,33 +2,34 @@
 layout: default
 ---
 
-<div class="hero-image-caption">
-<img class="hero-image" src="/assets/hero-images/{{ page.hero-image }}"/>
-{% if page.hero-source %}
-  <a class="hero-caption" href="{{ page.hero-source }}">Source &nbsp;<span class="nf nf-oct-link"></span></a>
+{% if page.hero-image %}
+  <div class="hero-image-caption">
+	  <img class="hero-image" src="/assets/images/{{page.permalink}}/{{ page.hero-image }}"/>
+  {% if page.hero-source %}
+    <a class="hero-caption" href="{{ page.hero-source }}">Source &nbsp;<span class="nf nf-oct-link"></span></a>
+  {% endif %}
+  </div>
 {% endif %}
-</div>
 <h1> {{ page.title }} </h1>
-<div class="author-date">
-  <b>{{ page.authors | join: ", " }}</b><br>
-  {{ page.author-affiliation | join: ", " }}<br>
-  Published: {{ page.date | date:"%b %d, %Y"}}<br>
-  {%- if page.reviewedBy %}
-  Reviewed By: {{ page.reviewedBy }}
-  {%- endif -%}
-</div>
+{% if page.authors %}
+<div class="author">{{ page.authors | join: ", " }}</div>
+<div class="affiliation">{{ page.author-affiliation | join: ", " }}</div>
+<div class="date">Published: {{ page.date | date:"%b %d, %Y"}}</div>
+{%- if page.reviewedBy %}
+<div class="reviewed">Reviewed By: {{ page.reviewedBy }}</div>
+{%- endif -%}
+{% endif %}
 
+{% if page.excerpt %}
 <div class="excerpt">
 {{ page.excerpt | markdownify }}
 </div>
-
+{% endif %}
 <hr>
-
 {{ content }}
 
-<hr>
-
 {% if page.author-bio %}
+<hr>
   <div class="author-bio">
 	{% if page.author-bio %}
 	{% if page.authorImage %}

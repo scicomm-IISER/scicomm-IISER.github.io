@@ -20,7 +20,7 @@ So, I didn't do my master's. After my Bachelor’s, I did a job for almost a yea
 {: .interview-answer }
 And since then, I joined the PhD program at IIT Kanpur directly after B. Tech and completed PhD in 2010 and immediately after finishing the PhD, I joined IIT Hyderabad as a faculty in the department of chemical engineering. In fact, it was kind of a rare occasion when I received the faculty position offer from IIT Hyderabad without even formally submitting my PhD thesis.
 {: .interview-answer }
-{% include article-image.html image="/assets/images/articles/IIT-Kanpur.jpg" caption="Prof. Sharma did his PhD at Indian Institute of Technology (IIT) Kanpur directly after his B.Tech" width=500 %}
+{% include figure.html image="IIT-Kanpur.jpg" caption="Prof. Sharma did his PhD at Indian Institute of Technology (IIT) Kanpur directly after his B.Tech" width=500 suppressPrefix=true %}
 SS: Really ?
 
 CSS: Yeah, so, I mean, I got the faculty position offer in May 2010, while I submitted my PhD thesis in October 2010. And in December finally, I joined the institute and I defended my PhD after four months. So, I defended my PhD thesis after 2011, but I started guiding a PhD student from January 2011. So, that is how it was. (laughs !)
@@ -36,7 +36,7 @@ CSS: I consider myself lucky because, between 2008 and 2010, many new institutio
 Assuming that it would take a while for the interview call to come, hopefully after I submitted my thesis, I decided to apply. However, things moved much faster than I expected. Within three months of submitting my application, I received the interview call. I was interviewed in March, and by May 1st, I was offered a faculty position. Of course, it was a conditional offer, subject to the completion of my PhD. But I think that's how things turned up, favorably. I believe I made the right decision to join immediately after my PhD. The experience I gained in those initial years, setting up my lab and building my team, was just as valuable as any postdoctoral experience could have been.
 {: .interview-answer }
 SS: My next question would be if you look back as an IIT student and today as an IIT teacher, what similarities and differences are defined because you are  from an IIT which needs no introduction, the IIT comfort. But frankly speaking, you are now in IIT which is much newer compared to even 50 years, not even 25 years. So, I mean what legacy IITs have for the previous seven IITs. So, I mean what differences and similarities do you find and then from the fun point, from the bench to the chair, How do you just change direction?
-{% include article-image.html image="/assets/images/articles/iit-h_3.png" caption="Prof. Sharma joined as a faculty at Indian Institute of Technology (IIT) Hyderabad in the department of Chemical Engineering even before formally submitting his PhD thesis" width=500 %}
+{% include figure.html image="iit-h_3.png" caption="Prof. Sharma joined as a faculty at Indian Institute of Technology (IIT) Hyderabad in the department of Chemical Engineering even before formally submitting his PhD thesis" width=500 suppressPrefix=true %}
 
 CSS: I think it's an interesting question because I was a PhD student at IIT Kanpur and then joined a new IIT that was still in the process of being established at the time. So, yes, there are a lot of differences, as well as similarities, and I would consider both aspects.
 {: .interview-answer }
@@ -67,7 +67,7 @@ SS: Sir, you are saying that the IIT Hyderabad design is meant mainly for the ma
 
 CSS: It's a B.Tech program, a complete B.Tech program in Computer Engineering.
 {: .interview-answer }
-{% include article-image.html image="/assets/images/articles/uci.jpg" caption="Prof. Sharma was a visiting research scholar at the UC Irvine" width=500 %}
+{% include figure.html image="uci.jpg" caption="Prof. Sharma was a visiting research scholar at the UC Irvine" width=500 suppressPrefix=true %}
 SS: When I was about to join an institute, we were giving JEE Mains, JEE Advanced, and NEET exams. During that time, we were asked mainly which subjects we were interested in. Given the variety of subjects, the first screening often came down to whether the subject was considered 'core' or 'non-core.' To me, core subjects meant electrical, mechanical, and civil engineering, while the rest were seen as non-core. Some people believed core subjects would always have a lot of job opportunities because they’re foundational, while others argued that those are outdated, relics of the past.
 In today’s world, people often say that yesterday belonged to Electrical Engineering and today belongs to fields like Quantum Computing and Artificial Intelligence. Considering this shift, IIT Hyderabad is introducing a program aimed at the manufacturing industry and is ranked third in innovation. This challenges the traditional view that everything is shifting to electronics or online industries. From that perspective, how do you see the future of core vs. non-core subjects? Do you think the boundaries between them are becoming more blurred, or is there still a clear distinction?
 
@@ -89,7 +89,7 @@ At IIT Hyderabad, we recognized the importance of AI early on. We were the first
 {: .interview-answer }
 SS: My next question may not come across positively, but given the global scenario and specifically the current situation in India, we’ve been hearing that IIT Bombay is considered the most coveted institute, followed by IIT Kanpur, IIT Kharagpur, and IIT Delhi. In recent years, it's been observed that about 70-80% of students are getting selected for IIT Bombay, while the rest are not, which seems very concerning. This situation feels unacceptable in our society. While it's understood that not everything can be 100% distributed, the fact that IITs have always been seen as paragons of excellence, and are now seeming to fall short, raises a question.
 Do you think this decline is due to the changing global landscape, or is it that the brightest minds are no longer choosing to stay in India? Or, is it that IITs themselves are not producing the best anymore? How do you interpret this situation? It’s not something that's viewed positively, whether at the government level, among students, peers, or industry.
-{% include article-image.html image="/assets/images/articles/carbon_lab.jpg" caption="Prof. Chandra Shekhar Sharma's Carbon Laboratory, IIT Hyderabad" width=500 %}
+{% include figure.html image="carbon_lab.jpg" caption="Prof. Chandra Shekhar Sharma's Carbon Laboratory, IIT Hyderabad" width=500 suppressPrefix=true %}
 
 CSS: See, I think we need to look at this scenario from a broader perspective. When we talk about placements, the 70-80% you mentioned doesn’t mean that the remaining 20% aren’t doing anything. Over the past 5 to 10 years, there has been a significant rise in startups, many of which are led by our youth, including B.Tech students. At IIT Hyderabad, for example, there are students in their second or third years running their own startups and even employing others. This highlights that not all students who don’t get placed in traditional jobs are without opportunities.
 {: .interview-answer }
@@ -100,7 +100,7 @@ Even for those completing a Ph.D., the mindset has evolved. It’s no longer jus
 So, if we look at this from a broader perspective, I believe no IIT graduate is without a career path. The options are more diverse than ever before.
 {: .interview-answer }
 SS: So you have been in academic administration. The fact is that being a professor just with his students and lab and being in the administration, how do the two chairs differ?
-{% include article-image.html image="/assets/images/articles/with_isro_chair.jpeg" caption="Meeting with ISRO chairman Dr. Somanath to strengthen the research cooperation between IIT Hyderabad & ISRO, with Prof. Chandra Shekhar Sharma" width=500 %}
+{% include figure.html image="with_isro_chair.jpeg" caption="Meeting with ISRO chairman Dr. Somanath to strengthen the research cooperation between IIT Hyderabad & ISRO, with Prof. Chandra Shekhar Sharma" width=500 suppressPrefix=true %}
 
 CSS: I believe there's a difference of opinion regarding the timing of transitioning into science administration. Some say one should focus on research early on and move to administration later in their career. However, my perspective is different. Through my experience with INYAS, I’ve realized that young scientists often face challenges that are best understood and handled by their peers. If you identify issues that you feel strongly about, I believe you should step into administration, rather than blame the system or the seniors. By doing so, you can make a positive contribution and help bring about change.
 {: .interview-answer }
@@ -143,7 +143,7 @@ Over the past five to six years, we’ve significantly expanded our activities. 
 {: .interview-answer }
 With such a wide target audience, our initiatives have been impactful, but of course, there’s always room for improvement. These academies are dedicated to supporting young scientists, and yes, there is an age limit for participation, but we are continuously working to ensure inclusivity and broader representation.
 {: .interview-answer }
-{% include article-image.html image="/assets/images/articles/AMU.png" caption="Prof. Sharma did his B.Tech in Chemical Engineering at Aligarh Muslim University (AMU)" width=500 %}
+{% include figure.html image="AMU.png" caption="Prof. Sharma did his B.Tech in Chemical Engineering at Aligarh Muslim University (AMU)" width=500 suppressPrefix=true %}
 SS: Apart from these in the very basic nature or the mode of operation, how does the Indian Academy of Science, Indian National Science Academy and the third National Science Academy, the three in Delhi, Allahabad and Bangalore are different from INYAS ?
 
 CSS: As I mentioned earlier, our mandate primarily focuses on young scientists, which, for us, includes everyone from school students to college students, to PhDs, postdocs, and early career researchers. In contrast, INSA (Indian National Science Academy) in Delhi has a mandate that is more centered on the international representation of Indian scientists on the global stage. We also have the National Academy of Sciences, which focuses primarily on science outreach, especially in schools. The Indian Academy of Sciences, on the other hand, operates more as a publication space.
@@ -176,7 +176,7 @@ CSS: Well, I wouldn’t say it was wrong, because when I look at it from a famil
 {: .interview-answer }
 That’s where clarity of thought and self-confidence become crucial. If you’re not clear about your decision, you won’t be able to convince others. I was able to convince my family, though it took time. Eventually, they were fine with it, but yes, there was initial backlash.
 {: .interview-answer }
-{% include article-image.html image="/assets/images/articles/INYAS_24_midyrmeet_2.jpg" caption="Post-INYAS’s Mid Year Meeting (MYM-2024) at IISER Kolkata" width=500 %}
+{% include figure.html image="INYAS_24_midyrmeet_2.jpg" caption="Post-INYAS’s Mid Year Meeting (MYM-2024) at IISER Kolkata" width=500 suppressPrefix=true %}
 SS: Okay, so, last question, any final comments for the students and readers?
 
 CSS: See, based on my own experience, my own journey, I must say that two things, one is _follow your dreams_, follow your passion. And secondly, have the clarity of thoughts in mind as early as possible because if you are confused, you will not be able to give your 100%. So, and to bring that clarity, you have to be aware of your surroundings. Like what is going on? What are the career options?
