@@ -1,0 +1,20 @@
+- hint: "A thermodynamic quantity representing the degree of disorder in a system"
+  word: ENTROPY
+- hint: "The amount of product formed in a chemical reaction"
+  word: YIELD
+- hint: "The bending of waves around obstacles leading to patterns of bright and dark bands."
+  word: DIFFRACTION
+- hint: "A nearly massless subatomic particle with no electric charge"
+  word: NEUTRINO
+- hint: "The diffusion of water across a selectively permeable membrane"
+  word: OSMOSIS
+- hint: "Quantum mechanical attribute, must be integer for bosons"
+  word: SPIN
+- hint: "A subatomic particle with no electric charge, found in the nucleus of an atom"
+  word: NEUTRON
+- hint: "A point in a standing wave where the amplitude is zero"
+  word: NODE
+- hint: "A negatively charged subatomic particle"
+  word: ELECTRON
+- hint: "Fundamental unit of chromatin, consisting of a segment of DNA wound around a core of histone proteins"
+  word: NEUCLEOSOME

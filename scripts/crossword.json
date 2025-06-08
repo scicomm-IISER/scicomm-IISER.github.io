@@ -1,0 +1,21 @@
+{
+	"size": 15,
+	"intersections": 15,
+	"hints": {
+				"ANDROMEDA": "Large body of salt water",
+				"APHELION": "Baked food made from flour",
+				"CHRONOMETER": "Place where you live",
+				"PARALLAX": "Large body of salt water",
+				"EQUINOX": "Happy facial expression",
+				"SUPERNOVA": "Art of sound and rhythm",
+				"CASSIOPEIA ": "Baked food made from flour",
+				"PULSAR": "Small rodent",
+				"NEBULA": "Happy facial expression",
+				"QUASAR": "Art of sound and rhythm",
+				"SIRIUS": "Large farm animal you can ride",
+				"VOYAGER": "Small rodent",
+				"ASTROLABE": "Hard natural material",
+				"SPECTROSCOPE": "Place where you live",
+				"SOLSTICE": "Large farm animal you can ride"
+	}
+}

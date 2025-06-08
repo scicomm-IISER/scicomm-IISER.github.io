@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-words: [
-	{ word: "HOUSE", hint: "Place where you live" },
-	{ word: "OCEAN", hint: "Large body of salt water" },
-	{ word: "SMILE", hint: "Happy facial expression" },
-	{ word: "MUSIC", hint: "Art of sound and rhythm" },
-	{ word: "BREAD", hint: "Baked food made from flour" },
-	{ word: "HORSE", hint: "Large farm animal you can ride" },
-	{ word: "MOUSE", hint: "Small rodent" },
-	{ word: "STONE", hint: "Hard natural material" },
-	{ word: "CRANE", hint: "Large bird or construction machine" },
-	{ word: "DANCE", hint: "Move rhythmically to music" }
-]
-=======
 {
     "down": {
         "APHELION": [
@@ -200,4 +186,3 @@ words: [
     ],
     "size": 15
 }
->>>>>>> 2d71367 (most of crossword done)

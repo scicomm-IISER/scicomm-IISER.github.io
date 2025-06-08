@@ -1,0 +1,37 @@
+@use 'constants';
+
+#seed-word {
+  font-weight: bold;
+  color: constants.$hn-color;
+}
+
+.hint-block {
+  margin-bottom: 20px;
+}
+.hint-text {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.llInputs {
+  display: flex;
+  gap: 5px;
+}
+.llInputs input {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border: 0;
+  color: constants.$link-color;
+  font-weight: bold;
+}
+.llInputs input.locked {
+  background: constants.$link-color;
+  color: constants.$bg-color;
+}
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  color: darkgreen;
+}

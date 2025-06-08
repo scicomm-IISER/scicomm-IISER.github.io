@@ -4,7 +4,7 @@ permalink: /games/
 ---
 
 ### Quizzes
-<ul class="quizzes-list">
+<ul>
 {% for article in site.categories["quiz"] %}
 <li>{{ article.title }} <a class="button" href="{{ article.url }}">Start</a></li>
 {% endfor %}
@@ -12,7 +12,7 @@ permalink: /games/
 
 <br>
 ### Crosswords
-<ul class="crosswords-list">
+<ul>
 {% for article in site.categories["crossword"] limit: 4 %}
 <li>{{ article.title }} <a class="button" href="{{ article.url }}">Start</a></li>
 {% endfor %}
@@ -20,4 +20,8 @@ permalink: /games/
 
 <br>
 ### Linked Lists
-We are currently working on this. Please check out the PDF of the magazine for a non-interactive version of the game.
+<ul>
+{% for article in site.categories["linkedlist"] limit: 4 %}
+<li>{{ article.title }} <a class="button" href="{{ article.url }}">Start</a></li>
+{% endfor %}
+</ul>

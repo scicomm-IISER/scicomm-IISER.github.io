@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 layout: posts
 ---
 
@@ -38,3 +39,28 @@ layout: posts
 loadCrosswordData(JSON.parse('{{ site.data.crosswords[page.file] | jsonify }}'))
 </script>
 {% endif %}
+=======
+layout: pages
+---
+
+<div id="crossword-wrapper">
+<div id="crossword-container">
+<table id="crossword"></table>
+</div>
+<div class="clues">
+  <h4>Across</h4>
+  <div id="acrossClues"></div>
+  <h4>Down</h4>
+  <div id="downClues"></div>
+  <p>
+  <button id="revealBtn">Reveal</button>
+  <button id="refreshBtn">Clear</button>
+  </p>
+</div>
+</div>
+
+<script src="/assets/js/crossword.js"></script>
+<script>
+handleFile({{ site.data.crosswords[page.file] | jsonify }});
+</script>
+>>>>>>> 2d71367 (most of crossword done)

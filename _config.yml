@@ -54,6 +54,16 @@ defaults:
       type: posts
     values:
       layout: quiz
+      category: quiz
+      author-image: false
+      authors: ['Alekhya Kundu']
+      excerpt: ""
+  - scope:
+      path: "_posts/*/*-linkedlist.md"
+      type: posts
+    values:
+      layout: linkedlist
+      category: linkedlist
       author-image: false
       authors: ['Alekhya Kundu']
       excerpt: ""
@@ -62,6 +72,10 @@ defaults:
       type: posts
     values:
       layout: crossword
+<<<<<<< HEAD
+=======
+      category: crossword
+>>>>>>> 2d71367 (most of crossword done)
       author-image: false
       excerpt: ""
       authors: ['Alekhya Kundu']
