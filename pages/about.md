@@ -24,7 +24,7 @@ If you are feeling generous and wish to sponsor some printed copies of our magaz
 <div class="members">
 {% for member in category[1] %}
 <div class="member-details">
-<img src="/assets/images/members/{{member["image"]}}"/>
+<img src="/assets/members/{{member["image"]}}"/>
 <strong>{{ member["name"] | upcase }}</strong>
 <div>
 {% for link in member["links"] %}

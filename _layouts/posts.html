@@ -4,7 +4,7 @@ layout: default
 
 {% if page.hero-image %}
   <div class="hero-image-caption">
-	  <img class="hero-image" src="/assets/images/{{page.permalink}}/{{ page.hero-image }}"/>
+	  <img class="hero-image" src="/assets/images{{page.permalink}}{{ page.hero-image }}"/>
   {% if page.hero-source %}
     <a class="hero-caption" href="{{ page.hero-source }}">Source &nbsp;<span class="nf nf-oct-link"></span></a>
   {% endif %}
@@ -13,12 +13,14 @@ layout: default
 <h1> {{ page.title }} </h1>
 {% if page.authors %}
 <div class="author">{{ page.authors | join: ", " }}</div>
+{% endif %}
+{% if page.author-affiliation %}
 <div class="affiliation">{{ page.author-affiliation | join: ", " }}</div>
+{% endif %}
 <div class="date">Published: {{ page.date | date:"%b %d, %Y"}}</div>
 {%- if page.reviewedBy %}
 <div class="reviewed">Reviewed By: {{ page.reviewedBy }}</div>
 {%- endif -%}
-{% endif %}
 
 {% if page.excerpt %}
 <div class="excerpt">
@@ -32,8 +34,8 @@ layout: default
 <hr>
   <div class="author-bio">
 	{% if page.author-bio %}
-	{% if page.authorImage %}
-	<img src="/assets/authorFaces/{{ page.authorImage }}"/>
+	{% if page.author-image %}
+	<img src={{ "/assets/images" | append: page.permalink | append: "author-image" }}/>
 	{% endif %}
 	{% endif %}
     {{ page.author-bio | markdownify }}

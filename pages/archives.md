@@ -36,7 +36,7 @@ Complete archive of all _Articles_, _Interviews_ and _Insight Digest_ publicatio
   {% else %}
   Issue {{ item.issue }}
   {% assign filename = "issue" | append: item.issue %}
-  {% for item in site.data["researchSummary"][filename] %}
+  {% for item in site.data.digest[filename] %}
   {% assign slug = item["Title"] | slugify %}
   {% assign link = "/issue" | append: item.issue | append: "/digest/#" | append: slug %}
   - {{ item["Title"] }} <span class="archive-author">_{{ item["Author"] }}_</span> <a class="button" href="{{ link }}">Read</a>

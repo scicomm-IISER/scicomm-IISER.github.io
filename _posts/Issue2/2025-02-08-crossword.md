@@ -2,7 +2,6 @@
 title: "Darwin's Game: Evolution-Themed Crossword"
 issue: 2
 category: crossword
-layout: pages
 permalink: /issue2/crossword/
 ---
 

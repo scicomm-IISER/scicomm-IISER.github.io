@@ -5,6 +5,8 @@ baseurl: ''
 destination: ./docs
 logo-light: "/assets/global/logo-light.png"
 logo-dark: "/assets/global/bannerTextWhite.svg"
+digest-excerpt: "In Insight Digest, we showcase the latest happenings in science research."
+digest-truncate-length: 330
 archives: # key-value pairs that list the categories of posts that need to be listed in the archives page
   article: "Articles"
   interview: "Interviews"
@@ -12,10 +14,26 @@ archives: # key-value pairs that list the categories of posts that need to be li
 archive-year: # range of years to archive
   start: 2024
   end: 2025
-category-icons:
+color-emoji:
   article: "🧬"
   interview: "🎙️"
   crossword: "🎳"
+  author: "🧑‍🔬"
+  browse: "🥽"
+  download: "⤵️"
+  old: "🗓️"
+  alert: "🧩"
+  cloud: "☁️"
+  copyright: "©️"
+  speaker: "📢"
+  newspaper: "🗞️"
+  fire: "🔥"
+  star: "🌠"
+  flask: "⚗️"
+  scientist: "🧑‍🔬"
+  clip: "📎"
+  hourglass: "⏳"
+
 defaults:
   - scope:
       path: ""
@@ -23,26 +41,32 @@ defaults:
     values:
       layout: posts
       excerpt: ""
+      author-image: true
   - scope:
       path: "_posts/*/*-digest.md"
       type: posts
     values:
       layout: digest
+      author-image: false
       excerpt: ""
   - scope:
       path: "_posts/*/*-quiz.md"
       type: posts
     values:
       layout: quiz
+      author-image: false
+      authors: ['Alekhya Kundu']
       excerpt: ""
   - scope:
       path: "_posts/*/*-crossword.md"
       type: posts
     values:
-      layout: pages
+      layout: posts
+      author-image: false
       excerpt: ""
+      authors: ['Alekhya Kundu']
   - scope:
-      type: pages
+      path: "pages/*"
     values:
       layout: pages
       excerpt: ""

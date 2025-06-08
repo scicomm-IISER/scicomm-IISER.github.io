@@ -3,16 +3,16 @@ layout: default
 ---
 
 <div class="hero-image-caption">
-	<img class="hero-image" src="/assets/images/issue{{page.issueNumber}}/digest/{{page.hero-image}}"/>
+	<img class="hero-image" src="/assets/images/issue{{page.issue}}/digest/{{page.hero-image}}"/>
 {% if page.hero-source %}
 <a class="hero-caption" href="{{ page.hero-source }}">Source &nbsp;<span class="nf nf-oct-link"></span></a>
 {% endif %}
 </div>
-<h1> Insight Digest | Issue #{{ page.issueNumber }} </h1>
-<div class="excerpt"> In Insight Digest, we showcase fresh highlights from the frontiers of science research.</div>
+<h1> Insight Digest | Issue #{{ page.issue }} </h1>
+<strong>{{ site.digest-excerpt }} </strong>
 
-{% assign id = "issue" | append: page.issueNumber %}
-{% for item in site.data.researchSummary[id] %}
+{% assign id = "issue" | append: page.issue %}
+{% for item in site.data.digest[id] %}
 <div class="digest-item">
 <h3 id="{{ item["Title"] | slugify }}">{{ item["Title"] }}</h3>
 <span class="reference">{{ item["Reference"] }}</span>

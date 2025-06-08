@@ -2,7 +2,6 @@
 title: "Qrossword: In Celebration of 100 Years of QM"
 issue: 1
 category: crossword
-layout: pages
 permalink: /issue1/crossword/
 ---
 

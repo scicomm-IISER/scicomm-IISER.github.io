@@ -3,6 +3,7 @@ title: "CosmoGrid: Astronomoy and astrophysics-themed crossword"
 issue: 3
 category: crossword
 permalink: /issue3/crossword/
+hero-image: "NGC2395.jpeg"
 ---
 
 This issue's crossword is based on astronomy and astrophysics. Enjoy!

@@ -41,7 +41,7 @@ layout: default
 
 <h2> Insight Digest </h2>
 {% assign filename = "issue" | append: page.issue %}
-{% for item in site.data["researchSummary"][filename] %}
+{% for item in site.data.digest[filename] %}
 {% assign slug = item["Title"] | slugify %}
 {% assign link = "/issue" | append: page.issue | append: "/digest/#" | append: slug %}
 <div class="magazine-item">

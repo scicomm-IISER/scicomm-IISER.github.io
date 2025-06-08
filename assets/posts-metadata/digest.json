@@ -1,0 +1,22 @@
+---
+layout: null
+---
+
+[
+  {% for magazine in site.data.magazines %}
+  {% assign outerloop = forloop %}
+  {%- assign path = "issue" | append: magazine["issue-number"] %}
+  {%- for item in site.data.digest[path] -%}
+    {
+      "title": {{ item["Title"] | jsonify }},
+      "author": "{{ item["Author"] }}",
+      "affiliation": "{{ item["Affiliation"] }}",
+      "summary": "{{ item["Summary"] | strip_newlines | replace:'"','\"' }}",
+      "summary-trunc": "{{ item["Summary"] | strip_newlines | replace:'"','\"' | truncate: site.digest-truncate-length }}",
+      "reference": "{{ item["Reference"] }}",
+      "url": "{{ item["Url"] }}",
+      "permalink": "/{{ path }}/digest/#{{ item["Title"] | slugify }}"
+    }{% if outerloop.last %}{% if forloop.last %}{{ continue }}{% else %},{% endif %}{% else %},{% endif %}
+  {% endfor %}
+  {% endfor %}
+]
