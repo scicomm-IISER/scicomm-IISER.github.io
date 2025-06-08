@@ -41,3 +41,12 @@ main {
     margin-right: 0.5rem;
   }
 }
+
+.highlighter-rouge {
+  background-color: rgba(constants.$fg-color, 0.05);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.highlight {
+  margin: 0;
+}

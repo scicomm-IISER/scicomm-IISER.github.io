@@ -39,6 +39,7 @@
 	<!doctype html>
 
 <link rel="stylesheet" href="/assets/css/styles.css">
+<link rel="stylesheet" href="/assets/css/syntax.css">
 <link rel="stylesheet" href="/assets/webfonts/Lato/stylesheet.css">
 <link rel="stylesheet" href="/assets/webfonts/Hero New/stylesheet.css">
 <link rel="stylesheet" href="/assets/webfonts/Roboto/stylesheet.css">
@@ -70,7 +71,9 @@
 <div class="author">Alekhya Kundu</div>
 
 
+
 <div class="date">Published: Nov 14, 2024</div>
+
 <div class="excerpt">
 
 
@@ -80,6 +83,40 @@
 <p>2025 will mark the 100th anniversary of Heisenberg’s formulation of matrix mechanics and the foundation of quantum mechanics. To commemorate this milestone, InScight’s inaugural  themed crossword is based on quantum physics.</p>
 
 <iframe class="crossword-iframe" allow="web-share; fullscreen" style="border:none; width: 100% !important; position: static;display: block !important; margin: 0 !important;" src="https://puzzleme.amuselabs.com/pmm/crossword?id=the_qrossword&amp;set=0f2008d8845731e3634527c9ceec252c915a083f82d229222a91210aa3df1ddc&amp;embed=1" aria-label="Puzzle Me Game"> </iframe>
+
+
+
+
+<div class="container" id="gameContainer">
+    <div class="crossword-container">
+        <div id="crosswordGrid"></div>
+    </div>
+    <span class="hints-panel">
+		<div class="controls">
+			<button class="btn" onclick="revealSolution()">Reveal Solution</button>
+			<button class="btn" onclick="clearGrid()">Clear Grid</button>
+		</div>
+
+        <div class="hints-section">
+			<b>Across</b>
+			<hr>
+            <div id="acrossHints"></div>
+        </div>
+        <div class="hints-section">
+			<b>Down</b>
+			<hr>
+            <div id="downHints"></div>
+        </div>
+    </span>
+</div>
+
+<script src="/assets/js/crossword.js">
+</script>
+
+<script>
+loadCrosswordData(JSON.parse('null'))
+</script>
+
 
 
 

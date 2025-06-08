@@ -41,6 +41,16 @@ main {
     margin-right: 0.5rem;
   }
 }
+.highlighter-rouge {
+  background-color: rgba(238, 238, 238, 0.05);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  margin: 0;
+}
+
 img {
   max-width: 900px;
   text-align: center;
@@ -275,7 +285,7 @@ a.nf {
 
 .hero-image {
   height: 500px;
-  width: 100%;
+  width: 100vw;
   object-fit: cover;
 }
 
@@ -422,13 +432,130 @@ iframe.crossword-iframe {
   width: 100%;
 }
 
-.highlight {
+.container {
+  display: none;
+}
+
+.container-active {
+  margin-top: 20px;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+#crosswordGrid {
+  border: 2px solid #EEEEEE;
+  padding: 1rem;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.grid-cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #292929;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #DCA06D;
+}
+
+.grid-cell.black {
+  background: #292929;
+}
+
+.grid-cell input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+.grid-cell input.correct {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.grid-cell input.incorrect {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.grid-cell input.revealed {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.cell-number {
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.hints-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.hints-section {
+  margin-bottom: 20px;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.controls input[type=file] {
+  margin-right: 10px;
+}
+
+.btn {
+  background: #6EACDA;
+  color: #292929;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 5px;
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.btn:hover {
+  color: #EEEEEE;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  padding: 10px;
+}
+
+.success {
+  color: green;
+  text-align: center;
+  padding: 10px;
+}
+
+.highlight-main {
   display: flex;
   flex-direction: row;
   gap: 2rem;
   margin-bottom: 2rem;
 }
-.highlight > a > img {
+.highlight-main > a > img {
   width: 100%;
   height: 100%;
   object-fit: cover;

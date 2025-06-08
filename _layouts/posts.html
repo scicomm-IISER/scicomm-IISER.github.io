@@ -4,7 +4,11 @@ layout: default
 
 {% if page.hero-image %}
   <div class="hero-image-caption">
+	{% if page.hero-image contains "/assets/" %}
+	  <img class="hero-image" src="{{ page.hero-image }}"/>
+	{% else %}
 	  <img class="hero-image" src="/assets/images{{page.permalink}}{{ page.hero-image }}"/>
+	{% endif %}
   {% if page.hero-source %}
     <a class="hero-caption" href="{{ page.hero-source }}">Source &nbsp;<span class="nf nf-oct-link"></span></a>
   {% endif %}
@@ -17,7 +21,9 @@ layout: default
 {% if page.author-affiliation %}
 <div class="affiliation">{{ page.author-affiliation | join: ", " }}</div>
 {% endif %}
+{% if page.date %}
 <div class="date">Published: {{ page.date | date:"%b %d, %Y"}}</div>
+{% endif %}
 {%- if page.reviewedBy %}
 <div class="reviewed">Reviewed By: {{ page.reviewedBy }}</div>
 {%- endif -%}

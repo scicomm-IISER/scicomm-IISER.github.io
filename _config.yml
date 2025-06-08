@@ -61,7 +61,7 @@ defaults:
       path: "_posts/*/*-crossword.md"
       type: posts
     values:
-      layout: posts
+      layout: crossword
       author-image: false
       excerpt: ""
       authors: ['Alekhya Kundu']

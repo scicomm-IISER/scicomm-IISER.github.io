@@ -5,7 +5,7 @@ permalink: /
 
 {% assign year = 'now' | date: "%Y" %}
 {% assign latestIssue = site.data.magazines[0] %}
-<div class="highlight">
+<div class="highlight-main">
 
 <a href="{{latestIssue["permalink"]}}"><img src="/assets/magazine-thumbnails/{{ latestIssue["thumbnail"] }}"/></a>
 <div class="highlight-desc" markdown=1>
