@@ -6,13 +6,20 @@
   object-fit: cover;
 }
 
+@media (max-width: constants.$breakpoint-medium) {
+  .hero-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .excerpt {
-  color: constants.$hn-color;
+  color: constants.$fg-color;
   font-style: italic;
-  // font-weight: bold;
-  font-size: 0.9rem;
-  text-align: right;
-  margin-left: 10%;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: justify;
+  margin-right: 40%;
 }
 .author {
   font-size: 1.3rem;

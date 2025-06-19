@@ -1,9 +1,23 @@
-$bg-color: #292929;
-$fg-color: #EEEEEE;
-$h1-color: #FFF4B7;
-$hn-color: #DCA06D;
-$link-color: #DD4053;     // soft azure
-$emph-color: #6EACDA;
+// $bg-color: #F8F8F5;
+// $fg-color: #2E2E2E;
+// $h1-color: #4B6043;
+// $hn-color: #D87C5A;
+// $link-color: #DDDCD3;     // soft azure
+// $emph-color: #3B3A30;
+
+$bg-color: #FAFAF9;
+$fg-color: #1F2937;
+$h1-color: #3B82F6;
+$hn-color: #3B3A30;
+$link-color: #D87C5A;     // soft azure
+$emph-color: #6B7280;
+
+// $bg-color: #292929;
+// $fg-color: #EEEEEE;
+// $h1-color: #FFF4B7;
+// $hn-color: #DCA06D;
+// $link-color: #DD4053;     // soft azure
+// $emph-color: #6EACDA;
 
 $font-size: 17px;
 $h1-size: 2.5em;
@@ -29,5 +43,5 @@ $crossword-height: 700px !default;
 $logo-size: 100px;
 
 $breakpoint-tiny: 450px;
-$breakpoint-small: 550px;
+$breakpoint-small: 600px;
 $breakpoint-medium: 1000px;

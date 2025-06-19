@@ -1,0 +1,166 @@
+{
+    "down": {
+        "FERMI": [
+            11,
+            "Italian Nobel laureate, created the first nuclear reactor, well-known for wielding a six-inch slide rule"
+        ],
+        "DIRAC": [
+            21,
+            "English mathematician and physicist, used Lorentz invariance and quantum mechanics to predict antimatter"
+        ],
+        "LASER": [
+            62,
+            "Source of focused light that uses stimulated emission"
+        ],
+        "BORN": [
+            119,
+            "German physicist, postulated that squares of amplitudes are measurement probabilities"
+        ],
+        "BOHR": [
+            84,
+            "Danish physicist, popularised the Copenhagen interpretation"
+        ],
+        "EVERETT": [
+            43,
+            "American physicist, proposed the many-worlds interpretation of quantum mechanics in his doctoral dissertation"
+        ],
+        "PHONON": [
+            2,
+            "Bosonic excitation, quantised sound wave"
+        ],
+        "PHOTON": [
+            0,
+            "Quantised excitation of electromagnetic field"
+        ]
+    },
+    "across": {
+        "UNITARY": [
+            32,
+            "Adjective to describe a transformation that preserves norms of vectors"
+        ],
+        "PAULI": [
+            59,
+            "Austrian physicist, the first to propose existence of neutrinos"
+        ],
+        "ENTANGLE": [
+            157,
+            "(verb,) 'Mix' two particles such that you cannot specify the state of one without specifying that of the other"
+        ],
+        "QUBIT": [
+            117,
+            "Two-level quantum system, unit of quantum information"
+        ],
+        "DECOHERE": [
+            94,
+            "Lose quantum information by interacting with environment, typically irreversibly"
+        ],
+        "PLANCK": [
+            2,
+            "Unit of 'quantum angular momentum', also a physicist"
+        ],
+        "TUNNEL": [
+            39,
+            "Pass through classically-forbidden region"
+        ]
+    },
+    "blanks": [
+        78,
+        91,
+        104,
+        130,
+        143,
+        156,
+        1,
+        14,
+        27,
+        53,
+        66,
+        79,
+        92,
+        105,
+        131,
+        144,
+        80,
+        93,
+        106,
+        16,
+        29,
+        55,
+        68,
+        81,
+        107,
+        133,
+        146,
+        17,
+        30,
+        134,
+        147,
+        18,
+        31,
+        57,
+        70,
+        83,
+        109,
+        122,
+        135,
+        148,
+        19,
+        45,
+        58,
+        71,
+        136,
+        149,
+        20,
+        46,
+        72,
+        85,
+        111,
+        124,
+        137,
+        150,
+        8,
+        86,
+        112,
+        125,
+        138,
+        151,
+        9,
+        22,
+        48,
+        74,
+        87,
+        113,
+        126,
+        139,
+        152,
+        165,
+        10,
+        23,
+        49,
+        127,
+        140,
+        153,
+        166,
+        76,
+        89,
+        102,
+        115,
+        128,
+        141,
+        154,
+        167,
+        12,
+        25,
+        51,
+        64,
+        77,
+        90,
+        103,
+        116,
+        129,
+        142,
+        155,
+        168
+    ],
+    "size": 13
+}

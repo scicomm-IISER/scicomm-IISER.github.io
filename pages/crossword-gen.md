@@ -1,5 +1,6 @@
 ---
 permalink: /crossword-gen/
 layout: crossword
-title: "Crossword"
+title: "Create Your Crossword"
+file: "issue4"
 ---

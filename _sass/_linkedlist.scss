@@ -15,6 +15,7 @@
 .llInputs {
   display: flex;
   gap: 5px;
+  flex-wrap: wrap;
 }
 .llInputs input {
   width: 30px;

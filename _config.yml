@@ -4,7 +4,7 @@ url: "https://scicomm.iiserkol.ac.in" # the base hostname & protocol for your si
 baseurl: ''
 destination: ./docs
 logo-light: "/assets/global/logo-light.png"
-logo-dark: "/assets/global/bannerTextWhite.svg"
+logo-dark: "/assets/global/bannerTextDark.svg"
 digest-excerpt: "In Insight Digest, we showcase the latest happenings in science research."
 digest-truncate-length: 330
 archives: # key-value pairs that list the categories of posts that need to be listed in the archives page
@@ -41,7 +41,7 @@ defaults:
     values:
       layout: posts
       excerpt: ""
-      author-image: true
+      author-image: false
   - scope:
       path: "_posts/*/*-digest.md"
       type: posts
@@ -72,10 +72,7 @@ defaults:
       type: posts
     values:
       layout: crossword
-<<<<<<< HEAD
-=======
       category: crossword
->>>>>>> 2d71367 (most of crossword done)
       author-image: false
       excerpt: ""
       authors: ['Alekhya Kundu']

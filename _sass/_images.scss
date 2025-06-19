@@ -9,8 +9,13 @@ figure {
   > figcaption {
     font-size: 0.9rem;
     padding-top: 0.2rem;
-    color: constants.$h1-color;
+    color: constants.$emph-color;
     font-style: italic;
   }
 }
 
+@media (max-width: constants.$breakpoint-small) {
+  img {
+    max-width: 100%;
+  }
+}

@@ -32,19 +32,15 @@ If you are new here, welcome! You have reached the home page of *InScight*. {{ s
 {% for cat in categories %}
  {% assign post = site.categories[cat][0] %}
  {% assign image = "/assets/images" | append: post.permalink | append: post.hero-image | relative_link %}
+ <div class="highlight-desc">
  <a href="{{ post.permalink }}" id="highlight-{{ cat }}-url">
  <img id="highlight-{{ cat }}-image" src="{{ image }}"/>
  </a>
-{% endfor %}
-{% for cat in categories %}
  <strong id="highlight-{{ cat }}-title">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</strong>
-{% endfor %}
-{% for cat in categories %}
  <span class="archive-author" id="highlight-{{ cat }}-author"> {{ post.authors | join: ", " }} </span>
-{% endfor %}
-{% for cat in categories %}
- <div class="home-button"><span>{{ site.color-emoji["browse"] }} <a href="{{post["permalink"]}}" id="highlight-{{ cat }}-link"> Browse </a></span><span class="shuffle" id="{{ cat }}-shuffle"></span></div>
-{% endfor %}
+ <p class="home-button"><span>{{ site.color-emoji["browse"] }} <a href="{{post["permalink"]}}" id="highlight-{{ cat }}-link"> Browse </a></span><span class="shuffle" id="{{ cat }}-shuffle"></span></p>
+ </div>
+ {% endfor %}
 </div>
 
 # Insight Digest Highlights
