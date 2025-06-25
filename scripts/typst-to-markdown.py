@@ -14,7 +14,6 @@ def FrontMatter(contents):
             if len(day) == 1:
                 day = "0"+day
             year = line[line.find("year:")+5:line.find(",", line.find("year:")+5)].strip()
-            print(day, month, year)
             frontMatter["date"] = year + "-" + month + "-" + day
             continue
         if line.startswith("#let file ="):
@@ -116,7 +115,6 @@ issue = sys.argv[3]
 with open(typstpath, "r") as file:
     contents = [line.rstrip() for line in file]
 frontMatter, mainStart = FrontMatter(contents)
-print(frontMatter["date"])
 frontMatter["category"] = category
 savePath = frontMatter["date"] + "-" + typstpath.split("/")[-1].replace(".typ", ".md")
 if category == "article":

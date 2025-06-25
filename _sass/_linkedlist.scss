@@ -24,12 +24,12 @@
   font-size: 1.1rem;
   text-transform: uppercase;
   border: 0;
-  color: constants.$link-color;
+  color: constants.$bg-color;
   font-weight: bold;
+  background: constants.$emph-color;
 }
 .llInputs input.locked {
   background: constants.$link-color;
-  color: constants.$bg-color;
 }
 #result {
   margin-top: 20px;

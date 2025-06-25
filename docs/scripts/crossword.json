@@ -1,22 +1,22 @@
 {
-	"size": 17,
+	"size": 15,
 	"intersections": 15,
 	"hints": {
-		"MOLECULARCLOCK": "Estimation of evolutionary timescales based on mutation rates",
-		"COEVOLUTION": "Reciprocal evolutionary changes between interacting species",
-		"SELECTION": "_______ PRESSURE - Environmental factors that influence reproductive success",
-		"DRIFT": "GENETIC _____ - Random changes in allele frequencies in a population",
-		"HOMOLOGOUS": "Anatomical similarities due to shared ancestry",
-		"PUNCTUATED": "_______ EQUILIBRIUM - The idea that evolution occurs in rapid bursts rather than gradually",
-		"GENEFLOW": "Movement of genes between populations through migration",
-		"FREQUENCY": "ALLELE _______ - This refers to the proportion of a specific allele (variant of a gene) within a population's gene pool",
-		"MICROEVOLUTION": "This refers to evolutionary changes within a population or species over a relatively short period of time",
-		"CLADOGRAM": "A diagram depicting evolutionary relationships",
-		"SYMBIOSIS": "Long-term interaction between different species, often mutually beneficial",
-		"BOTTLENECK": "The effect that refers to a sharp reduction in population size causing genetic diversity loss",
-		"PHYLOGENY": "Evolutionary history and relationships among species",
-		"FOUNDER": "The effect which refers to genetic variation resulting from a small group establishing a new population",
-		"ADAPTIVE": "______ RADIATION - The rapid evolution of multiple species from a common ancestor"
+		"SPECTROSCOPE": "A scientific instrument that disperses light into a spectrum, allowing astronomers to analyze the composition of stars.",
+		"ANDROMEDA": "A spiral galaxy on a collision course with the Milky Way, visible to the naked eye from Earth.",
+		"NEBULA": "A vast cloud of gas and dust in space, often the birthplace of stars or the remnants of dead ones.",
+		"QUASAR": "An extremely bright and energetic object powered by a supermassive black hole at the center of a distant galaxy.",
+		"APHELION": "The point in a planet’s elliptical orbit that is farthest from the Sun, resulting in lower solar intensity.",
+		"SIRIUS": "The brightest star in Earth's night sky, part of Canis Major, located just 8.6 light-years away.",
+		"VOYAGER": "A pair of NASA spaceprobes launched in1977, now travelingthrough interstellarspace carrying theGolden Record.",
+		"ASTROLABE": "An ancient analog toolused for solvingproblems related totime and the positionof the Sun and stars.",
+		"CHRONOMETER": "A high-precision timekeeping device used historically in navigation to determine longitude at sea.",
+		"PARALLAX": "The apparent shift in position of a nearby star against the background of distant stars due to Earth's motion.",
+		"EQUINOX": "The two points in Earth's orbit when the Sun is directly above the equator, resulting in nearly equal day and night.",
+		"SUPERNOVA": "A cataclysmic explosion marking the violent death of a massive star, often leaving behind a neutron star or black hole.",
+		"CASSIOPEIA": "A distinctive W-shaped constellation named after a vain queen in Greek mythology.",
+		"SOLSTICE": "The moment when the Sun reaches its highest or lowest point in the sky at noon, marking the longest or shortest day.",
+		"PULSAR": "A highly magnetized, rotating neutron star that emits beams of electromagnetic radiation from its magnetic poles."
 	}
 }
 

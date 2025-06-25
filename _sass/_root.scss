@@ -28,17 +28,19 @@ main {
   flex-grow: 1;
   max-width: constants.$width;
   margin: auto;
+  width: constants.$width;
 }
 
 @media (max-width: constants.$breakpoint-medium) {
   body {
-    max-width: 100%;
-    margin: 0;
+    max-width: calc(100% - 2rem);
+    margin: auto;
     margin-top: 1rem;
   }
   main {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    max-width: 100%;
+    // margin-left: 0.5rem;
+    // margin-right: 0.5rem;
   }
 }
 

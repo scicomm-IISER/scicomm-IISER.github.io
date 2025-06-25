@@ -1,0 +1,30 @@
+[
+  
+    {
+      "title": "Linked List | Issue #3",
+      "date": "2025-05-04T00:00:00+05:30",
+      "permalink": "/issue3/linkedlist/",
+      "author": "Alekhya Kundu",
+      "category": "linkedlist",
+      "hero-image": "/assets/images/issue3/linkedlist/radium.jpg"
+    },
+  
+    {
+      "title": "Linked List | Issue #2",
+      "date": "2025-05-04T00:00:00+05:30",
+      "permalink": "/issue2/linkedlist/",
+      "author": "Alekhya Kundu",
+      "category": "linkedlist",
+      "hero-image": "/assets/images/issue2/linkedlist/entropy.jpg"
+    },
+  
+    {
+      "title": "Linked List | Issue #1",
+      "date": "2024-11-14T00:00:00+05:30",
+      "permalink": "/issue1/linkedlist/",
+      "author": "Alekhya Kundu",
+      "category": "linkedlist",
+      "hero-image": "/assets/images/issue1/linkedlist/nerve.jpg"
+    }
+  
+]

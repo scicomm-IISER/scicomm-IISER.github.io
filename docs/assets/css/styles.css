@@ -28,17 +28,17 @@ main {
   flex-grow: 1;
   max-width: 900px;
   margin: auto;
+  width: 900px;
 }
 
 @media (max-width: 1000px) {
   body {
-    max-width: 100%;
-    margin: 0;
+    max-width: calc(100% - 2rem);
+    margin: auto;
     margin-top: 1rem;
   }
   main {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    max-width: 100%;
   }
 }
 .highlighter-rouge {
@@ -82,7 +82,7 @@ h2, h3, h4, h5, h6 {
   color: #3B3A30;
   text-align: left;
   line-height: 95%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
@@ -124,9 +124,15 @@ a.nf:focus {
 }
 
 header {
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
   width: 100vw;
+  display: flex;
+  max-width: 900px;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: start;
 }
 
 nav {
@@ -134,11 +140,8 @@ nav {
   height: 15px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: auto;
   margin-top: 0;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
   width: 100%;
 }
 nav > a {
@@ -150,8 +153,7 @@ nav > a:hover {
 }
 
 #home-button img {
-  width: 100px;
-  height: 100%;
+  height: 30px;
 }
 
 @media (max-width: 1000px) {
@@ -166,10 +168,16 @@ nav > a:hover {
     padding-right: 1rem;
   }
 }
+.nav-partial {
+  display: none;
+}
+
 @media (max-width: 600px) {
-  #home-button img {
-    width: 60px;
-    height: 100%;
+  .nav-full {
+    display: none;
+  }
+  .nav-partial {
+    display: flex;
   }
 }
 footer {
@@ -236,9 +244,12 @@ a.nf {
   gap: 0.1rem;
   flex-direction: column;
 }
+.magazine-item > .magazine-summary-title {
+  margin-bottom: 0.2rem;
+}
 
 .magazine-item + .magazine-item {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
 }
 
 .magazine-banner {
@@ -260,6 +271,16 @@ a.nf {
 }
 .release-buttons > strong {
   color: #6B7280;
+}
+
+.magazine-summary-title {
+  color: #6B7280;
+  padding-right: 1rem;
+}
+
+.magazine-summary-author {
+  color: #1F2937;
+  font-weight: bold;
 }
 
 .digest-item {
@@ -333,6 +354,14 @@ a.nf {
 }
 .author-bio > img {
   max-width: 300px;
+}
+
+#hero-caption {
+  color: #FAFAF9;
+  background-color: rgba(31, 41, 55, 0.4);
+  position: relative;
+  left: 50%;
+  bottom: 3em;
 }
 
 table {
@@ -413,17 +442,22 @@ input[type=radio]:checked {
   padding-left: 0.5rem;
 }
 
-button.reveal {
+.reveal {
   margin-top: 1rem;
   background-color: #1F2937;
   color: #FAFAF9;
   border: 0px;
   font-weight: bold;
-  padding: 0.5rem;
+  padding: 0.3rem;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
   font-size: 0.9rem;
   border-radius: 7%;
+  cursor: pointer;
+}
+
+.reveal:hover {
+  text-decoration: none;
 }
 
 .quiz-image {
@@ -502,14 +536,6 @@ iframe.crossword-iframe {
   max-width: 400px;
   display: flex;
   flex-direction: column;
-}
-
-#refreshBtn, #revealBtn {
-  font-family: "Lato", "Symbols Nerd Font", "Noto Color Emoji" !important;
-  background: #3B3A30;
-  font-size: 0.9rem;
-  border: none;
-  padding: 3px;
 }
 
 @media (max-width: 1000px) {
@@ -652,13 +678,13 @@ iframe.crossword-iframe {
   font-size: 1.1rem;
   text-transform: uppercase;
   border: 0;
-  color: #D87C5A;
+  color: #FAFAF9;
   font-weight: bold;
+  background: #6B7280;
 }
 
 .llInputs input.locked {
   background: #D87C5A;
-  color: #FAFAF9;
 }
 
 #result {

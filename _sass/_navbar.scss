@@ -1,8 +1,14 @@
 @use 'constants';
 header {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding-top: constants.$footer-gap;
+    padding-bottom: calc(2 * constants.$footer-gap);
     width: 100vw;
+    display: flex;
+	max-width: constants.$width;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: start;
 }
 
 nav {
@@ -10,11 +16,8 @@ nav {
 	height: constants.$header-height;
 	display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: auto;
     margin-top: 0;
-    padding-top: constants.$footer-gap;
-    padding-bottom: calc(2 * constants.$footer-gap);
     width: 100%;
     > a {
       color: constants.$hn-color;
@@ -25,8 +28,8 @@ nav {
     }
 }
 #home-button img {
-  width: constants.$logo-size;
-  height: 100%;
+  height: constants.$logo-size;
+  // height: 100%;
 }
 
 @media (max-width: constants.$breakpoint-medium) {
@@ -41,10 +44,15 @@ nav {
     padding-right: 1rem;
   }
 }
+.nav-partial {
+    display: none;
+}
 
 @media (max-width: constants.$breakpoint-small) {
-  #home-button img {
-    width: calc(0.6 * constants.$logo-size);
-    height: 100%;
+  .nav-full {
+    display: none;
+  }
+  .nav-partial {
+    display: flex
   }
 }

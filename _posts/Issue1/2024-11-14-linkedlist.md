@@ -1,8 +1,8 @@
 ---
-title: "Linked List | Issue #1"
+title: "Linked List #1: MUTATION"
 issue: 1
 category: linkedlist
 permalink: /issue1/linkedlist/
-file: issue1
 seed: MUTATION
+hero-image: "nerve.jpg"
 ---

@@ -1,7 +1,7 @@
 ---
 seed: "SEMICONDUCTOR"
 issue: 3
-title: "Linked List | Issue #3"
+title: "Linked List #3: SEMICONDUCTOR"
 permalink: /issue3/linkedlist/
-file: issue3
+hero-image: "radium.jpg"
 ---

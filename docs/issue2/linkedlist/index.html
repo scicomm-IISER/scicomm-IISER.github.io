@@ -25,10 +25,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Linked List | Issue #2</title>
+	<title>Linked List #2: ENZYME</title>
 	<meta name="description" content="">
 
-	<meta property="og:title" content="Linked List | Issue #2">
+	<meta property="og:title" content="Linked List #2: ENZYME">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content=http://localhost:4000/issue2/linkedlist/>
 	<meta property="og:description" content="">
@@ -51,7 +51,7 @@
 
 <body>
 <header>
-<nav>
+<nav class="nav-full">
 <a id="home-button" href="/">
  <img src="/assets/global/bannerTextDark.svg"/>
 </a>
@@ -61,12 +61,27 @@
 <a href="/submit/">Submit</a>
 <a href="/about/">About</a>
 </nav>
+<nav class="nav-partial">
+<a id="home-button" href="/">
+ <img src="/assets/global/bannerTextDark.svg"/>
+</a>
+<a href="/magazine/">Magazine</a>
+<a href="/submit/">Submit</a>
+<a href="/about/">About</a>
+</nav>
 </header> 
 
 
 <main>
   
-<h1> Linked List | Issue #2 </h1>
+  <div class="hero-image-caption">
+	
+	  <img class="hero-image" src="/assets/images/issue2/linkedlist/entropy.jpg"/>
+	
+  
+  </div>
+
+<h1> Linked List #2: ENZYME </h1>
 
 <div class="author">Alekhya Kundu</div>
 
@@ -89,13 +104,14 @@ Linked List is a general science-based word game. The rules are straightforward.
 	<li>This property goes all the way, so that the last letter of the last (eleventh) word is also the first letter of the seed word.</li>
 </ol>
 
-Find all the words!
+As always, the cover image is a clue to the first word. Find all the words!
 
 <p><strong>Seed Word:</strong> <span id="seed-word">ENZYME</span></p>
 <form id="ll-form"></form>
-<button onclick='checkAnswers([{"hint":"A radioactive element discovered by Marie and Pierre Curie","word":"RADIUM"},{"hint":"A physical force from moving electric charges","word":"MAGNETISM"},{"hint":"Mass times velocity, how hard it is to stop something","word":"MOMENTUM"},{"hint":"Smallest unit of compound with specific properties","word":"MOLECULE"},{"hint":"Measure of disorder in thermodynamics","word":"ENTROPY"},{"hint":"Silvery metal used in superconductors and LEDs","word":"YTTRIUM"},{"hint":"Subatomic particle of a quark and antiquark","word":"MESON"},{"hint":"Formation of atomic nuclei in stars or Big Bang","word":"NUCLEOSYNTHESIS"},{"hint":"State where material conducts electricity without resistance","word":"SUPERCONDUCTIVITY"},{"hint":"Material’s stiffness under stress","word":"YOUNGSMODULUS"}], "ENZYME")'>Check Answers</button>
+<button onclick='checkAnswers(null, "ENZYME")' class="reveal">Check Answers</button>
 <div id="result"></div>
 <script src="/assets/js/linkedlist.js"></script>
+
 <script>
 build([{"hint":"A thermodynamic quantity representing the degree of disorder in a system","word":"ENTROPY"},{"hint":"The amount of product formed in a chemical reaction","word":"YIELD"},{"hint":"The bending of waves around obstacles leading to patterns of bright and dark bands.","word":"DIFFRACTION"},{"hint":"A nearly massless subatomic particle with no electric charge","word":"NEUTRINO"},{"hint":"The diffusion of water across a selectively permeable membrane","word":"OSMOSIS"},{"hint":"Quantum mechanical attribute, must be integer for bosons","word":"SPIN"},{"hint":"A subatomic particle with no electric charge, found in the nucleus of an atom","word":"NEUTRON"},{"hint":"A point in a standing wave where the amplitude is zero","word":"NODE"},{"hint":"A negatively charged subatomic particle","word":"ELECTRON"},{"hint":"Fundamental unit of chromatin, consisting of a segment of DNA wound around a core of histone proteins","word":"NEUCLEOSOME"}], "ENZYME")
 </script>
@@ -113,7 +129,7 @@ build([{"hint":"A thermodynamic quantity representing the degree of disorder in 
  <footer>
 	<span>©️ 2025 InScight </span>
 	<span>|</span>
-	<span>☁️ Hosted by <a href="https://www.iiserkol.ac.in/web/en/" target="_blank">IISER Kolkata</a></span>
+	<span>🖥️ Hosted by <a href="https://www.iiserkol.ac.in/web/en/" target="_blank">IISER Kolkata</a></span>
 	<span>|</span>
 	<span><a class="nf social-links nf-fa-instagram" href="https://www.instagram.com/inscight_iiserkolkata/">󰋾</a><a class="nf social-links nf-fa-twitter_square" href="https://x.com/InScightIISERK"></a></span>
 </footer> 

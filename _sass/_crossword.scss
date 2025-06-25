@@ -64,13 +64,13 @@ iframe.crossword-iframe {
   flex-direction: column;
 }
 
-#refreshBtn,#revealBtn {
-  font-family: constants.$font, constants.$symbols-font, constants.$emoji-font !important;
-  background: constants.$hn-color;
-  font-size: 0.9rem;
-  border: none;
-  padding: 3px;
-}
+// #refreshBtn,#revealBtn {
+//   font-family: constants.$font, constants.$symbols-font, constants.$emoji-font !important;
+//   background: constants.$hn-color;
+//   font-size: 0.9rem;
+//   border: none;
+//   padding: 3px;
+// }
 
 @media (max-width: constants.$breakpoint-medium) {
   #crossword-wrapper {

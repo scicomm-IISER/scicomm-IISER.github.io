@@ -15,8 +15,8 @@ layout: default
 {% assign metaArticles = issueItems | where:"category", "meta" %}
 {% for item in metaArticles %}
 <div class="magazine-item">
-<b>{{ item.title }}</b>
-<span><i>{{ item.excerpt }}</i> <a class="button" href={{ item.url }}>Read</a></span>
+<span class="magazine-summary-title">{{ item.title }}</span>
+<span><span class="magazine-summary-author">{{ item.excerpt }}</span> <a class="reveal" href={{ item.url }}>Read</a></span>
 </div>
 {% endfor %}
 
@@ -25,8 +25,8 @@ layout: default
 {% assign articles = issueItems | where:"category", "article" %}
 {% for item in articles %}
 <div class="magazine-item">
-<strong>{{ item.title }}</strong>
-<span><i>{{ item.authors | join: ", " | strip }}</i> <a class="button" href={{ item.url }}>Read</a></span>
+<span class="magazine-summary-title">{{ item.title }}</span>
+<span><span class="magazine-summary-author">{{ item.authors | join: ", " | strip }}</span> <a class="reveal" href={{ item.url }}>Read</a></span>
 </div>
 {% endfor %}
 
@@ -34,8 +34,8 @@ layout: default
 {% assign interviews = issueItems | where:"category", "interview" %}
 {% for item in interviews %}
 <div class="magazine-item">
-<b>{{ item.title }}</b>
-<span><i>{{ item.authors | join: ", " }}</i> <a class="button" href={{ item.url }}>Read</a></span>
+<span class="magazine-summary-title">{{ item.title }}</span>
+<span><span class="magazine-summary-author">{{ item.authors | join: ", " }}</span> <a class="reveal" href={{ item.url }}>Read</a></span>
 </div>
 {% endfor %}
 
@@ -45,29 +45,19 @@ layout: default
 {% assign slug = item["Title"] | slugify %}
 {% assign link = "/issue" | append: page.issue | append: "/digest/#" | append: slug %}
 <div class="magazine-item">
-{{ item["Title"] }} 
-<span><i>{{ item["Author"] }}</i> <a class="button" href={{ link }}>Read</a></span>
+<span class="magazine-summary-title">{{ item.Title }}</span>
+<span><span class="magazine-summary-author">{{ item["Author"] }}</span> <a class="reveal" href={{ link }}>Read</a></span>
 </div>
 {% endfor %}
 <div class="magazine-item">
-<a class="button" href="/issue{{ page.issue }}/digest/">Read All</a><br>
+<span><a class="reveal" href="/issue{{ page.issue }}/digest/">Read All</a><br></span>
 </div>
 
 <h2 id="games"> Science Games </h2>
-<ul>
-{% for article in site.categories["quiz"] %}
-  {% if article.issue == page.issue %}
-  <li> General Science Quiz  <a class="button" href="{{ article.url }}">Try Out</a></li>
-  {% endif %}
+{% assign categories = "quiz,crossword,linkedlist" | split:"," %}
+{% for cat in categories %}
+{% assign items = issueItems | where:"category", cat %}
+<div class="magazine-item">
+	<span><span class="magazine-summary-title">{{ items[0].title }}</span><a class="reveal" href="{{ items[0].url }}">Try Out</a></span>
+</div>
 {% endfor %}
-{% for article in site.categories["crossword"] %}
-  {% if article.issue == page.issue %}
-  <li> {{ article.title }}  <a class="button" href="{{ article.url }}">Try Out</a></li>
-  {% endif %}
-{% endfor %}
-{% for article in site.categories["linkedlist"] %}
-  {% if article.issue == page.issue %}
-  <li> Linked List  <a class="button" href="{{ article.url }}">Try Out</a></li>
-  {% endif %}
-{% endfor %}
-</ul>

@@ -3,25 +3,49 @@ title: "Interactive Science Games"
 permalink: /games/
 ---
 
-### Quizzes
-<ul>
+## Recent Highlights
+{% assign categories = "crossword,quiz" | split: "," %}
+<div class="highlight-small">
+{% for cat in categories %}
+ {% assign post = site.categories[cat][0] %}
+ {% assign image = "/assets/images" | append: post.permalink | append: post.hero-image | relative_link %}
+ <div class="highlight-desc">
+ <a href="{{ post.permalink }}" id="highlight-{{ cat }}-url">
+ <img id="highlight-{{ cat }}-image" src="{{ image }}"/>
+ </a>
+ <strong id="highlight-{{ cat }}-title">{{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}</strong>
+ <span class="archive-author" id="highlight-{{ cat }}-author"> {{ post.authors | join: ", " }} </span>
+ <p class="home-button"><span>{{ site.color-emoji["browse"] }} <a href="{{post["permalink"]}}" id="highlight-{{ cat }}-link"> Browse </a></span><span class="shuffle" id="{{ cat }}-shuffle"></span></p>
+ </div>
+ {% endfor %}
+</div>
+
+## Quick links
+[Quizzes](#quizzes)
+
+[Crosswords](#crosswords)
+
+[Linked Lists](#linked-lists)
+
+## Quizzes
+<div class="magazine-summary" markdown=1>
 {% for article in site.categories["quiz"] %}
-<li>{{ article.title }} <a class="button" href="{{ article.url }}">Start</a></li>
+{{ article.title }} \| <span class="magazine-summary-author">{{ article.date | date:"%b, %Y" }}</span> <a class="reveal" href="{{ article.url }}">Start</a>
 {% endfor %}
-</ul>
+</div>
 
-<br>
-### Crosswords
-<ul>
-{% for article in site.categories["crossword"] limit: 4 %}
-<li>{{ article.title }} <a class="button" href="{{ article.url }}">Start</a></li>
+## Crosswords
+<div class="magazine-summary" markdown=1>
+{% for article in site.categories["crossword"] %}
+{{ article.title }} \| <span class="magazine-summary-author">{{ article.date | date:"%b, %Y" }}</span> <a class="reveal" href="{{ article.url }}">Start</a>
 {% endfor %}
-</ul>
+</div>
 
-<br>
-### Linked Lists
-<ul>
-{% for article in site.categories["linkedlist"] limit: 4 %}
-<li>{{ article.title }} <a class="button" href="{{ article.url }}">Start</a></li>
+## Linked Lists
+<div class="magazine-summary" markdown=1>
+{% for article in site.categories["linkedlist"] %}
+{{ article.title }} \| <span class="magazine-summary-author">{{ article.date | date:"%b, %Y" }}</span> <a class="reveal" href="{{ article.url }}">Start</a>
 {% endfor %}
-</ul>
+</div>
+
+<script src="/assets/js/randomHighlight.js"></script>

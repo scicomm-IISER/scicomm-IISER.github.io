@@ -50,3 +50,11 @@
   text-align: center;
   flex-wrap: wrap;
 }
+
+#hero-caption {
+  color: constants.$bg-color;
+  background-color: rgba(constants.$fg-color, 0.4);
+  position: relative;
+  left: 50%;
+  bottom: 3em;
+}

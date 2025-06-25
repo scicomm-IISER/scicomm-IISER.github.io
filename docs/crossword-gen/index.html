@@ -51,13 +51,21 @@
 
 <body>
 <header>
-<nav>
+<nav class="nav-full">
 <a id="home-button" href="/">
  <img src="/assets/global/bannerTextDark.svg"/>
 </a>
 <a href="/magazine/">Magazine</a>
 <a href="/archives/">Archives</a>
 <a href="/games/">Games</a>
+<a href="/submit/">Submit</a>
+<a href="/about/">About</a>
+</nav>
+<nav class="nav-partial">
+<a id="home-button" href="/">
+ <img src="/assets/global/bannerTextDark.svg"/>
+</a>
+<a href="/magazine/">Magazine</a>
 <a href="/submit/">Submit</a>
 <a href="/about/">About</a>
 </nav>
@@ -80,8 +88,8 @@
 <div id="crossword-container">
 <div id="crossword"></div>
   <p>
-  <button id="revealBtn">Reveal</button>
-  <button id="refreshBtn">Clear</button>
+  <button id="revealBtn" class="reveal">Reveal</button>
+  <button id="refreshBtn" class="reveal">Clear</button>
   </p>
 </div>
 <div class="clues">
@@ -97,8 +105,9 @@
 </div>
 
 <script src="/assets/js/crossword.js"></script>
+
 <script>
-handleFile({"down":{"APHELION":[65,"Baked food made from flour"],"ANDROMEDA":[59,"Large body of salt water"],"NEBULA":[144,"Happy facial expression"],"SUPERNOVA":[91,"Art of sound and rhythm"],"SIRIUS":[3,"Large farm animal you can ride"],"SOLSTICE":[42,"Large farm animal you can ride"],"EQUINOX":[38,"Happy facial expression"],"QUASAR":[0,"Art of sound and rhythm"]},"across":{"VOYAGER":[154,"Small rodent"],"PULSAR":[188,"Small rodent"],"CASSIOPEIA":[210,"Baked food made from flour"],"SPECTROSCOPE":[3,"Place where you live"],"PARALLAX":[121,"Large body of salt water"],"CHRONOMETER":[94,"Place where you live"],"ASTROLABE":[30,"Hard natural material"]},"blanks":[90,105,120,135,150,165,180,195,1,16,46,61,76,2,17,47,62,77,92,107,137,152,167,182,197,93,108,138,153,168,183,198,19,49,64,79,109,139,169,184,199,20,50,185,200,21,51,66,81,111,141,171,186,201,22,52,67,82,112,142,172,187,202,23,143,173,203,24,39,54,69,84,114,129,25,40,55,70,85,115,130,145,175,205,220,26,41,56,71,86,116,131,146,161,176,206,221,27,162,177,207,222,28,43,58,73,88,118,133,148,163,178,208,223,29,44,194,209,224],"size":15});
+handleFile(null);
 </script>
 
 
@@ -114,7 +123,7 @@ handleFile({"down":{"APHELION":[65,"Baked food made from flour"],"ANDROMEDA":[59
  <footer>
 	<span>©️ 2025 InScight </span>
 	<span>|</span>
-	<span>☁️ Hosted by <a href="https://www.iiserkol.ac.in/web/en/" target="_blank">IISER Kolkata</a></span>
+	<span>🖥️ Hosted by <a href="https://www.iiserkol.ac.in/web/en/" target="_blank">IISER Kolkata</a></span>
 	<span>|</span>
 	<span><a class="nf social-links nf-fa-instagram" href="https://www.instagram.com/inscight_iiserkolkata/">󰋾</a><a class="nf social-links nf-fa-twitter_square" href="https://x.com/InScightIISERK"></a></span>
 </footer> 

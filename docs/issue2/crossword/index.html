@@ -51,7 +51,7 @@
 
 <body>
 <header>
-<nav>
+<nav class="nav-full">
 <a id="home-button" href="/">
  <img src="/assets/global/bannerTextDark.svg"/>
 </a>
@@ -61,11 +61,26 @@
 <a href="/submit/">Submit</a>
 <a href="/about/">About</a>
 </nav>
+<nav class="nav-partial">
+<a id="home-button" href="/">
+ <img src="/assets/global/bannerTextDark.svg"/>
+</a>
+<a href="/magazine/">Magazine</a>
+<a href="/submit/">Submit</a>
+<a href="/about/">About</a>
+</nav>
 </header> 
 
 
 <main>
   
+  <div class="hero-image-caption">
+	
+	  <img class="hero-image" src="/assets/images/issue2/crossword/evolution.jpg"/>
+	
+  
+  </div>
+
 <h1> Darwin's Game: Evolution-Themed Crossword </h1>
 
 <div class="author">Alekhya Kundu</div>
@@ -84,8 +99,8 @@
 <div id="crossword-container">
 <div id="crossword"></div>
   <p>
-  <button id="revealBtn">Reveal</button>
-  <button id="refreshBtn">Clear</button>
+  <button id="revealBtn" class="reveal">Reveal</button>
+  <button id="refreshBtn" class="reveal">Clear</button>
   </p>
 </div>
 <div class="clues">
@@ -101,6 +116,7 @@
 </div>
 
 <script src="/assets/js/crossword.js"></script>
+
 <script>
 handleFile({"down":{"MICROEVOLUTION":[65,"This refers to evolutionary changes within a population or species over a relatively short period of time"],"HOMOLOGOUS":[84,"Anatomical similarities due to shared ancestry"],"SELECTION":[142,"_______ PRESSURE - Environmental factors that influence reproductive success"],"ADAPTIVE":[112,"______ RADIATION - The rapid evolution of multiple species from a common ancestor"],"COEVOLUTION":[46,"Reciprocal evolutionary changes between interacting species"],"GENEFLOW":[20,"Movement of genes between populations through migration"],"FOUNDER":[5,"The effect which refers to genetic variation resulting from a small group establishing a new population"],"SYMBIOSIS":[0,"Long-term interaction between different species, often mutually beneficial"]},"across":{"BOTTLENECK":[272,"The effect that refers to a sharp reduction in population size causing genetic diversity loss"],"PHYLOGENY":[187,"Evolutionary history and relationships among species"],"PUNCTUATED":[223,"_______ EQUILIBRIUM - The idea that evolution occurs in rapid bursts rather than gradually"],"CLADOGRAM":[110,"A diagram depicting evolutionary relationships"],"DRIFT":[73,"GENETIC _____ - Random changes in allele frequencies in a population"],"FREQUENCY":[5,"ALLELE _______ - This refers to the proportion of a specific allele (variant of a gene) within a population's gene pool"],"MOLECULARCLOCK":[34,"Estimation of evolutionary timescales based on mutation rates"]},"blanks":[153,170,204,221,238,255,1,18,52,69,86,103,120,137,154,171,205,222,239,256,2,19,53,70,87,104,121,138,155,172,206,240,257,3,156,173,207,241,258,4,21,55,72,89,106,123,140,157,174,208,242,259,124,141,158,175,209,243,260,23,57,91,108,125,24,58,92,109,126,143,160,177,211,245,262,25,59,93,127,144,161,178,212,246,263,26,60,94,128,145,162,179,196,213,247,264,27,61,78,95,248,265,282,28,62,79,96,130,147,164,181,198,215,249,266,283,29,233,250,267,284,30,64,81,98,132,149,166,183,200,217,234,251,268,285,14,31,48,15,32,49,66,83,100,134,151,168,185,202,219,236,253,270,287,16,33,50,67,254,271,288],"size":17});
 </script>
@@ -118,7 +134,7 @@ handleFile({"down":{"MICROEVOLUTION":[65,"This refers to evolutionary changes wi
  <footer>
 	<span>©️ 2025 InScight </span>
 	<span>|</span>
-	<span>☁️ Hosted by <a href="https://www.iiserkol.ac.in/web/en/" target="_blank">IISER Kolkata</a></span>
+	<span>🖥️ Hosted by <a href="https://www.iiserkol.ac.in/web/en/" target="_blank">IISER Kolkata</a></span>
 	<span>|</span>
 	<span><a class="nf social-links nf-fa-instagram" href="https://www.instagram.com/inscight_iiserkolkata/">󰋾</a><a class="nf social-links nf-fa-twitter_square" href="https://x.com/InScightIISERK"></a></span>
 </footer> 

@@ -32,11 +32,40 @@ async function randomPost(category) {
 		summary.innerHTML = post["summary-trunc"]
 		const link = document.getElementById("highlight-digest-link");
 		link.href = post["permalink"]
+	} else if (category == "quiz") {
+		const url = document.getElementById("highlight-quiz-link");
+		url.href = post["permalink"]
+		const title = document.getElementById("highlight-quiz-title");
+		title.innerHTML = post["title"]
+		const author = document.getElementById("highlight-quiz-author");
+		author.innerHTML = post["author"]
+		const image = document.getElementById("highlight-quiz-image");
+		image.src = post["hero-image"]
+	} else if (category == "crossword") {
+		const url = document.getElementById("highlight-crossword-link");
+		url.href = post["permalink"]
+		const title = document.getElementById("highlight-crossword-title");
+		title.innerHTML = post["title"]
+		const author = document.getElementById("highlight-crossword-author");
+		author.innerHTML = post["author"]
+		const image = document.getElementById("highlight-crossword-image");
+		image.src = post["hero-image"]
 	}
 }
 
-document.getElementById("article-shuffle").addEventListener("click", function () { randomPost("article"); });
-document.getElementById("interview-shuffle").addEventListener("click", function () { randomPost("interview"); });
-document.getElementById("digest-shuffle").addEventListener("click", function () { randomPost("digest"); });
-randomPost("article");
-randomPost("interview");
+let categories = ["article", "interview", "digest", "crossword", "quiz", "linkedlist"]
+categories.forEach((cat) => {
+	if (document.getElementById(`${cat}-shuffle`) != null) {
+		console.log(cat);
+		document.getElementById(`${cat}-shuffle`).addEventListener("click", function () { randomPost(cat); });
+	}
+});
+// if (document.getElementById('elementId')
+// document.getElementById("article-shuffle").addEventListener("click", function () { randomPost("article"); });
+// document.getElementById("interview-shuffle").addEventListener("click", function () { randomPost("interview"); });
+// document.getElementById("digest-shuffle").addEventListener("click", function () { randomPost("digest"); });
+// document.getElementById("crossword-shuffle").addEventListener("click", function () { randomPost("crossword"); });
+// document.getElementById("quiz-shuffle").addEventListener("click", function () { randomPost("quiz"); });
+// document.getElementById("linkedlist-shuffle").addEventListener("click", function () { randomPost("linkedlist"); });
+// randomPost("article");
+// randomPost("interview");

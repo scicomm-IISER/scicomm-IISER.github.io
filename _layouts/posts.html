@@ -10,7 +10,7 @@ layout: default
 	  <img class="hero-image" src="/assets/images{{page.permalink}}{{ page.hero-image }}"/>
 	{% endif %}
   {% if page.hero-source %}
-    <a class="hero-caption" href="{{ page.hero-source }}">Source &nbsp;<span class="nf nf-oct-link"></span></a>
+	  <div id="hero-caption">{{ page.hero-source }}</div>
   {% endif %}
   </div>
 {% endif %}

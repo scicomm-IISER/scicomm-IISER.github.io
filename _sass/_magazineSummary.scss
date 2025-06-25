@@ -4,9 +4,12 @@
   display: flex;
   gap: 0.1rem;
   flex-direction: column;
+  > .magazine-summary-title {
+    margin-bottom: 0.2rem;
+  }
 }
 .magazine-item + .magazine-item {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
 }
 .magazine-banner {
   > div {
@@ -27,6 +30,12 @@
   color: constants.$emph-color;
   }
 }
-// .magazine-summary + .magazine-summary {
-//   margin-top: 6rem;
-// }
+
+.magazine-summary-title {
+  color: constants.$emph-color;
+  padding-right: 1rem;
+}
+.magazine-summary-author {
+  color: constants.$fg-color;
+  font-weight: bold;
+}

@@ -51,13 +51,21 @@
 
 <body>
 <header>
-<nav>
+<nav class="nav-full">
 <a id="home-button" href="/">
  <img src="/assets/global/bannerTextDark.svg"/>
 </a>
 <a href="/magazine/">Magazine</a>
 <a href="/archives/">Archives</a>
 <a href="/games/">Games</a>
+<a href="/submit/">Submit</a>
+<a href="/about/">About</a>
+</nav>
+<nav class="nav-partial">
+<a id="home-button" href="/">
+ <img src="/assets/global/bannerTextDark.svg"/>
+</a>
+<a href="/magazine/">Magazine</a>
 <a href="/submit/">Submit</a>
 <a href="/about/">About</a>
 </nav>
@@ -78,13 +86,13 @@
 
 
 <div class="magazine-item">
-<b>Reclaiming the Joy of Scientific Discovery</b>
-<span><i>Foreword by Prof. Balaram Mukhopadhyay</i> <a class="button" href=/issue3/foreword/>Read</a></span>
+<span class="magazine-summary-title">Reclaiming the Joy of Scientific Discovery</span>
+<span><span class="magazine-summary-author">Foreword by Prof. Balaram Mukhopadhyay</span> <a class="reveal" href=/issue3/foreword/>Read</a></span>
 </div>
 
 <div class="magazine-item">
-<b>A Word from the Editor</b>
-<span><i>Suman Haldar</i> <a class="button" href=/issue3/editor/>Read</a></span>
+<span class="magazine-summary-title">A Word from the Editor</span>
+<span><span class="magazine-summary-author">Suman Haldar</span> <a class="reveal" href=/issue3/editor/>Read</a></span>
 </div>
 
 
@@ -93,28 +101,28 @@
 
 
 <div class="magazine-item">
-<strong>From a BS-MS Student to An Independent Scientist: My Academic Journey</strong>
-<span><i>Sayan Choudhury</i> <a class="button" href=/issue3/sayan-journey/>Read</a></span>
+<span class="magazine-summary-title">From a BS-MS Student to An Independent Scientist: My Academic Journey</span>
+<span><span class="magazine-summary-author">Sayan Choudhury</span> <a class="reveal" href=/issue3/sayan-journey/>Read</a></span>
 </div>
 
 <div class="magazine-item">
-<strong>The Cora Ball - Protecting Millions of Ocean Acres by The Second</strong>
-<span><i>Sharanya Chatterjee</i> <a class="button" href=/issue3/sharanya-second/>Read</a></span>
+<span class="magazine-summary-title">The Cora Ball - Protecting Millions of Ocean Acres by The Second</span>
+<span><span class="magazine-summary-author">Sharanya Chatterjee</span> <a class="reveal" href=/issue3/sharanya-second/>Read</a></span>
 </div>
 
 <div class="magazine-item">
-<strong>Smart Moves: Temple Langurs Master the Art of Begging</strong>
-<span><i>Dishari Dasgupta</i> <a class="button" href=/issue3/dishari-begging/>Read</a></span>
+<span class="magazine-summary-title">Smart Moves: Temple Langurs Master the Art of Begging</span>
+<span><span class="magazine-summary-author">Dishari Dasgupta</span> <a class="reveal" href=/issue3/dishari-begging/>Read</a></span>
 </div>
 
 <div class="magazine-item">
-<strong>Secret of the Wings: Nanostructures on a Dragonfly</strong>
-<span><i>Debanuj Chatterjee</i> <a class="button" href=/issue3/debanuj-dragonfly/>Read</a></span>
+<span class="magazine-summary-title">Secret of the Wings: Nanostructures on a Dragonfly</span>
+<span><span class="magazine-summary-author">Debanuj Chatterjee</span> <a class="reveal" href=/issue3/debanuj-dragonfly/>Read</a></span>
 </div>
 
 <div class="magazine-item">
-<strong>Brain on Overload: Unlocking Hope for Rare Diseases Through Cellular Cleanup</strong>
-<span><i>Tisha Dash</i> <a class="button" href=/issue3/tisha-cleanup/>Read</a></span>
+<span class="magazine-summary-title">Brain on Overload: Unlocking Hope for Rare Diseases Through Cellular Cleanup</span>
+<span><span class="magazine-summary-author">Tisha Dash</span> <a class="reveal" href=/issue3/tisha-cleanup/>Read</a></span>
 </div>
 
 
@@ -122,13 +130,13 @@
 
 
 <div class="magazine-item">
-<b>In Conversation with Prof. Mustansir Barma</b>
-<span><i>Swarnendu Saha</i> <a class="button" href=/issue3/swarnendu-barma/>Read</a></span>
+<span class="magazine-summary-title">In Conversation with Prof. Mustansir Barma</span>
+<span><span class="magazine-summary-author">Swarnendu Saha</span> <a class="reveal" href=/issue3/swarnendu-barma/>Read</a></span>
 </div>
 
 <div class="magazine-item">
-<b>In Conversation with Dr. Chandra Shekhar Sharma</b>
-<span><i>Swarnendu Saha</i> <a class="button" href=/issue3/swarnendu-sharma/>Read</a></span>
+<span class="magazine-summary-title">In Conversation with Dr. Chandra Shekhar Sharma</span>
+<span><span class="magazine-summary-author">Swarnendu Saha</span> <a class="reveal" href=/issue3/swarnendu-sharma/>Read</a></span>
 </div>
 
 
@@ -138,81 +146,67 @@
 
 
 <div class="magazine-item">
-New Functions for an Old Protein: How Does RAS Drive Migration in Human Cells? 
-<span><i>Dhiman Sankar Pal</i> <a class="button" href=/issue3/digest/#new-functions-for-an-old-protein-how-does-ras-drive-migration-in-human-cells>Read</a></span>
+<span class="magazine-summary-title">New Functions for an Old Protein: How Does RAS Drive Migration in Human Cells?</span>
+<span><span class="magazine-summary-author">Dhiman Sankar Pal</span> <a class="reveal" href=/issue3/digest/#new-functions-for-an-old-protein-how-does-ras-drive-migration-in-human-cells>Read</a></span>
 </div>
 
 
 
 <div class="magazine-item">
-Recyclable Bio-based Polyethylene-like Materials from Acceptor-less Dehydrogenative Polymerization of Bio-derived Diols and Catalyst-enabled Closed-loop Recycling 
-<span><i>Anusha Biswas</i> <a class="button" href=/issue3/digest/#recyclable-bio-based-polyethylene-like-materials-from-acceptor-less-dehydrogenative-polymerization-of-bio-derived-diols-and-catalyst-enabled-closed-loop-recycling>Read</a></span>
+<span class="magazine-summary-title">Recyclable Bio-based Polyethylene-like Materials from Acceptor-less Dehydrogenative Polymerization of Bio-derived Diols and Catalyst-enabled Closed-loop Recycling</span>
+<span><span class="magazine-summary-author">Anusha Biswas</span> <a class="reveal" href=/issue3/digest/#recyclable-bio-based-polyethylene-like-materials-from-acceptor-less-dehydrogenative-polymerization-of-bio-derived-diols-and-catalyst-enabled-closed-loop-recycling>Read</a></span>
 </div>
 
 
 
 <div class="magazine-item">
-The Neuron With Its Own Brain 
-<span><i>Madhura Theng</i> <a class="button" href=/issue3/digest/#the-neuron-with-its-own-brain>Read</a></span>
+<span class="magazine-summary-title">The Neuron With Its Own Brain</span>
+<span><span class="magazine-summary-author">Madhura Theng</span> <a class="reveal" href=/issue3/digest/#the-neuron-with-its-own-brain>Read</a></span>
 </div>
 
 
 
 <div class="magazine-item">
-Intraspecific competition for a nest and its implication for the fitness of relocating ant colonies 
-<span><i>Tanusree Mondal</i> <a class="button" href=/issue3/digest/#intraspecific-competition-for-a-nest-and-its-implication-for-the-fitness-of-relocating-ant-colonies>Read</a></span>
+<span class="magazine-summary-title">Intraspecific competition for a nest and its implication for the fitness of relocating ant colonies</span>
+<span><span class="magazine-summary-author">Tanusree Mondal</span> <a class="reveal" href=/issue3/digest/#intraspecific-competition-for-a-nest-and-its-implication-for-the-fitness-of-relocating-ant-colonies>Read</a></span>
 </div>
 
 
 
 <div class="magazine-item">
-Unlocking the Origins of Animal Multicellularity: A Close Relative Shows the Way 
-<span><i>Swarnendu Saha</i> <a class="button" href=/issue3/digest/#unlocking-the-origins-of-animal-multicellularity-a-close-relative-shows-the-way>Read</a></span>
+<span class="magazine-summary-title">Unlocking the Origins of Animal Multicellularity: A Close Relative Shows the Way</span>
+<span><span class="magazine-summary-author">Swarnendu Saha</span> <a class="reveal" href=/issue3/digest/#unlocking-the-origins-of-animal-multicellularity-a-close-relative-shows-the-way>Read</a></span>
 </div>
 
 <div class="magazine-item">
-<a class="button" href="/issue3/digest/">Read All</a><br>
+<span><a class="reveal" href="/issue3/digest/">Read All</a><br></span>
 </div>
 
 <h2 id="games"> Science Games </h2>
-<ul>
-
-  
-  <li> General Science Quiz  <a class="button" href="/issue3/quiz/">Try Out</a></li>
-  
-
-  
-
-  
 
 
-  
 
-  
-  <li> CosmoGrid: Astronomoy and astrophysics-themed crossword  <a class="button" href="/issue3/crossword/">Try Out</a></li>
-  
-
-  
-
-  
+<div class="magazine-item">
+	<span><span class="magazine-summary-title">General Science Quiz #3</span><a class="reveal" href="/issue3/quiz/">Try Out</a></span>
+</div>
 
 
-  
-  <li> Linked List  <a class="button" href="/issue3/linkedlist/">Try Out</a></li>
-  
+<div class="magazine-item">
+	<span><span class="magazine-summary-title">CosmoGrid: Astronomoy and Astrophysics-Themed Crossword</span><a class="reveal" href="/issue3/crossword/">Try Out</a></span>
+</div>
 
-  
 
-  
+<div class="magazine-item">
+	<span><span class="magazine-summary-title">Linked List #3: SEMICONDUCTOR</span><a class="reveal" href="/issue3/linkedlist/">Try Out</a></span>
+</div>
 
-</ul>
 
 </main>
 
  <footer>
 	<span>©️ 2025 InScight </span>
 	<span>|</span>
-	<span>☁️ Hosted by <a href="https://www.iiserkol.ac.in/web/en/" target="_blank">IISER Kolkata</a></span>
+	<span>🖥️ Hosted by <a href="https://www.iiserkol.ac.in/web/en/" target="_blank">IISER Kolkata</a></span>
 	<span>|</span>
 	<span><a class="nf social-links nf-fa-instagram" href="https://www.instagram.com/inscight_iiserkolkata/">󰋾</a><a class="nf social-links nf-fa-twitter_square" href="https://x.com/InScightIISERK"></a></span>
 </footer> 

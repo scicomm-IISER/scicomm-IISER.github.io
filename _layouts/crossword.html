@@ -6,8 +6,8 @@ layout: posts
 <div id="crossword-container">
 <div id="crossword"></div>
   <p>
-  <button id="revealBtn">Reveal</button>
-  <button id="refreshBtn">Clear</button>
+  <button id="revealBtn" class="reveal">Reveal</button>
+  <button id="refreshBtn" class="reveal">Clear</button>
   </p>
 </div>
 <div class="clues">
@@ -23,6 +23,7 @@ layout: posts
 </div>
 
 <script src="/assets/js/crossword.js"></script>
+{% assign file = "issue" | append: page.issue %}
 <script>
-handleFile({{ site.data.crosswords[page.file] | jsonify }});
+handleFile({{ site.data.crosswords[file] | jsonify }});
 </script>

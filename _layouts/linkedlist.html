@@ -11,13 +11,14 @@ Linked List is a general science-based word game. The rules are straightforward.
 	<li>This property goes all the way, so that the last letter of the last (eleventh) word is also the first letter of the seed word.</li>
 </ol>
 
-Find all the words!
+As always, the cover image is a clue to the first word. Find all the words!
 
 <p><strong>Seed Word:</strong> <span id="seed-word">{{ page.seed }}</span></p>
 <form id="ll-form"></form>
-<button onclick='checkAnswers({{ site.data.linkedlists.issue3 | jsonify }}, "{{ page.seed }}")'>Check Answers</button>
+<button onclick='checkAnswers({{ site.data.linkedlists[page.file] | jsonify }}, "{{ page.seed }}")' class="reveal">Check Answers</button>
 <div id="result"></div>
 <script src="/assets/js/linkedlist.js"></script>
+{% assign file = "issue" | append: page.issue %}
 <script>
-build({{ site.data.linkedlists[page.file] | jsonify }}, "{{ page.seed }}")
+build({{ site.data.linkedlists[file] | jsonify }}, "{{ page.seed }}")
 </script>

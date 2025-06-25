@@ -1,0 +1,39 @@
+[
+  
+    {
+      "title": "Chemystery!",
+      "date": "2025-06-05T00:00:00+05:30",
+      "permalink": "/issue4/crossword/",
+      "author": "Alekhya Kundu",
+      "category": "crossword",
+      "hero-image": "/assets/images/issue4/crossword/crossword4.jpg"
+    },
+  
+    {
+      "title": "CosmoGrid: Astronomoy and astrophysics-themed crossword",
+      "date": "2025-05-05T00:00:00+05:30",
+      "permalink": "/issue3/crossword/",
+      "author": "Alekhya Kundu",
+      "category": "crossword",
+      "hero-image": "/assets/images/issue3/crossword/NGC2395.jpeg"
+    },
+  
+    {
+      "title": "Darwin's Game: Evolution-Themed Crossword",
+      "date": "2025-02-08T00:00:00+05:30",
+      "permalink": "/issue2/crossword/",
+      "author": "Alekhya Kundu",
+      "category": "crossword",
+      "hero-image": "/assets/images/issue2/crossword/evolution.jpg"
+    },
+  
+    {
+      "title": "Qrossword: In Celebration of 100 Years of QM",
+      "date": "2024-11-14T00:00:00+05:30",
+      "permalink": "/issue1/crossword/",
+      "author": "Alekhya Kundu",
+      "category": "crossword",
+      "hero-image": "/assets/images/issue1/crossword/sobitri.jpg"
+    }
+  
+]

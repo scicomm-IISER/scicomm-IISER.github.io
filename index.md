@@ -64,11 +64,11 @@ If you are new here, welcome! You have reached the home page of *InScight*. {{ s
 
 You can contribute under these categories:
 
-{{ site.color-emoji["star"] }} _Science Articles_ – Engaging write-ups on scientific concepts, discoveries, or phenomena, written for a general audience.
+{{ site.color-emoji["star"] }} **Science Articles** – Engaging write-ups on scientific concepts, discoveries, or phenomena, written for a general audience.
 
-{{ site.color-emoji["flask"] }} _Research Summaries_ – Concise overviews of recent peer-reviewed papers (including your own), tailored for non-specialists.
+{{ site.color-emoji["flask"] }} **Research Summaries** – Concise overviews of recent peer-reviewed papers (including your own), tailored for non-specialists.
 
-{{ site.color-emoji["scientist"] }} _PhD Stories_ – Thoughtful narratives by senior PhD students (4th year onwards) tracing the arc of their research journey.
+{{ site.color-emoji["scientist"] }} **PhD Stories** – Thoughtful narratives by senior PhD students (4th year onwards) tracing the arc of their research journey.
 
 {{ site.color-emoji["clip"] }} You can find loads of details on the [Content Submission page](/submit/) (along with linked examples), so be sure to check it out if you are curious.
 

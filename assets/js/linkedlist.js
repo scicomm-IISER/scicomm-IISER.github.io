@@ -4,8 +4,7 @@ function build(questions, seed) {
 
 	// Show seed word + next letter hint
 	document.getElementById('seed-word').insertAdjacentHTML("afterend",
-	  `<p><em>Next word should start with: <strong>${seed.slice(-1)}</strong></em>.</p>
-		<p><em>Last word should end with: <strong>${seed.slice(0,1)}</strong></em>.</p>`
+	  `<p>Next word should start with: <strong>${seed.slice(-1)}</strong>. Last word should end with: <strong>${seed.slice(0,1)}</strong>.</p>`
 	);
 	questions.forEach((q, i) => {
 	  const block = document.createElement('div');
@@ -85,7 +84,7 @@ function build(questions, seed) {
 
 // Final validation
 function checkAnswers(questions, seed) {
-	console.log(questions);
+  console.log(questions);
   let correct = true;
   let lastChar = seed[seed.length - 1].toUpperCase();
 

@@ -1,0 +1,188 @@
+{
+    "down": {
+        "CASSIOPEIA": [
+            72,
+            "A distinctive W-shaped constellation named after a vain queen in Greek mythology."
+        ],
+        "VOYAGER": [
+            134,
+            "A pair of NASA spaceprobes launched in1977, now travelingthrough interstellarspace carrying theGolden Record."
+        ],
+        "APHELION": [
+            115,
+            "The point in a planet’s elliptical orbit that is farthest from the Sun, resulting in lower solar intensity."
+        ],
+        "CHRONOMETER": [
+            8,
+            "A high-precision timekeeping device used historically in navigation to determine longitude at sea."
+        ],
+        "QUASAR": [
+            141,
+            "An extremely bright and energetic object powered by a supermassive black hole at the center of a distant galaxy."
+        ],
+        "NEBULA": [
+            109,
+            "A vast cloud of gas and dust in space, often the birthplace of stars or the remnants of dead ones."
+        ],
+        "SIRIUS": [
+            47,
+            "The brightest star in Earth's night sky, part of Canis Major, located just 8.6 light-years away."
+        ],
+        "SOLSTICE": [
+            0,
+            "The moment when the Sun reaches its highest or lowest point in the sky at noon, marking the longest or shortest day."
+        ]
+    },
+    "across": {
+        "ANDROMEDA": [
+            79,
+            "A spiral galaxy on a collision course with the Milky Way, visible to the naked eye from Earth."
+        ],
+        "PULSAR": [
+            211,
+            "A highly magnetized, rotating neutron star that emits beams of electromagnetic radiation from its magnetic poles."
+        ],
+        "ASTROLABE": [
+            201,
+            "An ancient analog toolused for solvingproblems related totime and the positionof the Sun and stars."
+        ],
+        "SUPERNOVA": [
+            47,
+            "A cataclysmic explosion marking the violent death of a massive star, often leaving behind a neutron star or black hole."
+        ],
+        "PARALLAX": [
+            165,
+            "The apparent shift in position of a nearby star against the background of distant stars due to Earth's motion."
+        ],
+        "SPECTROSCOPE": [
+            0,
+            "A scientific instrument that disperses light into a spectrum, allowing astronomers to analyze the composition of stars."
+        ],
+        "EQUINOX": [
+            105,
+            "The two points in Earth's orbit when the Sun is directly above the equator, resulting in nearly equal day and night."
+        ]
+    },
+    "blanks": [
+        120,
+        135,
+        150,
+        180,
+        195,
+        210,
+        16,
+        31,
+        46,
+        61,
+        76,
+        91,
+        121,
+        136,
+        151,
+        181,
+        196,
+        17,
+        32,
+        137,
+        152,
+        182,
+        197,
+        18,
+        33,
+        63,
+        78,
+        93,
+        123,
+        138,
+        153,
+        183,
+        198,
+        19,
+        34,
+        64,
+        94,
+        199,
+        20,
+        35,
+        65,
+        95,
+        125,
+        140,
+        155,
+        185,
+        200,
+        21,
+        36,
+        66,
+        96,
+        126,
+        22,
+        37,
+        67,
+        97,
+        112,
+        127,
+        142,
+        157,
+        187,
+        217,
+        173,
+        188,
+        218,
+        24,
+        39,
+        69,
+        99,
+        114,
+        129,
+        144,
+        159,
+        174,
+        189,
+        219,
+        25,
+        40,
+        70,
+        100,
+        26,
+        41,
+        56,
+        71,
+        101,
+        116,
+        131,
+        146,
+        161,
+        176,
+        191,
+        221,
+        12,
+        27,
+        42,
+        57,
+        222,
+        13,
+        28,
+        43,
+        58,
+        73,
+        88,
+        103,
+        118,
+        133,
+        148,
+        163,
+        178,
+        193,
+        223,
+        14,
+        29,
+        44,
+        59,
+        74,
+        89,
+        104,
+        119
+    ],
+    "size": 15
+}

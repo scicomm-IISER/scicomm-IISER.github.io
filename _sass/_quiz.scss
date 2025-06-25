@@ -28,18 +28,23 @@ input[type='radio']:checked {
   font-size: 1.4rem;
   padding-left: 0.5rem;
 }
-button.reveal {
+.reveal {
   margin-top: 1rem;
   background-color: constants.$fg-color;
   color: constants.$bg-color;
   border: 0px;
   font-weight: bold;
-  padding: 0.5rem;
+  padding: 0.3rem;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
   font-size: 0.9rem;
   border-radius: 7%;
+  cursor: pointer;
 }
+.reveal:hover {
+  text-decoration: none;
+}
+
 .quiz-image {
   max-width: 500px;
   width: 100%;

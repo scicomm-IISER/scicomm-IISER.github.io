@@ -11,15 +11,15 @@ permalink: /magazine/
 <ul>
 {% assign featured = current | where_exp: "post" , "post.feature == true" %}
 {% for post in featured limit:2 %}
-<li><strong>{{ post.title }}</strong>&nbsp;&nbsp;&nbsp;<i>{{ post.authors | join: ", " }}</i></li>
+<li><span class="magazine-summary-title">{{ post.title }}</span><span class="magazine-summary-author">{{ post.authors | join: ", " }}</span></li>
 {% endfor %}
 {% assign interviews = current | where_exp: "post" , "post.category == 'interview'" %}
 {% for post in interviews limit:1 %}
-<li><strong>{{ post.title }}</strong>&nbsp;&nbsp;&nbsp;<i>{{ post.authors | join: ", " }}</i></li>
+<li><span class="magazine-summary-title">{{ post.title }}</span><span class="magazine-summary-author">{{ post.authors | join: ", " }}</span></li>
 {% endfor %}
 {% for post in current %}
 {% if post.category == "crossword" %}
-<li><strong>{{ post.title }}</strong></li>
+<li><span class="magazine-summary-title">{{ post.title }}</span></li>
 {% endif %}
 {% endfor %}
 </ul>
