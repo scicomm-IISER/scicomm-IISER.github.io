@@ -37,14 +37,13 @@ layout: default
 {{ content }}
 
 {% if page.author-bio %}
+{{ page.authorImage }}
 <hr>
   <div class="author-bio">
-	{% if page.author-bio %}
-	{% if page.author-image %}
-	<img src={{ "/assets/images" | append: page.permalink | append: "author-image" }}/>
+	{% if page.authorImage %}
+	<img src={{ "/assets/images" | append: page.permalink | append: page.authorImage }} />
 	{% endif %}
     {{ page.author-bio | markdownify }}
-	{% endif %}
   </div>
 {% endif %}
 <br>

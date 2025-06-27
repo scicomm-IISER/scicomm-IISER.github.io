@@ -59,14 +59,12 @@ def FrontMatter(contents):
 
 def MainMatterArticle(mainContents, mainStart):
     mainMatter = ""
-    figCounter = 1
     for line in mainContents:
-        if line.startswith("#v-image(") or line.startswith("#h-image("):
+        if line.startswith("#img(") or line.startswith("#img("):
             imageDict = {'path': "", 'caption': ""}
             imageDict['path'] = os.path.basename(line[line.find("path: \"")+7:line.find("\"", line.find("path: \"")+7)])
             imageDict['caption'] = line[line.find("caption: \"")+10:line.find("\"", line.find("caption: \"")+10)]
-            mainMatter += "{{% include article-image.html image=\"/assets/images/articles/{}\" caption=\"**Fig {}**. {}\" width=500 %}}\n".format(imageDict['path'], figCounter, imageDict["caption"]) + "\n"
-            figCounter += 1
+            mainMatter += "{{% include figure.html image=\"{}\" caption=\"{}\" width=500 %}}\n".format(imageDict['path'], imageDict["caption"].replace("*","**")) + "\n"
             continue
         if line.startswith("#align") or line.startswith("#colbreak()") or line.startswith("#show: section.with") or line.startswith("#import"):
             continue
@@ -87,12 +85,12 @@ def MainMatterInterview(interviewName, interviewer, interviewee):
     for line in interviewContent:
         if len(line) == 0:
             continue
-        if line.startswith("V-IMAGE:") or line.startswith("H-IMAGE:"):
+        if line.startswith("IMAGE:"):
             imageDict = {}
             for (i, s) in enumerate([s.strip() for s in line[line.find("(")+1:line.rfind(")")].split("\",")]):
                 k, v = [s[:s.find(":")].strip(' \"'), s[s.find(":")+1:].strip(' \"')]
                 imageDict[k] = v
-            mainMatter += "{{% include article-image.html image=\"/assets/images/articles/{}\" caption=\"{}\" width=500 %}}\n".format(os.path.basename(imageDict['path']), imageDict['caption'])
+            mainMatter += "{{% include figure.html image=\"{}\" caption=\"{}\" width=500 %}}\n".format(os.path.basename(imageDict['path']), imageDict["caption"].replace("*","**"))
             continue
         if line.startswith("#dcap(\"") and line.endswith("\")"):
             mainMatter += line[7:-2]+"\n"
@@ -116,6 +114,7 @@ with open(typstpath, "r") as file:
     contents = [line.rstrip() for line in file]
 frontMatter, mainStart = FrontMatter(contents)
 frontMatter["category"] = category
+frontMatter["permalink"] = "/issue" + issue + "/" + frontMatter["authors"][0].split()[0].lower() + "-" + frontMatter["title"].split()[-1].lower()
 savePath = frontMatter["date"] + "-" + typstpath.split("/")[-1].replace(".typ", ".md")
 if category == "article":
     mainMatter = MainMatterArticle(contents[mainStart+1:], mainStart+1)
