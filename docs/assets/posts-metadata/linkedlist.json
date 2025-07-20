@@ -1,7 +1,16 @@
 [
   
     {
-      "title": "Linked List | Issue #3",
+      "title": "Linked List #4: TURBULENCE",
+      "date": "2025-06-05T00:00:00+05:30",
+      "permalink": "/issue4/linkedlist/",
+      "author": "Alekhya Kundu",
+      "category": "linkedlist",
+      "hero-image": "/assets/images/issue4/linkedlist/radium.jpg"
+    },
+  
+    {
+      "title": "Linked List #3: SEMICONDUCTOR",
       "date": "2025-05-04T00:00:00+05:30",
       "permalink": "/issue3/linkedlist/",
       "author": "Alekhya Kundu",
@@ -10,7 +19,7 @@
     },
   
     {
-      "title": "Linked List | Issue #2",
+      "title": "Linked List #2: ENZYME",
       "date": "2025-05-04T00:00:00+05:30",
       "permalink": "/issue2/linkedlist/",
       "author": "Alekhya Kundu",
@@ -19,7 +28,7 @@
     },
   
     {
-      "title": "Linked List | Issue #1",
+      "title": "Linked List #1: MUTATION",
       "date": "2024-11-14T00:00:00+05:30",
       "permalink": "/issue1/linkedlist/",
       "author": "Alekhya Kundu",

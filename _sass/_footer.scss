@@ -9,4 +9,7 @@ footer {
     gap: 0.5em;
     color: constants.$fg-color;
     font-weight: bold;
+    > span > .nf {
+      color: constants.$h1-color;
+    }
 }

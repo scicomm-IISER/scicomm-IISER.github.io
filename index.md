@@ -9,7 +9,7 @@ permalink: /
 
 <a href="{{latestIssue["permalink"]}}"><img src="/assets/magazine-thumbnails/{{ latestIssue["thumbnail"] }}"/></a>
 <div class="highlight-desc" markdown=1>
-<h1>Issue #{{ latestIssue["issue-number"] }} | {{ latestIssue["month"] }} </h1>
+<h1>Issue #{{ latestIssue["issue-number"] }} | {{ latestIssue["month"] }} {{ latestIssue["year"] }} </h1>
 {% for key in latestIssue["highlights"] %}
 {% assign post = site.posts | find_exp:"item", "item.permalink contains key" %}
 <span class="nf">{{ site.color-emoji[post.category] }}</span> {{ post.title | markdownify | remove: '<p>' | remove: '</p>' }} {% if post.authors != nil %} <span class="archive-author">{{ post.authors }}</span> {% endif %} <br>

@@ -35,6 +35,8 @@ nav {
 @media (max-width: constants.$breakpoint-medium) {
   header {
     width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   nav {
     width: calc(100% - 2rem);

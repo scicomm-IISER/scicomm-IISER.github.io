@@ -1,5 +1,15 @@
 #### IMPORTANT: The latest issues should go to the top. ####
 
+- permalink: /issue4/
+  thumbnail: issue4
+  issue-number: 4
+  month: July
+  year: 2025
+  highlights:
+    - /sukalyan-devices/
+    - /suprabha-modes/
+    - /swarnendu-mitra/
+    - /shreya-effect/
 - permalink: /issue3/
   thumbnail: issue3
   issue-number: 3
@@ -7,6 +17,7 @@
   year: 2025
   highlights:
     - /sayan-journey/
+    - /debanuj-dragonfly/
     - /swarnendu-barma/
     - /crossword/
 - permalink: /issue2/
@@ -15,15 +26,17 @@
   month: March
   year: 2025
   highlights:
-    - "Melding Data with Science: A Perspective on the Recent Nobel Prizes - **Neelanjana Sengupta**"
-    - "The Quantum Conundrum: Redefining Security in the Quantum Revolution - **Shibaraj Sahu**"
-    - "The Theme for This Issue's Crossword is **Biological Evolution**"
+    - /nobel/
+    - /quantum/
+    - /probal/
+    - /quiz/
 - permalink: /issue1/
   thumbnail: issue1
   issue-number: 1
   month: January
   year: 2025
   highlights:
-    - Quantum Physics-themed Crossword
-    - IISER Kolkata’s iGEM 2024 Breakthrough
-    - Revolutionising Biology with Artificial Intelligence
+    - /bioAi/
+    - /trends/
+    - /sunilkhare/
+    - /quiz/

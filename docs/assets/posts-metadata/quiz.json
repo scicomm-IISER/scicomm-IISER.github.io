@@ -1,6 +1,15 @@
 [
   
     {
+      "title": "General Science Quiz #4",
+      "date": "2025-06-03T00:00:00+05:30",
+      "permalink": "/issue4/quiz/",
+      "author": "Alekhya Kundu",
+      "category": "quiz",
+      "hero-image": "/assets/images/issue4/quiz/quizQ7.jpeg"
+    },
+  
+    {
       "title": "General Science Quiz #3",
       "date": "2025-05-03T00:00:00+05:30",
       "permalink": "/issue3/quiz/",
@@ -10,7 +19,7 @@
     },
   
     {
-      "title": "Picture Quiz | Issue #2",
+      "title": "Picture Quiz #2",
       "date": "2025-04-03T00:00:00+05:30",
       "permalink": "/issue2/quiz/",
       "author": "Alekhya Kundu",
@@ -19,7 +28,7 @@
     },
   
     {
-      "title": "Science Quiz | Issue #1",
+      "title": "General Science Quiz #1",
       "date": "2024-11-14T00:00:00+05:30",
       "permalink": "/issue1/quiz/",
       "author": "Alekhya Kundu",

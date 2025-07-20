@@ -1,5 +1,5 @@
 ---
-title: "Chemystery!"
+title: "Chemystery! Themed Crossword"
 issue: 4
 category: crossword
 permalink: /issue4/crossword/

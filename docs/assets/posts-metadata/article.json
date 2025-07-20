@@ -1,6 +1,15 @@
 [
   
     {
+      "title": "Topology in Action: From Doughnuts to Quantum Devices",
+      "date": "2025-06-06T00:00:00+05:30",
+      "permalink": "/issue4/sukalyan-devices/",
+      "authors": "Sukalyan Deb",
+      "category": "article",
+      "hero-image": "/assets/images/issue4/sukalyan-devices/sukalyan.jpg"
+    },
+  
+    {
       "title": "From a BS-MS Student to An Independent Scientist: My Academic Journey",
       "date": "2025-04-16T00:00:00+05:30",
       "permalink": "/issue3/sayan-journey/",
@@ -37,12 +46,39 @@
     },
   
     {
+      "title": "A Century of Quantum Mechanics: From Paradoxes to Possibilities",
+      "date": "2025-03-10T00:00:00+05:30",
+      "permalink": "/issue4/sobitri-possibilities/",
+      "authors": "Sobitri Sen",
+      "category": "article",
+      "hero-image": "/assets/images/issue4/sobitri-possibilities/sobitri.jpg"
+    },
+  
+    {
       "title": "Brain on Overload: Unlocking Hope for Rare Diseases Through Cellular Cleanup",
       "date": "2025-03-09T00:00:00+05:30",
       "permalink": "/issue3/tisha-cleanup/",
       "authors": "Tisha Dash",
       "category": "article",
       "hero-image": "/assets/images/issue3/tisha-cleanup/tisha.jpeg"
+    },
+  
+    {
+      "title": "Cosmic music of the Sun: Rossby and other inertial modes",
+      "date": "2025-03-06T00:00:00+05:30",
+      "permalink": "/issue4/suprabha-modes/",
+      "authors": "Suprabha Mukhopadhyay",
+      "category": "article",
+      "hero-image": "/assets/images/issue4/suprabha-modes/suprabha.jpeg"
+    },
+  
+    {
+      "title": "The Chemical Ballet: How Volatiles Orchestrate Pest and Predator Behaviour",
+      "date": "2025-03-06T00:00:00+05:30",
+      "permalink": "/issue4/sayantani-behaviour/",
+      "authors": "Sayantani Nath",
+      "category": "article",
+      "hero-image": "/assets/images/issue4/sayantani-behaviour/sayantaniCover.jpeg"
     },
   
     {

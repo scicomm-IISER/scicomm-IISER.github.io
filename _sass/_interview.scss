@@ -1,0 +1,11 @@
+@use 'constants';
+
+.interview-answer {
+  padding: 0.6rem;
+  background-color: rgba(constants.$emph-color, 0.1);
+  margin-left: 1rem;
+}
+
+.interview-answer + .interview-answer {
+  margin-top: -1rem;
+}

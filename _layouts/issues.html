@@ -53,6 +53,15 @@ layout: default
 <span><a class="reveal" href="/issue{{ page.issue }}/digest/">Read All</a><br></span>
 </div>
 
+<h2> Science Comics </h2>
+{% assign items = issueItems | where:"category", "comic" %}
+{% for item in items %}
+<div class="magazine-item">
+<span class="magazine-summary-title">{{ item.title }}</span>
+<span><span class="magazine-summary-author">{{ item.authors }}</span> <a class="reveal" href={{ item.permalink }}>Read</a></span>
+</div>
+{% endfor %}
+
 <h2 id="games"> Science Games </h2>
 {% assign categories = "quiz,crossword,linkedlist" | split:"," %}
 {% for cat in categories %}

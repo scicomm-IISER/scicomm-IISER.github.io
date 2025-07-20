@@ -35,7 +35,7 @@ main {
   body {
     max-width: calc(100% - 2rem);
     margin: auto;
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
   main {
     max-width: 100%;
@@ -153,12 +153,14 @@ nav > a:hover {
 }
 
 #home-button img {
-  height: 30px;
+  height: 25px;
 }
 
 @media (max-width: 1000px) {
   header {
     width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   nav {
     width: calc(100% - 2rem);
@@ -190,6 +192,9 @@ footer {
   gap: 0.5em;
   color: #1F2937;
   font-weight: bold;
+}
+footer > span > .nf {
+  color: #3B82F6;
 }
 
 .nf {
@@ -691,6 +696,16 @@ iframe.crossword-iframe {
   margin-top: 20px;
   font-weight: bold;
   color: darkgreen;
+}
+
+.interview-answer {
+  padding: 0.6rem;
+  background-color: rgba(107, 114, 128, 0.1);
+  margin-left: 1rem;
+}
+
+.interview-answer + .interview-answer {
+  margin-top: -1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -63,6 +63,7 @@ def MainMatterArticle(mainContents, mainStart):
         if line.startswith("#img(") or line.startswith("#img("):
             imageDict = {'path': "", 'caption': ""}
             imageDict['path'] = os.path.basename(line[line.find("path: \"")+7:line.find("\"", line.find("path: \"")+7)])
+            print(imageDict['path'])
             imageDict['caption'] = line[line.find("caption: \"")+10:line.find("\"", line.find("caption: \"")+10)]
             mainMatter += "{{% include figure.html image=\"{}\" caption=\"{}\" width=500 %}}\n".format(imageDict['path'], imageDict["caption"].replace("*","**")) + "\n"
             continue
@@ -90,6 +91,7 @@ def MainMatterInterview(interviewName, interviewer, interviewee):
             for (i, s) in enumerate([s.strip() for s in line[line.find("(")+1:line.rfind(")")].split("\",")]):
                 k, v = [s[:s.find(":")].strip(' \"'), s[s.find(":")+1:].strip(' \"')]
                 imageDict[k] = v
+            print(imageDict['path'])
             mainMatter += "{{% include figure.html image=\"{}\" caption=\"{}\" width=500 %}}\n".format(os.path.basename(imageDict['path']), imageDict["caption"].replace("*","**"))
             continue
         if line.startswith("#dcap(\"") and line.endswith("\")"):
@@ -114,7 +116,7 @@ with open(typstpath, "r") as file:
     contents = [line.rstrip() for line in file]
 frontMatter, mainStart = FrontMatter(contents)
 frontMatter["category"] = category
-frontMatter["permalink"] = "/issue" + issue + "/" + frontMatter["authors"][0].split()[0].lower() + "-" + frontMatter["title"].split()[-1].lower()
+frontMatter["permalink"] = "/issue" + issue + "/" + frontMatter["authors"][0].split()[0].lower() + "-" + frontMatter["title"].split()[-1].lower() + "/"
 savePath = frontMatter["date"] + "-" + typstpath.split("/")[-1].replace(".typ", ".md")
 if category == "article":
     mainMatter = MainMatterArticle(contents[mainStart+1:], mainStart+1)

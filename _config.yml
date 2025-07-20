@@ -3,8 +3,7 @@ description: "InScight is a student-run online magazine hosted by IISER Kolkata,
 url: "https://scicomm.iiserkol.ac.in" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: ''
 destination: ./docs
-logo-light: "/assets/global/logo-light.png"
-logo-dark: "/assets/global/bannerTextDark.svg"
+logo: "/assets/global/darkBanner.png"
 digest-excerpt: "In Insight Digest, we showcase the latest happenings in science research."
 digest-truncate-length: 330
 archives: # key-value pairs that list the categories of posts that need to be listed in the archives page
