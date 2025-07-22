@@ -8,7 +8,6 @@ authors: ['Swarnendu Saha']
 author-affiliation: ['IISER Kolkata']
 excerpt: "*Ever wondered how a reluctant chemistry student becomes a gravitational wave pioneer?* Join Dr. Sanjit Mitra as he traces his accidental journey from Kolkata’s B.Sc. classrooms to playing a leading role in India’s endeavour in the cosmic detective work with LIGO, where mirrors detect ripples in spacetime thinner than a proton!"
 hero-image: "SDG.jpg"
-date: "2025-06-08"
 category: "interview"
 permalink: "/issue4/swarnendu-dattagupta/"
 ---
@@ -156,7 +155,7 @@ It was not just in Dhaka in 1924 when he wrote that letter to Einstein, but it s
 {: .interview-answer }
 Here, after independence, we have separated our research institutions from the university system. Has that been good for us? We keep on asking why there are no Nobel Prizes from here? The answer is obvious, I think.
 {: .interview-answer }
-{% include figure.html image="SDGstage.jpg" caption="At the release of a book on the doyen of Rabindrasangeet: Shailajaranjan Majumdar, on his125th birth anniversary, at the Lipika auditorium of Visva-Bharati. Standing by his side is Dr. Shruti Bandyopadhyay, Principal, Sangit Bhavana." width=500 %}
+{% include figure.html image="SDGstage.jpg" caption="At the release of a book on the doyen of Rabindrasangeet: Shailajaranjan Majumdar, on his 125th birth anniversary, at the Lipika auditorium of Visva-Bharati. Standing by his side is Dr. Shruti Bandyopadhyay, Principal, Sangit Bhavana." width=500 %}
 SS:On to my next question. For the last several months, many international opportunities have become blocked. The US appears cutoff. UK says we don't have funding. many countries are at war. In this scenario, what is your suggestion? How should today's students make progress? Is doing a PhD in India a good choice? More specifically, how much of a difference does getting a degree from a good Western University make versus getting the degree from a good place in India?
 
 SDG: Let me answer the last part first. There are many counterexamples of students, who have done PhDs in our country, have done exceedingly well internationally also. I can give you some names also. So, I think again that distinction is immaterial. The first part is difficult for me to answer. Let me tell you my own experience with my two daughters.

@@ -17,6 +17,7 @@ color-emoji:
   article: "🧬"
   interview: "🎙️"
   crossword: "🎳"
+  comic: "🖍️"
   author: "🧑‍🔬"
   browse: "🥽"
   download: "⤵️"
@@ -92,3 +93,7 @@ kramdown:
   highlighter: rouge
 plugins:
   - jekyll-sitemap
+socials:
+  - facebook: https://www.facebook.com/inscightmagazine
+  - instagram: https://www.instagram.com/inscight_iiserkolkata/
+  - twitter: https://x.com/InScightIISERK

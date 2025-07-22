@@ -1,6 +1,6 @@
 ---
 issue: 4
-title: "In Conversation with Prof. Sanjit Mitra"
+title: "Meet Prof. Sanjit Mitra, the Spokesperson for LIGO India"
 file: "interviewSM.txt"
 group1: "['SS:']"
 group2: "SM:"
@@ -8,9 +8,8 @@ authors: ['Swarnendu Saha']
 author-affiliation: ['IISER Kolkata']
 excerpt: "*Ever wondered how a reluctant chemistry student becomes a gravitational wave pioneer?* Join Dr. Sanjit Mitra as he traces his accidental journey from Kolkata’s B.Sc. classrooms to playing a leading role in India’s endeavour in the cosmic detective work with LIGO, where mirrors detect ripples in spacetime thinner than a proton! He’ll decode why three global detectors are essential to pinpoint colliding black holes and how LIGO-India could soon become one of the main players in this scene. But brace yourself: he also questions if our education system stifles more thinkers than it fuels—what do you think?"
 hero-image: "SMzeroshadowday.jpg"
-date: "2025-06-08"
 category: "interview"
-permalink: "/issue4/swarnendu-mitra/"
+permalink: "/issue4/swarnendu-india/"
 ---
 
 
