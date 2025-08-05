@@ -1,6 +1,6 @@
 ---
 issue: 4
-title: "Meet Prof. Sanjit Mitra, the Spokesperson for LIGO India"
+title: "Meet Prof. Sanjit Mitra, the Science Spokesperson of LIGO India"
 file: "interviewSM.txt"
 group1: "['SS:']"
 group2: "SM:"
