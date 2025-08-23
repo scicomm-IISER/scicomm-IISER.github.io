@@ -56,7 +56,6 @@ async function randomPost(category) {
 let categories = ["article", "interview", "digest", "crossword", "quiz", "linkedlist"]
 categories.forEach((cat) => {
 	if (document.getElementById(`${cat}-shuffle`) != null) {
-		console.log(cat);
 		document.getElementById(`${cat}-shuffle`).addEventListener("click", function () { randomPost(cat); });
 	}
 });

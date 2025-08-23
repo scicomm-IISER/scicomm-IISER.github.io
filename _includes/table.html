@@ -1,10 +1,13 @@
 <div class="table">
 <table>
+<thead>
 <tr>
   {% for pair in site.data.tables[include.path][0] %}
   <th> {{ pair[0] }} </th>
   {% endfor %}
 </tr>
+</thead>
+<tbody>
 {% for row in site.data.tables[include.path] %}
 <tr>
   {% for pair in row %}
@@ -13,5 +16,6 @@
 </tr>
 {% endfor %}
 <caption>{{ include.caption }}</caption>
+</tbody>
 </table>
 </div>

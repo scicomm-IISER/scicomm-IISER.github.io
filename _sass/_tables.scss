@@ -1,22 +1,85 @@
 @use 'constants';
 table {
-  border-collapse: collapse;
+  width: 100%;
+  border-collapse: separate; /* Required for border-spacing to work */
+  border-spacing: 5px 5px;
   > caption {
     font-size: 0.9rem;
     padding-top: 0.2rem;
-    color: constants.$h1-color;
+    color: constants.$emph-color;
     font-style: italic;
     caption-side: bottom;
     text-align: justify;
   }
+  table-layout:fixed;
 }
 .table {
   display: grid;
   justify-content: center;
 }
 th,td {
-  border: 3px solid gray;
-  padding: 4px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   vertical-align: bottom;
   margin: 0;
+}
+td {
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(constants.$h1-color, 0.1);
+}
+thead {
+    background-color: rgba(constants.$h1-color, 0.2);
+}
+
+td.IN {
+  background-color: constants.$IN-color;
+}
+td.PH {
+  background-color: constants.$PH-color;
+}
+td.PD {
+  background-color: constants.$PD-color;
+}
+
+span.IN {
+  color: constants.$IN-color;
+  font-weight: bold;
+}
+span.PH {
+  color: constants.$PH-color;
+  font-weight: bold;
+}
+span.PD {
+  color: constants.$PD-color;
+  font-weight: bold;
+}
+
+thead > tr{
+  text-transform: uppercase;
+  text-align: center;
+  color: constants.$fg-color;
+}
+
+.type, .date {
+  text-align: center;
+  width: 60px;
+}
+.date {
+  font-weight: bold;
+  width: 100px;
+}
+.position {
+  white-space: normal;
+}
+
+.IN, .PH, .PD,  {
+  color: constants.$bg-color;
+}
+.IN > a, .PH > a, .PD > a,  {
+  color: constants.$bg-color;
 }

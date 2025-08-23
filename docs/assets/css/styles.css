@@ -442,12 +442,15 @@ a.nf {
 }
 
 table {
-  border-collapse: collapse;
+  width: 100%;
+  border-collapse: separate; /* Required for border-spacing to work */
+  border-spacing: 5px 5px;
+  table-layout: fixed;
 }
 table > caption {
   font-size: 0.9rem;
   padding-top: 0.2rem;
-  color: #3B82F6;
+  color: #6B7280;
   font-style: italic;
   caption-side: bottom;
   text-align: justify;
@@ -459,10 +462,79 @@ table > caption {
 }
 
 th, td {
-  border: 3px solid gray;
-  padding: 4px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   vertical-align: bottom;
   margin: 0;
+}
+
+td {
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+thead {
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
+td.IN {
+  background-color: #aa6f73;
+}
+
+td.PH {
+  background-color: #66545e;
+}
+
+td.PD {
+  background-color: #a39193;
+}
+
+span.IN {
+  color: #aa6f73;
+  font-weight: bold;
+}
+
+span.PH {
+  color: #66545e;
+  font-weight: bold;
+}
+
+span.PD {
+  color: #a39193;
+  font-weight: bold;
+}
+
+thead > tr {
+  text-transform: uppercase;
+  text-align: center;
+  color: #1F2937;
+}
+
+.type, .date {
+  text-align: center;
+  width: 60px;
+}
+
+.date {
+  font-weight: bold;
+  width: 100px;
+}
+
+.position {
+  white-space: normal;
+}
+
+.IN, .PH, .PD {
+  color: #FAFAF9;
+}
+
+.IN > a, .PH > a, .PD > a {
+  color: #FAFAF9;
 }
 
 .recent-articles {
