@@ -97,3 +97,16 @@ socials:
   - facebook: https://www.facebook.com/inscightmagazine
   - instagram: https://www.instagram.com/inscight_iiserkolkata/
   - twitter: https://x.com/InScightIISERK
+navbar:
+  Magazine: "/magazine/"
+  Games: "/games/"
+  Submit: "/submit/"
+  About: "/about/"
+navbarLong:
+  Magazine: "/magazine/"
+  Archives: "/archives/"
+  Games: "/games/"
+  Opportunities: "/opportunities/"
+  Comics: "/comics/"
+  Submit: "/submit/"
+  About: "/about/"

@@ -18,7 +18,7 @@ html::-webkit-scrollbar { /* WebKit */
 body {
   width: 100%;
   margin: 0;
-  margin-top: 1rem;
+  margin-top: constants.$min-margin;
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - constants.$footer-height + constants.$footer-gap);
@@ -33,7 +33,7 @@ main {
 
 @media (max-width: constants.$breakpoint-medium) {
   body {
-    max-width: calc(100% - 2rem);
+    max-width: calc(100% - 2 * constants.$min-margin);
     margin: auto;
     margin-top: 0rem;
   }

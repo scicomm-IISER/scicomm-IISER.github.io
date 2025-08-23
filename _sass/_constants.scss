@@ -36,6 +36,7 @@ $emoji-font: "Noto Color Emoji";
 $nf-font: "Lilex Nerd Font";
 
 $width: 900px !default;
+$min-margin: 1rem !default;
 $footer-gap: 1rem !default;
 $footer-height: 50px !default;
 $header-height: 15px !default;
@@ -45,3 +46,5 @@ $logo-size: 25px;
 $breakpoint-tiny: 450px;
 $breakpoint-small: 600px;
 $breakpoint-medium: 1000px;
+
+$navbar-height: 51px;

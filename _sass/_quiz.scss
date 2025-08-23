@@ -28,7 +28,7 @@ input[type='radio']:checked {
   font-size: 1.4rem;
   padding-left: 0.5rem;
 }
-.reveal {
+.reveal, .reveal a {
   margin-top: 1rem;
   background-color: constants.$fg-color;
   color: constants.$bg-color;

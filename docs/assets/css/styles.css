@@ -127,18 +127,14 @@ header {
   margin: auto;
   padding-top: 1rem;
   padding-bottom: 2rem;
-  width: 100vw;
-  display: flex;
+  width: 100%;
   max-width: 900px;
-  justify-content: space-between;
-  gap: 2rem;
-  align-items: start;
 }
 
 nav {
-  max-width: 900px;
   height: 15px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin: auto;
   margin-top: 0;
@@ -154,6 +150,7 @@ nav > a:hover {
 
 #home-button img {
   height: 25px;
+  padding-top: 3pt;
 }
 
 @media (max-width: 1000px) {
@@ -163,25 +160,100 @@ nav > a:hover {
     padding-bottom: 0;
   }
   nav {
-    width: calc(100% - 2rem);
+    width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 }
-.nav-partial {
+.sidebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(250, 250, 247, 0.7);
+  backdrop-filter: blur(7px);
+}
+
+#sidebar-active {
   display: none;
 }
 
+.sidebar-overlay {
+  display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.open-sidebar-button > svg, .close-sidebar-button > svg {
+  fill: #3B3A30;
+  width: 2rem;
+  height: 2rem;
+}
+
 @media (max-width: 600px) {
-  .nav-full {
+  .open-sidebar-button, .close-sidebar-button {
+    display: block;
+  }
+  .horiz {
     display: none;
   }
-  .nav-partial {
-    display: flex;
-  }
 }
+.open-sidebar-button {
+  transition: all 0.5s ease-out;
+}
+
+.close-sidebar-button {
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  align-self: flex-end;
+}
+
+.sidebar {
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 10;
+  max-width: 300px;
+  width: 75%;
+  height: 100vh;
+  height: 100dvh;
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+  transition: right 0.5s ease-out;
+}
+.sidebar > a {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0;
+}
+
+#sidebar-active:checked ~ .sidebar {
+  right: 0;
+}
+
+#sidebar-active:checked ~ .sidebar-overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  z-index: 9;
+  background-color: transparent;
+}
+
+#sidebar-active:checked ~ .open-sidebar-button {
+  opacity: 0;
+}
+
 footer {
   width: 100%;
   margin-top: 1rem;
@@ -447,7 +519,7 @@ input[type=radio]:checked {
   padding-left: 0.5rem;
 }
 
-.reveal {
+.reveal, .reveal a {
   margin-top: 1rem;
   background-color: #1F2937;
   color: #FAFAF9;
