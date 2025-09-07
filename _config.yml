@@ -60,6 +60,14 @@ defaults:
       authors: ['Alekhya Kundu']
       excerpt: ""
   - scope:
+      path: "_posts/*/*-whoami.md"
+      type: posts
+    values:
+      layout: whoami
+      category: whoami
+      author-image: false
+      excerpt: ""
+  - scope:
       path: "_posts/*/*-linkedlist.md"
       type: posts
     values:

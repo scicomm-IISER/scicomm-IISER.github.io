@@ -1,3 +1,4 @@
+#!/bin/env python
 import json
 import random
 from tqdm import tqdm
@@ -21,8 +22,6 @@ def isAcceptable(word, sequence, direction, crossword, cell_direction, size, con
         for shift in [1, -1]:
             adjacent = list(loc)
             adjacent[1 - direction] += shift
-            # if word == "SPECTROSCOPE" and adjacent[1 - direction] >= 0 and adjacent[1 - direction] < size:
-            #     print(grid[tuple(adjacent)] != "#", tuple(loc) not in connections[tuple(adjacent)], shift, connections[tuple(adjacent)])
             if adjacent[1 - direction] >= 0 and adjacent[1 - direction] < size and grid[tuple(adjacent)] != "#" and tuple(loc) not in connections[tuple(adjacent)]:
                 return False
         if crossword[tuple(loc)] != "#" and (crossword[tuple(loc)] != char or cell_direction[tuple(loc)] != str(1 - direction)):
@@ -75,13 +74,6 @@ def getSequence(head, direction, word):
 
 
 def createGrid(grid, words_list, size, direction, cell_direction, classification, depth, connections):
-    # for (k,v) in connections.items():
-    #     if len(v) > 2:
-    #         print(k, v, len(words_list), direction, depth)
-    #         assert False
-    # for i in range(size):
-    #     print(" ".join([grid[(i, j)] for j in range(size)]))
-    # print(words_list[0])
     for word in words_list:
         for direction in [direction,]:
             if set(grid.values()) == {"#"}:
@@ -106,13 +98,16 @@ def createGrid(grid, words_list, size, direction, cell_direction, classification
     if not accept:
         return grid, cell_direction, False, classification, depth
 
-
+# number of random initial sequences to consider
 MAX_ITER = 100
+
+# for every random initial sequence, the maximum 
+# number of spatial configurations that will be
+# checked to optimise and fit requirements
 MAX_DEPTH = 100000
+
 size, reqIntersections, words_data = loadData("crossword.json")
-# sorted_words = ['CHRONOMETER', 'SIRIUS', 'SOLSTICE', 'EQUINOX', 'PULSAR', 'ANDROMEDA', 'APHELION', 'SUPERNOVA', 'PARALLAX', 'QUASAR', 'NEBULA', 'CASSIOPEIA', 'ASTROLABE', 'SPECTROSCOPE', 'VOYAGER'] 
 sorted_words = sorted(words_data.keys(), key=len, reverse=True)
-# sorted_words = random.sample(sorted_words, k=len(sorted_words))
 accept = False
 
 for i in tqdm(range(MAX_ITER)):

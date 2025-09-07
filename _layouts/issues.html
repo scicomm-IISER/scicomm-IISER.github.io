@@ -63,7 +63,7 @@ layout: default
 {% endfor %}
 
 <h2 id="games"> Science Games </h2>
-{% assign categories = "quiz,crossword,linkedlist" | split:"," %}
+{% assign categories = "quiz,crossword,linkedlist,whoami" | split:"," %}
 {% for cat in categories %}
 {% assign items = issueItems | where:"category", cat %}
 <div class="magazine-item">

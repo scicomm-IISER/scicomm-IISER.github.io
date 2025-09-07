@@ -1,0 +1,19 @@
+---
+layout: posts
+---
+
+Identify the natural laws and biochemical processes from the hints.
+
+{% assign file = "issue" | append: page.issue %}
+{% assign path = site.data.whoami[file] %}
+{% for item in path %}
+<h3>{{ item["question"] }}</h3>
+<img class="quiz-image" src="{{ page.permalink | append: item["image"] | prepend: '/assets/images' | relative_url }}">
+<ul>
+{% for hint in item["hints"] %}
+<li>{{ hint }}</li>
+{% endfor %}
+</ul>
+<button type="button" value="{{ item["answer"] }}" class="reveal">Reveal</button>
+{% endfor %}
+<script src="{{ site.baseurl }}{% link assets/js/whoami.js %}"> </script>

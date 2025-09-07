@@ -1,0 +1,28 @@
+- question: Which law of nature am I?
+  image: "fizzy.jpg"
+  hints:
+    - Discovered in the early 19th century, I explain why carbon dioxide stays trapped in your soda until the cap is opened.
+    - I describe how the amount of gas dissolved in a liquid depends on the pressure above it, keeping soft drinks fizzy under a sealed lid.
+    - Beyond beverages, I also govern how gases like oxygen dissolve into the bloodstream, maintaining nature’s delicate balance of exchange.
+  answer: "Henry's law"
+- question: Which natural process am I?
+  image: "decompose.jpg"
+  hints:
+    - I transform fallen leaves, dead plants, and animal remains into simpler building blocks that enrich the earth.
+    - Driven by microbes like bacteria and fungi, I break down complex organic matter and release nutrients that help plants thrive.
+    - Beyond nourishing the soil, I also influence the planet’s carbon balance, subtly shaping the air we breathe.
+  answer: "Decomposition"
+- question: Which scientific principle am I?
+  image: "hardy.jpg"
+  hints:
+    - Formulated in 1908, I describe how a population’s genetic makeup can remain in balance when no external forces act upon it.
+    - Named after two mathematicians, I predict that allele frequencies stay constant unless altered by mutation, selection, or migration.
+    - Beyond representing stability, I provide a baseline for detecting shifts in genetic variation, helping scientists trace how populations evolve over time.
+  answer: "Hardy–Weinberg principle"
+- question: Which fundamental constant of nature am I?
+  image: "light.jpg"
+  hints:
+    - I am reported to have been measured for the first time by the Danish astronomer Ole Christensen Rømer.
+    - I connect electricity and magnetism, quietly emerging from Maxwell’s equations in the 19th century.
+    - By remaining finite, I ensure that the past and the future remain distinct.
+  answer: "Speed of light"
