@@ -610,7 +610,6 @@ input[type=radio]:checked {
 }
 
 .quiz-image {
-  max-width: 500px;
   width: 100%;
   display: block;
   margin: auto;

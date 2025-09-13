@@ -1,21 +1,23 @@
-- hint: "Carrier of electrochemical impulses between brain and rest of the body"
-  word: NERVE
-- hint: "Oval-shaped figure with two axes of symmetry"
-  word: ELLIPSE
-- hint: "Energy measure combining internal energy and \"pressure energy\""
-  word: ENTHALPY
-- hint: "Three feet or 36 inches"
-  word: YARD
-- hint: "Geological process by which sediments, soil, and rocks are deposited onto a landform or landmass"
-  word: DEPOSITION
-- hint: "Elementary particle, cosmic ray component onto a landform or landmass"
-  word: NEUTRINO
-- hint: "A process in which fluid moves through semipermeable membrane to seek equilibrium"
-  word: OSMOSIS
-- hint: "Sedimentary rock formed from the cementation of sandsized mineral particles, used to build the Qutub Minar"
-  word: SANDSTONE
-- hint: "Inverse of log function"
-  word: EXPONENTIAL
-- hint: "Lightest metal, used in batteries"
-  word: LITHIUM
-
+seed: MUTATION
+hints:
+  - "Carrier of electrochemical impulses between brain and rest of the body"
+  - "Oval-shaped figure with two axes of symmetry"
+  - "Energy measure combining internal energy and \"pressure energy\""
+  - "Three feet or 36 inches"
+  - "Geological process by which sediments, soil, and rocks are deposited onto a landform or landmass"
+  - "Elementary particle, cosmic ray component onto a landform or landmass"
+  - "A process in which fluid moves through semipermeable membrane to seek equilibrium"
+  - "Sedimentary rock formed from the cementation of sandsized mineral particles, used to build the Qutub Minar"
+  - "Inverse of log function"
+  - "Lightest metal, used in batteries"
+answers:
+  - "NERVE"
+  - "ELLIPSE"
+  - "ENTHALPY"
+  - "YARD"
+  - "DEPOSITION"
+  - "NEUTRINO"
+  - "OSMOSIS"
+  - "SANDSTONE"
+  - "EXPONENTIAL"
+  - "LITHIUM"

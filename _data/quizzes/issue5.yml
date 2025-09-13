@@ -63,7 +63,7 @@ options:
     - "Interacts with CFTR to regulate glutamate transport"
 
 images:
-  - 
+  - "Q1-ttb.svg"
   -
   -
   -
@@ -71,8 +71,8 @@ images:
   -
   -
   -
-  -
-  -
+  - "Q9.png"
+  - "Q10.png"
 
 answers:
   - 3

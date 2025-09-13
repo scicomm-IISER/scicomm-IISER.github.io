@@ -1,29 +1,38 @@
 [
   
     {
-      "title": "Meet Prof. Sanjit Mitra, the Science Spokesperson of LIGO India",
-      "date": "2025-06-08T00:00:00+05:30",
-      "permalink": "/issue4/swarnendu-india/",
-      "authors": "Swarnendu Saha",
-      "hero-image": "/assets/images/issue4/swarnendu-india/SMzeroshadowday.jpg",
+      "title": "At the Intersection of Physics and Biology: Tamal Das on Forces, Cells, and Curiosity",
+      "date": "2025-08-10T00:00:00+05:30",
+      "permalink": "/issue5/suman-curiosity/",
+      "authors": "Suman Halder",
+      "hero-image": "/assets/images/issue5/suman-curiosity/tamal.png",
       "category": "interview"
     },
   
     {
-      "title": "Through The Eyes Of The Founding Director: Interview with Prof. Dattagupta",
-      "date": "2025-06-08T00:00:00+05:30",
-      "permalink": "/issue4/swarnendu-dattagupta/",
+      "title": "Why Therapies Fail: Prof. Ofer Reizes on Cancer, Collaboration, and Curiosity",
+      "date": "2025-08-05T00:00:00+05:30",
+      "permalink": "/issue5/swarnendu-curiosity/",
       "authors": "Swarnendu Saha",
-      "hero-image": "/assets/images/issue4/swarnendu-dattagupta/SDG.jpg",
+      "hero-image": "/assets/images/issue5/swarnendu-curiosity/ofer.jpeg",
       "category": "interview"
     },
   
     {
-      "title": "From IISER Kolkata Transit Campus to Tel Aviv: Rajarshi Bhattacharyya's Academic Voyage",
-      "date": "2025-06-08T00:00:00+05:30",
-      "permalink": "/issue4/swarnendu-voyage/",
+      "title": "With Prof. Nagaraj Balasubramanian: On Cell Biology, Cancer, and the Joy of Doing Science",
+      "date": "2025-08-02T00:00:00+05:30",
+      "permalink": "/issue5/sharanya-science/",
+      "authors": "Sharanya Chatterjee",
+      "hero-image": "/assets/images/issue5/sharanya-science/nagaraj.jpeg",
+      "category": "interview"
+    },
+  
+    {
+      "title": "From Cancer Research to Paradigm Shifts: Dr. Sushanta Roychoudhury With InScight",
+      "date": "2025-07-20T00:00:00+05:30",
+      "permalink": "/issue5/swarnendu-inscight/",
       "authors": "Swarnendu Saha",
-      "hero-image": "/assets/images/issue4/swarnendu-voyage/RBcover.jpeg",
+      "hero-image": "/assets/images/issue5/swarnendu-inscight/baw_2025.jpg",
       "category": "interview"
     },
   

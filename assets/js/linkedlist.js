@@ -1,3 +1,65 @@
+// make inputs interactive
+
+function Interactive(answers, totalNum) {
+	console.log(answers);
+	answers.forEach((answer, i) => {
+	  let saneAnswer = answer.split(" ").join("");
+	  const llInputs = document.getElementById(`form-${i}`);
+
+	  const inputs = llInputs.children;
+
+	  for (let j = 0; j < inputs.length; j++) {
+		const input = inputs[j];
+
+		// 🔑 Auto-select on focus
+		input.addEventListener('focus', () => {
+		  setTimeout(() => input.select(), 0);
+		});
+
+		input.addEventListener('input', e => {
+		  const char = e.data || input.value.slice(-1);
+		  if (!char || !char.match(/[A-Z]/i)) return;
+
+		  input.value = char.toUpperCase();
+
+		  if (j < saneAnswer.length - 1) {
+			inputs[j + 1].focus();
+		  }
+
+		  if (j === saneAnswer.length - 1 && i < totalNum - 1) {
+			  console.log(2)
+			const lastChar = input.value.toUpperCase();
+			const nextInput = document.getElementById(`form-${i+1}`).children[0];
+			nextInput.value = lastChar;
+			document.getElementById(`form-${i+1}`).children[1].focus();
+		  }
+		});
+
+		input.addEventListener('keydown', e => {
+		  const key = e.key;
+
+		  if (key === 'ArrowRight' && j < saneAnswer.length - 1) {
+			inputs[j + 1].focus();
+		  } else if (key === 'ArrowLeft' && j > 0) {
+			inputs[j - 1].focus();
+		  } else if (key == 'ArrowDown' && i < totalNum - 1) {
+			document.getElementById(`form-${i+1}`).children[j].focus();
+		  } else if (key == 'ArrowUp' && i > 0) {
+			document.getElementById(`form-${i-1}`).children[j].focus();
+		  }
+			//  } else if (key === 'ArrowDown' || key === 'ArrowUp') {
+			// const dir = key === 'ArrowDown' ? 1 : -1;
+			// const targetRow = questions[i + dir];
+			// if (targetRow && targetRow.input[j]) {
+			//   targetRow.input[j].focus();
+			// }
+			//  }
+		});
+	  }
+	});
+}
+
+
 // Build interface
 function build(questions, seed) {
 	const form = document.getElementById('ll-form');
@@ -83,17 +145,17 @@ function build(questions, seed) {
 }
 
 // Final validation
-function checkAnswers(questions, seed) {
-  console.log(questions);
+function checkAnswers(answers, seed) {
+  console.log(answers);
   let correct = true;
   let lastChar = seed[seed.length - 1].toUpperCase();
 
-  for (let i = 0; i < questions.length; i++) {
-	  let question = questions[i];
-	  answers = document.getElementById(`form-${i}`).elements;
-	  console.log(question.word);
-	  for (j = 0; j < question.word.length; j++) {
-	   answers[j].value = question.word[j];
+  answers.forEach((answer, i) => {
+	  let saneAnswer = answer.split(" ").join("");
+	  console.log(saneAnswer);
+	  input = document.getElementById(`form-${i}`).elements;
+	  for (j = 0; j < saneAnswer.length; j++) {
+	   input[j].value = saneAnswer[j];
 	  }
-  }
+  });
 }

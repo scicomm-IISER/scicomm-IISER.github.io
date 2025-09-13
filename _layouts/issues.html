@@ -39,6 +39,7 @@ layout: default
 </div>
 {% endfor %}
 
+{% if site.data.digest[filename] %}
 <h2> Insight Digest </h2>
 {% assign filename = "issue" | append: page.issue %}
 {% for item in site.data.digest[filename] %}
@@ -52,21 +53,25 @@ layout: default
 <div class="magazine-item">
 <span><a class="reveal" href="/issue{{ page.issue }}/digest/">Read All</a><br></span>
 </div>
+{% endif %}
 
-<h2> Science Comics </h2>
 {% assign items = issueItems | where:"category", "comic" %}
+{% assign l = items | size %}
+{% if l > 0 %}
+<h2> Science Comics </h2>
 {% for item in items %}
 <div class="magazine-item">
 <span class="magazine-summary-title">{{ item.title }}</span>
 <span><span class="magazine-summary-author">{{ item.authors }}</span> <a class="reveal" href={{ item.permalink }}>Read</a></span>
 </div>
 {% endfor %}
+{% endif %}
 
 <h2 id="games"> Science Games </h2>
 {% assign categories = "quiz,crossword,linkedlist,whoami" | split:"," %}
-{% for cat in categories %}
-{% assign items = issueItems | where:"category", cat %}
+{% assign items = issueItems | where_exp:"item", "categories contains item.category" %}
+{% for item in items %}
 <div class="magazine-item">
-	<span><span class="magazine-summary-title">{{ items[0].title }}</span><a class="reveal" href="{{ items[0].url }}">Try Out</a></span>
+	<span><span class="magazine-summary-title">{{ item.title }}</span><a class="reveal" href="{{ item.url }}">Try Out</a></span>
 </div>
 {% endfor %}

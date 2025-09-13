@@ -2,6 +2,9 @@
 layout: posts
 ---
 
+<script src="/assets/js/linkedlist.js"></script>
+{% assign file = "issue" | append: page.issue %}
+{% assign data = site.data.linkedlists[file] %}
 Linked List is a general science-based word game. The rules are straightforward.
 <ol>
 	<li>The goal is to guess eleven words that have been drawn from science.</li>
@@ -13,12 +16,35 @@ Linked List is a general science-based word game. The rules are straightforward.
 
 As always, the cover image is a clue to the first word. Find all the words!
 
-<p><strong>Seed Word:</strong> <span id="seed-word">{{ page.seed }}</span></p>
-<form id="ll-form"></form>
-<button onclick='checkAnswers({{ site.data.linkedlists[page.file] | jsonify }}, "{{ page.seed }}")' class="reveal">Check Answers</button>
-<div id="result"></div>
-<script src="/assets/js/linkedlist.js"></script>
-{% assign file = "issue" | append: page.issue %}
+<p><strong>Seed Word:</strong> <span id="seed-word">{{ data.seed }}</span></p>
+<p>Next word should start with: <strong>{{ data.seed | split: "" | last }}</strong>. Last word should end with: <strong>{{ data.seed | split: "" | first }}</strong>.</p>
+{% for hint in data.hints %}
+{% assign outer = forloop %}
+<div class="hint-block">
+<div class="hint-text">
+{{ hint }}
+</div>
+<form id="form-{{ outer.index0 }}" class="llInputs">
+  {% assign letters = data.answers[outer.index0] | split: " " | join: "" | split: "" %}
+  {% for ch in letters %}
+  {% if forloop.first %}
+    {% if outer.first %}
+    <input maxlength="1" readOnly=true class="llInputs locked" value='{{ data.seed | split: "" | last }}' />
+	{% else %}
+    <input maxlength="1" readOnly=true class="llInputs locked" />
+	{% endif %}
+  {% else %}
+    {% if forloop.last and outer.last %}
+	  <input maxlength="1" readOnly=true class="llInputs locked" value='{{ data.seed | split: "" | first }}' />
+	{% else %}
+      <input maxlength="1" class="llInputs" />
+	{% endif %}
+  {% endif %}
+  {% endfor %}
+</form>
+</div>
+{% endfor %}
+<button onclick='checkAnswers({{ data.answers | jsonify }}, {{ data.seed | jsonify }})' class="reveal">Check Answers</button>
 <script>
-build({{ site.data.linkedlists[file] | jsonify }}, "{{ page.seed }}")
+	Interactive({{ data.answers | jsonify }}, {{data.answers | size | jsonify }})
 </script>
