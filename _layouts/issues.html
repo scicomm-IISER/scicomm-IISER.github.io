@@ -39,9 +39,9 @@ layout: default
 </div>
 {% endfor %}
 
+{% assign filename = "issue" | append: page.issue %}
 {% if site.data.digest[filename] %}
 <h2> Insight Digest </h2>
-{% assign filename = "issue" | append: page.issue %}
 {% for item in site.data.digest[filename] %}
 {% assign slug = item["Title"] | slugify %}
 {% assign link = "/issue" | append: page.issue | append: "/digest/#" | append: slug %}

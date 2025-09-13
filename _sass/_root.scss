@@ -18,7 +18,7 @@ html::-webkit-scrollbar { /* WebKit */
 body {
   width: 100%;
   margin: 0;
-  margin-top: constants.$min-margin;
+  margin-top: calc(constants.$header-height + 1rem);
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - constants.$footer-height + constants.$footer-gap);

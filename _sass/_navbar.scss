@@ -1,22 +1,24 @@
 @use 'constants';
 header {
-    margin: auto;
-    padding-top: constants.$footer-gap;
-    padding-bottom: calc(2 * constants.$footer-gap);
     width: 100%;
-	max-width: constants.$width;
+    background-color: constants.$fg-color;
+    position: fixed;
+    top: 0;
+    z-index: 999;
 }
 
 nav {
+	max-width: constants.$width;
+    // padding-top: calc(1.5 * constants.$footer-gap);
+    // padding-bottom: calc(1.5 * constants.$footer-gap);
 	height: constants.$header-height;
 	display: flex;
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    margin-top: 0;
     width: 100%;
     > a {
-      color: constants.$hn-color;
+      color: constants.$bg-color;
     }
     > a:hover {
       text-decoration: none;
@@ -73,7 +75,7 @@ nav {
   height: 2rem;
   cursor: pointer;
   > svg {
-    fill: constants.$hn-color;
+    fill: constants.$bg-color;
     width: 2rem;
     height: 2rem;
   }

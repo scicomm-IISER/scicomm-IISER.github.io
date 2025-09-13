@@ -11,8 +11,8 @@ layout: null
       "title": {{ item["Title"] | jsonify }},
       "author": "{{ item["Author"] }}",
       "affiliation": "{{ item["Affiliation"] }}",
-      "summary": "{{ item["Summary"] | strip_newlines | replace:'"','\"' }}",
-      "summary-trunc": "{{ item["Summary"] | strip_newlines | replace:'"','\"' | truncate: site.digest-truncate-length }}",
+      "summary": "{{ item["Summary"] | strip_newlines | replace:'"','\"' | replace:"\(", '$' | replace:"\)", '$' }}",
+      "summary-trunc": "{{ item["Summary"] | strip_newlines | replace:'"','\"' | replace:"\(", '$' | replace:"\)", '$' | truncate: site.digest-truncate-length }}",
       "reference": "{{ item["Reference"] }}",
       "url": "{{ item["Url"] }}",
       "permalink": "/{{ path }}/digest/#{{ item["Title"] | slugify }}"

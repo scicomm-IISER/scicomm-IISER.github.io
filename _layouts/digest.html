@@ -2,12 +2,14 @@
 layout: default
 ---
 
-<div class="hero-image-caption">
-	<img class="hero-image" src="/assets/images/issue{{page.issue}}/digest/{{page.hero-image}}"/>
-{% if page.hero-source %}
-<a class="hero-caption" href="{{ page.hero-source }}">Source &nbsp;<span class="nf nf-oct-link"></span></a>
+{% if hero-image %}
+	<div class="hero-image-caption">
+		<img class="hero-image" src="/assets/images/issue{{page.issue}}/digest/{{page.hero-image}}"/>
+	{% if page.hero-source %}
+	<a class="hero-caption" href="{{ page.hero-source }}">Source &nbsp;<span class="nf nf-oct-link"></span></a>
+	{% endif %}
+	</div>
 {% endif %}
-</div>
 <h1> Insight Digest | Issue #{{ page.issue }} </h1>
 <strong>{{ site.digest-excerpt }} </strong>
 

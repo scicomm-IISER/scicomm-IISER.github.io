@@ -45,8 +45,13 @@ If you are new here, welcome! You have reached the home page of *InScight*. {{ s
 
 # Insight Digest Highlights
 <div class="highlight-small">
-{% assign id = "issue" | append: site.data.magazines[0]["issue-number"] %}
+{% for issue in site.data.magazines %}
+{% assign id = "issue" | append: issue["issue-number"] %}
+{% if site.data.digest[id] != nil %}
 {% assign post = site.data.digest[id][0] %}
+{% break %}
+{% endif %}
+{% endfor %}
 <div class="highlight-desc">
 <p><strong id="highlight-digest-title">{{ post["Title"] }}</strong></p>
 <p> {{ site.color-emoji["article"] }} <span id="highlight-digest-reference"> {{ post["Reference"] }} </span></p>
