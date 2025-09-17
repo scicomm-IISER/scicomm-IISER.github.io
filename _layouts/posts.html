@@ -22,7 +22,7 @@ layout: default
 <div class="affiliation">{{ page.author-affiliation | join: ", " }}</div>
 {% endif %}
 {% if page.date %}
-<div class="date">Submitted: {{ page.date | date:"%b %d, %Y"}}</div>
+<div class="date">{{ page.date | date:"%b %d, %Y"}}</div>
 {% endif %}
 {%- if page.reviewedBy %}
 <div class="reviewed">Reviewed By: {{ page.reviewedBy }}</div>

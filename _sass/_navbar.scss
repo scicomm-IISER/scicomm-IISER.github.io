@@ -37,9 +37,10 @@ nav {
     padding-bottom: 0;
   }
   nav {
-    width: 100%;
-    padding-top: constants.$footer-gap;
-    padding-bottom: constants.$footer-gap;
+    margin-left: constants.$min-margin;
+    margin-right: constants.$min-margin;
+    // padding-top: constants.$footer-gap;
+    // padding-bottom: constants.$footer-gap;
   }
 }
 
@@ -92,9 +93,10 @@ nav {
 }
   .open-sidebar-button {
     transition: all 0.5s ease-out;
+    padding-right: calc(2 * constants.$min-margin);
   }
   .close-sidebar-button {
-    padding-right: constants.$min-margin;
+    padding-right: calc(2 * constants.$min-margin);
     padding-top: calc(0.5 * constants.$min-margin);
     align-self: flex-end;
   }

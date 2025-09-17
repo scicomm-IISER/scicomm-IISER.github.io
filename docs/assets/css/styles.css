@@ -33,12 +33,13 @@ main {
 
 @media (max-width: 1000px) {
   body {
-    max-width: calc(100% - 2rem);
-    margin: auto;
-    margin-top: 0rem;
+    max-width: 100%;
+    margin: 0;
+    margin-top: calc(60px + 1rem);
   }
   main {
-    max-width: 100%;
+    max-width: calc(100% - 2rem);
+    margin: auto;
   }
 }
 .highlighter-rouge {
@@ -160,9 +161,8 @@ nav > a:hover {
     padding-bottom: 0;
   }
   nav {
-    width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 .sidebar {
@@ -203,10 +203,11 @@ nav > a:hover {
 }
 .open-sidebar-button {
   transition: all 0.5s ease-out;
+  padding-right: 2rem;
 }
 
 .close-sidebar-button {
-  padding-right: 1rem;
+  padding-right: 2rem;
   padding-top: 0.5rem;
   align-self: flex-end;
 }
